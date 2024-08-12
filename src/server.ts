@@ -2,7 +2,7 @@ import { AutoRouter } from "itty-router";
 import { InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
 
 class JsonResponse extends Response {
-    constructor(body?: any, init?: any) {
+    constructor(body: Object, init?: Object) {
         const jsonBody = JSON.stringify(body);
         init = init || {
             headers: {
@@ -16,7 +16,7 @@ class JsonResponse extends Response {
 
 const router = AutoRouter();
 
-router.get("/", (request, env) => {
+router.get("/", (_, env) => {
     return new Response(`Heyo ${env.DISCORD_APPLICATION_ID}!! :D`)
 });
 

@@ -1,0 +1,26 @@
+{
+  "name": "underarc_bot",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "compile_register": "tsc -t es2021 -m esnext --moduleResolution Bundler --outDir dist src/register.ts",
+    "run_register": "node dist/register.js",
+    "register": "npm run compile_register && npm run run_register",
+    "ngrok": "ngrok http 8787"
+  },
+  "dependencies": {
+    "discord-interactions": "^4.0.0",
+    "itty-router": "^5.0.17"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240806.0",
+    "dotenv": "^16.4.5",
+    "ngrok": "^5.0.0-beta.2",
+    "typescript": "^5.5.4",
+    "wrangler": "3.70.0"
+  }
+}

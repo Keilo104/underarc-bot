@@ -17,7 +17,7 @@ class JsonResponse extends Response {
 const router = AutoRouter();
 
 router.get("/", (request, env) => {
-    return new Response(`Heyooouu ${env.DISCORD_APPLICATION_ID}!! :D`)
+    return new Response(`Heyo ${env.DISCORD_APPLICATION_ID}!! :D`)
 });
 
 router.post("/", async (request, env) => {

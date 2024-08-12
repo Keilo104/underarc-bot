@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: underarc-bot
+    runs-on: ubuntu-latest
     name: Deploy
     steps:
       - uses: actions/checkout@v4

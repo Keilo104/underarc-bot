@@ -1,4 +1,4 @@
-import { AutoRouter } from "itty-router";
+import {AutoRouter, IRequest} from "itty-router";
 import { InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
 
 class JsonResponse extends Response {
@@ -16,11 +16,11 @@ class JsonResponse extends Response {
 
 const router = AutoRouter();
 
-router.get("/", (_, env) => {
+router.get("/", (_: IRequest, env: any) => {
     return new Response(`Heyo ${env.DISCORD_APPLICATION_ID}!! :D`)
 });
 
-router.post("/", async (request, env) => {
+router.post("/", async (request: IRequest, env: any) => {
     const { isValid, interaction } = await server.verifyDiscordRequest(request, env);
 
     if (!isValid || !interaction) {

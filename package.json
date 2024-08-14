@@ -10,7 +10,8 @@
     "deploy": "wrangler deploy",
     "compile_register": "tsc -t es2021 -m esnext --moduleResolution Bundler --outDir dist src/register.ts",
     "run_register": "node dist/register.js",
-    "register": "npm run compile_register && npm run run_register",
+    "register_dev": "npm run compile_register && npm run run_register dev",
+    "register_prod": "npm run compile_register && npm run run_register prod",
     "ngrok": "ngrok http --domain=renewing-tapir-trivially.ngrok-free.app 8787"
   },
   "dependencies": {

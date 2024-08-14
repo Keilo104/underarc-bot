@@ -1,7 +1,12 @@
 import dotenv from 'dotenv';
 import {EIGHT_BALL_COMMAND, GUILD_INSTALL_COMMAND, PING_COMMAND, USER_INSTALL_COMMAND} from "./commands.js";
 
-dotenv.config({ path: ".dev.vars" });
+if (process.argv[2] == "dev")
+    dotenv.config({ path: ".dev.vars" });
+else if (process.argv[2] == "prod")
+    dotenv.config({ path: ".prod.vars" });
+else
+    throw new Error("Argument is necessary, either dev or prod.");
 
 const token = process.env.DISCORD_TOKEN;
 const applicationId = process.env.DISCORD_APPLICATION_ID;
@@ -10,9 +15,7 @@ if (!token)
     throw new Error("The DISCORD_TOKEN environment variable is required.");
 
 if (!applicationId)
-      throw new Error(
-            "The DISCORD_APPLICATION_ID environment variable is required.",
-      );
+      throw new Error("The DISCORD_APPLICATION_ID environment variable is required.");
 
 const url = `https://discord.com/api/v10/applications/${applicationId}/commands`;
 
@@ -26,7 +29,7 @@ const response = await fetch(url, {
 });
 
 if (response.ok) {
-    console.log("Registered all commands");
+    console.log(`Registered all commands on bot ${applicationId}`);
     const data = await response.json();
     console.log(JSON.stringify(data, null, 2));
 

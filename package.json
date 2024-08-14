@@ -11,7 +11,7 @@
     "compile_register": "tsc -t es2021 -m esnext --moduleResolution Bundler --outDir dist src/register.ts",
     "run_register": "node dist/register.js",
     "register": "npm run compile_register && npm run run_register",
-    "ngrok": "ngrok http 8787"
+    "ngrok": "ngrok http --domain=renewing-tapir-trivially.ngrok-free.app 8787"
   },
   "dependencies": {
     "discord-interactions": "^4.0.0",

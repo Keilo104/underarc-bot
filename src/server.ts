@@ -2,7 +2,7 @@ import { AutoRouter, IRequest } from "itty-router";
 import { InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
 import { EIGHT_BALL_COMMAND, PING_COMMAND } from "./commands";
 import { Emotes } from "./util/emotes";
-import {FigureOutUsername} from "./util/figure_out_username";
+import { FigureOutUsername } from "./util/figure_out_username";
 
 class JsonResponse extends Response {
     constructor(body: Object, init?: Object) {

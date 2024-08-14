@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import {TEST_COMMAND} from "./commands.js";
+import {EIGHT_BALL_COMMAND, PING_COMMAND} from "./commands.js";
 
 dotenv.config({ path: ".dev.vars" });
 
@@ -22,7 +22,7 @@ const response = await fetch(url, {
         Authorization: `Bot ${token}`,
     },
     method: "PUT",
-    body: JSON.stringify([TEST_COMMAND]),
+    body: JSON.stringify([PING_COMMAND, EIGHT_BALL_COMMAND]),
 });
 
 if (response.ok) {

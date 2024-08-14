@@ -1,6 +1,6 @@
 import { AutoRouter, IRequest } from "itty-router";
-import { InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
-import { EIGHT_BALL_COMMAND, PING_COMMAND } from "./commands";
+import {InteractionResponseFlags, InteractionResponseType, InteractionType, verifyKey} from "discord-interactions";
+import {EIGHT_BALL_COMMAND, GUILD_INSTALL_COMMAND, PING_COMMAND, USER_INSTALL_COMMAND} from "./commands";
 import { Emotes } from "./util/emotes";
 import { FigureOutUsername } from "./util/figure_out_username";
 
@@ -37,6 +37,9 @@ router.post("/", async (request: IRequest, env: any) => {
     }
 
     if (interaction.type === InteractionType.APPLICATION_COMMAND) {
+        const applicationId = env.DISCORD_APPLICATION_ID
+        let INVITE_URL: string
+
         switch (interaction.data.name.toLowerCase()) {
             case PING_COMMAND.name.toLowerCase():
                 return new JsonResponse({
@@ -44,6 +47,28 @@ router.post("/", async (request: IRequest, env: any) => {
                     data: {
                         content: "pong"
                     }
+                })
+
+            case GUILD_INSTALL_COMMAND.name.toLowerCase():
+                INVITE_URL = `https://discord.com/oauth2/authorize?client_id=${applicationId}&permissions=2048&integration_type=0&scope=applications.commands+bot`
+
+                return new JsonResponse({
+                    type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
+                    data: {
+                        content:INVITE_URL,
+                        flags: InteractionResponseFlags.EPHEMERAL,
+                    },
+                })
+
+            case USER_INSTALL_COMMAND.name.toLowerCase():
+                INVITE_URL = `https://discord.com/oauth2/authorize?client_id=${applicationId}&integration_type=1&scope=applications.commands`
+
+                return new JsonResponse({
+                    type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
+                    data: {
+                        content: INVITE_URL,
+                        flags: InteractionResponseFlags.EPHEMERAL,
+                    },
                 })
 
             case EIGHT_BALL_COMMAND.name.toLowerCase():

@@ -1,4 +1,4 @@
-import {ApplicationIntegrationType, InteractionContextType} from "./util/discord_enums";
+import { ApplicationIntegrationType, InteractionContextType } from "./util/discord_enums.js";
 
 export const PING_COMMAND = {
     name: "ping",

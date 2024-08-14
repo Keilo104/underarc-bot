@@ -36,7 +36,7 @@
 
   "1071": {
     "icon_image_url": "",
-    "release_patch": 99,
+    "release_patch": 3,
     "override_full_name": "Caesar King",
     "embed_color": "0xFFDC4D"
   },
@@ -50,7 +50,7 @@
 
   "1091": {
     "icon_image_url": "",
-    "release_patch": 99,
+    "release_patch": null,
     "override_full_name": "Hoshimi Miyabi",
     "embed_color": "0x1CE0EF"
   },
@@ -100,13 +100,13 @@
 
   "1161": {
     "icon_image_url": "",
-    "release_patch": 99,
+    "release_patch": null,
     "embed_color": "0xFFDC4D"
   },
 
   "1171": {
     "icon_image_url": "",
-    "release_patch": 99,
+    "release_patch": 3,
     "override_full_name": "Burnice White",
     "embed_color": "0xFFDC4D"
   },
@@ -127,7 +127,8 @@
 
   "1201": {
     "icon_image_url": "",
-    "release_patch": 99,
+    "release_patch": null,
+    "override_full_name": "Asaba Harumasa",
     "embed_color": "0x1CE0EF"
   },
 
@@ -140,7 +141,8 @@
 
   "1221": {
     "icon_image_url": "",
-    "release_patch": 99,
+    "release_patch": null,
+    "override_full_name": "Tsukishiro Yanagi",
     "embed_color": "0x1CE0EF"
   },
 

@@ -1,6 +1,6 @@
 import { AutoRouter, IRequest } from "itty-router";
-import {InteractionResponseFlags, InteractionResponseType, InteractionType, verifyKey} from "discord-interactions";
-import {EIGHT_BALL_COMMAND, GUILD_INSTALL_COMMAND, PING_COMMAND, USER_INSTALL_COMMAND} from "./commands";
+import { InteractionResponseFlags, InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
+import { EIGHT_BALL_COMMAND, GUILD_INSTALL_COMMAND, PING_COMMAND, USER_INSTALL_COMMAND } from "./commands";
 import { Emotes } from "./util/emotes";
 import { FigureOutUsername } from "./util/figure_out_username";
 

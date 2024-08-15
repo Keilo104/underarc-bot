@@ -1,7 +1,6 @@
 {
   "53001": {
     "icon_image_url": "https://i.imgur.com/JsfpmVA.png",
-    "release_patch": 1,
     "damage_type": ["Ice"],
     "synergy_count": 2,
     "synergy_type": "Ice",
@@ -9,7 +8,6 @@
   },
   "53002": {
     "icon_image_url": "https://i.imgur.com/61Mp45i.png",
-    "release_patch": 1,
     "damage_type": ["Physical"],
     "synergy_count": 2,
     "synergy_type": "Physical",
@@ -17,7 +15,6 @@
   },
   "53003": {
     "icon_image_url": "https://i.imgur.com/YdcghB4.png",
-    "release_patch": 1,
     "damage_type": ["HP Recovery", "Shield", "Energy Regen"],
     "synergy_count": 1,
     "synergy_type": "Support",
@@ -25,7 +22,6 @@
   },
   "53004": {
     "icon_image_url": "https://i.imgur.com/xmmiqd9.png",
-    "release_patch": 1,
     "damage_type": ["Physical"],
     "synergy_count": 0,
     "synergy_type": "Stun",
@@ -33,7 +29,6 @@
   },
   "53005": {
     "icon_image_url": "https://i.imgur.com/xyrvftN.png",
-    "release_patch": 1,
     "damage_type": ["Physical"],
     "synergy_count": 1,
     "synergy_type": "Defense",
@@ -41,7 +36,6 @@
   },
   "53006": {
     "icon_image_url": "https://i.imgur.com/fgk7loE.png",
-    "release_patch": 1,
     "damage_type": ["Physical"],
     "synergy_count": 1,
     "synergy_type": "Attack",
@@ -49,7 +43,6 @@
   },
   "53007": {
     "icon_image_url": "https://i.imgur.com/1rGlXQX.png",
-    "release_patch": 1,
     "damage_type": ["Fire"],
     "synergy_count": 2,
     "synergy_type": "Fire",
@@ -57,7 +50,6 @@
   },
   "53008": {
     "icon_image_url": "https://i.imgur.com/mBb3upe.png",
-    "release_patch": 1,
     "damage_type": ["HP Recovery"],
     "synergy_count": 1,
     "synergy_type": "Support",
@@ -65,7 +57,6 @@
   },
   "53009": {
     "icon_image_url": "https://i.imgur.com/0CPgQml.png",
-    "release_patch": 1,
     "damage_type": ["Physical"],
     "synergy_count": 1,
     "synergy_type": "Pierce",
@@ -73,7 +64,6 @@
   },
   "53010": {
     "icon_image_url": "https://i.imgur.com/Pb5eXBe.png",
-    "release_patch": 1,
     "damage_type": ["Electric"],
     "synergy_count": 2,
     "synergy_type": "Electric",
@@ -81,7 +71,6 @@
   },
   "53011": {
     "icon_image_url": "https://i.imgur.com/ughoypN.png",
-    "release_patch": 1,
     "damage_type": ["Physical"],
     "synergy_count": 1,
     "synergy_type": "Anomaly",
@@ -89,7 +78,6 @@
   },
   "53012": {
     "icon_image_url": "https://i.imgur.com/JxrrbH0.png",
-    "release_patch": 1,
     "damage_type": ["Energy Regen"],
     "synergy_count": 1,
     "synergy_type": "Support",
@@ -97,7 +85,6 @@
   },
   "54001": {
     "icon_image_url": "https://i.imgur.com/s304Du7.png",
-    "release_patch": 1,
     "damage_type": ["Ice"],
     "synergy_count": 2,
     "synergy_type": "Ice",
@@ -105,7 +92,6 @@
   },
   "54002": {
     "icon_image_url": "https://i.imgur.com/TZbTPhO.png",
-    "release_patch": 1,
     "damage_type": ["Physical"],
     "synergy_count": 2,
     "synergy_type": "Belobog Heavy Industries",
@@ -113,7 +99,6 @@
   },
   "54003": {
     "icon_image_url": "https://i.imgur.com/qXqzp0c.png",
-    "release_patch": 1,
     "damage_type": ["Ether"],
     "synergy_count": 2,
     "synergy_type": "Ether",
@@ -121,7 +106,6 @@
   },
   "54004": {
     "icon_image_url": "https://i.imgur.com/ojfweqB.png",
-    "release_patch": 1,
     "damage_type": ["Energy Regen", "Physical"],
     "synergy_count": 2,
     "synergy_type": "Victoria Housekeeping Co.",
@@ -129,7 +113,6 @@
   },
   "54005": {
     "icon_image_url": "https://i.imgur.com/22wbYQP.png",
-    "release_patch": 1,
     "damage_type": ["Physical"],
     "synergy_count": 2,
     "synergy_type": "Cunning Hares",
@@ -137,7 +120,6 @@
   },
   "54006": {
     "icon_image_url": "https://i.imgur.com/7SE6xOj.png",
-    "release_patch": 1,
     "damage_type": ["Fire"],
     "synergy_count": 2,
     "synergy_type": "Fire",
@@ -145,7 +127,6 @@
   },
   "54008": {
     "icon_image_url": "https://i.imgur.com/aZbKKwL.png",
-    "release_patch": 1,
     "damage_type": ["Electric"],
     "synergy_count": 2,
     "synergy_type": "Electric",
@@ -153,11 +134,18 @@
   },
   "54009": {
     "icon_image_url": "https://i.imgur.com/vQ9vKdU.png",
-    "release_patch": 1,
     "damage_type": ["Ether"],
     "synergy_count": 2,
     "synergy_type": "Ether",
     "embed_color": "0xfe437e"
+  },
+  "54011": {
+    "icon_image_url": "",
+    "release_patch": 3,
+    "damage_type": ["Physical"],
+    "synergy_count": 2,
+    "synergy_type": "Sons of Calydon",
+    "embed_color": "0xFFDC4D"
   },
   "54012": {
     "icon_image_url": "https://i.imgur.com/WaZFQDk.png",
@@ -169,7 +157,6 @@
   },
   "54013": {
     "icon_image_url": "https://i.imgur.com/3QggGjq.png",
-    "release_patch": 1,
     "damage_type": ["Physical"],
     "synergy_count": 2,
     "synergy_type": "Physical",

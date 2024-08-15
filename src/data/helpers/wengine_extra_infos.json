@@ -168,6 +168,13 @@
     "signature": "1041",
     "embed_color":  "0xFFDD0D"
   },
+  "14107": {
+    "icon_image_url": "",
+    "obtain": "Gacha",
+    "signature": "1071",
+    "embed_color":  "0xFFDC4D",
+    "release_patch": 3
+  },
   "14110": {
     "icon_image_url": "https://i.imgur.com/12yShxm.png",
     "obtain": "Gacha",
@@ -179,6 +186,13 @@
     "obtain": "Gacha",
     "signature": "1141",
     "embed_color":  "0xBDCBD9"
+  },
+  "14117": {
+    "icon_image_url": "",
+    "obtain": "Gacha",
+    "signature": "1171",
+    "embed_color":  "0xFFDC4D",
+    "release_patch": 3
   },
   "14118": {
     "icon_image_url": "https://i.imgur.com/dk70S36.png",

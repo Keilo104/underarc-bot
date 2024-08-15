@@ -2,35 +2,30 @@
   "1011": {
     "icon_image_url": "https://i.imgur.com/LfrjZPv.png",
     "signature_weapon": "13101",
-    "release_patch": 1,
     "embed_color": "0xD9FF40"
   },
 
   "1021": {
     "icon_image_url": "https://i.imgur.com/8cXl8IR.png",
     "signature_weapon": "14102",
-    "release_patch": 1,
     "embed_color": "0xFF4540"
   },
 
   "1031": {
     "icon_image_url": "https://i.imgur.com/82AxB4x.png",
     "signature_weapon": "13103",
-    "release_patch": 1,
     "embed_color": "0xFF4B89"
   },
 
   "1041": {
     "icon_image_url": "https://i.imgur.com/rW9BWMB.png",
     "signature_weapon": "14104",
-    "release_patch": 1,
     "embed_color": "0xFFDD0D"
   },
 
   "1061": {
     "icon_image_url": "https://i.imgur.com/9MnHi1l.png",
     "signature_weapon": "13106",
-    "release_patch": 1,
     "embed_color": "0xBDCBD9"
   },
 
@@ -44,7 +39,6 @@
   "1081": {
     "icon_image_url": "https://i.imgur.com/XkJa2GK.png",
     "signature_weapon": "13108",
-    "release_patch": 1,
     "embed_color": "0xFF4540"
   },
 
@@ -58,42 +52,36 @@
   "1101": {
     "icon_image_url": "https://i.imgur.com/GVXoWkl.png",
     "signature_weapon": "14110",
-    "release_patch": 1,
     "embed_color": "0xD9D9D9"
   },
 
   "1111": {
     "icon_image_url": "https://i.imgur.com/J2oHCRw.png",
     "signature_weapon": "13111",
-    "release_patch": 1,
     "embed_color": "0xD9D9D9"
   },
 
   "1121": {
     "icon_image_url": "https://i.imgur.com/jppZuOp.png",
     "signature_weapon": "13112",
-    "release_patch": 1,
     "embed_color": "0xD9D9D9"
   },
 
   "1131": {
     "icon_image_url": "https://i.imgur.com/1rwWD8B.png",
     "signature_weapon": "13113",
-    "release_patch": 1,
     "embed_color": "0x1CE0EF"
   },
 
   "1141": {
     "icon_image_url": "https://i.imgur.com/eI63QVG.png",
     "signature_weapon": "14114",
-    "release_patch": 1,
     "embed_color": "0xBDCBD9"
   },
 
   "1151": {
     "icon_image_url": "https://i.imgur.com/faEvnLq.png",
     "signature_weapon": "13115",
-    "release_patch": 1,
     "override_full_name": "Luciana Auxesis Theodoro de Montefio",
     "embed_color": "0xFFDC4D"
   },
@@ -114,14 +102,12 @@
   "1181": {
     "icon_image_url": "https://i.imgur.com/D0edxZt.png",
     "signature_weapon": "14118",
-    "release_patch": 1,
     "embed_color": "0xD9D9D9"
   },
 
   "1191": {
     "icon_image_url": "https://i.imgur.com/QOjnMdt.png",
     "signature_weapon": "14119",
-    "release_patch": 1,
     "embed_color": "0xBDCBD9"
   },
 
@@ -135,7 +121,6 @@
   "1211": {
     "icon_image_url": "https://i.imgur.com/hJIkwVo.png",
     "signature_weapon": "14121",
-    "release_patch": 1,
     "embed_color": "0xBDCBD9"
   },
 
@@ -149,7 +134,6 @@
   "1241": {
     "icon_image_url": "https://i.imgur.com/MUWz6ti.png",
     "signature_weapon": "14124",
-    "release_patch": 1,
     "embed_color": "0x38A2FF"
   },
 
@@ -177,7 +161,6 @@
   "1281": {
     "icon_image_url": "https://i.imgur.com/ZYWWKVA.png",
     "signature_weapon": "13128",
-    "release_patch": 1,
     "embed_color": "0xFFDC4D"
   }
 }

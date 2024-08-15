@@ -1,7 +1,7 @@
 import { AutoRouter, IRequest } from "itty-router";
 import { InteractionResponseFlags, InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
-import { EIGHT_BALL_COMMAND, GUILD_INSTALL_COMMAND, PING_COMMAND, USER_INSTALL_COMMAND } from "./commands";
-import { Emotes } from "./util/emotes";
+import {EIGHT_BALL_COMMAND, GUILD_INSTALL_COMMAND, PING_COMMAND, USER_INSTALL_COMMAND, ZZZ_COMMAND} from "./commands";
+import { Emote } from "./enums/emote";
 import { FigureOutUsername } from "./util/figure_out_username";
 
 class JsonResponse extends Response {
@@ -79,9 +79,12 @@ router.post("/", async (request: IRequest, env: any) => {
                     data: {
                         content:
                             `**${FigureOutUsername(interaction)} asked:** ${interaction.data.options[0].value}\n\n` +
-                            `${Emotes.ARCY_ICON.emote}: ${eight_ball_answers_json["answers"].sample()}`
+                            `${Emote.ARCY_ICON.emote}: ${eight_ball_answers_json["answers"].sample()}`
                     }
                 })
+
+            case ZZZ_COMMAND.name.toLowerCase():
+
 
             default:
                 return new JsonResponse({ error: "Unknown Type" }, { status: 400 })

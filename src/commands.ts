@@ -21,6 +21,22 @@ export const USER_INSTALL_COMMAND = {
     description: "create a link to add arcy to yourself, so you can use her anywhere! :D",
 }
 
+export const ZZZ_COMMAND = {
+    name: "zzz",
+    type: 1,
+    integration_types: [ApplicationIntegrationType.GUILD_INSTALL, ApplicationIntegrationType.USER_INSTALL],
+    contexts: [InteractionContextType.GUILD, InteractionContextType.PRIVATE_CHANNEL],
+    description: "ask for something zzz related!",
+    options: [
+        {
+            name: "thing",
+            description: "the thing you wish to ask for!",
+            type: 3,
+            required: true,
+        },
+    ]
+}
+
 export const EIGHT_BALL_COMMAND = {
     name: "8ball",
     type: 1,

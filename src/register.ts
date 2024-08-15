@@ -1,10 +1,10 @@
 import dotenv from 'dotenv';
 import {
+    AGENT_COMMAND,
     EIGHT_BALL_COMMAND,
     GUILD_INSTALL_COMMAND,
     PING_COMMAND,
     USER_INSTALL_COMMAND,
-    ZZZ_COMMAND
 } from "./commands.js";
 
 if (process.argv[2] == "dev")
@@ -34,7 +34,7 @@ const response = await fetch(url, {
     body: JSON.stringify(
         [
             PING_COMMAND, EIGHT_BALL_COMMAND, USER_INSTALL_COMMAND, GUILD_INSTALL_COMMAND,
-            ZZZ_COMMAND,
+            AGENT_COMMAND,
         ]
     ),
 });

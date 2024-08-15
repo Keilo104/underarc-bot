@@ -1,21 +1,16 @@
 import { AutoRouter, IRequest } from "itty-router";
 import { InteractionResponseFlags, InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
-import {EIGHT_BALL_COMMAND, GUILD_INSTALL_COMMAND, PING_COMMAND, USER_INSTALL_COMMAND, ZZZ_COMMAND} from "./commands";
+import {
+    AGENT_COMMAND,
+    EIGHT_BALL_COMMAND,
+    GUILD_INSTALL_COMMAND,
+    PING_COMMAND,
+    USER_INSTALL_COMMAND,
+} from "./commands";
 import { Emote } from "./enums/emote";
 import { FigureOutUsername } from "./util/figure_out_username";
-
-class JsonResponse extends Response {
-    constructor(body: Object, init?: Object) {
-        const jsonBody = JSON.stringify(body);
-        init = init || {
-            headers: {
-                "content-type": "application/json;charset=UTF-8",
-            },
-        };
-
-        super(jsonBody, init)
-    }
-}
+import {JsonResponse} from "./util/json_reponse";
+import {agent_command_handler } from "./zzz_commands/agent_command";
 
 const router = AutoRouter();
 
@@ -47,7 +42,7 @@ router.post("/", async (request: IRequest, env: any) => {
                     data: {
                         content: "pong"
                     }
-                })
+                });
 
             case GUILD_INSTALL_COMMAND.name.toLowerCase():
                 INVITE_URL = `https://discord.com/oauth2/authorize?client_id=${applicationId}&permissions=2048&integration_type=0&scope=applications.commands+bot`
@@ -58,7 +53,7 @@ router.post("/", async (request: IRequest, env: any) => {
                         content:INVITE_URL,
                         flags: InteractionResponseFlags.EPHEMERAL,
                     },
-                })
+                });
 
             case USER_INSTALL_COMMAND.name.toLowerCase():
                 INVITE_URL = `https://discord.com/oauth2/authorize?client_id=${applicationId}&integration_type=1&scope=applications.commands`
@@ -69,7 +64,7 @@ router.post("/", async (request: IRequest, env: any) => {
                         content: INVITE_URL,
                         flags: InteractionResponseFlags.EPHEMERAL,
                     },
-                })
+                });
 
             case EIGHT_BALL_COMMAND.name.toLowerCase():
                 const eight_ball_answers_json = require("./data/8ball_answers.json")
@@ -81,10 +76,10 @@ router.post("/", async (request: IRequest, env: any) => {
                             `**${FigureOutUsername(interaction)} asked:** ${interaction.data.options[0].value}\n\n` +
                             `${Emote.ARCY_ICON.emote}: ${eight_ball_answers_json["answers"].sample()}`
                     }
-                })
+                });
 
-            case ZZZ_COMMAND.name.toLowerCase():
-
+            case AGENT_COMMAND.name.toLowerCase():
+                return agent_command_handler(interaction.data.options);
 
             default:
                 return new JsonResponse({ error: "Unknown Type" }, { status: 400 })

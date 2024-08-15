@@ -21,19 +21,39 @@ export const USER_INSTALL_COMMAND = {
     description: "create a link to add arcy to yourself, so you can use her anywhere! :D",
 }
 
-export const ZZZ_COMMAND = {
-    name: "zzz",
+export const AGENT_COMMAND = {
+    name: "agent",
     type: 1,
     integration_types: [ApplicationIntegrationType.GUILD_INSTALL, ApplicationIntegrationType.USER_INSTALL],
     contexts: [InteractionContextType.GUILD, InteractionContextType.PRIVATE_CHANNEL],
-    description: "ask for something zzz related!",
+    description: "ask for information from a zzz agent!",
     options: [
         {
-            name: "thing",
-            description: "the thing you wish to ask for!",
+            name: "agent",
+            description: "the agent you wish to ask for!",
             type: 3,
             required: true,
         },
+
+        {
+            name: "what",
+            description: "what of the agent to show!",
+            type: 3,
+            required: false,
+            choices: [
+                {
+                    name: "Stats",
+                    value: "stats"
+                }
+            ]
+        },
+
+        {
+            name: "level",
+            description: "level of what you want to show!",
+            type: 4,
+            required: false,
+        }
     ]
 }
 

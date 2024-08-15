@@ -53,6 +53,8 @@ export const AGENT_COMMAND = {
             description: "level of what you want to show!",
             type: 4,
             required: false,
+            min_value: 0,
+            max_value: 60,
         }
     ]
 }

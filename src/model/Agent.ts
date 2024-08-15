@@ -33,7 +33,9 @@ export class Agent {
     public baseAnomalyProficiency: number = 0;
 
 
-    public static AgentFromHakushin(): Agent {
+    public static AgentFromHakushin(agentJson: any): Agent {
+        const agentHelper = require(`../data/helpers/agent_extra_infos.json`);
+
         let agent = new Agent();
 
 

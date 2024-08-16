@@ -70,7 +70,7 @@ export function printAgentStats(agent: Agent): JsonResponse {
                 agentEmbed,
             ]
         }
-    })
+    });
 }
 
 export function printAgentStatsAtLevel(agent: Agent, level: number): JsonResponse {
@@ -98,5 +98,5 @@ export function printAgentStatsAtLevel(agent: Agent, level: number): JsonRespons
                 agentEmbed,
             ]
         }
-    })
+    });
 }

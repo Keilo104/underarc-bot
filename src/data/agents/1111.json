@@ -1160,7 +1160,7 @@
           "Additional Ability: Teamwork"
         ],
         "Desc": [
-          "When Anton uses his <color=#ffffff>Piledriver Attack</color>, the skill's DMG is increased by <color=#2BAD00>24%</color>. When he uses his <color=#ffffff>Drill Attack</color>, the skill's DMG is increased by <color=#2BAD00>40%</color>.",
+          "When Anton uses his <color=#ffffff>Piledriver Attack</color>, the skill's DMG is increased by <color=#2BAD00>24%</color> and when he uses his <color=#ffffff>Drill Attack</color>, the skill's DMG is increased by <color=#2BAD00>40%</color>.",
           "When another character in your squad shares the same Attribute or Faction:\nWhile Anton is in <color=#ffffff>Burst Mode</color>, for every 4 critical hits, the next attack hitting <color=#2eb6ff>Shocked</color> enemies triggers an additional bout of <color=#2eb6ff>Shock</color> DMG at 45% of the original DMG. This effect can trigger once every 0.5s."
         ]
       }

@@ -2,7 +2,6 @@ import {JsonResponse} from "../util/json_reponse";
 import {InteractionResponseFlags, InteractionResponseType} from "discord-interactions";
 import {Agent} from "../model/Agent";
 import {printAgentStats, printAgentStatsAtLevel} from "./agent_commands/print_agent_stats";
-import {FigureOutUsername} from "../util/figure_out_username";
 import {printAgentCore, printAgentCoreAtLevel} from "./agent_commands/print_agent_core";
 
 function translateAgent(agent: string | null): string | null {
@@ -44,7 +43,7 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
 
     let agentId: string | null = translateAgent(agentInput);
 
-    if(agentId && levelInput) {
+    if(agentId && levelInput !== null) {
         const agentJson = JSON.parse(await env.agents.get(agentId));
         const agent = Agent.AgentFromHakushin(agentJson);
 

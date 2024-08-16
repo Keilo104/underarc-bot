@@ -16,7 +16,7 @@ export class Element {
     ) {
     }
 
-    public static GetElementFromId(id: string | null): Element | null {
+    public static GetElementFromId(id: string | null | undefined): Element {
         switch(id) {
             case "200":
                 return Element.PHYSICAL;

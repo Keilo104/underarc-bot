@@ -18,7 +18,7 @@ export class Faction {
     ) {
     }
 
-    public static GetFactionFromId(id: string | null) {
+    public static GetFactionFromId(id: string | null | undefined) {
         switch (id) {
             case "1":
                 return Faction.CUNNING_HARES;

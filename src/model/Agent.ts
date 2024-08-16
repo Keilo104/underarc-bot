@@ -222,12 +222,25 @@ export class Agent {
 
         for(let i = 0; i < description1.length ; i++) {
             if (description1[i] !== description2[i]) {
-                let extras = "";
+                let extrasStart = "";
+                let extrasEnd = "";
+
+                ["+"].forEach((item) => {
+                    if(description1[i].startsWith(item)) {
+                        extrasStart = `${extrasStart}${item}`
+                        description1[i] = description1[i].slice(item.length, description1[i].length);
+                        description2[i] = description2[i].slice(item.length, description2[i].length);
+                        description3[i] = description3[i].slice(item.length, description3[i].length);
+                        description4[i] = description4[i].slice(item.length, description4[i].length);
+                        description5[i] = description5[i].slice(item.length, description5[i].length);
+                        description6[i] = description6[i].slice(item.length, description6[i].length);
+                        description7[i] = description7[i].slice(item.length, description7[i].length);
+                    }
+                });
 
                 [",", ".", "%", "/s", "s"].forEach((item) => {
                     if(description1[i].endsWith(item)) {
-                        console.log(description1[i]);
-                        extras = `${item}${extras}`
+                        extrasEnd = `${item}${extrasEnd}`
                         description1[i] = description1[i].slice(0, -item.length);
                         description2[i] = description2[i].slice(0, -item.length);
                         description3[i] = description3[i].slice(0, -item.length);
@@ -239,8 +252,8 @@ export class Agent {
                 });
 
                 meshedDescription =
-                    `${meshedDescription} **${description1[i]}/${description2[i]}/${description3[i]}/` +
-                    `${description4[i]}/${description5[i]}/${description6[i]}/${description7[i]}${extras}**`;
+                    `${meshedDescription} **${extrasStart}${description1[i]}/${description2[i]}/${description3[i]}/` +
+                    `${description4[i]}/${description5[i]}/${description6[i]}/${description7[i]}${extrasEnd}**`;
 
             } else {
                 meshedDescription = `${meshedDescription} ${description1[i]}`;

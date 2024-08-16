@@ -12,9 +12,9 @@ export class PurpleCoreMat {
     public static UNKNOWN = new PurpleCoreMat(null, "No Data", Emote.UNKNOWN_ICON);
 
     private constructor(
-        id: string | null,
-        purpleCoreMat: string,
-        emote: Emote,
+        public id: string | null,
+        public purpleCoreMat: string,
+        public emote: Emote,
     ) {
     }
 

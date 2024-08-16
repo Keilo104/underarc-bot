@@ -54,13 +54,6 @@ export function printAgentStats(agent: Agent): any {
             `${agent.scalesAnomalyProficiency() ? ` → ${agent.anomalyProficiencyAtLevel(60)}` : ""}`
     });
 
-    agentEmbed.fields.push({
-        name: "Core skill upgrade materials", inline: false,
-        value:
-            `${agent.purpleCoreMat.emote.emote} ${agent.purpleCoreMat.purpleCoreMat}\n` +
-            `${agent.goldenCoreMat.emote.emote} ${agent.goldenCoreMat.goldenCoreMat}`
-    });
-
     return agentEmbed;
 }
 

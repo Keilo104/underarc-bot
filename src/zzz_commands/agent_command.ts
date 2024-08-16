@@ -1,7 +1,7 @@
 import {JsonResponse} from "../util/json_reponse";
 import {InteractionResponseFlags, InteractionResponseType} from "discord-interactions";
 import {Agent} from "../model/Agent";
-import {printAgentStats} from "./print_agent_stats";
+import {printAgentStats, printAgentStatsAtLevel} from "./agent_commands/print_agent_stats";
 
 function translateAgent(agent: string | null): string | null {
     const agentTranslations = require("../data/helpers/agent_translations.json");
@@ -11,6 +11,16 @@ function translateAgent(agent: string | null): string | null {
     }
 
     return null;
+}
+
+function bindLevel(min: number, max: number, level: number): number {
+    if(level > max)
+        return max;
+
+    if(level < min)
+        return min;
+
+    return level;
 }
 
 export async function agentCommandHandler(request: any, env: any): Promise<JsonResponse> {
@@ -31,14 +41,23 @@ export async function agentCommandHandler(request: any, env: any): Promise<JsonR
 
     let agentId: string | null = translateAgent(agentInput);
 
-    if(agentId) {
+    if(agentId && levelInput == 99) {
         const agentJson = JSON.parse(await env.agents.get(agentId));
         const agent = Agent.AgentFromHakushin(agentJson);
 
         switch(whatInput) {
-            case "stats":
             default:
+            case "stats":
                 return printAgentStats(agent);
+        }
+    } else if (agentId) {
+        const agentJson = JSON.parse(await env.agents.get(agentId));
+        const agent = Agent.AgentFromHakushin(agentJson);
+
+        switch(whatInput) {
+            default:
+            case "stats":
+                return printAgentStatsAtLevel(agent, bindLevel(1, 60, levelInput));
         }
     }
 

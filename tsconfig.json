@@ -16,7 +16,7 @@
 		"isolatedModules": true /* Ensure that each file can be safely transpiled without relying on other imports. */,
 		"allowSyntheticDefaultImports": true /* Allow 'import x from y' when a module doesn't have a default export. */,
 		"strict": true /* Enable all strict type-checking options. */,
-		"noUncheckedIndexedAccess": true,
+		"noUncheckedIndexedAccess": false,
 		"skipLibCheck": true, /* Skip type checking all .d.ts files. */
 	}
 }

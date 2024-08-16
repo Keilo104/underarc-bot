@@ -50,7 +50,13 @@
   "ceasar": "1071",
   "caeser": "1071",
   "caesar": "1071",
+  "ceaser king": "1071",
+  "ceasar king": "1071",
+  "caeser king": "1071",
+  "caesar king": "1071",
   "shiza": "1071",
+  "king": "1071",
+
 
   "billy": "1081",
   "billy the kid": "1081",
@@ -102,6 +108,8 @@
   "lighter": "1161",
 
   "burnice": "1171",
+  "burnice white": "1171",
+  "white": "1171",
 
   "lisa": "1181",
   "grace": "1181",

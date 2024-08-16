@@ -76,9 +76,6 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
         return new JsonResponse({
             type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
             data: {
-                content:
-                    `**${FigureOutUsername(interaction)}** asked for: ` +
-                    `${agentInput}'s ${whatInput} ${levelInput ? `at lv${levelInput}` : ""}`,
                 embeds: [
                     embed,
                 ],

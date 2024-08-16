@@ -315,6 +315,7 @@ export class Agent {
             .replaceAll("Dodge Counter", `${Emote.DODGE_ICON.emote}Dodge Counter`)
             .replaceAll("Chain Attack", `${Emote.ULTIMATE_ICON.emote}Chain Attack`)
             .replaceAll("Assist Attack", `${Emote.QUICK_ASSIST_ICON.emote}Assist Attack`)
+            .replaceAll("Assist Follow-Up", `${Emote.QUICK_ASSIST_ICON.emote}Assist Follow-Up`)
             .replaceAll("Quick Assist", `${Emote.QUICK_ASSIST_ICON.emote}Quick Assist`)
             .replaceAll("Core Passive", `${Emote.CORE_SKILL_ICON.emote}Core Passive`)
             .replaceAll("Ultimate", `${Emote.ULTIMATE_FILLED_ICON.emote}Ultimate`)

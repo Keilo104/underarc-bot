@@ -31,6 +31,7 @@
 
   "1071": {
     "release_patch": 3,
+    "signature_weapon": "14107",
     "override_full_name": "Caesar King",
     "embed_color": "0xFFDC4D"
   },
@@ -91,6 +92,7 @@
 
   "1171": {
     "release_patch": 3,
+    "signature_weapon": "14117",
     "override_full_name": "Burnice White",
     "embed_color": "0xFFDC4D"
   },

@@ -6,6 +6,7 @@ import {DamageType} from "../enums/damage_type";
 import {PurpleCoreMat} from "../enums/purple_core_mat";
 import {GoldenCoreMat} from "../enums/golden_core_mat";
 import {Stat} from "../enums/stat";
+import {Emote} from "../enums/emote";
 
 export class Agent {
     public id: number | null = null;
@@ -44,6 +45,9 @@ export class Agent {
 
     public firstCoreBoosts: number[] = [0, 0, 0, 0, 0, 0];
     public secondCoreBoosts: number[] = [0, 0, 0, 0, 0, 0];
+
+    public coreSkillNames: string[] = [];
+    public coreSkillDescs: string[][] = [];
 
     public loadFromHelper() {
         const agentHelper = require(`../data/helpers/agent_extra_infos.json`);
@@ -158,6 +162,12 @@ export class Agent {
 
     public firstCoreStatAtLevel(level: number): string {
         switch(this.firstCoreStat) {
+            case Stat.IMPACT:
+                return `${this.baseImpact + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level)}`
+
+            case Stat.ANOMALY_MASTERY:
+                return `${this.baseAnomalyMastery + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level)}`
+
             case Stat.ENERGY_REGEN:
                 return `${1.2 + (Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level) / 100)}/s`;
 
@@ -177,6 +187,12 @@ export class Agent {
 
     public secondCoreStatAtLevel(level: number): string {
         switch(this.secondCoreStat) {
+            case Stat.IMPACT:
+                return `${this.baseImpact + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level)}`
+
+            case Stat.ANOMALY_MASTERY:
+                return `${this.baseAnomalyMastery + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level)}`
+
             case Stat.ENERGY_REGEN:
                 return `${1.2 + (Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level) / 100)}/s`;
 
@@ -192,6 +208,45 @@ export class Agent {
             default:
                 return `0`;
         }
+    }
+
+    public coreSkillMeshedDescription(index: number): string {
+        let meshedDescription = "";
+        let description1 = this.coreSkillDescs[index][0].split(" ");
+        let description2 = this.coreSkillDescs[index][1].split(" ");
+        let description3 = this.coreSkillDescs[index][2].split(" ");
+        let description4 = this.coreSkillDescs[index][3].split(" ");
+        let description5 = this.coreSkillDescs[index][4].split(" ");
+        let description6 = this.coreSkillDescs[index][5].split(" ");
+        let description7 = this.coreSkillDescs[index][6].split(" ");
+
+        for(let i = 0; i < description1.length ; i++) {
+            if (description1[i] !== description2[i]) {
+                let extras = "";
+
+                [",", ".", "%", "/s", "s"].forEach((item) => {
+                    if(description1[i].endsWith(item)) {
+                        console.log(description1[i]);
+                        extras = `${item}${extras}`
+                        description1[i] = description1[i].slice(0, -item.length);
+                        description2[i] = description2[i].slice(0, -item.length);
+                        description3[i] = description3[i].slice(0, -item.length);
+                        description4[i] = description4[i].slice(0, -item.length);
+                        description5[i] = description5[i].slice(0, -item.length);
+                        description6[i] = description6[i].slice(0, -item.length);
+                        description7[i] = description7[i].slice(0, -item.length);
+                    }
+                });
+
+                meshedDescription =
+                    `${meshedDescription} **${description1[i]}/${description2[i]}/${description3[i]}/` +
+                    `${description4[i]}/${description5[i]}/${description6[i]}/${description7[i]}${extras}**`;
+
+            } else {
+                meshedDescription = `${meshedDescription} ${description1[i]}`;
+            }
+        }
+        return meshedDescription;
     }
 
     public static AgentFromHakushin(agentJson: any): Agent {
@@ -221,8 +276,51 @@ export class Agent {
         if (Object.keys(agentJson["ExtraLevel"]).length)
             Agent.SetCoreBoostsFromHakushin(agent, agentJson);
 
+        if (Object.keys(agentJson["Passive"]["Level"]).length) {
+            agent.coreSkillNames = agentJson["Passive"]["Level"]["1"]["Name"];
+            agent.coreSkillNames.forEach((_) => {
+                agent.coreSkillDescs.push([]);
+            });
+
+            ["1", "2", "3", "4", "5", "6", "7"].forEach((level) => {
+                agent.coreSkillDescs[0].push(Agent.TreatString(agentJson["Passive"]["Level"][level]["Desc"][0]));
+                agent.coreSkillDescs[1].push(Agent.TreatString(agentJson["Passive"]["Level"][level]["Desc"][1]));
+            });
+        }
+
         agent.loadFromHelper();
         return agent;
+    }
+
+    private static TreatString(string: string): string {
+        return string
+            .replaceAll("Special Attack", `${Emote.SKILL_ICON.emote}Special Attack`)
+            .replaceAll(`EX ${Emote.SKILL_ICON.emote}Special Attack`, `${Emote.SKILL_FILLED_ICON.emote}EX Special Attack`)
+            .replaceAll("Basic Attack", `${Emote.BASIC_ATTACK_ICON.emote}Basic Attack`)
+            .replaceAll("Dash Attack", `${Emote.DODGE_ICON.emote}Dash Attack`)
+            .replaceAll("Dodge Counter", `${Emote.DODGE_ICON.emote}Dodge Counter`)
+            .replaceAll("Chain Attack", `${Emote.ULTIMATE_ICON.emote}Chain Attack`)
+            .replaceAll("Assist Attack", `${Emote.QUICK_ASSIST_ICON.emote}Assist Attack`)
+            .replaceAll("Quick Assist", `${Emote.QUICK_ASSIST_ICON.emote}Quick Assist`)
+            .replaceAll("Ultimate", `${Emote.ULTIMATE_FILLED_ICON.emote}Ultimate`)
+            .replaceAll("HP", `${Emote.HP_STAT_ICON.emote}HP`)
+            .replaceAll(`Max ${Emote.HP_STAT_ICON.emote}HP`, `${Emote.HP_STAT_ICON.emote}Max HP`)
+            .replaceAll("ATK", `${Emote.ATK_STAT_ICON.emote}ATK`)
+            .replaceAll("DEF", `${Emote.DEF_STAT_ICON.emote}DEF`)
+            .replaceAll("Impact", `${Emote.IMPACT_STAT_ICON.emote}Impact`)
+            .replaceAll("Energy Regen", `${Emote.ENERGY_REGEN_STAT_ICON.emote}Energy Regen`)
+            .replaceAll("Energy Generation Rate", `${Emote.ENERGY_GENERATION_RATE_STAT_ICON.emote}Energy Generation Rate`)
+            .replaceAll("Anomaly Mastery", `${Emote.ANOMALY_MASTERY_STAT_ICON.emote}Anomaly Mastery`)
+            .replaceAll("Anomaly Proficiency", `${Emote.ANOMALY_PROFICIENCY_STAT_ICON.emote}Anomaly Proficiency`)
+            .replaceAll("CRIT Rate", `${Emote.CRIT_RATE_STAT_ICON.emote}CRIT Rate`)
+            .replaceAll("<color=#2eb6ff>", `${Emote.ELECTRIC_ICON.emote}`)
+            .replaceAll("<color=#fe437e>", `${Emote.ETHER_ICON.emote}`)
+            .replaceAll("<color=#f0d12b>", `${Emote.PHYSICAL_ICON.emote}`)
+            .replaceAll("<color=#98eff0>", `${Emote.ICE_ICON.emote}`)
+            .replaceAll("<color=#2BAD00>", "")
+            .replaceAll("<color=#ffffff>", "")
+            .replaceAll("</color>", "")
+            .replaceAll("`", "\\`")
     }
 
     private static SetCoreMatsFromHakushin(agent: Agent, agentJson: any) {

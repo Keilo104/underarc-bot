@@ -21,4 +21,41 @@ export class Stat {
         public emote: Emote,
     ) {
     }
+
+    public static GetStatFromCoreName(coreName: string): Stat {
+        switch(coreName) {
+            case "placeholder_hp":
+                return Stat.HP;
+
+            case "Base ATK":
+                return Stat.ATK;
+
+            case "placeholder_def":
+                return Stat.DEF;
+
+            case "Impact":
+                return Stat.IMPACT;
+
+            case "CRIT Rate":
+                return Stat.CRIT_RATE;
+
+            case "CRIT DMG":
+                return Stat.CRIT_DMG;
+
+            case "Anomaly Mastery":
+                return Stat.ANOMALY_MASTERY;
+
+            case "placeholder_anomaly_proficiency":
+                return Stat.ANOMALY_PROFICIENCY;
+
+            case "PEN Ratio":
+                return Stat.PEN_RATIO;
+
+            case "Base Energy Regen":
+                return Stat.ENERGY_REGEN;
+
+            default:
+                return Stat.UNKNOWN;
+        }
+    }
 }

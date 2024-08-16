@@ -47,11 +47,11 @@ export function printAgentStats(agent: Agent): JsonResponse {
             `` +
             `` +
             `\n${Emote.IMPACT_STAT_ICON.emote} **Impact:** ${agent.impactAtLevel(1)}` +
-            ` → ${agent.impactAtLevel(60)}` +
+            `${agent.scalesImpact() ? ` → ${agent.impactAtLevel(60)}` : ""}` +
             `\n${Emote.ANOMALY_MASTERY_STAT_ICON.emote} **Anomaly Mastery:** ${agent.anomalyMasteryAtLevel(1)}` +
-            ` → ${agent.anomalyMasteryAtLevel(60)}` +
+            `${agent.scalesAnomalyMastery() ? ` → ${agent.anomalyMasteryAtLevel(60)}` : ""}` +
             `\n${Emote.ANOMALY_PROFICIENCY_STAT_ICON.emote} **Anomaly Proficiency:** ${agent.anomalyProficiencyAtLevel(1)}` +
-            ` → ${agent.anomalyProficiencyAtLevel(60)}`
+            `${agent.scalesAnomalyProficiency() ? ` → ${agent.anomalyProficiencyAtLevel(60)}` : ""}`
     });
 
     agentEmbed.fields.push({

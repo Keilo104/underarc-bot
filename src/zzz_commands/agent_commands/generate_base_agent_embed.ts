@@ -28,5 +28,10 @@ export function generateBaseAgentEmbed(agent: Agent) {
                 "inaccurate and is subject to changes before release."
         }
 
+    agentEmbed.fields.push({
+        name: "", inline: false,
+        value: "Signature weapon placeholder field"
+    })
+
     return agentEmbed;
 }

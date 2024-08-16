@@ -44,6 +44,10 @@ export const AGENT_COMMAND = {
                 {
                     name: "Stats",
                     value: "stats"
+                },
+                {
+                    name: "Core",
+                    value: "core"
                 }
             ]
         },

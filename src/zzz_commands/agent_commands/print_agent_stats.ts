@@ -5,7 +5,7 @@ import {generateBaseAgentEmbed} from "./generate_base_agent_embed";
 export function printAgentStats(agent: Agent): any {
     const agentEmbed = generateBaseAgentEmbed(agent);
 
-    agentEmbed.fields.push({
+    agentEmbed.fields.unshift({
         name: "Base stats at Lv1 → Lv60", inline: false,
         value:
             `${Emote.HP_STAT_ICON.emote} **HP:** ${agent.hpAtLevel(1)} → ${agent.hpAtLevel(60)}` +
@@ -29,7 +29,7 @@ export function printAgentStats(agent: Agent): any {
 export function printAgentStatsAtLevel(agent: Agent, level: number): any {
     const agentEmbed = generateBaseAgentEmbed(agent);
 
-    agentEmbed.fields.push({
+    agentEmbed.fields.unshift({
         name: `Base stats at Lv${level}`, inline: false,
         value:
             `${Emote.HP_STAT_ICON.emote} **HP:** ${agent.hpAtLevel(level)}` +

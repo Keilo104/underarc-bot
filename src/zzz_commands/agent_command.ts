@@ -3,6 +3,7 @@ import {InteractionResponseFlags, InteractionResponseType} from "discord-interac
 import {Agent} from "../model/Agent";
 import {printAgentStats, printAgentStatsAtLevel} from "./agent_commands/print_agent_stats";
 import {FigureOutUsername} from "../util/figure_out_username";
+import {printAgentCore, printAgentCoreAtLevel} from "./agent_commands/print_agent_core";
 
 function translateAgent(agent: string | null): string | null {
     const agentTranslations = require("../data/helpers/agent_translations.json");
@@ -26,7 +27,7 @@ function bindLevel(min: number, max: number, level: number): number {
 
 export async function agentCommandHandler(interaction: any, env: any): Promise<JsonResponse> {
     let agentInput: string | null = null;
-    let whatInput: string = "stats";
+    let whatInput: string = "core";
     let levelInput: number | null = null;
     let embed: any | null = null;
 
@@ -48,18 +49,26 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
         const agent = Agent.AgentFromHakushin(agentJson);
 
         switch(whatInput) {
-            default:
             case "stats":
                 embed = printAgentStatsAtLevel(agent, bindLevel(1, 60, levelInput));
+                break;
+
+            default:
+            case "core":
+                embed = printAgentCoreAtLevel(agent, bindLevel(0, 6, levelInput));
         }
     } else if (agentId) {
         const agentJson = JSON.parse(await env.agents.get(agentId));
         const agent = Agent.AgentFromHakushin(agentJson);
 
         switch(whatInput) {
-            default:
             case "stats":
                 embed = printAgentStats(agent);
+                break;
+
+            default:
+            case "core":
+                embed = printAgentCore(agent);
         }
     }
 
@@ -72,8 +81,8 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
                     `${agentInput}'s ${whatInput} ${levelInput ? `at lv${levelInput}` : ""}`,
                 embeds: [
                     embed,
-                ]
-            }
+                ],
+            },
         });
     }
 

@@ -64,68 +64,68 @@ export class Agent {
     public hpAtLevel(level: number): number {
         if(this.firstCoreStat == Stat.HP)
             return Math.floor(this.baseHp + ((this.hpGrowth * (level - 1)) / 10000) +
-                Agent.getBoostForLevel(this.hpBoosts, level) + Agent.getCoreBoostForLevel(this.firstCoreBoosts, level));
+                Agent.GetBoostForLevel(this.hpBoosts, level) + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level));
 
         if(this.secondCoreStat == Stat.HP)
             return Math.floor(this.baseHp + ((this.hpGrowth * (level - 1)) / 10000) +
-                Agent.getBoostForLevel(this.hpBoosts, level) + Agent.getCoreBoostForLevel(this.secondCoreBoosts, level));
+                Agent.GetBoostForLevel(this.hpBoosts, level) + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level));
 
         return Math.floor(this.baseHp + ((this.hpGrowth * (level - 1)) / 10000) +
-            Agent.getBoostForLevel(this.hpBoosts, level));
+            Agent.GetBoostForLevel(this.hpBoosts, level));
     }
 
     public atkAtLevel(level: number): number {
         if(this.firstCoreStat == Stat.ATK)
             return Math.floor(this.baseAtk + ((this.atkGrowth * (level - 1)) / 10000) +
-                Agent.getBoostForLevel(this.atkBoosts, level) + Agent.getCoreBoostForLevel(this.firstCoreBoosts, level));
+                Agent.GetBoostForLevel(this.atkBoosts, level) + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level));
 
         if(this.secondCoreStat == Stat.ATK)
             return Math.floor(this.baseAtk + ((this.atkGrowth * (level - 1)) / 10000) +
-                Agent.getBoostForLevel(this.atkBoosts, level) + Agent.getCoreBoostForLevel(this.secondCoreBoosts, level));
+                Agent.GetBoostForLevel(this.atkBoosts, level) + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level));
 
         return Math.floor(this.baseAtk + ((this.atkGrowth * (level - 1)) / 10000) +
-            Agent.getBoostForLevel(this.atkBoosts, level));
+            Agent.GetBoostForLevel(this.atkBoosts, level));
     }
 
     public defAtLevel(level: number): number {
         if(this.firstCoreStat == Stat.DEF)
             return Math.floor(this.baseDef + ((this.defGrowth * (level - 1)) / 10000) +
-                Agent.getBoostForLevel(this.defBoosts, level) + Agent.getCoreBoostForLevel(this.firstCoreBoosts, level));
+                Agent.GetBoostForLevel(this.defBoosts, level) + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level));
 
         if(this.secondCoreStat == Stat.DEF)
             return Math.floor(this.baseDef + ((this.defGrowth * (level - 1)) / 10000) +
-                Agent.getBoostForLevel(this.defBoosts, level) + Agent.getCoreBoostForLevel(this.secondCoreBoosts, level));
+                Agent.GetBoostForLevel(this.defBoosts, level) + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level));
 
         return Math.floor(this.baseDef + ((this.defGrowth * (level - 1)) / 10000) +
-            Agent.getBoostForLevel(this.defBoosts, level));
+            Agent.GetBoostForLevel(this.defBoosts, level));
     }
 
     public impactAtLevel(level: number): number {
         if(this.firstCoreStat == Stat.IMPACT)
-            return this.baseImpact + Agent.getCoreBoostForLevel(this.firstCoreBoosts, level);
+            return this.baseImpact + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level);
 
         if(this.secondCoreStat == Stat.IMPACT)
-            return this.baseImpact + Agent.getCoreBoostForLevel(this.secondCoreBoosts, level);
+            return this.baseImpact + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level);
 
         return this.baseImpact;
     }
 
     public anomalyMasteryAtLevel(level: number): number {
         if(this.firstCoreStat == Stat.ANOMALY_MASTERY)
-            return this.baseAnomalyMastery + Agent.getCoreBoostForLevel(this.firstCoreBoosts, level);
+            return this.baseAnomalyMastery + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level);
 
         if(this.secondCoreStat == Stat.ANOMALY_MASTERY)
-            return this.baseAnomalyMastery + Agent.getCoreBoostForLevel(this.secondCoreBoosts, level);
+            return this.baseAnomalyMastery + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level);
 
         return this.baseAnomalyMastery;
     }
 
     public anomalyProficiencyAtLevel(level: number): number {
         if(this.firstCoreStat == Stat.ANOMALY_PROFICIENCY)
-            return this.baseAnomalyProficiency + Agent.getCoreBoostForLevel(this.firstCoreBoosts, level);
+            return this.baseAnomalyProficiency + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level);
 
         if(this.secondCoreStat == Stat.ANOMALY_PROFICIENCY)
-            return this.baseAnomalyProficiency + Agent.getCoreBoostForLevel(this.secondCoreBoosts, level);
+            return this.baseAnomalyProficiency + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level);
 
         return this.baseAnomalyProficiency;
     }
@@ -159,16 +159,16 @@ export class Agent {
     public firstCoreStatAtLevel(level: number): string {
         switch(this.firstCoreStat) {
             case Stat.ENERGY_REGEN:
-                return `${1.2 + (Agent.getCoreBoostForLevel(this.firstCoreBoosts, level) / 100)}/s`;
+                return `${1.2 + (Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level) / 100)}/s`;
 
             case Stat.CRIT_RATE:
-                return `${5 + (Agent.getCoreBoostForLevel(this.firstCoreBoosts, level) / 100)}%`;
+                return `${5 + (Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level) / 100)}%`;
 
             case Stat.CRIT_DMG:
-                return `${50 + (Agent.getCoreBoostForLevel(this.firstCoreBoosts, level) / 100)}%`;
+                return `${50 + (Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level) / 100)}%`;
 
             case Stat.PEN_RATIO:
-                return `${Agent.getCoreBoostForLevel(this.firstCoreBoosts, level) / 100}%`;
+                return `${Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level) / 100}%`;
 
             default:
                 return `0`;
@@ -178,16 +178,16 @@ export class Agent {
     public secondCoreStatAtLevel(level: number): string {
         switch(this.secondCoreStat) {
             case Stat.ENERGY_REGEN:
-                return `${1.2 + (Agent.getCoreBoostForLevel(this.secondCoreBoosts, level) / 100)}/s`;
+                return `${1.2 + (Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level) / 100)}/s`;
 
             case Stat.CRIT_RATE:
-                return `${5 + (Agent.getCoreBoostForLevel(this.secondCoreBoosts, level) / 100)}%`;
+                return `${5 + (Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level) / 100)}%`;
 
             case Stat.CRIT_DMG:
-                return `${50 + (Agent.getCoreBoostForLevel(this.secondCoreBoosts, level) / 100)}%`;
+                return `${50 + (Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level) / 100)}%`;
 
             case Stat.PEN_RATIO:
-                return `${Agent.getCoreBoostForLevel(this.secondCoreBoosts, level) / 100}%`;
+                return `${Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level) / 100}%`;
 
             default:
                 return `0`;
@@ -209,79 +209,90 @@ export class Agent {
         agent.specialty = Specialty.GetSpecialtyFromId(Object.keys(agentJson["WeaponType"])[0]);
         agent.damageType = DamageType.GetDamageTypeFromId(Object.keys(agentJson["HitType"])[0]);
 
-        if ("Materials" in agentJson["Passive"]) {
-            Object.keys(agentJson["Passive"]["Materials"][6]).forEach((material) => {
-                if (agentJson["Passive"]["Materials"][6][material] == 30)
-                    agent.purpleCoreMat = PurpleCoreMat.GetPurpleCoreMatFromId(material);
+        if ("Materials" in agentJson["Passive"])
+            Agent.SetCoreMatsFromHakushin(agent, agentJson);
 
-                else if (agentJson["Passive"]["Materials"][6][material] == 4)
-                    agent.goldenCoreMat = GoldenCoreMat.GetGoldenCoreMatFromId(material);
-            })
-        }
+        if (Object.keys(agentJson["Stats"]).length)
+            Agent.SetStatsFromHakushin(agent, agentJson);
 
-        if (Object.keys(agentJson["Stats"]).length) {
-            agent.baseHp = agentJson["Stats"]["HpMax"];
-            agent.hpGrowth = agentJson["Stats"]["HpGrowth"];
-            agent.baseAtk = agentJson["Stats"]["Attack"];
-            agent.atkGrowth = agentJson["Stats"]["AttackGrowth"];
-            agent.baseDef = agentJson["Stats"]["Defence"];
-            agent.defGrowth = agentJson["Stats"]["DefenceGrowth"];
+        if (Object.keys(agentJson["Level"]).length)
+            Agent.SetBoostsFromHakushin(agent, agentJson);
 
-            agent.baseImpact = agentJson["Stats"]["BreakStun"];
-            agent.baseAnomalyMastery = agentJson["Stats"]["ElementMystery"];
-            agent.baseAnomalyProficiency = agentJson["Stats"]["ElementAbnormalPower"];
-        }
-
-        if (Object.keys(agentJson["Level"]).length) {
-            agent.hpBoosts = [];
-            agent.atkBoosts = [];
-            agent.defBoosts = [];
-
-            ["1", "2", "3", "4", "5", "6"].forEach((level) => {
-                agent.hpBoosts.push(agentJson["Level"][level]["HpMax"]);
-                agent.atkBoosts.push(agentJson["Level"][level]["Attack"]);
-                agent.defBoosts.push(agentJson["Level"][level]["Defence"]);
-            });
-        }
-
-        if (Object.keys(agentJson["ExtraLevel"]).length) {
-            agent.firstCoreBoosts = [];
-            agent.secondCoreBoosts = [];
-            let firstCoreStatKey = "";
-            let secondCoreStatKey = "";
-
-            Object.keys(agentJson["ExtraLevel"]["1"]["Extra"]).forEach((ascension) => {
-                if(agent.firstCoreStat == Stat.UNKNOWN) {
-                    firstCoreStatKey = ascension;
-                    agent.firstCoreStat = Stat.GetStatFromCoreName(agentJson["ExtraLevel"]["1"]["Extra"][ascension]["Name"]);
-                } else if (agent.secondCoreStat == Stat.UNKNOWN) {
-                    secondCoreStatKey = ascension;
-                    agent.secondCoreStat = Stat.GetStatFromCoreName(agentJson["ExtraLevel"]["1"]["Extra"][ascension]["Name"]);
-                }
-            });
-
-            if(agentJson["ExtraLevel"]["1"]["Extra"][firstCoreStatKey]["Value"] == 0) {
-                let helperCoreStatKey = firstCoreStatKey;
-                firstCoreStatKey = secondCoreStatKey;
-                secondCoreStatKey = helperCoreStatKey;
-
-                let helperCoreStat = agent.firstCoreStat;
-                agent.firstCoreStat = agent.secondCoreStat;
-                agent.secondCoreStat = helperCoreStat;
-            }
-
-            ["1", "2", "3", "4", "5", "6"].forEach((ascension) => {
-                agent.firstCoreBoosts.push(agentJson["ExtraLevel"][ascension]["Extra"][firstCoreStatKey]["Value"]);
-                agent.secondCoreBoosts.push(agentJson["ExtraLevel"][ascension]["Extra"][secondCoreStatKey]["Value"]);
-            });
-        }
+        if (Object.keys(agentJson["ExtraLevel"]).length)
+            Agent.SetCoreBoostsFromHakushin(agent, agentJson);
 
         agent.loadFromHelper();
-
         return agent;
     }
 
-    public static getBoostForLevel(boostArray: number[], level: number): number {
+    private static SetCoreMatsFromHakushin(agent: Agent, agentJson: any) {
+        Object.keys(agentJson["Passive"]["Materials"][6]).forEach((material) => {
+            if (agentJson["Passive"]["Materials"][6][material] == 30)
+                agent.purpleCoreMat = PurpleCoreMat.GetPurpleCoreMatFromId(material);
+
+            else if (agentJson["Passive"]["Materials"][6][material] == 4)
+                agent.goldenCoreMat = GoldenCoreMat.GetGoldenCoreMatFromId(material);
+        })
+    }
+
+    private static SetStatsFromHakushin(agent: Agent, agentJson: any) {
+        agent.baseHp = agentJson["Stats"]["HpMax"];
+        agent.hpGrowth = agentJson["Stats"]["HpGrowth"];
+        agent.baseAtk = agentJson["Stats"]["Attack"];
+        agent.atkGrowth = agentJson["Stats"]["AttackGrowth"];
+        agent.baseDef = agentJson["Stats"]["Defence"];
+        agent.defGrowth = agentJson["Stats"]["DefenceGrowth"];
+
+        agent.baseImpact = agentJson["Stats"]["BreakStun"];
+        agent.baseAnomalyMastery = agentJson["Stats"]["ElementMystery"];
+        agent.baseAnomalyProficiency = agentJson["Stats"]["ElementAbnormalPower"];
+    }
+
+    private static SetBoostsFromHakushin(agent: Agent, agentJson: any) {
+        agent.hpBoosts = [];
+        agent.atkBoosts = [];
+        agent.defBoosts = [];
+
+        ["1", "2", "3", "4", "5", "6"].forEach((level) => {
+            agent.hpBoosts.push(agentJson["Level"][level]["HpMax"]);
+            agent.atkBoosts.push(agentJson["Level"][level]["Attack"]);
+            agent.defBoosts.push(agentJson["Level"][level]["Defence"]);
+        });
+    }
+
+    private static SetCoreBoostsFromHakushin(agent: Agent, agentJson: any) {
+        agent.firstCoreBoosts = [];
+        agent.secondCoreBoosts = [];
+        let firstCoreStatKey = "";
+        let secondCoreStatKey = "";
+
+        Object.keys(agentJson["ExtraLevel"]["1"]["Extra"]).forEach((ascension) => {
+            if(agent.firstCoreStat == Stat.UNKNOWN) {
+                firstCoreStatKey = ascension;
+                agent.firstCoreStat = Stat.GetStatFromCoreName(agentJson["ExtraLevel"]["1"]["Extra"][ascension]["Name"]);
+            } else if (agent.secondCoreStat == Stat.UNKNOWN) {
+                secondCoreStatKey = ascension;
+                agent.secondCoreStat = Stat.GetStatFromCoreName(agentJson["ExtraLevel"]["1"]["Extra"][ascension]["Name"]);
+            }
+        });
+
+        if(agentJson["ExtraLevel"]["1"]["Extra"][firstCoreStatKey]["Value"] == 0) {
+            let helperCoreStatKey = firstCoreStatKey;
+            firstCoreStatKey = secondCoreStatKey;
+            secondCoreStatKey = helperCoreStatKey;
+
+            let helperCoreStat = agent.firstCoreStat;
+            agent.firstCoreStat = agent.secondCoreStat;
+            agent.secondCoreStat = helperCoreStat;
+        }
+
+        ["1", "2", "3", "4", "5", "6"].forEach((ascension) => {
+            agent.firstCoreBoosts.push(agentJson["ExtraLevel"][ascension]["Extra"][firstCoreStatKey]["Value"]);
+            agent.secondCoreBoosts.push(agentJson["ExtraLevel"][ascension]["Extra"][secondCoreStatKey]["Value"]);
+        });
+    }
+
+    private static GetBoostForLevel(boostArray: number[], level: number): number {
         if(level < 11)
             return boostArray[0];
 
@@ -300,7 +311,7 @@ export class Agent {
         return boostArray[5];
     }
 
-    public static getCoreBoostForLevel(boostArray: number[], level: number): number {
+    private static GetCoreBoostForLevel(boostArray: number[], level: number): number {
         if (level < 15)
             return 0
 

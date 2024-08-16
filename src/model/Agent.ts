@@ -317,6 +317,7 @@ export class Agent {
             .replaceAll("<color=#fe437e>", `${Emote.ETHER_ICON.emote}`)
             .replaceAll("<color=#f0d12b>", `${Emote.PHYSICAL_ICON.emote}`)
             .replaceAll("<color=#98eff0>", `${Emote.ICE_ICON.emote}`)
+            .replaceAll("<color=#ff5521>", `${Emote.FIRE_ICON.emote}`)
             .replaceAll("<color=#2BAD00>", "")
             .replaceAll("<color=#ffffff>", "")
             .replaceAll("</color>", "")

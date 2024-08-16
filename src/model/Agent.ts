@@ -259,6 +259,11 @@ export class Agent {
                 meshedDescription = `${meshedDescription} ${description1[i]}`;
             }
         }
+
+        if (meshedDescription.length > 1024) {
+            meshedDescription.replaceAll("<:attack_stat_icon:1266021627422969867>", "");
+        }
+
         return meshedDescription;
     }
 

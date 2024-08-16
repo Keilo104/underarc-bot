@@ -299,6 +299,8 @@ export class Agent {
                 agent.coreSkillDescs[0].push(Agent.TreatString(agentJson["Passive"]["Level"][level]["Desc"][0]));
                 agent.coreSkillDescs[1].push(Agent.TreatString(agentJson["Passive"]["Level"][level]["Desc"][1]));
             });
+
+            console.log(agent.coreSkillDescs[1][0].replaceAll("Anomaly Agents", "wooo"));
         }
 
         agent.loadFromHelper();
@@ -331,9 +333,6 @@ export class Agent {
             .replaceAll("CRIT Rate", `${Emote.CRIT_RATE_STAT_ICON.emote}CRIT Rate`)
             .replaceAll("CRIT DMG", `${Emote.CRIT_DMG_STAT_ICON.emote}CRIT DMG`)
             .replaceAll("PEN Ratio", `${Emote.PEN_RATIO_STAT_ICON.emote}PEN Ratio`)
-            .replaceAll("Attack-type character", `${Emote.ATTACK_ICON.emote}Attack-type character`)
-            .replaceAll("Support character", `${Emote.SUPPORT_ICON.emote}Support character`)
-            .replaceAll("Anomaly Agents", `${Emote.ANOMALY_ICON.emote}Anomaly Agents`)
             .replaceAll("<color=#2eb6ff>", `${Emote.ELECTRIC_ICON.emote}`)
             .replaceAll("<color=#fe437e>", `${Emote.ETHER_ICON.emote}`)
             .replaceAll("<color=#f0d12b>", `${Emote.PHYSICAL_ICON.emote}`)
@@ -343,6 +342,9 @@ export class Agent {
             .replaceAll("<color=#ffffff>", "")
             .replaceAll("</color>", "")
             .replaceAll("`", "\\`")
+            .replaceAll("Attack-type character", `${Emote.ATTACK_ICON.emote}Attack-type character`)
+            .replaceAll("Support character", `${Emote.SUPPORT_ICON.emote}Support character`)
+            .replaceAll("Anomaly Agents", `${Emote.ANOMALY_ICON.emote}Anomaly Agents`)
     }
 
     private static SetCoreMatsFromHakushin(agent: Agent, agentJson: any) {

@@ -2,6 +2,7 @@ import {JsonResponse} from "../util/json_reponse";
 import {InteractionResponseFlags, InteractionResponseType} from "discord-interactions";
 import {Agent} from "../model/Agent";
 import {printAgentStats} from "./print_agent_stats";
+import fs from "node:fs";
 
 function translateAgent(agent: string): string {
     const agentTranslations = require("../data/helpers/agent_translations.json");
@@ -13,7 +14,7 @@ function translateAgent(agent: string): string {
     return "";
 }
 
-export function agentCommandHandler(request: any): JsonResponse {
+export async function agentCommandHandler(request: any, env: any): Promise<JsonResponse> {
     let agentInput: string = "";
     let whatInput: string = "";
     let levelInput: number = 99;
@@ -35,8 +36,9 @@ export function agentCommandHandler(request: any): JsonResponse {
         switch(whatInput) {
             case "stats":
             default:
-                const agentJson = JSON.parse();
+                const agentJson = JSON.parse(await env.agents.get(agentId));
                 const agent = Agent.AgentFromHakushin(agentJson);
+                console.log(agentJson);
 
                 return printAgentStats(agent);
         }

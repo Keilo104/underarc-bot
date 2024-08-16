@@ -10,11 +10,15 @@
     "deploy": "wrangler deploy",
     "compile_register": "tsc -t es2021 -m esnext --moduleResolution Bundler --outDir dist src/register.ts",
     "run_register": "node dist/register.js",
+    "compile_update_kv": "tsc -t es2021 -m esnext --moduleResolution Bundler --outDir dist src/update_kv.ts",
+    "run_update_kv": "node dist/update_kv.js",
     "register_dev": "npm run compile_register && npm run run_register dev",
     "register_prod": "npm run compile_register && npm run run_register prod",
+    "update_kv": "npm run compile_update_kv && npm run run_update_kv",
     "ngrok": "ngrok http --domain=renewing-tapir-trivially.ngrok-free.app 8787"
   },
   "dependencies": {
+    "axios": "^1.7.4",
     "discord-interactions": "^4.0.0",
     "itty-router": "^5.0.17"
   },

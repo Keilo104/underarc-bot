@@ -14,8 +14,27 @@ import {agentCommandHandler } from "./zzz_commands/agent_command";
 
 const router = AutoRouter();
 
+export interface Env {
+    agents: KVNamespace;
+}
+
 router.get("/", (_: IRequest, env: any) => {
     return new Response(`Heyo ${env.DISCORD_APPLICATION_ID}!! :D`)
+});
+
+router.post("/agents/:agentId", async (request: IRequest, env: any) => {
+    const securityKey = request.headers.get("security-key");
+
+    if (securityKey && securityKey === env.ENDPOINT_KEY) {
+        let agentJson = await request.json();
+        let agentId = request.params.agentId;
+
+        await env.agents.put(agentId, JSON.stringify(agentJson));
+
+        return new Response(`Agent ${agentId} added/updated successfully`, { status: 200 });
+    }
+
+    return new Response("Bad request signature.", { status: 401 });
 });
 
 router.post("/", async (request: IRequest, env: any) => {
@@ -79,7 +98,7 @@ router.post("/", async (request: IRequest, env: any) => {
                 });
 
             case AGENT_COMMAND.name.toLowerCase():
-                return agentCommandHandler(interaction.data.options);
+                return await agentCommandHandler(interaction.data.options, env);
 
             default:
                 return new JsonResponse({ error: "Unknown Type" }, { status: 400 })

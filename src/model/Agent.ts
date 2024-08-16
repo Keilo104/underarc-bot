@@ -261,7 +261,7 @@ export class Agent {
         }
 
         if (meshedDescription.length > 1024) {
-            meshedDescription.replaceAll("<:attack_stat_icon:1266021627422969867>", "");
+            meshedDescription = meshedDescription.replaceAll(`${Emote.ATK_STAT_ICON.emote}`, "");
         }
 
         return meshedDescription;
@@ -304,8 +304,6 @@ export class Agent {
                 agent.coreSkillDescs[0].push(Agent.TreatString(agentJson["Passive"]["Level"][level]["Desc"][0]));
                 agent.coreSkillDescs[1].push(Agent.TreatString(agentJson["Passive"]["Level"][level]["Desc"][1]));
             });
-
-            console.log(agent.coreSkillDescs[1][0].replaceAll("Anomaly Agents", "wooo"));
         }
 
         agent.loadFromHelper();

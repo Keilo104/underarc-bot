@@ -98,7 +98,7 @@ router.post("/", async (request: IRequest, env: any) => {
                 });
 
             case AGENT_COMMAND.name.toLowerCase():
-                return await agentCommandHandler(interaction.data.options, env);
+                return await agentCommandHandler(interaction, env);
 
             default:
                 return new JsonResponse({ error: "Unknown Type" }, { status: 400 })

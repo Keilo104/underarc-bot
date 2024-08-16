@@ -2,6 +2,7 @@ import {JsonResponse} from "../util/json_reponse";
 import {InteractionResponseFlags, InteractionResponseType} from "discord-interactions";
 import {Agent} from "../model/Agent";
 import {printAgentStats, printAgentStatsAtLevel} from "./agent_commands/print_agent_stats";
+import {FigureOutUsername} from "../util/figure_out_username";
 
 function translateAgent(agent: string | null): string | null {
     const agentTranslations = require("../data/helpers/agent_translations.json");
@@ -23,12 +24,13 @@ function bindLevel(min: number, max: number, level: number): number {
     return level;
 }
 
-export async function agentCommandHandler(request: any, env: any): Promise<JsonResponse> {
+export async function agentCommandHandler(interaction: any, env: any): Promise<JsonResponse> {
     let agentInput: string | null = null;
     let whatInput: string = "stats";
-    let levelInput: number = 99;
+    let levelInput: number | null = null;
+    let embed: any | null = null;
 
-    request.forEach((option: any) => {
+    interaction.data.options.forEach((option: any) => {
         if (option["name"] == "agent")
             agentInput = option["value"];
 
@@ -41,14 +43,14 @@ export async function agentCommandHandler(request: any, env: any): Promise<JsonR
 
     let agentId: string | null = translateAgent(agentInput);
 
-    if(agentId && levelInput == 99) {
+    if(agentId && levelInput) {
         const agentJson = JSON.parse(await env.agents.get(agentId));
         const agent = Agent.AgentFromHakushin(agentJson);
 
         switch(whatInput) {
             default:
             case "stats":
-                return printAgentStats(agent);
+                embed = printAgentStatsAtLevel(agent, bindLevel(1, 60, levelInput));
         }
     } else if (agentId) {
         const agentJson = JSON.parse(await env.agents.get(agentId));
@@ -57,8 +59,22 @@ export async function agentCommandHandler(request: any, env: any): Promise<JsonR
         switch(whatInput) {
             default:
             case "stats":
-                return printAgentStatsAtLevel(agent, bindLevel(1, 60, levelInput));
+                embed = printAgentStats(agent);
         }
+    }
+
+    if (embed) {
+        return new JsonResponse({
+            type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
+            data: {
+                content:
+                    `**${FigureOutUsername(interaction)}** asked for: ` +
+                    `${agentInput}'s ${whatInput} ${levelInput ? `at lv${levelInput}` : ""}`,
+                embeds: [
+                    embed,
+                ]
+            }
+        });
     }
 
     return new JsonResponse({

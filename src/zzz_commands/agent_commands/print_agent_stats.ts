@@ -1,6 +1,4 @@
 import {Agent} from "../../model/Agent";
-import {JsonResponse} from "../../util/json_reponse";
-import {InteractionResponseType} from "discord-interactions";
 import {Emote} from "../../enums/emote";
 
 function generateBaseAgentEmbed(agent: Agent) {
@@ -35,7 +33,7 @@ function generateBaseAgentEmbed(agent: Agent) {
 }
 
 
-export function printAgentStats(agent: Agent): JsonResponse {
+export function printAgentStats(agent: Agent): any {
     const agentEmbed = generateBaseAgentEmbed(agent);
 
     agentEmbed.fields.push({
@@ -63,17 +61,10 @@ export function printAgentStats(agent: Agent): JsonResponse {
             `${agent.goldenCoreMat.emote.emote} ${agent.goldenCoreMat.goldenCoreMat}`
     });
 
-    return new JsonResponse({
-        type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
-        data: {
-            embeds: [
-                agentEmbed,
-            ]
-        }
-    });
+    return agentEmbed;
 }
 
-export function printAgentStatsAtLevel(agent: Agent, level: number): JsonResponse {
+export function printAgentStatsAtLevel(agent: Agent, level: number): any {
     const agentEmbed = generateBaseAgentEmbed(agent);
 
     agentEmbed.fields.push({
@@ -91,12 +82,5 @@ export function printAgentStatsAtLevel(agent: Agent, level: number): JsonRespons
             `\n${Emote.ANOMALY_PROFICIENCY_STAT_ICON.emote} **Anomaly Proficiency:** ${agent.anomalyProficiencyAtLevel(level)}`
     });
 
-    return new JsonResponse({
-        type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
-        data: {
-            embeds: [
-                agentEmbed,
-            ]
-        }
-    });
+    return agentEmbed;
 }

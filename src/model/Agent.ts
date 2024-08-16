@@ -296,6 +296,7 @@ export class Agent {
         return string
             .replaceAll("Special Attack", `${Emote.SKILL_ICON.emote}Special Attack`)
             .replaceAll(`EX ${Emote.SKILL_ICON.emote}Special Attack`, `${Emote.SKILL_FILLED_ICON.emote}EX Special Attack`)
+            .replaceAll(`Ex ${Emote.SKILL_ICON.emote}Special Attack`, `${Emote.SKILL_FILLED_ICON.emote}Ex Special Attack`)
             .replaceAll("Basic Attack", `${Emote.BASIC_ATTACK_ICON.emote}Basic Attack`)
             .replaceAll("Dash Attack", `${Emote.DODGE_ICON.emote}Dash Attack`)
             .replaceAll("Dodge Counter", `${Emote.DODGE_ICON.emote}Dodge Counter`)

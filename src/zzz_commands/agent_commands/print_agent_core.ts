@@ -32,7 +32,7 @@ export function printAgentCoreAtLevel(agent: Agent, level: number) {
     const agentEmbed = generateBaseAgentEmbed(agent);
 
     agentEmbed.fields.unshift({
-        name: "Core skill upgrade materials", inline: false,
+        name: "Core Skill Upgrade Materials", inline: false,
         value:
             `${agent.purpleCoreMat.emote.emote} ${agent.purpleCoreMat.purpleCoreMat}\n` +
             `${agent.goldenCoreMat.emote.emote} ${agent.goldenCoreMat.goldenCoreMat}`

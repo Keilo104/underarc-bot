@@ -330,6 +330,7 @@ export class Agent {
             .replaceAll("Anomaly Proficiency", `${Emote.ANOMALY_PROFICIENCY_STAT_ICON.emote}Anomaly Proficiency`)
             .replaceAll("CRIT Rate", `${Emote.CRIT_RATE_STAT_ICON.emote}CRIT Rate`)
             .replaceAll("CRIT DMG", `${Emote.CRIT_DMG_STAT_ICON.emote}CRIT DMG`)
+            .replaceAll("PEN Ratio", `${Emote.PEN_RATIO_STAT_ICON.emote}PEN Ratio`)
             .replaceAll("<color=#2eb6ff>", `${Emote.ELECTRIC_ICON.emote}`)
             .replaceAll("<color=#fe437e>", `${Emote.ETHER_ICON.emote}`)
             .replaceAll("<color=#f0d12b>", `${Emote.PHYSICAL_ICON.emote}`)

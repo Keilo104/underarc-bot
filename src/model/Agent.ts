@@ -316,6 +316,7 @@ export class Agent {
             .replaceAll("Chain Attack", `${Emote.ULTIMATE_ICON.emote}Chain Attack`)
             .replaceAll("Assist Attack", `${Emote.QUICK_ASSIST_ICON.emote}Assist Attack`)
             .replaceAll("Quick Assist", `${Emote.QUICK_ASSIST_ICON.emote}Quick Assist`)
+            .replaceAll("Core Passive", `${Emote.CORE_SKILL_ICON.emote}Core Passive`)
             .replaceAll("Ultimate", `${Emote.ULTIMATE_FILLED_ICON.emote}Ultimate`)
             .replaceAll("HP", `${Emote.HP_STAT_ICON.emote}HP`)
             .replaceAll(`Max ${Emote.HP_STAT_ICON.emote}HP`, `${Emote.HP_STAT_ICON.emote}Max HP`)

@@ -9,8 +9,10 @@ import {GoldenCoreMat} from "../enums/golden_core_mat";
 export class Agent {
     public id: number | null = null;
     public name: string | null = null;
-    public full_name: string | null = null;
+    public fullName: string | null = null;
     public iconImageUrl: string = "https://i.imgur.com/lQlL7DG.png";
+    public embedColor: number = 0xffffff;
+    public releasePatch: number | null = 1;
 
     public rarity: Rarity = Rarity.UNKNOWN;
     public specialty: Specialty = Specialty.UNKNOWN;
@@ -32,14 +34,39 @@ export class Agent {
     public baseAnomalyMastery: number = 0;
     public baseAnomalyProficiency: number = 0;
 
-
-    public static AgentFromHakushin(agentJson: any): Agent {
+    public loadFromHelper() {
         const agentHelper = require(`../data/helpers/agent_extra_infos.json`);
 
+        if (this.id && "override_full_name" in agentHelper[`${this.id}`])
+            this.fullName = agentHelper[`${this.id}`]["override_full_name"];
+
+        if (this.id && "icon_image_url" in agentHelper[`${this.id}`])
+            this.iconImageUrl = agentHelper[`${this.id}`]["icon_image_url"];
+
+        if (this.id && "embed_color" in agentHelper[`${this.id}`])
+            this.embedColor = Number(agentHelper[`${this.id}`]["embed_color"]);
+
+        if (this.id && "release_patch" in agentHelper[`${this.id}`])
+            this.releasePatch = agentHelper[`${this.id}`]["release_patch"];
+    }
+
+
+    public static AgentFromHakushin(agentJson: any): Agent {
         let agent = new Agent();
 
+        agent.id = agentJson["Id"];
+        agent.name = agentJson["Name"];
+        agent.rarity = Rarity.GetRarityFromId(agentJson["Rarity"]);
 
+        agent.faction = Faction.GetFactionFromId(Object.keys(agentJson["Camp"])[0]);
+        agent.element = Element.GetElementFromId(Object.keys(agentJson["ElementType"])[0]);
+        agent.specialty = Specialty.GetSpecialtyFromId(Object.keys(agentJson["WeaponType"])[0]);
+        agent.damageType = DamageType.GetDamageTypeFromId(Object.keys(agentJson["HitType"])[0]);
 
+        if ("FullName" in agentJson["PartnerInfo"])
+            agent.fullName = agentJson["PartnerInfo"]["FullName"];
+
+        agent.loadFromHelper();
 
         return agent;
     }

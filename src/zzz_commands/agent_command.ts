@@ -3,19 +3,19 @@ import {InteractionResponseFlags, InteractionResponseType} from "discord-interac
 import {Agent} from "../model/Agent";
 import {printAgentStats} from "./print_agent_stats";
 
-function translateAgent(agent: string): string {
+function translateAgent(agent: string | null): string | null {
     const agentTranslations = require("../data/helpers/agent_translations.json");
 
-    if(agentTranslations.hasOwnProperty(agent)){
+    if(agent && agentTranslations.hasOwnProperty(agent)){
         return agentTranslations[agent]
     }
 
-    return "";
+    return null;
 }
 
 export async function agentCommandHandler(request: any, env: any): Promise<JsonResponse> {
-    let agentInput: string = "";
-    let whatInput: string = "";
+    let agentInput: string | null = null;
+    let whatInput: string = "stats";
     let levelInput: number = 99;
 
     request.forEach((option: any) => {
@@ -29,16 +29,15 @@ export async function agentCommandHandler(request: any, env: any): Promise<JsonR
             levelInput = option["value"];
     })
 
-    let agentId: string = translateAgent(agentInput);
+    let agentId: string | null = translateAgent(agentInput);
 
-    if(agentId !== "") {
+    if(agentId) {
+        const agentJson = JSON.parse(await env.agents.get(agentId));
+        const agent = Agent.AgentFromHakushin(agentJson);
+
         switch(whatInput) {
             case "stats":
             default:
-                const agentJson = JSON.parse(await env.agents.get(agentId));
-                const agent = Agent.AgentFromHakushin(agentJson);
-                console.log(agentJson);
-
                 return printAgentStats(agent);
         }
     }

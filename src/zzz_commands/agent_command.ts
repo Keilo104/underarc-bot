@@ -44,8 +44,7 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
     let agentId: string | null = translateAgent(agentInput);
 
     if(agentId && levelInput !== null) {
-        const agentJson = JSON.parse(await env.agents.get(agentId));
-        const agent = Agent.AgentFromHakushin(agentJson);
+        const agent = await Agent.AgentFromId(agentId, env);
 
         switch(whatInput) {
             case "stats":
@@ -57,8 +56,7 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
                 embed = printAgentCoreAtLevel(agent, bindLevel(0, 6, levelInput));
         }
     } else if (agentId) {
-        const agentJson = JSON.parse(await env.agents.get(agentId));
-        const agent = Agent.AgentFromHakushin(agentJson);
+        const agent = await Agent.AgentFromId(agentId, env);
 
         switch(whatInput) {
             case "stats":

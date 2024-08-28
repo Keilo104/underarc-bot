@@ -1,31 +1,26 @@
 {
   "1011": {
     "icon_image_url": "https://i.imgur.com/LfrjZPv.png",
-    "signature_weapon": "13101",
     "embed_color": "0xD9FF40"
   },
 
   "1021": {
     "icon_image_url": "https://i.imgur.com/8cXl8IR.png",
-    "signature_weapon": "14102",
     "embed_color": "0xFF4540"
   },
 
   "1031": {
     "icon_image_url": "https://i.imgur.com/82AxB4x.png",
-    "signature_weapon": "13103",
     "embed_color": "0xFF4B89"
   },
 
   "1041": {
     "icon_image_url": "https://i.imgur.com/rW9BWMB.png",
-    "signature_weapon": "14104",
     "embed_color": "0xFFDD0D"
   },
 
   "1061": {
     "icon_image_url": "https://i.imgur.com/9MnHi1l.png",
-    "signature_weapon": "13106",
     "embed_color": "0xBDCBD9"
   },
 
@@ -33,55 +28,47 @@
     "release_patch": 3,
     "signature_weapon": "14107",
     "override_full_name": "Caesar King",
+    "source": "hakushin",
     "embed_color": "0xFFDC4D"
   },
 
   "1081": {
     "icon_image_url": "https://i.imgur.com/XkJa2GK.png",
-    "signature_weapon": "13108",
     "embed_color": "0xFF4540"
   },
 
   "1091": {
     "release_patch": null,
-    "override_full_name": "Hoshimi Miyabi",
     "embed_color": "0x1CE0EF"
   },
 
   "1101": {
     "icon_image_url": "https://i.imgur.com/GVXoWkl.png",
-    "signature_weapon": "14110",
     "embed_color": "0xD9D9D9"
   },
 
   "1111": {
     "icon_image_url": "https://i.imgur.com/J2oHCRw.png",
-    "signature_weapon": "13111",
     "embed_color": "0xD9D9D9"
   },
 
   "1121": {
     "icon_image_url": "https://i.imgur.com/jppZuOp.png",
-    "signature_weapon": "13112",
     "embed_color": "0xD9D9D9"
   },
 
   "1131": {
     "icon_image_url": "https://i.imgur.com/1rwWD8B.png",
-    "signature_weapon": "13113",
     "embed_color": "0x1CE0EF"
   },
 
   "1141": {
     "icon_image_url": "https://i.imgur.com/eI63QVG.png",
-    "signature_weapon": "14114",
     "embed_color": "0xBDCBD9"
   },
 
   "1151": {
     "icon_image_url": "https://i.imgur.com/faEvnLq.png",
-    "signature_weapon": "13115",
-    "override_full_name": "Luciana Auxesis Theodoro de Montefio",
     "embed_color": "0xFFDC4D"
   },
 
@@ -94,69 +81,60 @@
     "release_patch": 3,
     "signature_weapon": "14117",
     "override_full_name": "Burnice White",
+    "source": "hakushin",
     "embed_color": "0xFFDC4D"
   },
 
   "1181": {
     "icon_image_url": "https://i.imgur.com/D0edxZt.png",
-    "signature_weapon": "14118",
     "embed_color": "0xD9D9D9"
   },
 
   "1191": {
     "icon_image_url": "https://i.imgur.com/QOjnMdt.png",
-    "signature_weapon": "14119",
     "embed_color": "0xBDCBD9"
   },
 
   "1201": {
     "release_patch": null,
-    "override_full_name": "Asaba Harumasa",
     "embed_color": "0x1CE0EF"
   },
 
   "1211": {
     "icon_image_url": "https://i.imgur.com/hJIkwVo.png",
-    "signature_weapon": "14121",
     "embed_color": "0xBDCBD9"
   },
 
   "1221": {
     "release_patch": null,
-    "override_full_name": "Tsukishiro Yanagi",
     "embed_color": "0x1CE0EF"
   },
 
   "1241": {
     "icon_image_url": "https://i.imgur.com/MUWz6ti.png",
-    "signature_weapon": "14124",
     "embed_color": "0x38A2FF"
   },
 
   "1251": {
     "icon_image_url": "https://i.imgur.com/P2zIMM6.png",
-    "signature_weapon": "14125",
     "release_patch": 2,
     "embed_color": "0x38A2FF"
   },
 
   "1261": {
     "icon_image_url": "https://i.imgur.com/hIGdTDy.png",
-    "signature_weapon": "14126",
     "release_patch": 2,
     "embed_color": "0x38A2FF"
   },
 
   "1271": {
     "icon_image_url": "https://i.imgur.com/LmXIrIJ.png",
-    "signature_weapon": "13127",
     "release_patch": 2,
     "embed_color": "0x38A2FF"
   },
 
   "1281": {
     "icon_image_url": "https://i.imgur.com/ZYWWKVA.png",
-    "signature_weapon": "13128",
     "embed_color": "0xFFDC4D"
   }
 }

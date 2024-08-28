@@ -7,6 +7,7 @@ import {PurpleCoreMat} from "../enums/purple_core_mat";
 import {GoldenCoreMat} from "../enums/golden_core_mat";
 import {Stat} from "../enums/stat";
 import {Emote} from "../enums/emote";
+import {TreatString} from "../util/treat_string";
 
 export class Agent {
     public id: number | null = null;
@@ -267,6 +268,16 @@ export class Agent {
         return meshedDescription;
     }
 
+    public static async AgentFromId(agentId: string, env: any): Promise<any> {
+        const agentJson = JSON.parse(await env.agents.get(agentId));
+        const agentHelper = require(`../data/helpers/agent_extra_infos.json`);
+
+        if("source" in agentHelper[agentId] && agentHelper[agentId]["source"] == "hakushin")
+            return Agent.AgentFromHakushin(agentJson);
+
+        return Agent.AgentFromHakushin(agentJson);
+    }
+
     public static AgentFromHakushin(agentJson: any): Agent {
         let agent = new Agent();
 
@@ -301,53 +312,13 @@ export class Agent {
             });
 
             ["1", "2", "3", "4", "5", "6", "7"].forEach((level) => {
-                agent.coreSkillDescs[0].push(Agent.TreatString(agentJson["Passive"]["Level"][level]["Desc"][0]));
-                agent.coreSkillDescs[1].push(Agent.TreatString(agentJson["Passive"]["Level"][level]["Desc"][1]));
+                agent.coreSkillDescs[0].push(TreatString(agentJson["Passive"]["Level"][level]["Desc"][0]));
+                agent.coreSkillDescs[1].push(TreatString(agentJson["Passive"]["Level"][level]["Desc"][1]));
             });
         }
 
         agent.loadFromHelper();
         return agent;
-    }
-
-    private static TreatString(string: string): string {
-        return string
-            .replaceAll("Special Attack", `${Emote.SKILL_ICON.emote}Special Attack`)
-            .replaceAll(`EX ${Emote.SKILL_ICON.emote}Special Attack`, `${Emote.SKILL_FILLED_ICON.emote}EX Special Attack`)
-            .replaceAll(`Ex ${Emote.SKILL_ICON.emote}Special Attack`, `${Emote.SKILL_FILLED_ICON.emote}Ex Special Attack`)
-            .replaceAll("Basic Attack", `${Emote.BASIC_ATTACK_ICON.emote}Basic Attack`)
-            .replaceAll("Dash Attack", `${Emote.DODGE_ICON.emote}Dash Attack`)
-            .replaceAll("Dodge Counter", `${Emote.DODGE_ICON.emote}Dodge Counter`)
-            .replaceAll("Chain Attack", `${Emote.ULTIMATE_ICON.emote}Chain Attack`)
-            .replaceAll("Assist Attack", `${Emote.QUICK_ASSIST_ICON.emote}Assist Attack`)
-            .replaceAll("Assist Follow-Up", `${Emote.QUICK_ASSIST_ICON.emote}Assist Follow-Up`)
-            .replaceAll("Quick Assist", `${Emote.QUICK_ASSIST_ICON.emote}Quick Assist`)
-            .replaceAll("Core Passive", `${Emote.CORE_SKILL_ICON.emote}Core Passive`)
-            .replaceAll("Ultimate", `${Emote.ULTIMATE_FILLED_ICON.emote}Ultimate`)
-            .replaceAll("HP", `${Emote.HP_STAT_ICON.emote}HP`)
-            .replaceAll(`Max ${Emote.HP_STAT_ICON.emote}HP`, `${Emote.HP_STAT_ICON.emote}Max HP`)
-            .replaceAll("ATK", `${Emote.ATK_STAT_ICON.emote}ATK`)
-            .replaceAll("DEF", `${Emote.DEF_STAT_ICON.emote}DEF`)
-            .replaceAll("Impact", `${Emote.IMPACT_STAT_ICON.emote}Impact`)
-            .replaceAll("Energy Regen", `${Emote.ENERGY_REGEN_STAT_ICON.emote}Energy Regen`)
-            .replaceAll("Energy Generation Rate", `${Emote.ENERGY_GENERATION_RATE_STAT_ICON.emote}Energy Generation Rate`)
-            .replaceAll("Anomaly Mastery", `${Emote.ANOMALY_MASTERY_STAT_ICON.emote}Anomaly Mastery`)
-            .replaceAll("Anomaly Proficiency", `${Emote.ANOMALY_PROFICIENCY_STAT_ICON.emote}Anomaly Proficiency`)
-            .replaceAll("CRIT Rate", `${Emote.CRIT_RATE_STAT_ICON.emote}CRIT Rate`)
-            .replaceAll("CRIT DMG", `${Emote.CRIT_DMG_STAT_ICON.emote}CRIT DMG`)
-            .replaceAll("PEN Ratio", `${Emote.PEN_RATIO_STAT_ICON.emote}PEN Ratio`)
-            .replaceAll("<color=#2eb6ff>", `${Emote.ELECTRIC_ICON.emote}`)
-            .replaceAll("<color=#fe437e>", `${Emote.ETHER_ICON.emote}`)
-            .replaceAll("<color=#f0d12b>", `${Emote.PHYSICAL_ICON.emote}`)
-            .replaceAll("<color=#98eff0>", `${Emote.ICE_ICON.emote}`)
-            .replaceAll("<color=#ff5521>", `${Emote.FIRE_ICON.emote}`)
-            .replaceAll("<color=#2BAD00>", "")
-            .replaceAll("<color=#ffffff>", "")
-            .replaceAll("</color>", "")
-            .replaceAll("`", "\\`")
-            .replaceAll("Attack-type character", `${Emote.ATTACK_ICON.emote}Attack-type character`)
-            .replaceAll("Support character", `${Emote.SUPPORT_ICON.emote}Support character`)
-            .replaceAll("Anomaly Agents", `${Emote.ANOMALY_ICON.emote}Anomaly Agents`)
     }
 
     private static SetCoreMatsFromHakushin(agent: Agent, agentJson: any) {

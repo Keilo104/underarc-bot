@@ -55,6 +55,7 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
             case "core":
                 embed = printAgentCoreAtLevel(agent, bindLevel(0, 6, levelInput));
         }
+
     } else if (agentId) {
         const agent = await Agent.AgentFromId(agentId, env);
 

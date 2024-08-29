@@ -8,6 +8,7 @@ import {GoldenCoreMat} from "../enums/golden_core_mat";
 import {Stat} from "../enums/stat";
 import {Emote} from "../enums/emote";
 import {TreatString} from "../util/treat_string";
+import {GetBoostForLevel} from "../util/get_boost_per_level";
 
 export class Agent {
     public id: number | null = null;
@@ -69,40 +70,40 @@ export class Agent {
     public hpAtLevel(level: number): number {
         if(this.firstCoreStat == Stat.HP)
             return Math.floor(this.baseHp + ((this.hpGrowth * (level - 1)) / 10000) +
-                Agent.GetBoostForLevel(this.hpBoosts, level) + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level));
+                GetBoostForLevel(this.hpBoosts, level) + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level));
 
         if(this.secondCoreStat == Stat.HP)
             return Math.floor(this.baseHp + ((this.hpGrowth * (level - 1)) / 10000) +
-                Agent.GetBoostForLevel(this.hpBoosts, level) + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level));
+                GetBoostForLevel(this.hpBoosts, level) + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level));
 
         return Math.floor(this.baseHp + ((this.hpGrowth * (level - 1)) / 10000) +
-            Agent.GetBoostForLevel(this.hpBoosts, level));
+            GetBoostForLevel(this.hpBoosts, level));
     }
 
     public atkAtLevel(level: number): number {
         if(this.firstCoreStat == Stat.ATK)
             return Math.floor(this.baseAtk + ((this.atkGrowth * (level - 1)) / 10000) +
-                Agent.GetBoostForLevel(this.atkBoosts, level) + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level));
+                GetBoostForLevel(this.atkBoosts, level) + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level));
 
         if(this.secondCoreStat == Stat.ATK)
             return Math.floor(this.baseAtk + ((this.atkGrowth * (level - 1)) / 10000) +
-                Agent.GetBoostForLevel(this.atkBoosts, level) + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level));
+                GetBoostForLevel(this.atkBoosts, level) + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level));
 
         return Math.floor(this.baseAtk + ((this.atkGrowth * (level - 1)) / 10000) +
-            Agent.GetBoostForLevel(this.atkBoosts, level));
+            GetBoostForLevel(this.atkBoosts, level));
     }
 
     public defAtLevel(level: number): number {
         if(this.firstCoreStat == Stat.DEF)
             return Math.floor(this.baseDef + ((this.defGrowth * (level - 1)) / 10000) +
-                Agent.GetBoostForLevel(this.defBoosts, level) + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level));
+                GetBoostForLevel(this.defBoosts, level) + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level));
 
         if(this.secondCoreStat == Stat.DEF)
             return Math.floor(this.baseDef + ((this.defGrowth * (level - 1)) / 10000) +
-                Agent.GetBoostForLevel(this.defBoosts, level) + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level));
+                GetBoostForLevel(this.defBoosts, level) + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level));
 
         return Math.floor(this.baseDef + ((this.defGrowth * (level - 1)) / 10000) +
-            Agent.GetBoostForLevel(this.defBoosts, level));
+            GetBoostForLevel(this.defBoosts, level));
     }
 
     public impactAtLevel(level: number): number {
@@ -268,17 +269,30 @@ export class Agent {
         return meshedDescription;
     }
 
-    public static async AgentFromId(agentId: string, env: any): Promise<any> {
+    public static async AgentFromId(agentId: string, env: any): Promise<Agent> {
         const agentJson = JSON.parse(await env.agents.get(agentId));
         const agentHelper = require(`../data/helpers/agent_extra_infos.json`);
 
         if("source" in agentHelper[agentId] && agentHelper[agentId]["source"] == "hakushin")
             return Agent.AgentFromHakushin(agentJson);
 
-        return Agent.AgentFromHakushin(agentJson);
+        return Agent.AgentFromSelfData(agentJson);
     }
 
-    public static AgentFromHakushin(agentJson: any): Agent {
+    private static AgentFromSelfData(agentJson: any): Agent {
+        let agent = new Agent();
+
+        agent.id = agentJson["Id"];
+        agent.name = agentJson["Name"];
+        agent.fullName = agentJson["FullName"];
+
+
+
+        agent.loadFromHelper();
+        return agent;
+    }
+
+    private static AgentFromHakushin(agentJson: any): Agent {
         let agent = new Agent();
 
         agent.id = agentJson["Id"];
@@ -386,25 +400,6 @@ export class Agent {
             agent.firstCoreBoosts.push(agentJson["ExtraLevel"][ascension]["Extra"][firstCoreStatKey]["Value"]);
             agent.secondCoreBoosts.push(agentJson["ExtraLevel"][ascension]["Extra"][secondCoreStatKey]["Value"]);
         });
-    }
-
-    private static GetBoostForLevel(boostArray: number[], level: number): number {
-        if(level < 11)
-            return boostArray[0];
-
-        if(level < 21)
-            return boostArray[1];
-
-        if(level < 31)
-            return boostArray[2];
-
-        if(level < 41)
-            return boostArray[3];
-
-        if(level < 51)
-            return boostArray[4];
-
-        return boostArray[5];
     }
 
     private static GetCoreBoostForLevel(boostArray: number[], level: number): number {

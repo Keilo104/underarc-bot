@@ -12,21 +12,20 @@
     "run_register": "node dist/register.js",
     "compile_update_kv": "tsc -t es2021 -m esnext --moduleResolution Bundler --outDir dist src/update_kv.ts",
     "run_update_kv": "node dist/update_kv.js",
-    "register_dev": "npm run compile_register && npm run run_register dev",
-    "register_prod": "npm run compile_register && npm run run_register prod",
+    "register": "npm run compile_register && npm run run_register",
     "update_kv": "npm run compile_update_kv && npm run run_update_kv",
     "ngrok": "ngrok http --domain=renewing-tapir-trivially.ngrok-free.app 8787"
   },
   "dependencies": {
-    "discord-interactions": "^4.0.0",
-    "itty-router": "^5.0.17"
+    "discord-interactions": "^4.1.0",
+    "itty-router": "^5.0.18"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240806.0",
+    "@cloudflare/workers-types": "^4.20240821.1",
     "dotenv": "^16.4.5",
     "ngrok": "^5.0.0-beta.2",
     "typescript": "^5.5.4",
-    "axios": "^1.7.4",
-    "wrangler": "3.71.0"
+    "axios": "^1.7.5",
+    "wrangler": "3.72.3"
   }
 }

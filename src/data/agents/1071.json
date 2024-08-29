@@ -2,7 +2,7 @@
   "Id": 1071,
   "Icon": "IconRole25",
   "Name": "Caesar",
-  "CodeName": "Avatar_Female_Size03_Caesar_En",
+  "CodeName": "Caesar",
   "Rarity": 4,
   "WeaponType": {
     "5": "Defense"
@@ -235,6 +235,68 @@
       }
     }
   },
+  "LevelEXP": [
+    50,
+    150,
+    250,
+    400,
+    600,
+    800,
+    1000,
+    1250,
+    1500,
+    1800,
+    1935,
+    2065,
+    2200,
+    2335,
+    2465,
+    2600,
+    2735,
+    2865,
+    3000,
+    4680,
+    4975,
+    5265,
+    5560,
+    5855,
+    6145,
+    6440,
+    6735,
+    7025,
+    7320,
+    10800,
+    11400,
+    12000,
+    12600,
+    13200,
+    13800,
+    14400,
+    15000,
+    15600,
+    16200,
+    17100,
+    18300,
+    19500,
+    20700,
+    21900,
+    23100,
+    24300,
+    25500,
+    26700,
+    27900,
+    34200,
+    36600,
+    39000,
+    41400,
+    43800,
+    46200,
+    48600,
+    51000,
+    53400,
+    55800,
+    0
+  ],
   "Skill": {
     "Basic": {
       "Description": [
@@ -254,8 +316,8 @@
               "Desc": "{Skill:1071001, Prop:1001}",
               "Param": {
                 "1071001": {
-                  "Main": 4120,
-                  "Growth": 380,
+                  "Main": 4510,
+                  "Growth": 410,
                   "Format": "%"
                 }
               }
@@ -265,8 +327,8 @@
               "Desc": "{Skill:1071002, Prop:1001}",
               "Param": {
                 "1071002": {
-                  "Main": 4200,
-                  "Growth": 390,
+                  "Main": 3900,
+                  "Growth": 360,
                   "Format": "%"
                 }
               }
@@ -276,8 +338,19 @@
               "Desc": "{Skill:1071003, Prop:1001}",
               "Param": {
                 "1071003": {
-                  "Main": 8000,
-                  "Growth": 730,
+                  "Main": 14150,
+                  "Growth": 1290,
+                  "Format": "%"
+                }
+              }
+            },
+            {
+              "Name": "Caesar_Property_Normal_03_Sp_Desc_Damage_01",
+              "Desc": "{Skill:1071008, Prop:1001}",
+              "Param": {
+                "1071008": {
+                  "Main": 11300,
+                  "Growth": 1030,
                   "Format": "%"
                 }
               }
@@ -287,8 +360,8 @@
               "Desc": "{Skill:1071004, Prop:1001}",
               "Param": {
                 "1071004": {
-                  "Main": 7010,
-                  "Growth": 640,
+                  "Main": 7530,
+                  "Growth": 690,
                   "Format": "%"
                 }
               }
@@ -298,8 +371,19 @@
               "Desc": "{Skill:1071005, Prop:1001}",
               "Param": {
                 "1071005": {
-                  "Main": 38690,
-                  "Growth": 3520,
+                  "Main": 18960,
+                  "Growth": 1730,
+                  "Format": "%"
+                }
+              }
+            },
+            {
+              "Name": "6th-Hit DMG Multiplier",
+              "Desc": "{Skill:1071006, Prop:1001}",
+              "Param": {
+                "1071006": {
+                  "Main": 38170,
+                  "Growth": 3470,
                   "Format": "%"
                 }
               }
@@ -309,8 +393,8 @@
               "Desc": "{Skill:1071001, Prop:1002}",
               "Param": {
                 "1071001": {
-                  "Main": 2060,
-                  "Growth": 100,
+                  "Main": 2260,
+                  "Growth": 110,
                   "Format": "%"
                 }
               }
@@ -320,7 +404,7 @@
               "Desc": "{Skill:1071002, Prop:1002}",
               "Param": {
                 "1071002": {
-                  "Main": 3720,
+                  "Main": 3590,
                   "Growth": 170,
                   "Format": "%"
                 }
@@ -331,8 +415,19 @@
               "Desc": "{Skill:1071003, Prop:1002}",
               "Param": {
                 "1071003": {
-                  "Main": 6880,
-                  "Growth": 320,
+                  "Main": 11670,
+                  "Growth": 540,
+                  "Format": "%"
+                }
+              }
+            },
+            {
+              "Name": "Caesar_Property_Normal_03_Sp_Desc_Stun_01",
+              "Desc": "{Skill:1071008, Prop:1001}",
+              "Param": {
+                "1071008": {
+                  "Main": 11300,
+                  "Growth": 1030,
                   "Format": "%"
                 }
               }
@@ -342,8 +437,8 @@
               "Desc": "{Skill:1071004, Prop:1002}",
               "Param": {
                 "1071004": {
-                  "Main": 6460,
-                  "Growth": 300,
+                  "Main": 7160,
+                  "Growth": 330,
                   "Format": "%"
                 }
               }
@@ -353,8 +448,46 @@
               "Desc": "{Skill:1071005, Prop:1002}",
               "Param": {
                 "1071005": {
-                  "Main": 28590,
-                  "Growth": 1300,
+                  "Main": 14580,
+                  "Growth": 670,
+                  "Format": "%"
+                }
+              }
+            },
+            {
+              "Name": "6th-Hit Daze Multiplier",
+              "Desc": "{Skill:1071006, Prop:1002}",
+              "Param": {
+                "1071006": {
+                  "Main": 27860,
+                  "Growth": 1270,
+                  "Format": "%"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Caesar_Skill_Normal_Branch_01_Title",
+          "Param": [
+            {
+              "Name": "DMG Multiplier",
+              "Desc": "{Skill:1071007, Prop:1001}",
+              "Param": {
+                "1071007": {
+                  "Main": 23020,
+                  "Growth": 2100,
+                  "Format": "%"
+                }
+              }
+            },
+            {
+              "Name": "Daze Multiplier",
+              "Desc": "{Skill:1071007, Prop:1002}",
+              "Param": {
+                "1071007": {
+                  "Main": 19860,
+                  "Growth": 910,
                   "Format": "%"
                 }
               }
@@ -430,9 +563,9 @@
           "Param": [
             {
               "Name": "DMG Multiplier",
-              "Desc": "{Skill:1071015, Prop:1001}",
+              "Desc": "{Skill:1071016, Prop:1001}",
               "Param": {
-                "1071015": {
+                "1071016": {
                   "Main": 5950,
                   "Growth": 550,
                   "Format": "%"
@@ -441,9 +574,9 @@
             },
             {
               "Name": "Daze Multiplier",
-              "Desc": "{Skill:1071015, Prop:1002}",
+              "Desc": "{Skill:1071016, Prop:1002}",
               "Param": {
-                "1071015": {
+                "1071016": {
                   "Main": 2980,
                   "Growth": 140,
                   "Format": "%"
@@ -457,9 +590,9 @@
           "Param": [
             {
               "Name": "DMG Multiplier",
-              "Desc": "{Skill:1071016, Prop:1001}",
+              "Desc": "{Skill:1071017, Prop:1001}",
               "Param": {
-                "1071016": {
+                "1071017": {
                   "Main": 19150,
                   "Growth": 1750,
                   "Format": "%"
@@ -468,9 +601,9 @@
             },
             {
               "Name": "Daze Multiplier",
-              "Desc": "{Skill:1071016, Prop:1002}",
+              "Desc": "{Skill:1071017, Prop:1002}",
               "Param": {
-                "1071016": {
+                "1071017": {
                   "Main": 17150,
                   "Growth": 780,
                   "Format": "%"
@@ -548,84 +681,28 @@
           "Desc": "Caesar_Skill_ExSpecial_02_Desc"
         },
         {
-          "Name": "Caesar_Skill_ExSpecial_03_Title",
-          "Desc": "Caesar_Skill_ExSpecial_03_Desc"
+          "Name": "Caesar_Skill_Revenge_Title",
+          "Desc": "Caesar_Skill_Revenge_Desc"
         },
         {
-          "Name": "Caesar_Skill_Special_Title",
+          "Name": "Caesar_Skill_Revenge_Title",
           "Param": [
             {
-              "Name": "DMG Multiplier",
-              "Desc": "{Skill:1071006, Prop:1001}",
-              "Param": {
-                "1071006": {
-                  "Main": 14400,
-                  "Growth": 1310,
-                  "Format": "%"
-                }
-              }
-            },
-            {
-              "Name": "Daze Multiplier",
-              "Desc": "{Skill:1071006, Prop:1002}",
-              "Param": {
-                "1071006": {
-                  "Main": 9400,
-                  "Growth": 430,
-                  "Format": "%"
-                }
-              }
+              "Name": "Caesar_Skill_Revenge_Key",
+              "Desc": "Caesar_Skill_Revenge_Value"
             }
           ]
         },
         {
-          "Name": "Caesar_Skill_ExSpecial_Title",
-          "Param": [
-            {
-              "Name": "DMG Multiplier",
-              "Desc": "{Skill:1071008, Prop:1001}",
-              "Param": {
-                "1071008": {
-                  "Main": 5610,
-                  "Growth": 510,
-                  "Format": "%"
-                }
-              }
-            },
-            {
-              "Name": "Daze Multiplier",
-              "Desc": "{Skill:1071008, Prop:1002}",
-              "Param": {
-                "1071008": {
-                  "Main": 2810,
-                  "Growth": 130,
-                  "Format": "%"
-                }
-              }
-            },
-            {
-              "Name": "Caesar_Property_Special_Desc_Stun_01",
-              "Desc": "{Skill:1071013, Prop:1002}",
-              "Param": {
-                "1071013": {
-                  "Main": 20130,
-                  "Growth": 920,
-                  "Format": "%"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "Name": "Caesar_Skill_ExSpecial_Title",
+          "Name": "Caesar_Skill_Special_01_Title",
           "Param": [
             {
               "Name": "DMG Multiplier",
               "Desc": "{Skill:1071009, Prop:1001}",
               "Param": {
                 "1071009": {
-                  "Main": 5250,
-                  "Growth": 480,
+                  "Main": 5610,
+                  "Growth": 510,
                   "Format": "%"
                 }
               }
@@ -635,8 +712,19 @@
               "Desc": "{Skill:1071009, Prop:1002}",
               "Param": {
                 "1071009": {
-                  "Main": 2630,
-                  "Growth": 120,
+                  "Main": 2810,
+                  "Growth": 130,
+                  "Format": "%"
+                }
+              }
+            },
+            {
+              "Name": "Caesar_Property_Special_Desc_Stun_01",
+              "Desc": "{Skill:1071014, Prop:1002}",
+              "Param": {
+                "1071014": {
+                  "Main": 7350,
+                  "Growth": 340,
                   "Format": "%"
                 }
               }
@@ -644,15 +732,15 @@
           ]
         },
         {
-          "Name": "Caesar_Skill_ExSpecial_Title",
+          "Name": "Caesar_Skill_Special_02_Title",
           "Param": [
             {
               "Name": "DMG Multiplier",
               "Desc": "{Skill:1071010, Prop:1001}",
               "Param": {
                 "1071010": {
-                  "Main": 41470,
-                  "Growth": 3770,
+                  "Main": 5250,
+                  "Growth": 480,
                   "Format": "%"
                 }
               }
@@ -662,19 +750,68 @@
               "Desc": "{Skill:1071010, Prop:1002}",
               "Param": {
                 "1071010": {
-                  "Main": 34340,
-                  "Growth": 1570,
+                  "Main": 2630,
+                  "Growth": 120,
+                  "Format": "%"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Caesar_Skill_ExSpecial_01_Title",
+          "Param": [
+            {
+              "Name": "DMG Multiplier",
+              "Desc": "{Skill:1071011, Prop:1001}",
+              "Param": {
+                "1071011": {
+                  "Main": 34040,
+                  "Growth": 3100,
+                  "Format": "%"
+                }
+              }
+            },
+            {
+              "Name": "Daze Multiplier",
+              "Desc": "{Skill:1071011, Prop:1002}",
+              "Param": {
+                "1071011": {
+                  "Main": 28480,
+                  "Growth": 1300,
+                  "Format": "%"
+                }
+              }
+            },
+            {
+              "Name": "Caesar_Property_ExSpecial_01_Desc_Damage_01",
+              "Desc": "{Skill:1071012, Prop:1001}",
+              "Param": {
+                "1071012": {
+                  "Main": 34040,
+                  "Growth": 3100,
+                  "Format": "%"
+                }
+              }
+            },
+            {
+              "Name": "Caesar_Property_ExSpecial_01_Desc_Stun_01",
+              "Desc": "{Skill:1071012, Prop:1002}",
+              "Param": {
+                "1071012": {
+                  "Main": 28480,
+                  "Growth": 1300,
                   "Format": "%"
                 }
               }
             },
             {
               "Name": "...",
-              "Desc": "{Skill:1071014, Prop:1002}",
+              "Desc": "{Skill:1071015, Prop:1002}",
               "Param": {
-                "1071014": {
-                  "Main": 26250,
-                  "Growth": 1200,
+                "1071015": {
+                  "Main": 14700,
+                  "Growth": 670,
                   "Format": "%"
                 }
               }
@@ -686,15 +823,15 @@
           ]
         },
         {
-          "Name": "Caesar_Skill_ExSpecial_Title",
+          "Name": "Caesar_Skill_ExSpecial_02_Title",
           "Param": [
             {
               "Name": "DMG Multiplier",
               "Desc": "{Skill:1071011, Prop:1001}",
               "Param": {
                 "1071011": {
-                  "Main": 28330,
-                  "Growth": 2580,
+                  "Main": 34040,
+                  "Growth": 3100,
                   "Format": "%"
                 }
               }
@@ -704,19 +841,19 @@
               "Desc": "{Skill:1071011, Prop:1002}",
               "Param": {
                 "1071011": {
-                  "Main": 24220,
-                  "Growth": 1110,
+                  "Main": 28480,
+                  "Growth": 1300,
                   "Format": "%"
                 }
               }
             },
             {
               "Name": "...",
-              "Desc": "{Skill:1071014, Prop:1002}",
+              "Desc": "{Skill:1071015, Prop:1002}",
               "Param": {
-                "1071014": {
-                  "Main": 26250,
-                  "Growth": 1200,
+                "1071015": {
+                  "Main": 14700,
+                  "Growth": 670,
                   "Format": "%"
                 }
               }
@@ -724,37 +861,6 @@
             {
               "Name": "Caesar_Property_ExSpecial_SpCost",
               "Desc": "Caesar_Property_ExSpecial_SpCostValue_02"
-            }
-          ]
-        },
-        {
-          "Name": "Caesar_Skill_ExSpecial_Title",
-          "Param": [
-            {
-              "Name": "DMG Multiplier",
-              "Desc": "{Skill:1071012, Prop:1001}",
-              "Param": {
-                "1071012": {
-                  "Main": 26620,
-                  "Growth": 2420,
-                  "Format": "%"
-                }
-              }
-            },
-            {
-              "Name": "Daze Multiplier",
-              "Desc": "{Skill:1071012, Prop:1002}",
-              "Param": {
-                "1071012": {
-                  "Main": 22630,
-                  "Growth": 1030,
-                  "Format": "%"
-                }
-              }
-            },
-            {
-              "Name": "Caesar_Property_ExSpecial_SpCost",
-              "Desc": "Caesar_Property_ExSpecial_SpCostValue_03"
             }
           ]
         }
@@ -823,22 +929,22 @@
           "Param": [
             {
               "Name": "DMG Multiplier",
-              "Desc": "{Skill:1071017, Prop:1001}",
+              "Desc": "{Skill:1071018, Prop:1001}",
               "Param": {
-                "1071017": {
-                  "Main": 59400,
-                  "Growth": 5400,
+                "1071018": {
+                  "Main": 60980,
+                  "Growth": 5550,
                   "Format": "%"
                 }
               }
             },
             {
               "Name": "Daze Multiplier",
-              "Desc": "{Skill:1071017, Prop:1002}",
+              "Desc": "{Skill:1071018, Prop:1002}",
               "Param": {
-                "1071017": {
-                  "Main": 17510,
-                  "Growth": 800,
+                "1071018": {
+                  "Main": 19080,
+                  "Growth": 870,
                   "Format": "%"
                 }
               }
@@ -850,9 +956,9 @@
           "Param": [
             {
               "Name": "DMG Multiplier",
-              "Desc": "{Skill:1071018, Prop:1001}",
+              "Desc": "{Skill:1071019, Prop:1001}",
               "Param": {
-                "1071018": {
+                "1071019": {
                   "Main": 193450,
                   "Growth": 17590,
                   "Format": "%"
@@ -861,14 +967,18 @@
             },
             {
               "Name": "Daze Multiplier",
-              "Desc": "{Skill:1071018, Prop:1002}",
+              "Desc": "{Skill:1071019, Prop:1002}",
               "Param": {
-                "1071018": {
+                "1071019": {
                   "Main": 27650,
                   "Growth": 1260,
                   "Format": "%"
                 }
               }
+            },
+            {
+              "Name": "Caesar_Skill_ExQTE_AddedBreakStunRatio_Key",
+              "Desc": "Caesar_Skill_ExQTE_AddedBreakStunRatio_Value"
             }
           ]
         }
@@ -941,9 +1051,9 @@
           "Param": [
             {
               "Name": "DMG Multiplier",
-              "Desc": "{Skill:1071019, Prop:1001}",
+              "Desc": "{Skill:1071020, Prop:1001}",
               "Param": {
-                "1071019": {
+                "1071020": {
                   "Main": 6650,
                   "Growth": 610,
                   "Format": "%"
@@ -952,9 +1062,9 @@
             },
             {
               "Name": "Daze Multiplier",
-              "Desc": "{Skill:1071019, Prop:1002}",
+              "Desc": "{Skill:1071020, Prop:1002}",
               "Param": {
-                "1071019": {
+                "1071020": {
                   "Main": 6650,
                   "Growth": 310,
                   "Format": "%"
@@ -968,9 +1078,9 @@
           "Param": [
             {
               "Name": "Light Defensive Daze Multiplier",
-              "Desc": "{Skill:1071020, Prop:1002}",
+              "Desc": "{Skill:1071021, Prop:1002}",
               "Param": {
-                "1071020": {
+                "1071021": {
                   "Main": 25900,
                   "Growth": 1180,
                   "Format": "%"
@@ -979,9 +1089,9 @@
             },
             {
               "Name": "Heavy Defensive Daze Multiplier",
-              "Desc": "{Skill:1071021, Prop:1002}",
+              "Desc": "{Skill:1071022, Prop:1002}",
               "Param": {
-                "1071021": {
+                "1071022": {
                   "Main": 32960,
                   "Growth": 1500,
                   "Format": "%"
@@ -990,9 +1100,9 @@
             },
             {
               "Name": "Chain Defensive Daze Multiplier",
-              "Desc": "{Skill:1071022, Prop:1002}",
+              "Desc": "{Skill:1071023, Prop:1002}",
               "Param": {
-                "1071022": {
+                "1071023": {
                   "Main": 16160,
                   "Growth": 740,
                   "Format": "%"
@@ -1006,20 +1116,20 @@
           "Param": [
             {
               "Name": "DMG Multiplier",
-              "Desc": "{Skill:1071023, Prop:1001}",
+              "Desc": "{Skill:1071024, Prop:1001}",
               "Param": {
-                "1071023": {
-                  "Main": 41080,
-                  "Growth": 3740,
+                "1071024": {
+                  "Main": 39360,
+                  "Growth": 3580,
                   "Format": "%"
                 }
               }
             },
             {
               "Name": "Daze Multiplier",
-              "Desc": "{Skill:1071023, Prop:1002}",
+              "Desc": "{Skill:1071024, Prop:1002}",
               "Param": {
-                "1071023": {
+                "1071024": {
                   "Main": 36060,
                   "Growth": 1640,
                   "Format": "%"

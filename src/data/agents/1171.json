@@ -2,7 +2,7 @@
   "Id": 1171,
   "Icon": "IconRole32",
   "Name": "Burnice",
-  "CodeName": "Avatar_Female_Size02_Burnice_En",
+  "CodeName": "Burnice",
   "Rarity": 4,
   "WeaponType": {
     "3": "Anomaly"
@@ -235,6 +235,68 @@
       }
     }
   },
+  "LevelEXP": [
+    50,
+    150,
+    250,
+    400,
+    600,
+    800,
+    1000,
+    1250,
+    1500,
+    1800,
+    1935,
+    2065,
+    2200,
+    2335,
+    2465,
+    2600,
+    2735,
+    2865,
+    3000,
+    4680,
+    4975,
+    5265,
+    5560,
+    5855,
+    6145,
+    6440,
+    6735,
+    7025,
+    7320,
+    10800,
+    11400,
+    12000,
+    12600,
+    13200,
+    13800,
+    14400,
+    15000,
+    15600,
+    16200,
+    17100,
+    18300,
+    19500,
+    20700,
+    21900,
+    23100,
+    24300,
+    25500,
+    26700,
+    27900,
+    34200,
+    36600,
+    39000,
+    41400,
+    43800,
+    46200,
+    48600,
+    51000,
+    53400,
+    55800,
+    0
+  ],
   "Skill": {
     "Basic": {
       "Description": [
@@ -369,8 +431,8 @@
               "Desc": "{Skill:1171006, Prop:1001}",
               "Param": {
                 "1171006": {
-                  "Main": 11940,
-                  "Growth": 1090,
+                  "Main": 12540,
+                  "Growth": 1140,
                   "Format": "%"
                 }
               }
@@ -380,8 +442,8 @@
               "Desc": "{Skill:1171007, Prop:1001}",
               "Param": {
                 "1171007": {
-                  "Main": 22170,
-                  "Growth": 2020,
+                  "Main": 23280,
+                  "Growth": 2120,
                   "Format": "%"
                 }
               }
@@ -391,8 +453,8 @@
               "Desc": "{Skill:1171006, Prop:1002}",
               "Param": {
                 "1171006": {
-                  "Main": 9190,
-                  "Growth": 420,
+                  "Main": 9650,
+                  "Growth": 440,
                   "Format": "%"
                 }
               }
@@ -402,8 +464,8 @@
               "Desc": "{Skill:1171007, Prop:1002}",
               "Param": {
                 "1171007": {
-                  "Main": 17060,
-                  "Growth": 780,
+                  "Main": 17910,
+                  "Growth": 820,
                   "Format": "%"
                 }
               }
@@ -854,7 +916,7 @@
           "Name": "Burnice_Skill_ExQTE_Title",
           "Param": [
             {
-              "Name": "DMG Multiplier",
+              "Name": "Burnice_Property_ExQTE_01_Desc_Dmg_01",
               "Desc": "{Skill:1171017, Prop:1001}",
               "Param": {
                 "1171017": {
@@ -865,7 +927,7 @@
               }
             },
             {
-              "Name": "Daze Multiplier",
+              "Name": "Burnice_Property_ExQTE_01_Desc_Stun_01",
               "Desc": "{Skill:1171017, Prop:1002}",
               "Param": {
                 "1171017": {

@@ -1,0 +1,26 @@
+{
+  "Id": 2021,
+  "Name": "Belle",
+  "FullName": "Belle",
+  "Specialty": 1,
+  "Faction": 0,
+  "Element": [
+    1
+  ],
+  "DamageType": [
+    0
+  ],
+  "Rarity": 2,
+  "Stats": {
+    "BaseAtk": 100,
+    "AtkGrowth": 57858,
+    "BaseDef": 50,
+    "DefGrowth": 67901,
+    "BaseHp": 600,
+    "HpGrowth": 814355,
+    "BaseImpact": 110,
+    "BaseAnomalyMastery": 100,
+    "BaseAnomalyProficiency": 100
+  },
+  "SigWeaponId": []
+}

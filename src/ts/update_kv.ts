@@ -1,4 +1,5 @@
 import ids_json from "../data/helpers/zzz_ids.json" assert { type: "json" }
+import agent_helper from "../data/helpers/agent_extra_infos.json" assert { type: "json" }
 import fs from "node:fs";
 import axios from "axios";
 import dotenv from "dotenv";
@@ -13,9 +14,17 @@ else
 const endpoint = process.env.ENDPOINT;
 const securityKey = process.env.ENDPOINT_KEY;
 
-ids_json.agents.forEach((agentId) => {
-    const agentFile = fs.readFileSync(`./src/data/agents/${agentId}.json`, "utf-8");
-    const agentJson = JSON.parse(agentFile);
+ids_json.agents.forEach((agentId: string) => {
+    let agentFile: string, agentJson: any;
+
+    if("source" in agent_helper[agentId as keyof Object] &&
+        agent_helper[agentId as keyof Object]["source" as keyof string] == "hakushin") {
+        agentFile = fs.readFileSync(`./src/data/hakushin_data/${agentId}.json`, "utf-8");
+        agentJson = JSON.parse(agentFile);
+    } else {
+        agentFile = fs.readFileSync(`./src/data/agents/${agentId}.json`, "utf-8");
+        agentJson = JSON.parse(agentFile);
+    }
 
     axios.post(`${endpoint}/agents/${agentId}`, agentJson, {
         headers: {

@@ -15,8 +15,8 @@ export class GoldenCoreMat {
     ) {
     }
 
-    public static GetGoldenCoreMatFromId(id: string | null) {
-        switch(id) {
+    public static GetGoldenCoreMatFromId(id: string | number | null) {
+        switch(`${id}`) {
             case "110001":
                 return GoldenCoreMat.FEROCIOUS_GRIP;
 

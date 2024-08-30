@@ -15,7 +15,7 @@ import {agentCommandHandler } from "./zzz_commands/agent_command";
 const router = AutoRouter();
 
 export interface Env {
-    agents: KVNamespace;
+    agents: KVNamespace,
 }
 
 router.get("/", (_: IRequest, env: any) => {

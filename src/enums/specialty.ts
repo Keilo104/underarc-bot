@@ -16,8 +16,8 @@ export class Specialty {
     ) {
     }
 
-    public static GetSpecialtyFromId(id: string | null | undefined): Specialty {
-        switch(id) {
+    public static GetSpecialtyFromId(id: string | number | null | undefined): Specialty {
+        switch(`${id}`) {
             case "1":
                 return Specialty.ATTACK;
 

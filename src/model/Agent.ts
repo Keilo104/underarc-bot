@@ -286,7 +286,55 @@ export class Agent {
         agent.name = agentJson["Name"];
         agent.fullName = agentJson["FullName"];
 
+        agent.specialty = Specialty.GetSpecialtyFromId(agentJson["Specialty"]);
+        agent.faction = Faction.GetFactionFromId(agentJson["Faction"]);
+        agent.element = Element.GetElementFromId(agentJson["Element"][0]);
+        agent.damageType = DamageType.GetDamageTypeFromId(agentJson["DamageType"][0]);
+        agent.rarity = Rarity.GetRarityFromId(agentJson["Rarity"]);
 
+        if("Stats" in agentJson) {
+            agent.baseAtk = agentJson["Stats"]["BaseAtk"];
+            agent.atkGrowth = agentJson["Stats"]["AtkGrowth"];
+            agent.baseDef = agentJson["Stats"]["BaseDef"];
+            agent.defGrowth = agentJson["Stats"]["DefGrowth"];
+            agent.baseHp = agentJson["Stats"]["BaseHp"];
+            agent.hpGrowth = agentJson["Stats"]["HpGrowth"];
+
+            agent.baseImpact = agentJson["Stats"]["BaseImpact"];
+            agent.baseAnomalyMastery = agentJson["Stats"]["BaseAnomalyMastery"];
+            agent.baseAnomalyProficiency = agentJson["Stats"]["BaseAnomalyProficiency"];
+        }
+
+        if("HpBoosts" in agentJson) {
+            agent.hpBoosts = agentJson["HpBoosts"];
+            agent.atkBoosts = agentJson["AtkBoosts"];
+            agent.defBoosts = agentJson["DefBoosts"];
+        }
+
+        if("CoreSkillInfo" in agentJson) {
+            agent.firstCoreStat = Stat.GetStatFromProps(agentJson["CoreSkillInfo"]["FirstCoreStat"]);
+            agent.firstCoreBoosts = agentJson["CoreSkillInfo"]["FirstCoreStatValues"];
+            agent.secondCoreStat = Stat.GetStatFromProps(agentJson["CoreSkillInfo"]["SecondCoreStat"]);
+            agent.secondCoreBoosts = agentJson["CoreSkillInfo"]["SecondCoreStatValues"];
+
+            agent.purpleCoreMat = PurpleCoreMat.GetPurpleCoreMatFromId(agentJson["CoreSkillInfo"]["PurpleCoreMat"]);
+            agent.goldenCoreMat = GoldenCoreMat.GetGoldenCoreMatFromId(agentJson["CoreSkillInfo"]["GoldenCoreMat"]);
+        }
+
+        if("CoreSkillLevels" in agentJson) {
+            agent.coreSkillNames = agentJson["CoreSkillLevels"]["Name"];
+
+            for(let _ = 0; _ < agent.coreSkillNames.length; _++) {
+                agent.coreSkillDescs.push([]);
+            }
+
+            for(let item = 0; item < agentJson["CoreSkillLevels"]["Descriptions"].length; item++) {
+                for(let i = 0; i < agentJson["CoreSkillLevels"]["Descriptions"][item].length; i++) {
+                    let treatedString = TreatString(agentJson["CoreSkillLevels"]["Descriptions"][item][i]);
+                    agent.coreSkillDescs[i].push(treatedString);
+                }
+            }
+        }
 
         agent.loadFromHelper();
         return agent;
@@ -379,10 +427,10 @@ export class Agent {
         Object.keys(agentJson["ExtraLevel"]["1"]["Extra"]).forEach((ascension) => {
             if(agent.firstCoreStat == Stat.UNKNOWN) {
                 firstCoreStatKey = ascension;
-                agent.firstCoreStat = Stat.GetStatFromCoreName(agentJson["ExtraLevel"]["1"]["Extra"][ascension]["Name"]);
+                agent.firstCoreStat = Stat.GetStatFromProps(agentJson["ExtraLevel"]["1"]["Extra"][ascension]["Prop"]);
             } else if (agent.secondCoreStat == Stat.UNKNOWN) {
                 secondCoreStatKey = ascension;
-                agent.secondCoreStat = Stat.GetStatFromCoreName(agentJson["ExtraLevel"]["1"]["Extra"][ascension]["Name"]);
+                agent.secondCoreStat = Stat.GetStatFromProps(agentJson["ExtraLevel"]["1"]["Extra"][ascension]["Prop"]);
             }
         });
 

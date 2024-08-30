@@ -14,8 +14,8 @@ export class DamageType {
     ) {
     }
 
-    public static GetDamageTypeFromId(id: string | null | undefined) {
-        switch(id) {
+    public static GetDamageTypeFromId(id: string | number | null | undefined) {
+        switch(`${id}`) {
             case "101":
                 return DamageType.SLASH;
 

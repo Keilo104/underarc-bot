@@ -1,5 +1,6 @@
 import ids_json from "../data/helpers/zzz_ids.json" assert { type: "json" }
 import agent_helper from "../data/helpers/agent_extra_infos.json" assert { type: "json" }
+import wengine_helper from "../data/helpers/wengine_extra_infos.json" assert { type: "json" }
 import fs from "node:fs";
 import axios from "axios";
 import dotenv from "dotenv";
@@ -26,6 +27,30 @@ ids_json.agents.forEach((agentId: string) => {
     }
 
     axios.post(`${endpoint}/agents/${agentId}`, agentJson, {
+        headers: {
+            "security-key": securityKey
+        }
+    })
+        .then((response) => {
+            console.log(response.data);
+        })
+        .catch((error) => {
+            console.error(error.message);
+        })
+})
+
+ids_json.wengines.forEach((wengineId: string) => {
+    let wengineFile: string, wengineJson: any;
+
+    if("source" in wengine_helper[wengineId as keyof Object]) {
+        wengineFile = fs.readFileSync(`./src/data/hakushin_data/${wengineId}.json`, "utf-8");
+        wengineJson = JSON.parse(wengineFile);
+    } else {
+        wengineFile = fs.readFileSync(`./src/data/wengines/${wengineId}.json`, "utf-8");
+        wengineJson = JSON.parse(wengineFile);
+    }
+
+    axios.post(`${endpoint}/wengines/${wengineId}`, wengineJson, {
         headers: {
             "security-key": securityKey
         }

@@ -16,6 +16,7 @@ const router = AutoRouter();
 
 export interface Env {
     agents: KVNamespace,
+    wengines: KVNamespace,
 }
 
 router.get("/", (_: IRequest, env: any) => {
@@ -32,6 +33,21 @@ router.post("/agents/:agentId", async (request: IRequest, env: any) => {
         await env.agents.put(agentId, JSON.stringify(agentJson));
 
         return new Response(`Agent ${agentId} added/updated successfully`, { status: 200 });
+    }
+
+    return new Response("Bad request signature.", { status: 401 });
+});
+
+router.post("/wengines/:wengineId", async (request: IRequest, env: any) => {
+    const securityKey = request.headers.get("security-key");
+
+    if (securityKey && securityKey === env.ENDPOINT_KEY) {
+        let wengineJson = await request.json();
+        let wengineId = request.params.wengineId;
+
+        await env.wengines.put(wengineId, JSON.stringify(wengineJson));
+
+        return new Response(`W-Engine ${wengineId} added/updated successfully`, { status: 200 });
     }
 
     return new Response("Bad request signature.", { status: 401 });

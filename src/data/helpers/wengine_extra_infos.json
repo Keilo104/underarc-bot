@@ -173,7 +173,8 @@
     "obtain": "Gacha",
     "signature": "1071",
     "embed_color":  "0xFFDC4D",
-    "release_patch": 3
+    "release_patch": 3,
+    "source": "hakushin"
   },
   "14110": {
     "icon_image_url": "https://i.imgur.com/12yShxm.png",
@@ -192,7 +193,8 @@
     "obtain": "Gacha",
     "signature": "1171",
     "embed_color":  "0xFFDC4D",
-    "release_patch": 3
+    "release_patch": 3,
+    "source": "hakushin"
   },
   "14118": {
     "icon_image_url": "https://i.imgur.com/dk70S36.png",

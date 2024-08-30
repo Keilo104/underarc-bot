@@ -5,7 +5,7 @@ import {printAgentStats, printAgentStatsAtLevel} from "./agent_commands/print_ag
 import {printAgentCore, printAgentCoreAtLevel} from "./agent_commands/print_agent_core";
 
 function translateAgent(agent: string | null): string | null {
-    const agentTranslations = require("../data/helpers/agent_translations.json");
+    const agentTranslations = require("../../data/helpers/agent_translations.json");
 
     if(agent && agentTranslations.hasOwnProperty(agent)){
         return agentTranslations[agent]

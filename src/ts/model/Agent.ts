@@ -52,7 +52,7 @@ export class Agent {
     public coreSkillDescs: string[][] = [];
 
     public loadFromHelper() {
-        const agentHelper = require(`../data/helpers/agent_extra_infos.json`);
+        const agentHelper = require(`../../data/helpers/agent_extra_infos.json`);
 
         if (this.id && "override_full_name" in agentHelper[`${this.id}`])
             this.fullName = agentHelper[`${this.id}`]["override_full_name"];
@@ -271,7 +271,7 @@ export class Agent {
 
     public static async AgentFromId(agentId: string, env: any): Promise<Agent> {
         const agentJson = JSON.parse(await env.agents.get(agentId));
-        const agentHelper = require(`../data/helpers/agent_extra_infos.json`);
+        const agentHelper = require(`../../data/helpers/agent_extra_infos.json`);
 
         if("source" in agentHelper[agentId] && agentHelper[agentId]["source"] == "hakushin")
             return Agent.AgentFromHakushin(agentJson);

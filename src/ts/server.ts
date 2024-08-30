@@ -86,7 +86,7 @@ router.post("/", async (request: IRequest, env: any) => {
                 });
 
             case EIGHT_BALL_COMMAND.name.toLowerCase():
-                const eight_ball_answers_json = require("./data/8ball_answers.json")
+                const eight_ball_answers_json = require("../data/8ball_answers.json")
 
                 return new JsonResponse({
                     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,

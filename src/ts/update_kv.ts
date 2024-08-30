@@ -1,4 +1,4 @@
-import ids_json from "./data/helpers/zzz_ids.json" assert { type: "json" }
+import ids_json from "../data/helpers/zzz_ids.json" assert { type: "json" }
 import fs from "node:fs";
 import axios from "axios";
 import dotenv from "dotenv";

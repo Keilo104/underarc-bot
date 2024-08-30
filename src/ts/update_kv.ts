@@ -17,8 +17,7 @@ const securityKey = process.env.ENDPOINT_KEY;
 ids_json.agents.forEach((agentId: string) => {
     let agentFile: string, agentJson: any;
 
-    if("source" in agent_helper[agentId as keyof Object] &&
-        agent_helper[agentId as keyof Object]["source" as keyof string] == "hakushin") {
+    if("source" in agent_helper[agentId as keyof Object]) {
         agentFile = fs.readFileSync(`./src/data/hakushin_data/${agentId}.json`, "utf-8");
         agentJson = JSON.parse(agentFile);
     } else {

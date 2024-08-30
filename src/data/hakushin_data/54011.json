@@ -422,25 +422,25 @@
   "SkillProp": {
     "5401101": {
       "1001": {
-        "Main": 57600,
-        "Growth": 5760,
+        "Main": 96000,
+        "Growth": 9600,
         "Format": "%"
       },
       "1002": {
-        "Main": 21100,
-        "Growth": 2110,
+        "Main": 35100,
+        "Growth": 3510,
         "Format": "%"
       }
     },
     "5401102": {
       "1001": {
-        "Main": 35000,
-        "Growth": 3500,
+        "Main": 75300,
+        "Growth": 7530,
         "Format": "%"
       },
       "1002": {
-        "Main": 5000,
-        "Growth": 500,
+        "Main": 10800,
+        "Growth": 1080,
         "Format": "%"
       }
     }

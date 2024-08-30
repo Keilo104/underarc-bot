@@ -25,7 +25,7 @@ def look_in_json(json_to_look, what_to_look_for):
 
 
 places_to_look = ["FileCfg", "Data", "TextMap"]
-what_to_look_for = ["Anbi_Skill_BeHitAid_Title"]
+what_to_look_for = ["44610", 44610]
 
 for directory in places_to_look:
     for json_file_path in os.listdir(f"C:/facul/ZenlessData/{directory}"):

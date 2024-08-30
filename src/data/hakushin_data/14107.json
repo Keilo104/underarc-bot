@@ -1,14 +1,14 @@
 {
-  "Id": 14117,
-  "CodeName": "Weapon_S_1171",
-  "Name": "Item_Weapon_S_1171_Name",
-  "Desc": "Item_Weapon_S_1171_Desc",
-  "Desc2": "Equip to increase Anomaly Agents' combat capabilities",
-  "Desc3": "Item_Weapon_S_1171_ShortDesc",
+  "Id": 14107,
+  "CodeName": "Weapon_S_1071",
+  "Name": "Item_Weapon_S_1071_Name",
+  "Desc": "Item_Weapon_S_1071_Desc",
+  "Desc2": "Equip to increase Defense Agents' combat capabilities",
+  "Desc3": "Item_Weapon_S_1071_ShortDesc",
   "Rarity": 4,
-  "Icon": "Assets/NapResources/UI/Sprite/A6DynamicLoad/ItemIconSmall/UnPacker/TestItemIcon.png",
+  "Icon": "Assets/NapResources/UI/Sprite/A1DynamicLoad/ItemIconWeapon/UnPacker/Weapon_S_1071.png",
   "WeaponType": {
-    "3": "Anomaly"
+    "5": "Defense"
   },
   "BaseProperty": {
     "Name": "Base ATK",
@@ -17,10 +17,10 @@
     "Value": 48
   },
   "RandProperty": {
-    "Name": "Anomaly Proficiency",
-    "Name2": "Anomaly Proficiency",
-    "Format": "{0:0}",
-    "Value": 36
+    "Name": "Impact",
+    "Name2": "Impact",
+    "Format": "{0:0.#%}",
+    "Value": 720
   },
   "Level": {
     "0": {
@@ -355,27 +355,27 @@
       "RandRate": 15000
     }
   },
-  "Materials": "10:12000,101012:4|10:28000,101022:12|10:60000,101022:20|10:100000,101032:10|10:200000,101032:20",
+  "Materials": "10:12000,101014:4|10:28000,101024:12|10:60000,101024:20|10:100000,101034:10|10:200000,101034:20",
   "Talents": {
     "1": {
-      "Name": "Weapon_TalentTitle_14117",
-      "Desc": "Weapon_TalentDes_81411701"
+      "Name": "Weapon_TalentTitle_14107",
+      "Desc": "Weapon_TalentDes_81410701"
     },
     "2": {
-      "Name": "Weapon_TalentTitle_14117",
-      "Desc": "Weapon_TalentDes_81411702"
+      "Name": "Weapon_TalentTitle_14107",
+      "Desc": "Weapon_TalentDes_81410702"
     },
     "3": {
-      "Name": "Weapon_TalentTitle_14117",
-      "Desc": "Weapon_TalentDes_81411703"
+      "Name": "Weapon_TalentTitle_14107",
+      "Desc": "Weapon_TalentDes_81410703"
     },
     "4": {
-      "Name": "Weapon_TalentTitle_14117",
-      "Desc": "Weapon_TalentDes_81411704"
+      "Name": "Weapon_TalentTitle_14107",
+      "Desc": "Weapon_TalentDes_81410704"
     },
     "5": {
-      "Name": "Weapon_TalentTitle_14117",
-      "Desc": "Weapon_TalentDes_81411705"
+      "Name": "Weapon_TalentTitle_14107",
+      "Desc": "Weapon_TalentDes_81410705"
     }
   }
 }

@@ -177,7 +177,7 @@ load_avatar_skill_level_template(valk_dict, trans_json)
 load_avatar_talent_template(valk_dict, trans_json)
 
 for x in valk_dict.values():
-    with open(f"parsed_data/agents/{x['Id']}.json", "w", encoding="utf-8") as json_file_to_write:
+    with open(f"../data/agents/{x['Id']}.json", "w", encoding="utf-8") as json_file_to_write:
         json_file_to_write.write(json.dumps(x, indent=2))
 
     pass

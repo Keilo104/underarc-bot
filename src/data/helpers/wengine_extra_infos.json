@@ -1,77 +1,100 @@
 {
   "12001": {
-    "icon_image_url": "https://i.imgur.com/FhlNhle.png"
+    "icon_image_url": "https://i.imgur.com/FhlNhle.png",
+    "obtain": "Craftable"
   },
   "12002": {
-    "icon_image_url": "https://i.imgur.com/hg68f0S.png"
+    "icon_image_url": "https://i.imgur.com/hg68f0S.png",
+    "obtain": "Craftable"
   },
   "12003": {
-    "icon_image_url": "https://i.imgur.com/A09oGn2.png"
+    "icon_image_url": "https://i.imgur.com/A09oGn2.png",
+    "obtain": "Craftable"
   },
   "12004": {
-    "icon_image_url": "https://i.imgur.com/VZiCLTq.png"
+    "icon_image_url": "https://i.imgur.com/VZiCLTq.png",
+    "obtain": "Craftable"
   },
   "12005": {
-    "icon_image_url": "https://i.imgur.com/A2AviE3.png"
+    "icon_image_url": "https://i.imgur.com/A2AviE3.png",
+    "obtain": "Craftable"
   },
   "12006": {
-    "icon_image_url": "https://i.imgur.com/h8bgQEa.png"
+    "icon_image_url": "https://i.imgur.com/h8bgQEa.png",
+    "obtain": "Craftable"
   },
   "12007": {
-    "icon_image_url": "https://i.imgur.com/tZsn0w1.png"
+    "icon_image_url": "https://i.imgur.com/tZsn0w1.png",
+    "obtain": "Craftable"
   },
   "12008": {
-    "icon_image_url": "https://i.imgur.com/CnYYFDL.png"
+    "icon_image_url": "https://i.imgur.com/CnYYFDL.png",
+    "obtain": "Craftable"
   },
   "12009": {
-    "icon_image_url": "https://i.imgur.com/KgpAm1o.png"
+    "icon_image_url": "https://i.imgur.com/KgpAm1o.png",
+    "obtain": "Craftable"
   },
   "12010": {
-    "icon_image_url": "https://i.imgur.com/mc3VA7o.png"
+    "icon_image_url": "https://i.imgur.com/mc3VA7o.png",
+    "obtain": "Craftable"
   },
   "12011": {
-    "icon_image_url": "https://i.imgur.com/EvIyi7L.png"
+    "icon_image_url": "https://i.imgur.com/EvIyi7L.png",
+    "obtain": "Craftable"
   },
   "12012": {
-    "icon_image_url": "https://i.imgur.com/gQJh0ku.png"
+    "icon_image_url": "https://i.imgur.com/gQJh0ku.png",
+    "obtain": "Craftable"
   },
   "12013": {
-    "icon_image_url": "https://i.imgur.com/bIlYS7A.png"
+    "icon_image_url": "https://i.imgur.com/bIlYS7A.png",
+    "obtain": "Craftable"
   },
   "12014": {
-    "icon_image_url": "https://i.imgur.com/UjNjtOh.png"
+    "icon_image_url": "https://i.imgur.com/UjNjtOh.png",
+    "obtain": "Craftable"
   },
   "13001": {
-    "icon_image_url": "https://i.imgur.com/7OZYmSE.png"
+    "icon_image_url": "https://i.imgur.com/7OZYmSE.png",
+    "obtain": "Craftable"
   },
   "13002": {
     "icon_image_url": "https://i.imgur.com/3kZXYGM.png",
+    "obtain": "Craftable",
     "override_description": "Any squad members' Dodge Counter, EX Special Attack, Assist Attack, or Chain Attack respectively generates **20/23/26/29/32 (Dodge) | 25/28.5/32/35.5/40 (Special) | 30/34.5/39/43.5/48 (Assist) | 35/40/45/50/55 (Chain)** more Decibels and generates **0.7/0.8/0.9/1/1.1** Energy for the equipper. This effect can trigger once every 12s. The cooldown for each type of attack is independent of others. Passive effects of the same name do not stack."
   },
   "13003": {
-    "icon_image_url": "https://i.imgur.com/ECtTUvq.png"
+    "icon_image_url": "https://i.imgur.com/ECtTUvq.png",
+    "obtain": "Craftable"
   },
   "13004": {
-    "icon_image_url": "https://i.imgur.com/GDTJ76C.png"
+    "icon_image_url": "https://i.imgur.com/GDTJ76C.png",
+    "obtain": "Craftable"
   },
   "13005": {
-    "icon_image_url": "https://i.imgur.com/30I7iB0.png"
+    "icon_image_url": "https://i.imgur.com/30I7iB0.png",
+    "obtain": "Craftable"
   },
   "13006": {
-    "icon_image_url": "https://i.imgur.com/cmogKj1.png"
+    "icon_image_url": "https://i.imgur.com/cmogKj1.png",
+    "obtain": "Craftable"
   },
   "13007": {
-    "icon_image_url": "https://i.imgur.com/88pr2Kz.png"
+    "icon_image_url": "https://i.imgur.com/88pr2Kz.png",
+    "obtain": "Craftable"
   },
   "13008": {
-    "icon_image_url": "https://i.imgur.com/mnqce2Z.png"
+    "icon_image_url": "https://i.imgur.com/mnqce2Z.png",
+    "obtain": "Craftable"
   },
   "13009": {
     "icon_image_url": "https://i.imgur.com/ogm4dwF.png",
     "obtain": "Battlepass"
   },
   "13010": {
-    "icon_image_url": "https://i.imgur.com/mbEQHEC.png"
+    "icon_image_url": "https://i.imgur.com/mbEQHEC.png",
+    "obtain": "Craftable"
   },
   "13011": {
     "icon_image_url": "https://i.imgur.com/3nVPpag.png",
@@ -90,7 +113,7 @@
   },
   "13103": {
     "icon_image_url": "https://i.imgur.com/Qw5OS5N.png",
-    "obtain": "Nicole Demara",
+    "obtain": "Gacha",
     "signature": "1031",
     "embed_color":  "0xFF4B89"
   },

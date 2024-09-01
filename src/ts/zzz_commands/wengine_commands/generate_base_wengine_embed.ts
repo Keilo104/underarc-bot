@@ -1,12 +1,11 @@
 import {WEngine} from "../../model/WEngine";
 
 export function generateBaseWengineEmbed(wengine: WEngine): any {
-    console.log(wengine.specialty);
-
     const wengineEmbed: { [k: string]: any } = {
         title: wengine.name,
         description:
-            `${wengine.rarity.gearEmote.emote} ${wengine.specialty.emote.emote} ${"placeholder obtain"}`,
+            `${wengine.rarity.gearEmote.emote} ${wengine.specialty.emote.emote}\n` +
+            `${wengine.obtainMethod.emote.emote} • ${wengine.obtainMethod.method}`,
         thumbnail: {
             url: wengine.iconImageUrl,
         },

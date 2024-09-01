@@ -2,6 +2,7 @@ import {Emote} from "../enums/emote";
 import {Rarity} from "../enums/rarity";
 import {Specialty} from "../enums/specialty";
 import {Stat} from "../enums/stat";
+import {ObtainMethod} from "../enums/gear_obtain_method";
 
 export class WEngine {
     public id: number | null = null;
@@ -13,6 +14,7 @@ export class WEngine {
 
     public rarity: Rarity = Rarity.UNKNOWN;
     public specialty: Specialty = Specialty.UNKNOWN;
+    public obtainMethod: ObtainMethod = ObtainMethod.UNKNOWN;
 
     public mainStat: Stat = Stat.UNKNOWN;
     public mainStatBase: number = 0;
@@ -31,7 +33,7 @@ export class WEngine {
         const wengineHelper = require(`../../data/helpers/wengine_extra_infos.json`);
 
         if (this.id && "obtain" in wengineHelper[`${this.id}`])
-            console.log("HEEEELP");
+            this.obtainMethod = ObtainMethod.GetObtainMethodFromString(wengineHelper[`${this.id}`]["obtain"]);
 
         if (this.id && "override_description" in wengineHelper[`${this.id}`])
             this.descOverride = wengineHelper[`${this.id}`]["override_description"];

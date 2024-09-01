@@ -134,7 +134,7 @@ export class Emote {
     public static LUNAR_NOVILUNA_ICON = new Emote("<:lunar_noviluna_icon:1266650773937197127>");
     public static LUNAR_DECRESCENT_ICON = new Emote("<:lunar_decrescent_icon:1266650781810167808>");
     public static LUNAR_PLENILUNA_ICON = new Emote("<:lunar_pleniluna_icon:1266650789154394143>");
-    public static WEAPON_11_EVENT_ICON = new Emote("<:weapon_11_event_icon:1266650797203259493>");
+    public static GILDED_BLOSSOM_ICON = new Emote("<:gilded_blossom_icon:1266650797203259493>");
     public static SPRING_EMBRACE_ICON = new Emote("<:spring_embrace_icon:1266650805608513596>");
     public static BUNNY_BAND_ICON = new Emote("<:bunny_band_icon:1266650816727744553>");
     public static ELECTROLIP_GLOSS_ICON = new Emote("<:electrolip_gloss_icon:1266650827133681724>");
@@ -147,7 +147,7 @@ export class Emote {
     public static SLICE_OF_TIME_ICON = new Emote("<:slice_of_time_icon:1266650901347831920>");
     public static STREET_SUPERSTAR_ICON = new Emote("<:street_superstar_icon:1266650908482080790>");
     public static ROARING_RIDE_ICON = new Emote("<:roaring_ride_icon:1266650920327057510>");
-    public static SETH_WEAPON_ICON = new Emote("<:seth_weapon_icon:1266650937557123172>");
+    public static PEACEKEEPER_SPECIALIZED_ICON = new Emote("<:peacekeeper_specialized_icon:1266650937557123172>");
     public static KABOOM_THE_CANNON_ICON = new Emote("<:kaboom_the_cannon_icon:1266650949057773599>");
     public static BASHFUL_DEMON_ICON = new Emote("<:bashful_demon_icon:1266650959073771612>");
     public static BIG_CYLINDER_ICON = new Emote("<:big_cylinder_icon:1266650985858732093>");
@@ -159,8 +159,8 @@ export class Emote {
     public static SIX_SHOOTER_ICON = new Emote("<:six_shooter_icon:1266653302565634091>");
     public static UNFETTERED_GAME_BALL_ICON = new Emote("<:unfettered_game_ball_icon:1266653309574447134>");
     public static CANNON_ROTOR_ICON = new Emote("<:cannon_rotor_icon:1266653316750901248>");
-    public static JANE_DOE_WEAPON_ICON = new Emote("<:jane_doe_weapon_icon:1266653326184022087>");
-    public static QINGYI_WEAPON_ICON = new Emote("<:qingyi_weapon_icon:1266653331976355871>");
+    public static SHARPENED_STINGER_ICON = new Emote("<:sharpened_stinger_icon:1266653326184022087>");
+    public static ICE_JADE_TEAPOT_ICON = new Emote("<:ice_jade_teapot_icon:1266653331976355871>");
 
     public static PENGUINBOO_ICON = new Emote("<:penguinboo_icon:1267340979904581753>");
     public static ROCKETBOO_ICON = new Emote("<:rocketboo_icon:1267341042756092015>");
@@ -241,7 +241,7 @@ export class Emote {
             "13009": Emote.ELECTROLIP_GLOSS_ICON,
             "13010": Emote.BUNNY_BAND_ICON,
             "13011": Emote.SPRING_EMBRACE_ICON,
-            "13013": Emote.WEAPON_11_EVENT_ICON,
+            "13013": Emote.GILDED_BLOSSOM_ICON,
             "13101": Emote.DEMARA_BATTERY_MARK_II_ICON,
             "13103": Emote.THE_VAULT_ICON,
             "13106": Emote.HOUSEKEEPER_ICON,
@@ -250,7 +250,7 @@ export class Emote {
             "13112": Emote.BIG_CYLINDER_ICON,
             "13113": Emote.BASHFUL_DEMON_ICON,
             "13115": Emote.KABOOM_THE_CANNON_ICON,
-            "13127": Emote.SETH_WEAPON_ICON,
+            "13127": Emote.PEACEKEEPER_SPECIALIZED_ICON,
             "13128": Emote.ROARING_RIDE_ICON,
             "14001": Emote.CANNON_ROTOR_ICON,
             "14002": Emote.UNFETTERED_GAME_BALL_ICON,
@@ -263,8 +263,8 @@ export class Emote {
             "14119": Emote.DEEP_SEA_VISITOR_ICON,
             "14121": Emote.WEEPING_CRADLE_ICON,
             "14124": Emote.RIOT_SUPPRESSOR_MARK_VI_ICON,
-            "14125": Emote.QINGYI_WEAPON_ICON,
-            "14126": Emote.JANE_DOE_WEAPON_ICON,
+            "14125": Emote.ICE_JADE_TEAPOT_ICON,
+            "14126": Emote.SHARPENED_STINGER_ICON,
 
             "53001": Emote.PENGUINBOO_ICON,
             "53002": Emote.LUCKYBOO_ICON,

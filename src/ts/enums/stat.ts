@@ -22,7 +22,7 @@ export class Stat {
     ) {
     }
 
-    public getFormattedStatForWEngine(statValue: number) {
+    public getFormattedStatForWEngine(statValue: number): string {
         switch(this) {
             case Stat.ATK_PERCENT:
                 return `${statValue}%`;

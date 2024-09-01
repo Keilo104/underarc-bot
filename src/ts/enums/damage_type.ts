@@ -1,4 +1,5 @@
 import {Emote} from "./emote";
+import {Element} from "./element";
 
 export class DamageType {
     public static SLASH = new DamageType("101", "Slash", Emote.SLASH_ICON);
@@ -14,7 +15,7 @@ export class DamageType {
     ) {
     }
 
-    public static GetDamageTypeFromId(id: string | number | null | undefined) {
+    public static GetDamageTypeFromId(id: string | number | null | undefined): DamageType {
         switch(`${id}`) {
             case "101":
                 return DamageType.SLASH;

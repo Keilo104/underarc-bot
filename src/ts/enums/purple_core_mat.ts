@@ -18,7 +18,7 @@ export class PurpleCoreMat {
     ) {
     }
 
-    public static GetPurpleCoreMatFromId(id: string | number | null) {
+    public static GetPurpleCoreMatFromId(id: string | number | null): PurpleCoreMat {
         switch(`${id}`) {
             case "110501":
                 return PurpleCoreMat.MURDEROUS_OBITUARY;

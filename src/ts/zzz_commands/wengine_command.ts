@@ -1,7 +1,12 @@
 import {JsonResponse} from "../util/json_reponse";
 import {InteractionResponseFlags, InteractionResponseType} from "discord-interactions";
 import {WEngine} from "../model/WEngine";
-import {printWEngine} from "./wengine_commands/print_wengine";
+import {
+    printWEngine,
+    printWEngineAtLevel,
+    printWEngineAtLevelAndRefinement,
+    printWEngineAtRefinement
+} from "./wengine_commands/print_wengine";
 
 function translateWEngine(wengine: string | null): string | null {
     return wengine;
@@ -30,11 +35,11 @@ export async function wengineCommandHandler(interaction: any, env: any): Promise
         const wengine = await WEngine.WEngineFromId(wengineId, env);
 
         if(levelInput !== null && refinementInput !== null) {
-
+            embed = printWEngineAtLevelAndRefinement(wengine, levelInput, refinementInput);
         } else if (levelInput !== null) {
-
+            embed = printWEngineAtLevel(wengine, levelInput);
         } else if (refinementInput !== null) {
-
+            embed = printWEngineAtRefinement(wengine, refinementInput);
         } else {
             embed = printWEngine(wengine);
         }

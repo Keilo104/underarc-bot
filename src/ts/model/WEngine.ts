@@ -3,6 +3,8 @@ import {Rarity} from "../enums/rarity";
 import {Specialty} from "../enums/specialty";
 import {Stat} from "../enums/stat";
 import {ObtainMethod} from "../enums/gear_obtain_method";
+import {TreatString} from "../util/treat_string";
+import {GetBoostForLevel} from "../util/get_boost_per_level";
 
 export class WEngine {
     public id: number | null = null;
@@ -29,6 +31,68 @@ export class WEngine {
     public descValues: string[] = [];
     public descOverride: string | null = null;
 
+    public meshedDescription(): string {
+        if(this.descOverride !== null)
+            return this.descOverride;
+
+        let meshedDescription = "";
+        let description1 = this.descValues[0].split(" ");
+        let description2 = this.descValues[1].split(" ");
+        let description3 = this.descValues[2].split(" ");
+        let description4 = this.descValues[3].split(" ");
+        let description5 = this.descValues[4].split(" ");
+
+        for(let i = 0; i < description1.length ; i++) {
+            if (description1[i] !== description2[i]) {
+                let extrasStart = "";
+                let extrasEnd = "";
+
+                ["+"].forEach((item) => {
+                    if(description1[i].startsWith(item)) {
+                        extrasStart = `${extrasStart}${item}`
+                        description1[i] = description1[i].slice(item.length, description1[i].length);
+                        description2[i] = description2[i].slice(item.length, description2[i].length);
+                        description3[i] = description3[i].slice(item.length, description3[i].length);
+                        description4[i] = description4[i].slice(item.length, description4[i].length);
+                        description5[i] = description5[i].slice(item.length, description5[i].length);
+                    }
+                });
+
+                [",", ".", "%", "/s", "s"].forEach((item) => {
+                    if(description1[i].endsWith(item)) {
+                        extrasEnd = `${item}${extrasEnd}`
+                        description1[i] = description1[i].slice(0, -item.length);
+                        description2[i] = description2[i].slice(0, -item.length);
+                        description3[i] = description3[i].slice(0, -item.length);
+                        description4[i] = description4[i].slice(0, -item.length);
+                        description5[i] = description5[i].slice(0, -item.length);
+                    }
+                });
+
+                meshedDescription =
+                    `${meshedDescription} **${extrasStart}${description1[i]}/${description2[i]}/` +
+                    `${description3[i]}/${description4[i]}/${description5[i]}${extrasEnd}**`;
+
+            } else {
+                meshedDescription = `${meshedDescription} ${description1[i]}`;
+            }
+        }
+
+        return meshedDescription;
+    }
+
+    public mainStatAtLevel(level: number): number {
+        return Math.floor(
+          this.mainStatBase * (1+ ((this.mainStatScaling[level] + GetBoostForLevel(this.mainStatBoosts, level)) / 10000))
+        );
+    }
+
+    public subStatAtLevel(level: number): number {
+        return Math.floor(
+          this.subStatBase * (1 + (GetBoostForLevel(this.subStatBoosts, level) / 10000))
+        );
+    }
+
     private loadHelper() {
         const wengineHelper = require(`../../data/helpers/wengine_extra_infos.json`);
 
@@ -36,7 +100,7 @@ export class WEngine {
             this.obtainMethod = ObtainMethod.GetObtainMethodFromString(wengineHelper[`${this.id}`]["obtain"]);
 
         if (this.id && "override_description" in wengineHelper[`${this.id}`])
-            this.descOverride = wengineHelper[`${this.id}`]["override_description"];
+            this.descOverride = TreatString(wengineHelper[`${this.id}`]["override_description"]);
 
         if (this.id && "signature" in wengineHelper[`${this.id}`])
             console.log("HEEEEEEEEEEEEEEEELP");
@@ -88,6 +152,10 @@ export class WEngine {
 
         wengine.descName = wengineJson["Refinements"]["Name"];
         wengine.descValues = wengineJson["Refinements"]["Descriptions"];
+
+        for(let i = 0; i < wengine.descValues.length; i++) {
+            wengine.descValues[i] = TreatString(wengine.descValues[i]);
+        }
 
         wengine.setScalingsFromRarity();
         wengine.loadHelper();

@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="parse everything" type="CompoundRunConfigurationType">
+    <toRun name="parse_agent_data" type="PythonConfigurationType" />
+    <toRun name="parse_wengine_data" type="PythonConfigurationType" />
+    <toRun name="parse_wengine_general_data" type="PythonConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>

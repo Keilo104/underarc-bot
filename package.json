@@ -9,9 +9,9 @@
     "start": "wrangler dev",
     "deploy": "wrangler deploy",
     "compile_register": "tsc -t es2021 -m esnext --moduleResolution Bundler --outDir dist src/ts/register.ts",
-    "run_register": "node dist/ts/register.js",
+    "run_register": "node dist/register.js",
     "compile_update_kv": "tsc -t es2021 -m esnext --moduleResolution Bundler --outDir dist src/ts/update_kv.ts",
-    "run_update_kv": "node dist/ts/update_kv.js",
+    "run_update_kv": "node dist/update_kv.js",
     "register": "npm run compile_register && npm run run_register",
     "update_kv": "npm run compile_update_kv && npm run run_update_kv",
     "ngrok": "ngrok http --domain=renewing-tapir-trivially.ngrok-free.app 8787"

@@ -1,8 +1,9 @@
 import json
+import os
 
 
 def load_initial_info(valks, translation_json):
-    with open(f"C:/facul/ZenlessData/FileCfg/AvatarBaseTemplateTb.json", "r", encoding="utf-8") as json_file:
+    with open(f"{zenless_data_path}/FileCfg/AvatarBaseTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
     for item in json_to_parse["KHHABHLHAFG"]:
@@ -20,7 +21,7 @@ def load_initial_info(valks, translation_json):
         valks[i]["DamageType"] = item["LFGOHEMCDLN"]
 
 def load_avatar_battle_template(valks, translation_json):
-    with open(f"C:/facul/ZenlessData/FileCfg/AvatarBattleTemplateTb.json", "r", encoding="utf-8") as json_file:
+    with open(f"{zenless_data_path}/FileCfg/AvatarBattleTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
     for item in json_to_parse["KHHABHLHAFG"]:
@@ -43,7 +44,7 @@ def load_avatar_battle_template(valks, translation_json):
         valks[i]["Stats"]["BaseAnomalyProficiency"] = item["CEADDLHLBHD"]
 
 def load_avatar_level_advance_template(valks, translation_json):
-    with open(f"C:/facul/ZenlessData/FileCfg/AvatarLevelAdvanceTemplateTb.json", "r", encoding="utf-8") as json_file:
+    with open(f"{zenless_data_path}/FileCfg/AvatarLevelAdvanceTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
     for item in json_to_parse["KHHABHLHAFG"]:
@@ -63,7 +64,7 @@ def load_avatar_level_advance_template(valks, translation_json):
         valks[valk_id]["DefBoosts"][boost_id-1] = item["HOLJIPFJMFI"]
 
 def load_avatar_ui_template(valks, translation_json):
-    with open(f"C:/facul/ZenlessData/FileCfg/AvatarUITemplateTb.json", "r", encoding="utf-8") as json_file:
+    with open(f"{zenless_data_path}/FileCfg/AvatarUITemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
     for item in json_to_parse["KHHABHLHAFG"]:
@@ -75,7 +76,7 @@ def load_avatar_ui_template(valks, translation_json):
         valks[i]["SigWeaponId"] = item["JOCBHGLDHGD"]
 
 def load_rarity(valks, translation_json):
-    with open(f"C:/facul/ZenlessData/FileCfg/ItemTemplateTb.json", "r", encoding="utf-8") as json_file:
+    with open(f"{zenless_data_path}/FileCfg/ItemTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
     for item in json_to_parse["KHHABHLHAFG"]:
@@ -86,7 +87,7 @@ def load_rarity(valks, translation_json):
 
 
 def load_avatar_talent_template(valks, translation_json):
-    with open(f"C:/facul/ZenlessData/FileCfg/AvatarTalentTemplateTb.json", "r", encoding="utf-8") as json_file:
+    with open(f"{zenless_data_path}/FileCfg/AvatarTalentTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
     for item in json_to_parse["KHHABHLHAFG"]:
@@ -105,7 +106,7 @@ def load_avatar_talent_template(valks, translation_json):
         }
 
 def load_avatar_passive_skill_template(valks, translation_json):
-    with open(f"C:/facul/ZenlessData/FileCfg/AvatarPassiveSkillTemplateTb.json", "r", encoding="utf-8") as json_file:
+    with open(f"{zenless_data_path}/FileCfg/AvatarPassiveSkillTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
     for item in json_to_parse["KHHABHLHAFG"]:
@@ -137,7 +138,7 @@ def load_avatar_passive_skill_template(valks, translation_json):
                     valks[i]["CoreSkillInfo"]["GoldenCoreMat"] = material["NADBGLEMMEH"]
 
 def load_avatar_skill_level_template(valks, translation_json):
-    with open(f"C:/facul/ZenlessData/FileCfg/AvatarSkillLevelTemplateTb.json", "r", encoding="utf-8") as json_file:
+    with open(f"{zenless_data_path}/FileCfg/AvatarSkillLevelTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
     for item in json_to_parse["KHHABHLHAFG"]:
@@ -162,7 +163,9 @@ def load_avatar_skill_level_template(valks, translation_json):
                 valks[i]["CoreSkillLevels"]["Descriptions"][item["KOGIEMPIGGB"]-1] += [translation_json[name] if name in translation_json else name]
 
 
-with open(f"C:/facul/ZenlessData/TextMap/TextMap_ENTemplateTb.json", "r", encoding="utf-8") as j_file:
+zenless_data_path = os.environ["ZENLESS_DATA_PATH"]
+
+with open(f"{zenless_data_path}/TextMap/TextMap_ENTemplateTb.json", "r", encoding="utf-8") as j_file:
     trans_json = json.load(j_file)
 
 valk_dict = {}
@@ -177,7 +180,7 @@ load_avatar_skill_level_template(valk_dict, trans_json)
 load_avatar_talent_template(valk_dict, trans_json)
 
 for x in valk_dict.values():
-    with open(f"../data/agents/{x['Id']}.json", "w", encoding="utf-8") as json_file_to_write:
+    with open(f"src/data/agents/{x['Id']}.json", "w", encoding="utf-8") as json_file_to_write:
         json_file_to_write.write(json.dumps(x, indent=2))
 
     pass

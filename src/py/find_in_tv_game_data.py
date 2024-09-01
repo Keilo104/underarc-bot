@@ -1,5 +1,5 @@
-import os
 import json
+import os
 
 
 def look_in_json(json_to_look, what_to_look_for):
@@ -24,12 +24,14 @@ def look_in_json(json_to_look, what_to_look_for):
     return flag
 
 
+zenless_data_path = os.environ["ZENLESS_DATA_PATH"]
+
 places_to_look = ["FileCfg", "Data", "TextMap"]
-what_to_look_for = ["44610", 44610]
+what_to_look_for = ["3600", 3600]
 
 for directory in places_to_look:
-    for json_file_path in os.listdir(f"C:/facul/ZenlessData/{directory}"):
-        with open(f"C:/facul/ZenlessData/{directory}/{json_file_path}", "r", encoding="utf-8") as json_file:
+    for json_file_path in os.listdir(f"{zenless_data_path}/{directory}"):
+        with open(f"{zenless_data_path}/{directory}/{json_file_path}", "r", encoding="utf-8") as json_file:
             json_to_look = json.load(json_file)
 
             if look_in_json(json_to_look, what_to_look_for):

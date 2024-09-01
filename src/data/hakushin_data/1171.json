@@ -318,7 +318,18 @@
                 "1171001": {
                   "Main": 4480,
                   "Growth": 410,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 4480,
+                  "DamagePercentageGrowth": 410,
+                  "StunRatio": 1870,
+                  "StunRatioGrowth": 90,
+                  "SpRecovery": 6100,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 36380,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 1694,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -329,7 +340,18 @@
                 "1171002": {
                   "Main": 4350,
                   "Growth": 400,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 4350,
+                  "DamagePercentageGrowth": 400,
+                  "StunRatio": 3080,
+                  "StunRatioGrowth": 140,
+                  "SpRecovery": 10070,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 59920,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 0,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -340,7 +362,18 @@
                 "1171003": {
                   "Main": 7170,
                   "Growth": 660,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 7170,
+                  "DamagePercentageGrowth": 660,
+                  "StunRatio": 4780,
+                  "StunRatioGrowth": 220,
+                  "SpRecovery": 15620,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 92876,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 4337,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -351,7 +384,18 @@
                 "1171004": {
                   "Main": 6660,
                   "Growth": 610,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 6660,
+                  "DamagePercentageGrowth": 610,
+                  "StunRatio": 3040,
+                  "StunRatioGrowth": 140,
+                  "SpRecovery": 9920,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 59064,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 2754,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -362,7 +406,18 @@
                 "1171005": {
                   "Main": 9630,
                   "Growth": 880,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 9630,
+                  "DamagePercentageGrowth": 880,
+                  "StunRatio": 5200,
+                  "StunRatioGrowth": 240,
+                  "SpRecovery": 16990,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 101008,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 4719,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -373,7 +428,18 @@
                 "1171001": {
                   "Main": 1870,
                   "Growth": 90,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 4480,
+                  "DamagePercentageGrowth": 410,
+                  "StunRatio": 1870,
+                  "StunRatioGrowth": 90,
+                  "SpRecovery": 6100,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 36380,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 1694,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -384,7 +450,18 @@
                 "1171002": {
                   "Main": 3080,
                   "Growth": 140,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 4350,
+                  "DamagePercentageGrowth": 400,
+                  "StunRatio": 3080,
+                  "StunRatioGrowth": 140,
+                  "SpRecovery": 10070,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 59920,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 0,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -395,7 +472,18 @@
                 "1171003": {
                   "Main": 4780,
                   "Growth": 220,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 7170,
+                  "DamagePercentageGrowth": 660,
+                  "StunRatio": 4780,
+                  "StunRatioGrowth": 220,
+                  "SpRecovery": 15620,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 92876,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 4337,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -406,7 +494,18 @@
                 "1171004": {
                   "Main": 3040,
                   "Growth": 140,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 6660,
+                  "DamagePercentageGrowth": 610,
+                  "StunRatio": 3040,
+                  "StunRatioGrowth": 140,
+                  "SpRecovery": 9920,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 59064,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 2754,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -417,7 +516,18 @@
                 "1171005": {
                   "Main": 5200,
                   "Growth": 240,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 9630,
+                  "DamagePercentageGrowth": 880,
+                  "StunRatio": 5200,
+                  "StunRatioGrowth": 240,
+                  "SpRecovery": 16990,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 101008,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 4719,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             }
@@ -433,7 +543,18 @@
                 "1171006": {
                   "Main": 12540,
                   "Growth": 1140,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 12540,
+                  "DamagePercentageGrowth": 1140,
+                  "StunRatio": 9650,
+                  "StunRatioGrowth": 440,
+                  "SpRecovery": 15780,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 187678,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 9598,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -444,7 +565,18 @@
                 "1171007": {
                   "Main": 23280,
                   "Growth": 2120,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 23280,
+                  "DamagePercentageGrowth": 2120,
+                  "StunRatio": 17910,
+                  "StunRatioGrowth": 820,
+                  "SpRecovery": 29310,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 348392,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 17111,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -455,7 +587,18 @@
                 "1171006": {
                   "Main": 9650,
                   "Growth": 440,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 12540,
+                  "DamagePercentageGrowth": 1140,
+                  "StunRatio": 9650,
+                  "StunRatioGrowth": 440,
+                  "SpRecovery": 15780,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 187678,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 9598,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -466,7 +609,18 @@
                 "1171007": {
                   "Main": 17910,
                   "Growth": 820,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 23280,
+                  "DamagePercentageGrowth": 2120,
+                  "StunRatio": 17910,
+                  "StunRatioGrowth": 820,
+                  "SpRecovery": 29310,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 348392,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 17111,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             }
@@ -546,7 +700,18 @@
                 "1171014": {
                   "Main": 6790,
                   "Growth": 620,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 6790,
+                  "DamagePercentageGrowth": 620,
+                  "StunRatio": 3400,
+                  "StunRatioGrowth": 160,
+                  "SpRecovery": 11100,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 66126,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 3083,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -557,7 +722,18 @@
                 "1171014": {
                   "Main": 3400,
                   "Growth": 160,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 6790,
+                  "DamagePercentageGrowth": 620,
+                  "StunRatio": 3400,
+                  "StunRatioGrowth": 160,
+                  "SpRecovery": 11100,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 66126,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 3083,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             }
@@ -573,7 +749,18 @@
                 "1171015": {
                   "Main": 21970,
                   "Growth": 2000,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 21970,
+                  "DamagePercentageGrowth": 2000,
+                  "StunRatio": 19440,
+                  "StunRatioGrowth": 890,
+                  "SpRecovery": 13800,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 164138,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 7666,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -584,7 +771,18 @@
                 "1171015": {
                   "Main": 19440,
                   "Growth": 890,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 21970,
+                  "DamagePercentageGrowth": 2000,
+                  "StunRatio": 19440,
+                  "StunRatioGrowth": 890,
+                  "SpRecovery": 13800,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 164138,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 7666,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             }
@@ -664,7 +862,18 @@
                 "1171008": {
                   "Main": 5780,
                   "Growth": 530,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 5780,
+                  "DamagePercentageGrowth": 530,
+                  "StunRatio": 5780,
+                  "StunRatioGrowth": 270,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 112564,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 5251,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -675,7 +884,18 @@
                 "1171009": {
                   "Main": 6240,
                   "Growth": 570,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 6240,
+                  "DamagePercentageGrowth": 570,
+                  "StunRatio": 6240,
+                  "StunRatioGrowth": 290,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 121338,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 5668,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -686,7 +906,18 @@
                 "1171008": {
                   "Main": 5780,
                   "Growth": 270,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 5780,
+                  "DamagePercentageGrowth": 530,
+                  "StunRatio": 5780,
+                  "StunRatioGrowth": 270,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 112564,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 5251,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -697,7 +928,18 @@
                 "1171009": {
                   "Main": 6240,
                   "Growth": 290,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 6240,
+                  "DamagePercentageGrowth": 570,
+                  "StunRatio": 6240,
+                  "StunRatioGrowth": 290,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 121338,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 5668,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             }
@@ -713,7 +955,18 @@
                 "1171010": {
                   "Main": 40910,
                   "Growth": 3720,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 40910,
+                  "DamagePercentageGrowth": 3720,
+                  "StunRatio": 31450,
+                  "StunRatioGrowth": 1430,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 868840,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 33968,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -724,7 +977,18 @@
                 "1171010": {
                   "Main": 31450,
                   "Growth": 1430,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 40910,
+                  "DamagePercentageGrowth": 3720,
+                  "StunRatio": 31450,
+                  "StunRatioGrowth": 1430,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 868840,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 33968,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -735,7 +999,18 @@
                 "1171011": {
                   "Main": 20500,
                   "Growth": 1870,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 20500,
+                  "DamagePercentageGrowth": 1870,
+                  "StunRatio": 15500,
+                  "StunRatioGrowth": 710,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 432280,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 16786,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -746,7 +1021,18 @@
                 "1171011": {
                   "Main": 15500,
                   "Growth": 710,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 20500,
+                  "DamagePercentageGrowth": 1870,
+                  "StunRatio": 15500,
+                  "StunRatioGrowth": 710,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 432280,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 16786,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -774,7 +1060,18 @@
                 "1171012": {
                   "Main": 76700,
                   "Growth": 6980,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 76700,
+                  "DamagePercentageGrowth": 6980,
+                  "StunRatio": 53360,
+                  "StunRatioGrowth": 2430,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 1278008,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 48000,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -785,7 +1082,18 @@
                 "1171012": {
                   "Main": 53360,
                   "Growth": 2430,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 76700,
+                  "DamagePercentageGrowth": 6980,
+                  "StunRatio": 53360,
+                  "StunRatioGrowth": 2430,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 1278008,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 48000,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -796,7 +1104,18 @@
                 "1171013": {
                   "Main": 37120,
                   "Growth": 3380,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 37120,
+                  "DamagePercentageGrowth": 3380,
+                  "StunRatio": 25820,
+                  "StunRatioGrowth": 1180,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 618460,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 23226,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -807,7 +1126,18 @@
                 "1171013": {
                   "Main": 25820,
                   "Growth": 1180,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 37120,
+                  "DamagePercentageGrowth": 3380,
+                  "StunRatio": 25820,
+                  "StunRatioGrowth": 1180,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 618460,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 23226,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -895,7 +1225,18 @@
                 "1171016": {
                   "Main": 68090,
                   "Growth": 6190,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 68090,
+                  "DamagePercentageGrowth": 6190,
+                  "StunRatio": 24200,
+                  "StunRatioGrowth": 1100,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 1893900,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 100296,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -906,7 +1247,18 @@
                 "1171016": {
                   "Main": 24200,
                   "Growth": 1100,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 68090,
+                  "DamagePercentageGrowth": 6190,
+                  "StunRatio": 24200,
+                  "StunRatioGrowth": 1100,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 1893900,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 100296,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             }
@@ -922,7 +1274,18 @@
                 "1171017": {
                   "Main": 201220,
                   "Growth": 18300,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 201220,
+                  "DamagePercentageGrowth": 18300,
+                  "StunRatio": 10640,
+                  "StunRatioGrowth": 490,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 0,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 86116,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -933,7 +1296,18 @@
                 "1171017": {
                   "Main": 10640,
                   "Growth": 490,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 201220,
+                  "DamagePercentageGrowth": 18300,
+                  "StunRatio": 10640,
+                  "StunRatioGrowth": 490,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 0,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 86116,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             }
@@ -1013,7 +1387,18 @@
                 "1171018": {
                   "Main": 8440,
                   "Growth": 770,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 8440,
+                  "DamagePercentageGrowth": 770,
+                  "StunRatio": 8440,
+                  "StunRatioGrowth": 390,
+                  "SpRecovery": 13800,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 164138,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 7666,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -1024,7 +1409,18 @@
                 "1171018": {
                   "Main": 8440,
                   "Growth": 390,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 8440,
+                  "DamagePercentageGrowth": 770,
+                  "StunRatio": 8440,
+                  "StunRatioGrowth": 390,
+                  "SpRecovery": 13800,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 164138,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 7666,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             }
@@ -1040,7 +1436,18 @@
                 "1171019": {
                   "Main": 27130,
                   "Growth": 1240,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 0,
+                  "DamagePercentageGrowth": 0,
+                  "StunRatio": 27130,
+                  "StunRatioGrowth": 1240,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 142738,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 0,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -1051,7 +1458,18 @@
                 "1171020": {
                   "Main": 34280,
                   "Growth": 1560,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 0,
+                  "DamagePercentageGrowth": 0,
+                  "StunRatio": 34280,
+                  "StunRatioGrowth": 1560,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 249738,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 0,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -1062,7 +1480,18 @@
                 "1171021": {
                   "Main": 16680,
                   "Growth": 760,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 0,
+                  "DamagePercentageGrowth": 0,
+                  "StunRatio": 16680,
+                  "StunRatioGrowth": 760,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 249738,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 0,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             }
@@ -1078,7 +1507,18 @@
                 "1171022": {
                   "Main": 31990,
                   "Growth": 2910,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 31990,
+                  "DamagePercentageGrowth": 2910,
+                  "StunRatio": 27520,
+                  "StunRatioGrowth": 1260,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 709196,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 27047,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             },
@@ -1089,7 +1529,18 @@
                 "1171022": {
                   "Main": 27520,
                   "Growth": 1260,
-                  "Format": "%"
+                  "Format": "%",
+                  "DamagePercentage": 31990,
+                  "DamagePercentageGrowth": 2910,
+                  "StunRatio": 27520,
+                  "StunRatioGrowth": 1260,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 709196,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 27047,
+                  "SpConsume": 0,
+                  "AttackData": []
                 }
               }
             }

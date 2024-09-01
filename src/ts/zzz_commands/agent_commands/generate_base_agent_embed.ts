@@ -14,6 +14,12 @@ export function generateBaseAgentEmbed(agent: Agent) {
         fields: [],
     }
 
+    agentEmbed.fields.push({
+        name: "", inline: false,
+        value: "Signature weapon placeholder field"
+    })
+
+
     if (agent.releasePatch == null)
         agentEmbed.footer = {
             text:
@@ -27,11 +33,6 @@ export function generateBaseAgentEmbed(agent: Agent) {
                 "This entry is from a future version, all information on it could be " +
                 "inaccurate and is subject to changes before release."
         }
-
-    agentEmbed.fields.push({
-        name: "", inline: false,
-        value: "Signature weapon placeholder field"
-    })
 
     return agentEmbed;
 }

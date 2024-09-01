@@ -1,6 +1,6 @@
 import {Agent} from "../../model/Agent";
 
-export function generateBaseAgentEmbed(agent: Agent) {
+export function generateBaseAgentEmbed(agent: Agent): any {
     const agentEmbed: { [k: string]: any } = {
         title: agent.fullName ? agent.fullName : agent.name,
         description:
@@ -16,8 +16,10 @@ export function generateBaseAgentEmbed(agent: Agent) {
 
     agentEmbed.fields.push({
         name: "", inline: false,
-        value: "Signature weapon placeholder field"
-    })
+        value:
+            `${agent.name}'s signature W-Engine is ` +
+            `**blablabla**`
+    });
 
 
     if (agent.releasePatch == null)

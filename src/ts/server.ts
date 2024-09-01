@@ -5,12 +5,13 @@ import {
     EIGHT_BALL_COMMAND,
     GUILD_INSTALL_COMMAND,
     PING_COMMAND,
-    USER_INSTALL_COMMAND,
+    USER_INSTALL_COMMAND, WENGINE_COMMAND,
 } from "./commands";
 import { Emote } from "./enums/emote";
 import { FigureOutUsername } from "./util/figure_out_username";
 import {JsonResponse} from "./util/json_reponse";
 import {agentCommandHandler } from "./zzz_commands/agent_command";
+import {wengineCommandHandler} from "./zzz_commands/wengine_command";
 
 const router = AutoRouter();
 
@@ -115,6 +116,9 @@ router.post("/", async (request: IRequest, env: any) => {
 
             case AGENT_COMMAND.name.toLowerCase():
                 return await agentCommandHandler(interaction, env);
+
+            case WENGINE_COMMAND.name.toLowerCase():
+                return await wengineCommandHandler(interaction, env);
 
             default:
                 return new JsonResponse({ error: "Unknown Type" }, { status: 400 })

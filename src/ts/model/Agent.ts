@@ -17,6 +17,7 @@ export class Agent {
     public iconImageUrl: string = "https://i.imgur.com/lQlL7DG.png";
     public embedColor: number = 0xffffff;
     public releasePatch: number | null = 1;
+    public emote: Emote = Emote.UNKNOWN_ICON;
 
     public rarity: Rarity = Rarity.UNKNOWN;
     public faction: Faction = Faction.UNKNOWN;
@@ -51,7 +52,7 @@ export class Agent {
     public coreSkillNames: string[] = [];
     public coreSkillDescs: string[][] = [];
 
-    public loadFromHelper() {
+    private loadFromHelper() {
         const agentHelper = require(`../../data/helpers/agent_extra_infos.json`);
 
         if (this.id && "override_full_name" in agentHelper[`${this.id}`])
@@ -163,49 +164,32 @@ export class Agent {
     }
 
     public firstCoreStatAtLevel(level: number): string {
-        switch(this.firstCoreStat) {
-            case Stat.IMPACT:
-                return `${this.baseImpact + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level)}`
-
-            case Stat.ANOMALY_MASTERY:
-                return `${this.baseAnomalyMastery + Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level)}`
-
-            case Stat.ENERGY_REGEN:
-                return `${1.2 + (Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level) / 100)}/s`;
-
-            case Stat.CRIT_RATE:
-                return `${5 + (Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level) / 100)}%`;
-
-            case Stat.CRIT_DMG:
-                return `${50 + (Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level) / 100)}%`;
-
-            case Stat.PEN_RATIO:
-                return `${Agent.GetCoreBoostForLevel(this.firstCoreBoosts, level) / 100}%`;
-
-            default:
-                return `0`;
-        }
+        return this.coreStatAtLevel(level, this.firstCoreStat, this.firstCoreBoosts);
     }
 
     public secondCoreStatAtLevel(level: number): string {
-        switch(this.secondCoreStat) {
+        return this.coreStatAtLevel(level, this.secondCoreStat, this.secondCoreBoosts);
+    }
+
+    private coreStatAtLevel(level: number, stat: Stat, boostArray: number[]): string {
+        switch(stat) {
             case Stat.IMPACT:
-                return `${this.baseImpact + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level)}`
+                return `${this.baseImpact + Agent.GetCoreBoostForLevel(boostArray, level)}`
 
             case Stat.ANOMALY_MASTERY:
-                return `${this.baseAnomalyMastery + Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level)}`
+                return `${this.baseAnomalyMastery + Agent.GetCoreBoostForLevel(boostArray, level)}`
 
             case Stat.ENERGY_REGEN:
-                return `${1.2 + (Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level) / 100)}/s`;
+                return `${1.2 + (Agent.GetCoreBoostForLevel(boostArray, level) / 100)}/s`;
 
             case Stat.CRIT_RATE:
-                return `${5 + (Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level) / 100)}%`;
+                return `${5 + (Agent.GetCoreBoostForLevel(boostArray, level) / 100)}%`;
 
             case Stat.CRIT_DMG:
-                return `${50 + (Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level) / 100)}%`;
+                return `${50 + (Agent.GetCoreBoostForLevel(boostArray, level) / 100)}%`;
 
             case Stat.PEN_RATIO:
-                return `${Agent.GetCoreBoostForLevel(this.secondCoreBoosts, level) / 100}%`;
+                return `${Agent.GetCoreBoostForLevel(boostArray, level) / 100}%`;
 
             default:
                 return `0`;
@@ -280,7 +264,7 @@ export class Agent {
     }
 
     private static AgentFromSelfData(agentJson: any): Agent {
-        let agent = new Agent();
+        const agent = new Agent();
 
         agent.id = agentJson["Id"];
         agent.name = agentJson["Name"];
@@ -336,12 +320,14 @@ export class Agent {
             }
         }
 
+        agent.emote = Emote.GetEmoteFromId(`${agent.id}`);
+
         agent.loadFromHelper();
         return agent;
     }
 
     private static AgentFromHakushin(agentJson: any): Agent {
-        let agent = new Agent();
+        const agent = new Agent();
 
         agent.id = agentJson["Id"];
         agent.name = agentJson["Name"];
@@ -378,6 +364,8 @@ export class Agent {
                 agent.coreSkillDescs[1].push(TreatString(agentJson["Passive"]["Level"][level]["Desc"][1]));
             });
         }
+
+        agent.emote = Emote.GetEmoteFromId(`${agent.id}`);
 
         agent.loadFromHelper();
         return agent;

@@ -59,8 +59,42 @@ export const AGENT_COMMAND = {
             required: false,
             min_value: 0,
             max_value: 60,
-        }
-    ]
+        },
+    ],
+}
+
+export const WENGINE_COMMAND = {
+    name: "wengine",
+    type: 1,
+    integration_types: [ApplicationIntegrationType.GUILD_INSTALL, ApplicationIntegrationType.USER_INSTALL],
+    contexts: [InteractionContextType.GUILD, InteractionContextType.PRIVATE_CHANNEL],
+    description: "ask for information from a zzz w-engine!",
+    options: [
+        {
+            name: "w-engine",
+            description: "the w-engine you wish to ask for!",
+            type: 3,
+            required: true,
+        },
+
+        {
+            name: "level",
+            description: "level of the w-engine!",
+            type: 4,
+            required: false,
+            min_value: 0,
+            max_value: 60,
+        },
+
+        {
+            name: "refinement",
+            description: "refinement of the w-engine!",
+            type: 4,
+            required: false,
+            min_value: 1,
+            max_value: 5,
+        },
+    ],
 }
 
 export const EIGHT_BALL_COMMAND = {

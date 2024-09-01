@@ -11,9 +11,9 @@ export function printAgentStats(agent: Agent): any {
             `${Emote.HP_STAT_ICON.emote} **HP:** ${agent.hpAtLevel(1)} → ${agent.hpAtLevel(60)}` +
             `\n${Emote.ATK_STAT_ICON.emote} **ATK:** ${agent.atkAtLevel(1)} → ${agent.atkAtLevel(60)}` +
             `\n${Emote.DEF_STAT_ICON.emote} **DEF:** ${agent.defAtLevel(1)} → ${agent.defAtLevel(60)}` +
-            `${agent.specialFirstCoreStat() ? `\n${agent.firstCoreStat.emote.emote} **${agent.firstCoreStat.displayName}:** ` +
+            `${agent.specialFirstCoreStat() ? `\n${agent.firstCoreStat.emote.emote} **${agent.firstCoreStat.name}:** ` +
                 `${agent.firstCoreStatAtLevel(1)} → ${agent.firstCoreStatAtLevel(60)}` : ""}` +
-            `${agent.specialSecondCoreStat() ? `\n${agent.secondCoreStat.emote.emote} **${agent.secondCoreStat.displayName}:** ` + 
+            `${agent.specialSecondCoreStat() ? `\n${agent.secondCoreStat.emote.emote} **${agent.secondCoreStat.name}:** ` + 
                 `${agent.secondCoreStatAtLevel(1)} → ${agent.secondCoreStatAtLevel(60)}` : ""}` +
             `\n${Emote.IMPACT_STAT_ICON.emote} **Impact:** ${agent.impactAtLevel(1)}` +
             `${agent.scalesImpact() ? ` → ${agent.impactAtLevel(60)}` : ""}` +
@@ -35,9 +35,9 @@ export function printAgentStatsAtLevel(agent: Agent, level: number): any {
             `${Emote.HP_STAT_ICON.emote} **HP:** ${agent.hpAtLevel(level)}` +
             `\n${Emote.ATK_STAT_ICON.emote} **ATK:** ${agent.atkAtLevel(level)}` +
             `\n${Emote.DEF_STAT_ICON.emote} **DEF:** ${agent.defAtLevel(level)}` +
-            `${agent.specialFirstCoreStat() ? `\n${agent.firstCoreStat.emote.emote} **${agent.firstCoreStat.displayName}:** ` +
+            `${agent.specialFirstCoreStat() ? `\n${agent.firstCoreStat.emote.emote} **${agent.firstCoreStat.name}:** ` +
                 `${agent.firstCoreStatAtLevel(level)}` : ""}` +
-            `${agent.specialSecondCoreStat() ? `\n${agent.secondCoreStat.emote.emote} **${agent.secondCoreStat.displayName}:** ` + 
+            `${agent.specialSecondCoreStat() ? `\n${agent.secondCoreStat.emote.emote} **${agent.secondCoreStat.name}:** ` + 
                 `${agent.secondCoreStatAtLevel(level)}` : ""}` +
             `\n${Emote.IMPACT_STAT_ICON.emote} **Impact:** ${agent.impactAtLevel(level)}` +
             `\n${Emote.ANOMALY_MASTERY_STAT_ICON.emote} **Anomaly Mastery:** ${agent.anomalyMasteryAtLevel(level)}` +

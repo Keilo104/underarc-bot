@@ -1,7 +1,7 @@
 import {Agent} from "../../model/Agent";
 import {generateBaseAgentEmbed} from "./generate_base_agent_embed";
 
-export function printAgentCore(agent: Agent) {
+export function printAgentCore(agent: Agent): any {
     const agentEmbed = generateBaseAgentEmbed(agent);
 
     agentEmbed.fields.unshift({
@@ -12,9 +12,9 @@ export function printAgentCore(agent: Agent) {
     });
 
     agentEmbed.fields.unshift({
-        name: "Core Stat Lv0 → LvF", inline: false,
+        name: "Core stat", inline: false,
         value:
-            `${agent.firstCoreStat.emote.emote} **${agent.firstCoreStat.displayName}:** ` +
+            `${agent.firstCoreStat.emote.emote} **${agent.firstCoreStat.name}:** ` +
             `${agent.firstCoreStatAtLevel(1)} → ${agent.firstCoreStatAtLevel(60)}`
     });
 
@@ -22,13 +22,18 @@ export function printAgentCore(agent: Agent) {
         agentEmbed.fields.unshift({
             name: agent.coreSkillNames[i], inline: false,
             value: `${agent.coreSkillMeshedDescription(i)}`
-        })
+        });
     }
+
+    agentEmbed.fields.unshift({
+        name: `Core at Lv0 → LvF`, inline: false,
+        value: ``
+    });
 
     return agentEmbed;
 }
 
-export function printAgentCoreAtLevel(agent: Agent, level: number) {
+export function printAgentCoreAtLevel(agent: Agent, level: number): any {
     const agentEmbed = generateBaseAgentEmbed(agent);
     let coreLevels = [0, "A", "B", "C", "D", "E", "F"];
     let coreLevelToRealLevel = [0, 15, 25, 35, 45, 55, 60];
@@ -41,9 +46,9 @@ export function printAgentCoreAtLevel(agent: Agent, level: number) {
     });
 
     agentEmbed.fields.unshift({
-        name: `Core Stat at Lv${coreLevels[level]}`, inline: false,
+        name: `Core stat`, inline: false,
         value:
-            `${agent.firstCoreStat.emote.emote} **${agent.firstCoreStat.displayName}:** ` +
+            `${agent.firstCoreStat.emote.emote} **${agent.firstCoreStat.name}:** ` +
             `${agent.firstCoreStatAtLevel(coreLevelToRealLevel[level])}`
     });
 
@@ -53,6 +58,11 @@ export function printAgentCoreAtLevel(agent: Agent, level: number) {
             value: agent.coreSkillDescs[i][level]
         });
     }
+
+    agentEmbed.fields.unshift({
+        name: `Core at Lv${coreLevels[level]}`, inline: false,
+        value: ``
+    });
 
     return agentEmbed;
 }

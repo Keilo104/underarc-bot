@@ -39,14 +39,15 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
 
         else if (option["name"] == "level")
             levelInput = option["value"];
-    })
+    });
 
-    let agentId: string | null = translateAgent(agentInput);
+    const agentId: string | null = translateAgent(agentInput);
 
-    if(agentId && levelInput !== null) {
+    if(agentId) {
         const agent = await Agent.AgentFromId(agentId, env);
 
-        switch(whatInput) {
+        if(levelInput !== null) {
+            switch(whatInput) {
             case "stats":
                 embed = printAgentStatsAtLevel(agent, bindLevel(1, 60, levelInput));
                 break;
@@ -54,12 +55,10 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
             default:
             case "core":
                 embed = printAgentCoreAtLevel(agent, bindLevel(0, 6, levelInput));
-        }
+            }
 
-    } else if (agentId) {
-        const agent = await Agent.AgentFromId(agentId, env);
-
-        switch(whatInput) {
+        } else {
+            switch(whatInput) {
             case "stats":
                 embed = printAgentStats(agent);
                 break;
@@ -67,6 +66,7 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
             default:
             case "core":
                 embed = printAgentCore(agent);
+            }
         }
     }
 
@@ -87,5 +87,5 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
             content: "Couldn't figure out what you want. Maybe ping mama keilo about it?",
             flags: InteractionResponseFlags.EPHEMERAL,
         },
-    })
+    });
 }

@@ -1,16 +1,20 @@
 {
+  "12001": "12001",
   "pleniluna": "12001",
   "lunar pleniluna": "12001",
   "[lunar] pleniluna": "12001",
 
+  "12002": "12002",
   "decrescent": "12002",
   "lunar decrescent": "12002",
   "[lunar] decrescent": "12002",
 
+  "12003": "12003",
   "noviluna": "12003",
   "lunar noviluna": "12003",
   "[lunar] noviluna": "12003",
 
+  "12004": "12004",
   "mark 1": "12004",
   "mark": ["12004", "12005", "12006", "13101", "14124"],
   "reverb mark 1": "12004",
@@ -19,6 +23,7 @@
   "reverb mark i": "12004",
   "[reverb] mark i": "12004",
 
+  "12005": "12005",
   "mark 2": ["12005", "13101"],
   "reverb mark 2": "12005",
   "[reverb] mark 2": "12005",
@@ -26,6 +31,7 @@
   "reverb mark ii": "12005",
   "[reverb] mark ii": "12005",
 
+  "12006": "12006",
   "mark 3": "12006",
   "reverb mark 3": "12006",
   "[reverb] mark 3": "12006",
@@ -33,18 +39,22 @@
   "reverb mark iii": "12006",
   "[reverb] mark iii": "12006",
 
+  "12007": "12007",
   "revolver": ["12007", "54013"],
   "vortex revolver": "12007",
   "[vortex] revolver": "12007",
 
+  "12008": "12008",
   "arrow": "12008",
   "vortex arrow": "12008",
   "[vortex] arrow": "12008",
 
+  "12009": "12009",
   "hatchet": "12009",
   "vortex hatchet": "12009",
   "[vortex] hatchet": "12009",
 
+  "12010": "12010",
   "alpha": "12010",
   "magnetic storm alpha": "12010",
   "magnetic alpha": "12010",
@@ -53,6 +63,7 @@
   "[magnetic] alpha": "12010",
   "[storm] alpha": "12010",
 
+  "12011": "12011",
   "bravo": "12011",
   "magnetic storm bravo": "12011",
   "magnetic bravo": "12011",
@@ -61,6 +72,7 @@
   "[magnetic] bravo": "12011",
   "[storm] bravo": "12011",
 
+  "12012": "12012",
   "charlie": "12012",
   "magnetic storm charlie": "12012",
   "magnetic charlie": "12012",
@@ -69,34 +81,42 @@
   "[magnetic] charlie": "12012",
   "[storm] charlie": "12012",
 
+  "12013": "12013",
   "base": "12013",
   "identity base": "12013",
   "[identity] base": "12013",
 
+  "12014": "12014",
   "inflection": "12014",
   "identity inflection": "12014",
   "[identity] inflection": "12014",
 
+  "13001": "13001",
   "street superstar": "13001",
   "superstar": "13001",
   "street": "13001",
 
+  "13002": "13002",
   "time": "13002",
   "slice": "13002",
   "slice of time": "13002",
 
+  "13003": "13003",
   "rainforest": "13003",
   "gourmet": "13003",
   "rainforest gourmet": "13003",
 
+  "13004": "13004",
   "starlight": "13004",
   "engine": "13004",
   "starlight engine": "13004",
 
+  "13005": "13005",
   "steam": "13005",
   "oven": "13005",
   "steam oven": "13005",
 
+  "13006": "13006",
   "precious": "13006",
   "fossilized": "13006",
   "fossil": "13006",
@@ -107,16 +127,19 @@
   "core fossilized": "13006",
   "precious fossilized core": "13006",
 
+  "13007": "13007",
   "original": "13007",
   "transformer": "13007",
   "original transformer": "13007",
   "original transformers": "13007",
   "transformers": "13007",
 
+  "13008": "13008",
   "weeping": ["13008", "14121"],
   "gemini": "13008",
   "weeping gemini": "13008",
 
+  "13009": "13009",
   "electrolip gloss": "13009",
   "electro-lip gloss": "13009",
   "gloss": "13009",
@@ -132,12 +155,14 @@
   "bp anom": "13009",
   "dsl": "13009",
 
+  "13010": "13010",
   "bunny": "13010",
   "band": "13010",
   "bunny band": "13010",
   "asshole": "13010",
   "fleshlight": "13010",
 
+  "13011": "13011",
   "spring": "13011",
   "embrace": "13011",
   "spring embrace": "13011",
@@ -154,6 +179,7 @@
   "battlepass defence": "13011",
   "battlepass def": "13011",
 
+  "13013": "13013",
   "1.1 event": "13013",
   "1.1 event weapon": "13013",
   "1.1 event weap": "13013",
@@ -173,6 +199,7 @@
   "gilded": "13013",
   "blossom": "13013",
 
+  "13101": "13101",
   "demara": "13101",
   "battery": "13101",
   "demara battery": "13101",
@@ -183,16 +210,20 @@
   "demara mark ii": "13101",
   "demara battery mark ii": "13101",
 
+  "13103": "13103",
   "vault": "13103",
   "the vault": "13103",
 
+  "13106": "13106",
   "housekeeper": "13106",
   "house": "13106",
   "keeper": "13106",
 
+  "13108": "13108",
   "replica": "13108",
   "starlight engine replica": "13108",
 
+  "13111": "13111",
   "drill rig - red axis": "13111",
   "drill rig red axis": "13111",
   "drill rig": "13111",
@@ -200,18 +231,22 @@
   "drill": "13111",
   "drill weapon": "13111",
 
+  "13112": "13112",
   "big cylinder": "13112",
   "cylinder": "13112",
   "big": "13112",
 
+  "13113": "13113",
   "bashful demon": "13113",
   "bashful": "13113",
   "demon weapon": "13113",
 
+  "13115": "13115",
   "kaboom the cannon": "13115",
   "cannon": ["13115", "14001"],
   "kaboom": "13115",
 
+  "13127": "13127",
   "peacekeeper - specialized": "13127",
   "peacekeeper - specialised": "13127",
   "peacekeeper specialized": "13127",
@@ -220,10 +255,12 @@
   "specialized": "13127",
   "specialised": "13127",
 
+  "13128": "13128",
   "roaring ride": "13128",
   "roaring": "13128",
   "ride": "13128",
 
+  "14001": "14001",
   "cannon rotor": "14001",
   "rotor": "14001",
   "attack bp": "14001",
@@ -235,6 +272,7 @@
   "battlepass attack": "14001",
   "battlepass atk": "14001",
 
+  "14002": "14002",
   "unfettered game ball": "14002",
   "unfettered game": "14002",
   "unfettered ball": "14002",
@@ -250,6 +288,7 @@
   "battlepass support": "14002",
   "battlepass sup": "14002",
 
+  "14003": "14003",
   "six shooter": "14003",
   "six": "14003",
   "shooter": "14003",
@@ -260,24 +299,34 @@
   "bp stun": "14003",
   "battlepass stun": "14003",
 
+  "14102": "14102",
   "steel cushion": "14102",
   "steel": "14102",
   "cushion": "14102",
 
-  "the brimstone": "14103",
-  "brimstone": "14103",
+  "14104": "14104",
+  "the brimstone": "14104",
+  "brimstone": "14104",
 
+  "14107": "14107",
+
+  "14110": "14110",
   "hellfire gears": "14110",
   "hellfire": "14110",
   "gears": "14110",
 
+  "14114": "14114",
   "the restrained": "14114",
   "restrained": "14114",
 
+  "14117": "14117",
+
+  "14118": "14118",
   "fusion compiler": "14118",
   "fusion": "14118",
   "compiler": "14118",
 
+  "14119": "14119",
   "deep sea visitor": "14119",
   "sea visitor": "14119",
   "deep sea": "14119",
@@ -286,9 +335,11 @@
   "sea": "14119",
   "visitor": "14119",
 
+  "14121": "14121",
   "weeping cradle": "14121",
   "cradle": "14121",
 
+  "14124": "14124",
   "riot suppressor mark vi": "14124",
   "riot suppressor mark 4": "14124",
   "suppressor mark vi": "14124",
@@ -312,6 +363,7 @@
   "vi": "14124",
   "4": "14124",
 
+  "14125": "14125",
   "ice-jade teapot": "14125",
   "icejade teapot": "14125",
   "ice-jade": "14125",
@@ -320,6 +372,7 @@
   "jade teapot": "14125",
   "jade": "14125",
 
+  "14126": "14126",
   "sharpened stinger": "14126",
   "sharpened": "14126",
   "stinger": "14126"

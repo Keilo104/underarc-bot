@@ -1,8 +1,8 @@
 import {Agent} from "../../model/Agent";
 import {generateBaseAgentEmbed} from "./generate_base_agent_embed";
 
-export function printAgentCore(agent: Agent): any {
-    const agentEmbed = generateBaseAgentEmbed(agent);
+export function printAgentCore(agent: Agent, env: any): any {
+    const agentEmbed = generateBaseAgentEmbed(agent, env);
 
     agentEmbed.fields.unshift({
         name: "Core skill upgrade materials", inline: false,
@@ -33,8 +33,8 @@ export function printAgentCore(agent: Agent): any {
     return agentEmbed;
 }
 
-export function printAgentCoreAtLevel(agent: Agent, level: number): any {
-    const agentEmbed = generateBaseAgentEmbed(agent);
+export function printAgentCoreAtLevel(agent: Agent, level: number, env: any): any {
+    const agentEmbed = generateBaseAgentEmbed(agent, env);
     let coreLevels = [0, "A", "B", "C", "D", "E", "F"];
     let coreLevelToRealLevel = [0, 15, 25, 35, 45, 55, 60];
 

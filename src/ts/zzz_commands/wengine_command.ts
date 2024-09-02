@@ -7,8 +7,9 @@ import {
 import {logInteraction} from "../util/log_interaction";
 import {translateAgent} from "./agent_command";
 import {Agent} from "../model/Agent";
+import {printAmbiguousWEngines} from "./wengine_commands/print_ambiguous_wengines";
 
-async function translateWEngine(wengine: string | null, env: any): Promise<string | null> {
+async function translateWEngine(wengine: string | null, env: any): Promise<string | string[] | null> {
     if(wengine == null)
         return null;
 
@@ -28,7 +29,7 @@ async function translateWEngine(wengine: string | null, env: any): Promise<strin
     const agentId = translateAgent(lookingFor);
 
     if(agentId)
-        return `${(await Agent.AgentForWEngine(agentId, env)).signatureWEngineId}`;
+        return `${(await Agent.AgentFromIdSlim(agentId, env)).signatureWEngineId}`;
 
     if(wengineTranslations.hasOwnProperty(wengine))
         return wengineTranslations[wengine];
@@ -55,10 +56,14 @@ export async function wengineCommandHandler(interaction: any, env: any): Promise
 
     const wengineId = await translateWEngine(wengineInput, env);
 
-    if(wengineId) {
-        const wengine = await WEngine.WEngineFromId(wengineId, env);
+    if(wengineId && wengineInput) {
+        if(typeof wengineId == "string"){
+            const wengine = await WEngine.WEngineFromId(wengineId, env);
 
-        embed = printWEngine(wengine, levelInput, refinementInput);
+            embed = printWEngine(wengine, levelInput, refinementInput, env);
+        } else
+            embed = await printAmbiguousWEngines(wengineInput, wengineId, env);
+
     }
 
     if (embed) {

@@ -50,23 +50,23 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
         if(levelInput !== null) {
             switch(whatInput) {
             case "stats":
-                embed = printAgentStatsAtLevel(agent, bindLevel(1, 60, levelInput));
+                embed = printAgentStatsAtLevel(agent, bindLevel(1, 60, levelInput), env);
                 break;
 
             default:
             case "core":
-                embed = printAgentCoreAtLevel(agent, bindLevel(0, 6, levelInput));
+                embed = printAgentCoreAtLevel(agent, bindLevel(0, 6, levelInput), env);
             }
 
         } else {
             switch(whatInput) {
             case "stats":
-                embed = printAgentStats(agent);
+                embed = printAgentStats(agent, env);
                 break;
 
             default:
             case "core":
-                embed = printAgentCore(agent);
+                embed = printAgentCore(agent, env);
             }
         }
     }

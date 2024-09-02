@@ -108,7 +108,7 @@ export class WEngine {
             this.descOverride = TreatString(wengineHelper[`${this.id}`]["override_description"]);
 
         if (this.id && "signature" in wengineHelper[`${this.id}`])
-            this.signatureAgent = await Agent.AgentForWEngine(wengineHelper[`${this.id}`]["signature"], env)
+            this.signatureAgent = await Agent.AgentFromIdSlim(wengineHelper[`${this.id}`]["signature"], env)
 
         if (this.id && "icon_image_url" in wengineHelper[`${this.id}`])
             this.iconImageUrl = wengineHelper[`${this.id}`]["icon_image_url"];
@@ -130,17 +130,17 @@ export class WEngine {
         }
     }
 
-    public static async WEngineForAgent(wengineId: string, env: any): Promise<WEngine> {
+    public static async WEngineFromIdSlim(wengineId: string, env: any): Promise<WEngine> {
         const wengineJson = JSON.parse(await env.wengines.get(wengineId));
         const wengineHelper = require(`../../data/helpers/wengine_extra_infos.json`);
 
         if("source" in wengineHelper[wengineId] && wengineHelper[wengineId]["source"] == "hakushin")
-            return WEngine.WEngineForAgentFromHakushin(wengineJson);
+            return WEngine.WEngineFromHakushinSlim(wengineJson);
 
-        return WEngine.WEngineForAgentFromSelfData(wengineJson);
+        return WEngine.WEngineFromSelfDataSlim(wengineJson);
     }
 
-    private static WEngineForAgentFromSelfData(wengineJson: any): WEngine {
+    private static WEngineFromSelfDataSlim(wengineJson: any): WEngine {
         const wengine = new WEngine();
 
         wengine.id = wengineJson["Id"];
@@ -150,7 +150,7 @@ export class WEngine {
         return wengine;
     }
 
-    private static WEngineForAgentFromHakushin(wengineJson: any): WEngine {
+    private static WEngineFromHakushinSlim(wengineJson: any): WEngine {
         const wengine = new WEngine();
 
         wengine.id = wengineJson["Id"];

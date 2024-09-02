@@ -2,8 +2,8 @@ import {Agent} from "../../model/Agent";
 import {Emote} from "../../enums/emote";
 import {generateBaseAgentEmbed} from "./generate_base_agent_embed";
 
-export function printAgentStats(agent: Agent): any {
-    const agentEmbed = generateBaseAgentEmbed(agent);
+export function printAgentStats(agent: Agent, env: any): any {
+    const agentEmbed = generateBaseAgentEmbed(agent, env);
 
     agentEmbed.fields.unshift({
         name: "Base stats at Lv1 → Lv60", inline: false,
@@ -26,8 +26,8 @@ export function printAgentStats(agent: Agent): any {
     return agentEmbed;
 }
 
-export function printAgentStatsAtLevel(agent: Agent, level: number): any {
-    const agentEmbed = generateBaseAgentEmbed(agent);
+export function printAgentStatsAtLevel(agent: Agent, level: number, env: any): any {
+    const agentEmbed = generateBaseAgentEmbed(agent, env);
 
     agentEmbed.fields.unshift({
         name: `Base stats at Lv${level}`, inline: false,

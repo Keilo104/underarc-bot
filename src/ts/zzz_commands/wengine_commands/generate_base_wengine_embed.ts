@@ -1,6 +1,6 @@
 import {WEngine} from "../../model/WEngine";
 
-export function generateBaseWengineEmbed(wengine: WEngine): any {
+export function generateBaseWengineEmbed(wengine: WEngine, env: any): any {
     const wengineEmbed: { [k: string]: any } = {
         title: wengine.name,
         description:
@@ -29,7 +29,7 @@ export function generateBaseWengineEmbed(wengine: WEngine): any {
                 "this is releasing soon, or at all, and all information is subject to changes before release."
         }
 
-    else if (wengine.releasePatch > 2)
+    else if (wengine.releasePatch > env.CURRENT_PATCH)
         wengineEmbed.footer = {
             text:
                 "This entry is from a future version, all information on it could be " +

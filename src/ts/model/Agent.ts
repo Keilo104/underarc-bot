@@ -64,7 +64,7 @@ export class Agent {
 
         if (this.id && "signature_weapon" in agentHelper[`${this.id}`]) {
             this.signatureWEngineId = agentHelper[`${this.id}`]["signature_weapon"];
-            this.signatureWEngine = await WEngine.WEngineForAgent(`${this.signatureWEngineId}`, env);
+            this.signatureWEngine = await WEngine.WEngineFromIdSlim(`${this.signatureWEngineId}`, env);
         }
 
         if (this.id && "icon_image_url" in agentHelper[`${this.id}`])
@@ -262,17 +262,17 @@ export class Agent {
         return meshedDescription;
     }
 
-    public static async AgentForWEngine(agentId: string, env: any): Promise<Agent> {
+    public static async AgentFromIdSlim(agentId: string, env: any): Promise<Agent> {
         const agentJson = JSON.parse(await env.agents.get(agentId));
         const agentHelper = require(`../../data/helpers/agent_extra_infos.json`);
 
         if("source" in agentHelper[agentId] && agentHelper[agentId]["source"] == "hakushin")
-            return Agent.AgentForWEngineFromHakushin(agentJson);
+            return Agent.AgentFromHakushinSlim(agentJson);
 
-        return Agent.AgentForWEngineFromSelfData(agentJson);
+        return Agent.AgentFromSelfDataSlim(agentJson);
     }
 
-    private static async AgentForWEngineFromSelfData(agentJson: any): Promise<Agent> {
+    private static async AgentFromSelfDataSlim(agentJson: any): Promise<Agent> {
         const agent = new Agent();
 
         agent.id = agentJson["Id"];
@@ -285,7 +285,7 @@ export class Agent {
         return agent;
     }
 
-    private static async AgentForWEngineFromHakushin(agentJson: any): Promise<Agent> {
+    private static async AgentFromHakushinSlim(agentJson: any): Promise<Agent> {
         const agentHelper = require(`../../data/helpers/agent_extra_infos.json`);
         const agent = new Agent();
 
@@ -368,7 +368,7 @@ export class Agent {
 
         if ("SigWeaponId" in agentJson && agentJson["SigWeaponId"].length > 0) {
             agent.signatureWEngineId = agentJson["SigWeaponId"][0];
-            agent.signatureWEngine = await WEngine.WEngineForAgent(`${agent.signatureWEngineId}`, env);
+            agent.signatureWEngine = await WEngine.WEngineFromIdSlim(`${agent.signatureWEngineId}`, env);
         }
 
         agent.emote = Emote.GetEmoteFromId(`${agent.id}`);

@@ -1,8 +1,8 @@
 import {WEngine} from "../../model/WEngine";
 import {generateBaseWengineEmbed} from "./generate_base_wengine_embed";
 
-export function printWEngine(wengine: WEngine, level: number | null, refinement: number | null): any {
-    const wengineEmbed = generateBaseWengineEmbed(wengine);
+export function printWEngine(wengine: WEngine, level: number | null, refinement: number | null, env: any): any {
+    const wengineEmbed = generateBaseWengineEmbed(wengine, env);
 
     if(refinement)
         descriptionAtRefinement(wengine, wengineEmbed, refinement);

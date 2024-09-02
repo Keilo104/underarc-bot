@@ -1,6 +1,6 @@
 import {Agent} from "../../model/Agent";
 
-export function generateBaseAgentEmbed(agent: Agent): any {
+export function generateBaseAgentEmbed(agent: Agent, env: any): any {
     const agentEmbed: { [k: string]: any } = {
         title: agent.fullName ? agent.fullName : agent.name,
         description:
@@ -30,7 +30,7 @@ export function generateBaseAgentEmbed(agent: Agent): any {
                 "this is releasing soon, or at all, and all information is subject to changes before release."
         }
 
-    else if (agent.releasePatch > 2)
+    else if (agent.releasePatch > env.CURRENT_PATCH)
         agentEmbed.footer = {
             text:
                 "This entry is from a future version, all information on it could be " +

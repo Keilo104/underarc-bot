@@ -7,6 +7,7 @@ import {
     printWEngineAtLevelAndRefinement,
     printWEngineAtRefinement
 } from "./wengine_commands/print_wengine";
+import {logMessage} from "../util/log_message";
 
 function translateWEngine(wengine: string | null): string | null {
     return wengine;
@@ -18,7 +19,11 @@ export async function wengineCommandHandler(interaction: any, env: any): Promise
     let refinementInput: string | null = null;
     let embed: any | null = null;
 
+    const logging: string[] = [];
+
     interaction.data.options.forEach((option: any) => {
+        logging.push(`**${option["name"]}:** ${option["value"]}\n`);
+
         if (option["name"] == "w-engine")
             wengineInput = option["value"];
 
@@ -56,6 +61,7 @@ export async function wengineCommandHandler(interaction: any, env: any): Promise
         });
     }
 
+    await logMessage(env, interaction, logging);
     return new JsonResponse({
         type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
         data: {

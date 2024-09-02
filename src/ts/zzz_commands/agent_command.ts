@@ -3,8 +3,9 @@ import {InteractionResponseFlags, InteractionResponseType} from "discord-interac
 import {Agent} from "../model/Agent";
 import {printAgentStats, printAgentStatsAtLevel} from "./agent_commands/print_agent_stats";
 import {printAgentCore, printAgentCoreAtLevel} from "./agent_commands/print_agent_core";
+import {logMessage} from "../util/log_message";
 
-function translateAgent(agent: string | null): string | null {
+export function translateAgent(agent: string | null): string | null {
     const agentTranslations = require("../../data/helpers/agent_translations.json");
 
     if(agent && agentTranslations.hasOwnProperty(agent)){
@@ -30,7 +31,11 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
     let levelInput: number | null = null;
     let embed: any | null = null;
 
+    const logging: string[] = []
+
     interaction.data.options.forEach((option: any) => {
+        logging.push(`**${option["name"]}:** ${option["value"]}\n`);
+
         if (option["name"] == "agent")
             agentInput = option["value"];
 
@@ -81,6 +86,7 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
         });
     }
 
+    await logMessage(env, interaction, logging);
     return new JsonResponse({
         type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
         data: {

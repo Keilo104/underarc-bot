@@ -55,7 +55,7 @@ export class Stat {
                 return `${statValue / 100}%`;
 
             default:
-                return `0`;
+                return `Error on parsing stat`;
         }
     }
 
@@ -98,6 +98,43 @@ export class Stat {
             case "30501":
             case "30502":
                 return Stat.ENERGY_REGEN;
+
+            default:
+                return Stat.UNKNOWN;
+        }
+    }
+
+    public static GetStatFromHakushinName(name: string): Stat {
+        switch(name) {
+            case "Base ATK":
+                return Stat.ATK;
+
+            case "ATK":
+                return Stat.ATK_PERCENT;
+
+            case "CRIT Rate":
+                return Stat.CRIT_RATE;
+
+            case "Energy Regen":
+                return Stat.ENERGY_REGEN;
+
+            case "HP":
+                return Stat.HP;
+
+            case "Anomaly Proficiency":
+                return Stat.ANOMALY_PROFICIENCY;
+
+            case "PEN Ratio":
+                return Stat.PEN_RATIO;
+
+            case "DEF":
+                return Stat.DEF;
+
+            case "Impact":
+                return Stat.IMPACT;
+
+            case "CRIT DMG":
+                return Stat.CRIT_DMG;
 
             default:
                 return Stat.UNKNOWN;

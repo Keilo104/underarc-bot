@@ -10,14 +10,15 @@ import {Agent} from "./Agent";
 export class WEngine {
     public id: number | null = null;
     public name: string | null = null;
+    public emote: Emote = Emote.UNKNOWN_ICON;
+    public rarity: Rarity = Rarity.UNKNOWN;
+    public specialty: Specialty = Specialty.UNKNOWN;
+
     public iconImageUrl: string = "https://i.imgur.com/lQlL7DG.png"
     public embedColor: number = 0xffffff;
     public releasePatch: number | null = 1;
-    public emote: Emote = Emote.UNKNOWN_ICON;
     public signatureAgent: Agent | null = null;
-
-    public rarity: Rarity = Rarity.UNKNOWN;
-    public specialty: Specialty = Specialty.UNKNOWN;
+    public descOverride: string | null = null;
     public obtainMethod: ObtainMethod = ObtainMethod.UNKNOWN;
 
     public mainStat: Stat = Stat.UNKNOWN;
@@ -31,11 +32,13 @@ export class WEngine {
 
     public descName: string | null = null;
     public descValues: string[] = [];
-    public descOverride: string | null = null;
 
     public meshedDescription(): string {
         if(this.descOverride !== null)
             return this.descOverride;
+
+        if(this.descValues.length < 5)
+            return "";
 
         let meshedDescription = "";
         let description1 = this.descValues[0].split(" ");
@@ -118,7 +121,7 @@ export class WEngine {
     }
 
     private setScalingsFromRarity() {
-        if(this.rarity != null) {
+        if(this.rarity !== null && this.rarity !== Rarity.UNKNOWN) {
             const xpTables = require(`../../data/wengines/xp_tables.json`);
 
             this.mainStatScaling = xpTables[`${this.rarity.id}`]["MainstatScaling"];
@@ -191,6 +194,7 @@ export class WEngine {
 
         wengine.setScalingsFromRarity();
         await wengine.loadHelper(env);
+
         return wengine;
     }
 
@@ -199,13 +203,25 @@ export class WEngine {
 
         wengine.id = wengineJson["Id"];
         wengine.name = wengineJson["Name"];
+        wengine.rarity = Rarity.GetRarityFromId(wengineJson["Rarity"]);
         wengine.specialty = Specialty.GetSpecialtyFromId(wengineJson["WeaponType"]);
 
-        wengine.rarity = Rarity.GetRarityFromId(wengineJson["Rarity"]);
         wengine.emote = Emote.GetEmoteFromId(`${wengine.id}`);
+
+        wengine.mainStat = Stat.GetStatFromHakushinName(wengineJson["BaseProperty"]["Name"]);
+        wengine.mainStatBase = wengineJson["BaseProperty"]["Value"];
+        wengine.subStat = Stat.GetStatFromHakushinName(wengineJson["RandProperty"]["Name"]);
+        wengine.subStatBase = wengineJson["RandProperty"]["Value"];
+
+        wengine.descName = wengineJson["Talents"]["1"]["Name"];
+
+        ["1", "2", "3", "4", "5"].forEach(i => {
+            wengine.descValues.push(TreatString(wengineJson["Talents"][i]["Desc"]));
+        });
 
         wengine.setScalingsFromRarity();
         await wengine.loadHelper(env);
+
         return wengine;
     }
 }

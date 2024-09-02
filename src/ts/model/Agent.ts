@@ -15,9 +15,6 @@ export class Agent {
     public id: number | null = null;
     public name: string | null = null;
     public fullName: string | null = null;
-    public iconImageUrl: string = "https://i.imgur.com/lQlL7DG.png";
-    public embedColor: number = 0xffffff;
-    public releasePatch: number | null = 1;
     public emote: Emote = Emote.UNKNOWN_ICON;
     public signatureWEngine: WEngine | null = null;
 
@@ -29,6 +26,10 @@ export class Agent {
 
     public purpleCoreMat: PurpleCoreMat = PurpleCoreMat.UNKNOWN;
     public goldenCoreMat: GoldenCoreMat = GoldenCoreMat.UNKNOWN;
+
+    public iconImageUrl: string = "https://i.imgur.com/lQlL7DG.png";
+    public embedColor: number = 0xffffff;
+    public releasePatch: number | null = 1;
 
     public baseHp: number = 0;
     public hpGrowth: number = 0;

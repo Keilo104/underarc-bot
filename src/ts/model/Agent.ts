@@ -426,6 +426,13 @@ export class Agent {
             });
         }
 
+        if("Talent" in agentJson) {
+            ["1", "2", "3", "4", "5", "6"].forEach(item => {
+                agent.consNames.push(agentJson["Talent"][item]["Name"]);
+                agent.consEffects.push(TreatString(agentJson["Talent"][item]["Desc"]));
+            });
+        }
+
         agent.emote = Emote.GetEmoteFromId(`${agent.id}`);
 
         await agent.loadFromHelper(env);

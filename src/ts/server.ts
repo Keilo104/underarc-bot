@@ -12,7 +12,7 @@ import { FigureOutUsername } from "./util/figure_out_username";
 import {JsonResponse} from "./util/json_reponse";
 import {agentCommandHandler } from "./zzz_commands/agent_command";
 import {wengineCommandHandler} from "./zzz_commands/wengine_command";
-import {logMessage} from "./util/log_message";
+import {logInteraction} from "./util/log_interaction";
 
 const router = AutoRouter();
 
@@ -116,7 +116,7 @@ router.post("/", async (request: IRequest, env: any) => {
                 });
 
             case SEND_ISSUE_COMMAND.name.toLowerCase():
-                await logMessage(env, interaction);
+                await logInteraction(env, interaction);
 
                 return new JsonResponse({
                     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,

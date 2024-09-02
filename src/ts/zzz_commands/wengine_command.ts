@@ -4,7 +4,7 @@ import {WEngine} from "../model/WEngine";
 import {
     printWEngine
 } from "./wengine_commands/print_wengine";
-import {logMessage} from "../util/log_message";
+import {logInteraction} from "../util/log_interaction";
 import {translateAgent} from "./agent_command";
 import {Agent} from "../model/Agent";
 
@@ -17,22 +17,18 @@ async function translateWEngine(wengine: string | null, env: any): Promise<strin
 
     let lookingFor = wengine;
     let foundLen = 0;
-    let sig = false;
 
     signatureWeaponStrings.forEach((item: string) => {
         if(wengine.endsWith(item) && item.length > foundLen) {
             lookingFor = wengine.substring(0, wengine.length - item.length);
             foundLen = item.length;
-            sig = true;
         }
     });
 
-    if(sig) {
-        const agentId = translateAgent(lookingFor);
+    const agentId = translateAgent(lookingFor);
 
-        if(agentId)
-            return `${(await Agent.AgentForWEngine(agentId, env)).signatureWEngineId}`;
-    }
+    if(agentId)
+        return `${(await Agent.AgentForWEngine(agentId, env)).signatureWEngineId}`;
 
     if(wengineTranslations.hasOwnProperty(wengine))
         return wengineTranslations[wengine];
@@ -76,7 +72,7 @@ export async function wengineCommandHandler(interaction: any, env: any): Promise
         });
     }
 
-    await logMessage(env, interaction);
+    await logInteraction(env, interaction);
     return new JsonResponse({
         type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
         data: {

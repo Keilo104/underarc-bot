@@ -5,9 +5,39 @@ import {
     printWEngine
 } from "./wengine_commands/print_wengine";
 import {logMessage} from "../util/log_message";
+import {translateAgent} from "./agent_command";
+import {Agent} from "../model/Agent";
 
-function translateWEngine(wengine: string | null): string | null {
-    return wengine;
+async function translateWEngine(wengine: string | null, env: any): Promise<string | null> {
+    if(wengine == null)
+        return null;
+
+    const signatureWeaponStrings = require("../../data/helpers/wengine_signature_translations.json")["wengineSignatureTranslations"];
+    const wengineTranslations = require("../../data/helpers/wengine_translations.json");
+
+    let lookingFor = wengine;
+    let foundLen = 0;
+    let sig = false;
+
+    signatureWeaponStrings.forEach((item: string) => {
+        if(wengine.endsWith(item) && item.length > foundLen) {
+            lookingFor = wengine.substring(0, wengine.length - item.length);
+            foundLen = item.length;
+            sig = true;
+        }
+    });
+
+    if(sig) {
+        const agentId = translateAgent(lookingFor);
+
+        if(agentId)
+            return `${(await Agent.AgentForWEngine(agentId, env)).signatureWEngineId}`;
+    }
+
+    if(wengineTranslations.hasOwnProperty(wengine))
+        return wengineTranslations[wengine];
+
+    return null;
 }
 
 export async function wengineCommandHandler(interaction: any, env: any): Promise<JsonResponse> {
@@ -27,7 +57,7 @@ export async function wengineCommandHandler(interaction: any, env: any): Promise
             refinementInput = option["value"];
     });
 
-    const wengineId = translateWEngine(wengineInput);
+    const wengineId = await translateWEngine(wengineInput, env);
 
     if(wengineId) {
         const wengine = await WEngine.WEngineFromId(wengineId, env);

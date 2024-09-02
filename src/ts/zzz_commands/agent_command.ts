@@ -9,7 +9,7 @@ export function translateAgent(agent: string | null): string | null {
     const agentTranslations = require("../../data/helpers/agent_translations.json");
 
     if(agent && agentTranslations.hasOwnProperty(agent)){
-        return agentTranslations[agent]
+        return agentTranslations[agent];
     }
 
     return null;

@@ -16,6 +16,7 @@ export class Agent {
     public name: string | null = null;
     public fullName: string | null = null;
     public emote: Emote = Emote.UNKNOWN_ICON;
+    public signatureWEngineId: number | null = null;
     public signatureWEngine: WEngine | null = null;
 
     public rarity: Rarity = Rarity.UNKNOWN;
@@ -61,8 +62,10 @@ export class Agent {
         if (this.id && "override_full_name" in agentHelper[`${this.id}`])
             this.fullName = agentHelper[`${this.id}`]["override_full_name"];
 
-        if (this.id && "signature_weapon" in agentHelper[`${this.id}`])
-            this.signatureWEngine = await WEngine.WEngineForAgent(agentHelper[`${this.id}`]["signature_weapon"], env);
+        if (this.id && "signature_weapon" in agentHelper[`${this.id}`]) {
+            this.signatureWEngineId = agentHelper[`${this.id}`]["signature_weapon"];
+            this.signatureWEngine = await WEngine.WEngineForAgent(`${this.signatureWEngineId}`, env);
+        }
 
         if (this.id && "icon_image_url" in agentHelper[`${this.id}`])
             this.iconImageUrl = agentHelper[`${this.id}`]["icon_image_url"];
@@ -276,15 +279,22 @@ export class Agent {
         agent.name = agentJson["Name"];
         agent.emote = Emote.GetEmoteFromId(`${agent.id}`);
 
+        if ("SigWeaponId" in agentJson && agentJson["SigWeaponId"].length > 0)
+            agent.signatureWEngineId = agentJson["SigWeaponId"][0];
+
         return agent;
     }
 
     private static async AgentForWEngineFromHakushin(agentJson: any): Promise<Agent> {
+        const agentHelper = require(`../../data/helpers/agent_extra_infos.json`);
         const agent = new Agent();
 
         agent.id = agentJson["Id"];
         agent.name = agentJson["Name"];
         agent.emote = Emote.GetEmoteFromId(`${agent.id}`);
+
+        if (agent.id && "signature_weapon" in agentHelper[`${agent.id}`])
+            agent.signatureWEngineId = agentHelper[`${agent.id}`]["signature_weapon"];
 
         return agent;
     }
@@ -357,7 +367,8 @@ export class Agent {
         }
 
         if ("SigWeaponId" in agentJson && agentJson["SigWeaponId"].length > 0) {
-            agent.signatureWEngine = await WEngine.WEngineForAgent(agentJson["SigWeaponId"][0], env);
+            agent.signatureWEngineId = agentJson["SigWeaponId"][0];
+            agent.signatureWEngine = await WEngine.WEngineForAgent(`${agent.signatureWEngineId}`, env);
         }
 
         agent.emote = Emote.GetEmoteFromId(`${agent.id}`);

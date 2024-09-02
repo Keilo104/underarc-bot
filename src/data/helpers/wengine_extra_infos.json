@@ -108,55 +108,55 @@
   "13101": {
     "icon_image_url": "https://i.imgur.com/AWxq7Y0.png",
     "obtain": "Gacha",
-    "signature": "1011",
+    "signature": 1011,
     "embed_color": "0xD9FF40"
   },
   "13103": {
     "icon_image_url": "https://i.imgur.com/Qw5OS5N.png",
     "obtain": "Gacha",
-    "signature": "1031",
+    "signature": 1031,
     "embed_color":  "0xFF4B89"
   },
   "13106": {
     "icon_image_url": "https://i.imgur.com/6iwCdDe.png",
     "obtain": "Gacha",
-    "signature": "1061",
+    "signature": 1061,
     "embed_color":  "0xBDCBD9"
   },
   "13108": {
     "icon_image_url": "https://i.imgur.com/kFwXptN.png",
     "obtain": "Gacha",
-    "signature": "1081",
+    "signature": 1081,
     "embed_color":  "0xFF4540"
   },
   "13111": {
     "icon_image_url": "https://i.imgur.com/cb2fBcY.png",
     "obtain": "Gacha",
-    "signature": "1111",
+    "signature": 1111,
     "embed_color":  "0xD9D9D9"
   },
   "13112": {
     "icon_image_url": "https://i.imgur.com/icRcqVA.png",
     "obtain": "Gacha",
-    "signature": "1121",
+    "signature": 1121,
     "embed_color":  "0xD9D9D9"
   },
   "13113": {
     "icon_image_url": "https://i.imgur.com/pKX9VX8.png",
     "obtain": "Gacha",
-    "signature": "1131",
+    "signature": 1131,
     "embed_color":  "0x1CE0EF"
   },
   "13115": {
     "icon_image_url": "https://i.imgur.com/00HDNe2.png",
     "obtain": "Gacha",
-    "signature": "1151",
+    "signature": 1151,
     "embed_color":  "0xFFDC4D"
   },
   "13127": {
     "icon_image_url": "https://i.imgur.com/OhkInmY.png",
     "obtain": "Gacha",
-    "signature": "1271",
+    "signature": 1271,
     "override_description": "While Shielded, the equipper's Energy Regen increases by **0.4/0.46/0.52/0.58/0.64/s.** The Anomaly Buildup accumulated by EX Special Attacks/Assist Follow-Ups increase by **36/40/45/50/55% (EX Special) | 36/40/45/50/55% (Assist Follow-Ups).**",
     "embed_color":  "0x38A2FF",
     "release_patch": 2
@@ -164,7 +164,7 @@
   "13128": {
     "icon_image_url": "https://i.imgur.com/mVIFTcD.png",
     "obtain": "Gacha",
-    "signature": "1281",
+    "signature": 1281,
     "embed_color": "0xFFDC4D"
   },
   "14001": {
@@ -182,18 +182,18 @@
   "14102": {
     "icon_image_url": "https://i.imgur.com/E3B5Ge9.png",
     "obtain": "Gacha",
-    "signature": "1021",
+    "signature": 1021,
     "embed_color":  "0xFF4540"
   },
   "14104": {
     "icon_image_url": "https://i.imgur.com/ro0ONEC.png",
     "obtain": "Gacha",
-    "signature": "1041",
+    "signature": 1041,
     "embed_color":  "0xFFDD0D"
   },
   "14107": {
     "obtain": "Gacha",
-    "signature": "1071",
+    "signature": 1071,
     "embed_color":  "0xFFDC4D",
     "release_patch": 3,
     "source": "hakushin"
@@ -201,18 +201,18 @@
   "14110": {
     "icon_image_url": "https://i.imgur.com/12yShxm.png",
     "obtain": "Gacha",
-    "signature": "1101",
+    "signature": 1101,
     "embed_color":  "0xD9D9D9"
   },
   "14114": {
     "icon_image_url": "https://i.imgur.com/vwRhcUR.png",
     "obtain": "Gacha",
-    "signature": "1141",
+    "signature": 1141,
     "embed_color":  "0xBDCBD9"
   },
   "14117": {
     "obtain": "Gacha",
-    "signature": "1171",
+    "signature": 1171,
     "embed_color":  "0xFFDC4D",
     "release_patch": 3,
     "source": "hakushin"
@@ -220,38 +220,38 @@
   "14118": {
     "icon_image_url": "https://i.imgur.com/dk70S36.png",
     "obtain": "Gacha",
-    "signature": "1181",
+    "signature": 1181,
     "embed_color":  "0xD9D9D9"
   },
   "14119": {
     "icon_image_url": "https://i.imgur.com/KG72PPm.png",
     "obtain": "Gacha",
-    "signature": "1191",
+    "signature": 1191,
     "embed_color":  "0xBDCBD9"
   },
   "14121": {
     "icon_image_url": "https://i.imgur.com/bOqg4lI.png",
     "obtain": "Gacha",
-    "signature": "1211",
+    "signature": 1211,
     "embed_color":  "0xBDCBD9"
   },
   "14124": {
     "icon_image_url": "https://i.imgur.com/4iN7nWr.png",
     "obtain": "Gacha",
-    "signature": "1241",
+    "signature": 1241,
     "embed_color":  "0x38A2FF"
   },
   "14125": {
     "icon_image_url": "https://i.imgur.com/nnGV2sf.png",
     "obtain": "Gacha",
-    "signature": "1251",
+    "signature": 1251,
     "embed_color":  "0x38A2FF",
     "release_patch": 2
   },
   "14126": {
     "icon_image_url": "https://i.imgur.com/BsFx4H1.png",
     "obtain": "Gacha",
-    "signature": "1261",
+    "signature": 1261,
     "embed_color":  "0x38A2FF",
     "release_patch": 2
   }

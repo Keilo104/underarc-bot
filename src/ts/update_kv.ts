@@ -15,6 +15,10 @@ else
 const endpoint = process.env.ENDPOINT;
 const securityKey = process.env.ENDPOINT_KEY;
 
+const jsonResponse: { [k: string]: any } = {}
+
+jsonResponse["agents"] = [];
+
 ids_json.agents.forEach((agentId: string) => {
     let agentFile: string, agentJson: any;
 
@@ -26,18 +30,13 @@ ids_json.agents.forEach((agentId: string) => {
         agentJson = JSON.parse(agentFile);
     }
 
-    axios.post(`${endpoint}/agents/${agentId}`, agentJson, {
-        headers: {
-            "security-key": securityKey
-        }
+    jsonResponse["agents"].push({
+        "Id": agentId,
+        "json": agentJson,
     })
-        .then((response) => {
-            console.log(response.data);
-        })
-        .catch((error) => {
-            console.error(error.message);
-        })
-})
+});
+
+jsonResponse["wengines"] = [];
 
 ids_json.wengines.forEach((wengineId: string) => {
     let wengineFile: string, wengineJson: any;
@@ -50,15 +49,20 @@ ids_json.wengines.forEach((wengineId: string) => {
         wengineJson = JSON.parse(wengineFile);
     }
 
-    axios.post(`${endpoint}/wengines/${wengineId}`, wengineJson, {
-        headers: {
-            "security-key": securityKey
-        }
+    jsonResponse["wengines"].push({
+        "Id": wengineId,
+        "json": wengineJson,
     })
-        .then((response) => {
-            console.log(response.data);
-        })
-        .catch((error) => {
-            console.error(error.message);
-        })
+});
+
+axios.post(`${endpoint}/massUpdate`, jsonResponse, {
+    headers: {
+        "security-key": securityKey
+    }
 })
+.then((response) => {
+    console.log(response.data);
+})
+.catch((error) => {
+    console.error(error.message);
+});

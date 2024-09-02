@@ -19,10 +19,45 @@ const router = AutoRouter();
 export interface Env {
     agents: KVNamespace,
     wengines: KVNamespace,
+    bangboos: KVNamespace,
 }
 
 router.get("/", (_: IRequest, env: any) => {
     return new Response(`Heyo ${env.DISCORD_APPLICATION_ID}!! :D`)
+});
+
+router.post("/massUpdate", async (request: IRequest, env: any) => {
+    const securityKey = request.headers.get("security-key");
+
+    if (securityKey && securityKey === env.ENDPOINT_KEY) {
+        let requestJson: { [k: string]: any } = await request.json();
+        let updatedAmount: number = 0;
+
+        if(requestJson.hasOwnProperty("agents")) {
+            for(const agent of requestJson["agents"]) {
+                await env.agents.put(agent["Id"], JSON.stringify(agent["json"]));
+                updatedAmount++;
+            }
+        }
+
+        if(requestJson.hasOwnProperty("wengines")) {
+            for(const wengine of requestJson["wengines"]) {
+                await env.wengines.put(wengine["Id"], JSON.stringify(wengine["json"]));
+                updatedAmount++;
+            }
+        }
+
+        if(requestJson.hasOwnProperty("bangboos")) {
+            for(const bangboo of requestJson["bangboos"]) {
+                await env.bangboos.put(bangboo["Id"], JSON.stringify(bangboo["json"]));
+                updatedAmount++;
+            }
+        }
+
+        return new Response(`Successfully added/updated ${updatedAmount} entries.`, { status: 200 });
+    }
+
+    return new Response("Bad request signature.", { status: 401 });
 });
 
 router.post("/agents/:agentId", async (request: IRequest, env: any) => {
@@ -50,6 +85,21 @@ router.post("/wengines/:wengineId", async (request: IRequest, env: any) => {
         await env.wengines.put(wengineId, JSON.stringify(wengineJson));
 
         return new Response(`W-Engine ${wengineId} added/updated successfully`, { status: 200 });
+    }
+
+    return new Response("Bad request signature.", { status: 401 });
+});
+
+router.post("/bangboos/:bangbooId", async (request: IRequest, env: any) => {
+    const securityKey = request.headers.get("security-key");
+
+    if (securityKey && securityKey === env.ENDPOINT_KEY) {
+        let bangbooJson = await request.json();
+        let bangbooId = request.params.bangbooId;
+
+        await env.bangboos.put(bangbooId, JSON.stringify(bangbooJson));
+
+        return new Response(`Bangboo ${bangbooId} added/updated successfully`, { status: 200 });
     }
 
     return new Response("Bad request signature.", { status: 401 });

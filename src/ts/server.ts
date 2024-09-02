@@ -189,7 +189,7 @@ router.post("/", async (request: IRequest, env: any) => {
 
     console.error("Unknown Type");
     return new JsonResponse({ error: "Unknown Type" }, { status: 400 });
-})
+});
 
 router.all("*", () => {
     return new Response("Not Found.", { status: 404 })

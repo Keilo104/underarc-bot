@@ -4,6 +4,7 @@ import {Agent} from "../model/Agent";
 import {printAgentStats, printAgentStatsAtLevel} from "./agent_commands/print_agent_stats";
 import {printAgentCore, printAgentCoreAtLevel} from "./agent_commands/print_agent_core";
 import {logInteraction} from "../util/log_interaction";
+import {printAgentMindscapes, printAgentMindscapesAtLevel} from "./agent_commands/print_agent_mindscapes";
 
 export function translateAgent(agent: string | null): string | null {
     const agentTranslations = require("../../data/helpers/agent_translations.json");
@@ -53,6 +54,10 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
                 embed = printAgentStatsAtLevel(agent, bindLevel(1, 60, levelInput), env);
                 break;
 
+            case "mindscape":
+                embed = printAgentMindscapesAtLevel(agent, bindLevel(1, 6, levelInput), env);
+                break;
+
             default:
             case "core":
                 embed = printAgentCoreAtLevel(agent, bindLevel(0, 6, levelInput), env);
@@ -62,6 +67,10 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
             switch(whatInput) {
             case "stats":
                 embed = printAgentStats(agent, env);
+                break;
+
+            case "mindscape":
+                embed = printAgentMindscapes(agent, env);
                 break;
 
             default:

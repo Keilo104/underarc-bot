@@ -56,6 +56,9 @@ export class Agent {
     public coreSkillNames: string[] = [];
     public coreSkillDescs: string[][] = [];
 
+    public consNames: string[] = [];
+    public consEffects: string[] = [];
+
     private async loadFromHelper(env: any) {
         const agentHelper = require(`../../data/helpers/agent_extra_infos.json`);
 
@@ -369,6 +372,13 @@ export class Agent {
         if ("SigWeaponId" in agentJson && agentJson["SigWeaponId"].length > 0) {
             agent.signatureWEngineId = agentJson["SigWeaponId"][0];
             agent.signatureWEngine = await WEngine.WEngineFromIdSlim(`${agent.signatureWEngineId}`, env);
+        }
+
+        if ("Cons" in agentJson && agentJson["Cons"].length == 6) {
+            for(const cons of agentJson["Cons"]) {
+                agent.consNames.push(cons["Name"]);
+                agent.consEffects.push(TreatString(cons["Effect"]));
+            }
         }
 
         agent.emote = Emote.GetEmoteFromId(`${agent.id}`);

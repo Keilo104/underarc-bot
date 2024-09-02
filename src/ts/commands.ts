@@ -42,13 +42,17 @@ export const AGENT_COMMAND = {
             required: false,
             choices: [
                 {
+                    name: "Core Skill",
+                    value: "core"
+                },
+                {
                     name: "Stats",
                     value: "stats"
                 },
                 {
-                    name: "Core",
-                    value: "core"
-                }
+                    name: "Mindscapes",
+                    value: "mindscape"
+                },
             ]
         },
 

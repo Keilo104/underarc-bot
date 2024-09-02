@@ -1,38 +1,18 @@
 import {WEngine} from "../../model/WEngine";
 import {generateBaseWengineEmbed} from "./generate_base_wengine_embed";
 
-export function printWEngine(wengine: WEngine): any {
+export function printWEngine(wengine: WEngine, level: number | null, refinement: number | null): any {
     const wengineEmbed = generateBaseWengineEmbed(wengine);
 
-    baseDescription(wengine, wengineEmbed);
-    baseStats(wengine, wengineEmbed)
+    if(refinement)
+        descriptionAtRefinement(wengine, wengineEmbed, refinement);
+    else
+        baseDescription(wengine, wengineEmbed);
 
-    return wengineEmbed;
-}
-
-export function printWEngineAtLevel(wengine: WEngine, level: number): any {
-    const wengineEmbed = generateBaseWengineEmbed(wengine);
-
-    baseDescription(wengine, wengineEmbed);
-    statsAtLevel(wengine, wengineEmbed, level);
-
-    return wengineEmbed;
-}
-
-export function printWEngineAtRefinement(wengine: WEngine, refinement: number): any {
-    const wengineEmbed = generateBaseWengineEmbed(wengine);
-
-    descriptionAtRefinement(wengine, wengineEmbed, refinement);
-    baseStats(wengine, wengineEmbed);
-
-    return wengineEmbed;
-}
-
-export function printWEngineAtLevelAndRefinement(wengine: WEngine, level: number, refinement: number): any {
-    const wengineEmbed = generateBaseWengineEmbed(wengine);
-
-    descriptionAtRefinement(wengine, wengineEmbed, refinement);
-    statsAtLevel(wengine, wengineEmbed, level);
+    if(level)
+        statsAtLevel(wengine, wengineEmbed, level);
+    else
+        baseStats(wengine, wengineEmbed);
 
     return wengineEmbed;
 }

@@ -2,10 +2,7 @@ import {JsonResponse} from "../util/json_reponse";
 import {InteractionResponseFlags, InteractionResponseType} from "discord-interactions";
 import {WEngine} from "../model/WEngine";
 import {
-    printWEngine,
-    printWEngineAtLevel,
-    printWEngineAtLevelAndRefinement,
-    printWEngineAtRefinement
+    printWEngine
 } from "./wengine_commands/print_wengine";
 import {logMessage} from "../util/log_message";
 
@@ -35,15 +32,7 @@ export async function wengineCommandHandler(interaction: any, env: any): Promise
     if(wengineId) {
         const wengine = await WEngine.WEngineFromId(wengineId, env);
 
-        if(levelInput !== null && refinementInput !== null) {
-            embed = printWEngineAtLevelAndRefinement(wengine, levelInput, refinementInput);
-        } else if (levelInput !== null) {
-            embed = printWEngineAtLevel(wengine, levelInput);
-        } else if (refinementInput !== null) {
-            embed = printWEngineAtRefinement(wengine, refinementInput);
-        } else {
-            embed = printWEngine(wengine);
-        }
+        embed = printWEngine(wengine, levelInput, refinementInput);
     }
 
     if (embed) {

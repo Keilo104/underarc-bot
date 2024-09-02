@@ -9,6 +9,7 @@ import {Stat} from "../enums/stat";
 import {Emote} from "../enums/emote";
 import {TreatString} from "../util/treat_string";
 import {GetBoostForLevel} from "../util/get_boost_per_level";
+import {WEngine} from "./WEngine";
 
 export class Agent {
     public id: number | null = null;
@@ -18,6 +19,7 @@ export class Agent {
     public embedColor: number = 0xffffff;
     public releasePatch: number | null = 1;
     public emote: Emote = Emote.UNKNOWN_ICON;
+    public signatureWEngine: WEngine | null = null;
 
     public rarity: Rarity = Rarity.UNKNOWN;
     public faction: Faction = Faction.UNKNOWN;
@@ -52,11 +54,14 @@ export class Agent {
     public coreSkillNames: string[] = [];
     public coreSkillDescs: string[][] = [];
 
-    private loadFromHelper() {
+    private async loadFromHelper(env: any) {
         const agentHelper = require(`../../data/helpers/agent_extra_infos.json`);
 
         if (this.id && "override_full_name" in agentHelper[`${this.id}`])
             this.fullName = agentHelper[`${this.id}`]["override_full_name"];
+
+        if (this.id && "signature_weapon" in agentHelper[`${this.id}`])
+            this.signatureWEngine = await WEngine.WEngineForAgent(agentHelper[`${this.id}`]["signature_weapon"], env);
 
         if (this.id && "icon_image_url" in agentHelper[`${this.id}`])
             this.iconImageUrl = agentHelper[`${this.id}`]["icon_image_url"];
@@ -253,17 +258,47 @@ export class Agent {
         return meshedDescription;
     }
 
+    public static async AgentForWEngine(agentId: string, env: any): Promise<Agent> {
+        const agentJson = JSON.parse(await env.agents.get(agentId));
+        const agentHelper = require(`../../data/helpers/agent_extra_infos.json`);
+
+        if("source" in agentHelper[agentId] && agentHelper[agentId]["source"] == "hakushin")
+            return Agent.AgentForWEngineFromHakushin(agentJson);
+
+        return Agent.AgentForWEngineFromSelfData(agentJson);
+    }
+
+    private static async AgentForWEngineFromSelfData(agentJson: any): Promise<Agent> {
+        const agent = new Agent();
+
+        agent.id = agentJson["Id"];
+        agent.name = agentJson["Name"];
+        agent.emote = Emote.GetEmoteFromId(`${agent.id}`);
+
+        return agent;
+    }
+
+    private static async AgentForWEngineFromHakushin(agentJson: any): Promise<Agent> {
+        const agent = new Agent();
+
+        agent.id = agentJson["Id"];
+        agent.name = agentJson["Name"];
+        agent.emote = Emote.GetEmoteFromId(`${agent.id}`);
+
+        return agent;
+    }
+
     public static async AgentFromId(agentId: string, env: any): Promise<Agent> {
         const agentJson = JSON.parse(await env.agents.get(agentId));
         const agentHelper = require(`../../data/helpers/agent_extra_infos.json`);
 
         if("source" in agentHelper[agentId] && agentHelper[agentId]["source"] == "hakushin")
-            return Agent.AgentFromHakushin(agentJson);
+            return Agent.AgentFromHakushin(agentJson, env);
 
-        return Agent.AgentFromSelfData(agentJson);
+        return Agent.AgentFromSelfData(agentJson, env);
     }
 
-    private static AgentFromSelfData(agentJson: any): Agent {
+    private static async AgentFromSelfData(agentJson: any, env: any): Promise<Agent> {
         const agent = new Agent();
 
         agent.id = agentJson["Id"];
@@ -276,7 +311,7 @@ export class Agent {
         agent.damageType = DamageType.GetDamageTypeFromId(agentJson["DamageType"][0]);
         agent.rarity = Rarity.GetRarityFromId(agentJson["Rarity"]);
 
-        if("Stats" in agentJson) {
+        if ("Stats" in agentJson) {
             agent.baseAtk = agentJson["Stats"]["BaseAtk"];
             agent.atkGrowth = agentJson["Stats"]["AtkGrowth"];
             agent.baseDef = agentJson["Stats"]["BaseDef"];
@@ -289,13 +324,13 @@ export class Agent {
             agent.baseAnomalyProficiency = agentJson["Stats"]["BaseAnomalyProficiency"];
         }
 
-        if("HpBoosts" in agentJson) {
+        if ("HpBoosts" in agentJson) {
             agent.hpBoosts = agentJson["HpBoosts"];
             agent.atkBoosts = agentJson["AtkBoosts"];
             agent.defBoosts = agentJson["DefBoosts"];
         }
 
-        if("CoreSkillInfo" in agentJson) {
+        if ("CoreSkillInfo" in agentJson) {
             agent.firstCoreStat = Stat.GetStatFromProps(agentJson["CoreSkillInfo"]["FirstCoreStat"]);
             agent.firstCoreBoosts = agentJson["CoreSkillInfo"]["FirstCoreStatValues"];
             agent.secondCoreStat = Stat.GetStatFromProps(agentJson["CoreSkillInfo"]["SecondCoreStat"]);
@@ -305,28 +340,32 @@ export class Agent {
             agent.goldenCoreMat = GoldenCoreMat.GetGoldenCoreMatFromId(agentJson["CoreSkillInfo"]["GoldenCoreMat"]);
         }
 
-        if("CoreSkillLevels" in agentJson) {
+        if ("CoreSkillLevels" in agentJson) {
             agent.coreSkillNames = agentJson["CoreSkillLevels"]["Name"];
 
-            for(let _ = 0; _ < agent.coreSkillNames.length; _++) {
+            for (let _ = 0; _ < agent.coreSkillNames.length; _++) {
                 agent.coreSkillDescs.push([]);
             }
 
-            for(let item = 0; item < agentJson["CoreSkillLevels"]["Descriptions"].length; item++) {
-                for(let i = 0; i < agentJson["CoreSkillLevels"]["Descriptions"][item].length; i++) {
+            for (let item = 0; item < agentJson["CoreSkillLevels"]["Descriptions"].length; item++) {
+                for (let i = 0; i < agentJson["CoreSkillLevels"]["Descriptions"][item].length; i++) {
                     let treatedString = TreatString(agentJson["CoreSkillLevels"]["Descriptions"][item][i]);
                     agent.coreSkillDescs[i].push(treatedString);
                 }
             }
         }
 
+        if ("SigWeaponId" in agentJson && agentJson["SigWeaponId"].length > 0) {
+            agent.signatureWEngine = await WEngine.WEngineForAgent(agentJson["SigWeaponId"][0], env);
+        }
+
         agent.emote = Emote.GetEmoteFromId(`${agent.id}`);
 
-        agent.loadFromHelper();
+        await agent.loadFromHelper(env);
         return agent;
     }
 
-    private static AgentFromHakushin(agentJson: any): Agent {
+    private static async AgentFromHakushin(agentJson: any, env: any): Promise<Agent> {
         const agent = new Agent();
 
         agent.id = agentJson["Id"];
@@ -367,7 +406,7 @@ export class Agent {
 
         agent.emote = Emote.GetEmoteFromId(`${agent.id}`);
 
-        agent.loadFromHelper();
+        await agent.loadFromHelper(env);
         return agent;
     }
 

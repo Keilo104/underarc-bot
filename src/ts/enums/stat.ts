@@ -73,24 +73,29 @@ export class Stat {
             case "13102":
                 return Stat.DEF;
 
+            case "12201":
             case "12202":
                 return Stat.IMPACT;
 
+            case "20101":
             case "20103":
                 return Stat.CRIT_RATE;
 
+            case "21101":
             case "21103":
                 return Stat.CRIT_DMG;
 
-            case "placeholder_anomaly_mastery":
+            case "31401":
                 return Stat.ANOMALY_MASTERY;
 
             case "31203":
                 return Stat.ANOMALY_PROFICIENCY;
 
+            case "23101":
             case "23103":
                 return Stat.PEN_RATIO;
 
+            case "30501":
             case "30502":
                 return Stat.ENERGY_REGEN;
 

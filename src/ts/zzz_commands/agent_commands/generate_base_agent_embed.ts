@@ -14,12 +14,13 @@ export function generateBaseAgentEmbed(agent: Agent): any {
         fields: [],
     }
 
-    agentEmbed.fields.push({
-        name: "", inline: false,
-        value:
-            `${agent.name}'s signature W-Engine is ` +
-            `**blablabla**`
-    });
+    if(agent.signatureWEngine)
+        agentEmbed.fields.push({
+            name: "", inline: false,
+            value:
+                `${agent.name}'s signature W-Engine is ` +
+                `${agent.signatureWEngine.emote.emote} **${agent.signatureWEngine.name}**`
+        });
 
 
     if (agent.releasePatch == null)

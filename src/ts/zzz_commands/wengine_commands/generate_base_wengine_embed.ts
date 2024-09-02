@@ -13,11 +13,14 @@ export function generateBaseWengineEmbed(wengine: WEngine): any {
         fields: [],
     }
 
-    wengineEmbed.fields.push({
-        name: "", inline: false,
-        value:
-            `${wengine.name} is **blablabla**'s signature W-Engine!`
-    });
+    if (wengine.signatureAgent) {
+        wengineEmbed.fields.push({
+            name: "", inline: false,
+            value:
+                `${wengine.name} is ${wengine.signatureAgent.emote.emote} **${wengine.signatureAgent.name}'s** ` +
+                `signature W-Engine!`
+        });
+    }
 
     if (wengine.releasePatch == null)
         wengineEmbed.footer = {

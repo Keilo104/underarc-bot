@@ -5,6 +5,7 @@ import {Stat} from "../enums/stat";
 import {ObtainMethod} from "../enums/gear_obtain_method";
 import {TreatString} from "../util/treat_string";
 import {GetBoostForLevel} from "../util/get_boost_per_level";
+import {Agent} from "./Agent";
 
 export class WEngine {
     public id: number | null = null;
@@ -13,6 +14,7 @@ export class WEngine {
     public embedColor: number = 0xffffff;
     public releasePatch: number | null = 1;
     public emote: Emote = Emote.UNKNOWN_ICON;
+    public signatureAgent: Agent | null = null;
 
     public rarity: Rarity = Rarity.UNKNOWN;
     public specialty: Specialty = Specialty.UNKNOWN;
@@ -93,7 +95,7 @@ export class WEngine {
         );
     }
 
-    private loadHelper() {
+    private async loadHelper(env: any) {
         const wengineHelper = require(`../../data/helpers/wengine_extra_infos.json`);
 
         if (this.id && "obtain" in wengineHelper[`${this.id}`])
@@ -103,7 +105,7 @@ export class WEngine {
             this.descOverride = TreatString(wengineHelper[`${this.id}`]["override_description"]);
 
         if (this.id && "signature" in wengineHelper[`${this.id}`])
-            console.log("HEEEEEEEEEEEEEEEELP");
+            this.signatureAgent = await Agent.AgentForWEngine(wengineHelper[`${this.id}`]["signature"], env)
 
         if (this.id && "icon_image_url" in wengineHelper[`${this.id}`])
             this.iconImageUrl = wengineHelper[`${this.id}`]["icon_image_url"];
@@ -125,17 +127,47 @@ export class WEngine {
         }
     }
 
+    public static async WEngineForAgent(wengineId: string, env: any): Promise<WEngine> {
+        const wengineJson = JSON.parse(await env.wengines.get(wengineId));
+        const wengineHelper = require(`../../data/helpers/wengine_extra_infos.json`);
+
+        if("source" in wengineHelper[wengineId] && wengineHelper[wengineId]["source"] == "hakushin")
+            return WEngine.WEngineForAgentFromHakushin(wengineJson);
+
+        return WEngine.WEngineForAgentFromSelfData(wengineJson);
+    }
+
+    private static WEngineForAgentFromSelfData(wengineJson: any): WEngine {
+        const wengine = new WEngine();
+
+        wengine.id = wengineJson["Id"];
+        wengine.name = wengineJson["Name"];
+        wengine.emote = Emote.GetEmoteFromId(`${wengine.id}`);
+
+        return wengine;
+    }
+
+    private static WEngineForAgentFromHakushin(wengineJson: any): WEngine {
+        const wengine = new WEngine();
+
+        wengine.id = wengineJson["Id"];
+        wengine.name = wengineJson["Name"];
+        wengine.emote = Emote.GetEmoteFromId(`${wengine.id}`);
+
+        return wengine;
+    }
+
     public static async WEngineFromId(wengineId: string, env: any): Promise<WEngine> {
         const wengineJson = JSON.parse(await env.wengines.get(wengineId));
         const wengineHelper = require(`../../data/helpers/wengine_extra_infos.json`);
 
         if("source" in wengineHelper[wengineId] && wengineHelper[wengineId]["source"] == "hakushin")
-            return WEngine.WEngineFromHakushin(wengineJson);
+            return WEngine.WEngineFromHakushin(wengineJson, env);
 
-        return WEngine.WEngineFromSelfData(wengineJson);
+        return WEngine.WEngineFromSelfData(wengineJson, env);
     }
 
-    private static WEngineFromSelfData(wengineJson: any): WEngine {
+    private static async WEngineFromSelfData(wengineJson: any, env: any): Promise<WEngine> {
         const wengine = new WEngine();
 
         wengine.id = wengineJson["Id"];
@@ -158,22 +190,22 @@ export class WEngine {
         }
 
         wengine.setScalingsFromRarity();
-        wengine.loadHelper();
+        await wengine.loadHelper(env);
         return wengine;
     }
 
-    private static WEngineFromHakushin(wengineJson: any): WEngine {
+    private static async WEngineFromHakushin(wengineJson: any, env: any): Promise<WEngine> {
         const wengine = new WEngine();
 
         wengine.id = wengineJson["Id"];
         wengine.name = wengineJson["Name"];
-        wengine.specialty = wengineJson["WeaponType"];
+        wengine.specialty = Specialty.GetSpecialtyFromId(wengineJson["WeaponType"]);
 
         wengine.rarity = Rarity.GetRarityFromId(wengineJson["Rarity"]);
         wengine.emote = Emote.GetEmoteFromId(`${wengine.id}`);
 
         wengine.setScalingsFromRarity();
-        wengine.loadHelper();
+        await wengine.loadHelper(env);
         return wengine;
     }
 }

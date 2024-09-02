@@ -2,23 +2,22 @@ import {FigureOutUsername} from "./figure_out_username";
 import {InteractionContextType} from "./discord_enums";
 import {FigureOutId} from "./figure_out_id";
 
-export async function logMessage(env: any, interaction: any, logging: string[]) {
+export async function logMessage(env: any, interaction: any) {
     const url = `https://discord.com/api/webhooks/${env.LOGGING_WEBHOOK}`;
-
     const fields: any[] = [];
-    let channel: string = "Not in a server";
     const currentDate: number = Math.floor(Date.now() / 1000);
 
-    logging.forEach(log => {
-        fields.push({
-            name: "", inline: false,
-            value: log
-        })
-    });
+    let channel: string = "Not in a server";
 
     if(interaction.context !== InteractionContextType.PRIVATE_CHANNEL)
         channel = `https://discord.com/channels/${interaction.guild_id}/${interaction.channel_id}`;
 
+    interaction.data.options.forEach((option: any)=> {
+        fields.push({
+            name: "", inline: false,
+            value: `**${option["name"]}:** ${option["value"]}\n`
+        })
+    });
 
     const response = await fetch(url, {
         headers: {

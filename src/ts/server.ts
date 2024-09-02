@@ -4,7 +4,7 @@ import {
     AGENT_COMMAND,
     EIGHT_BALL_COMMAND,
     GUILD_INSTALL_COMMAND,
-    PING_COMMAND,
+    PING_COMMAND, SEND_ISSUE_COMMAND,
     USER_INSTALL_COMMAND, WENGINE_COMMAND,
 } from "./commands";
 import { Emote } from "./enums/emote";
@@ -12,6 +12,7 @@ import { FigureOutUsername } from "./util/figure_out_username";
 import {JsonResponse} from "./util/json_reponse";
 import {agentCommandHandler } from "./zzz_commands/agent_command";
 import {wengineCommandHandler} from "./zzz_commands/wengine_command";
+import {logMessage} from "./util/log_message";
 
 const router = AutoRouter();
 
@@ -111,6 +112,17 @@ router.post("/", async (request: IRequest, env: any) => {
                         content:
                             `**${FigureOutUsername(interaction)} asked:** ${interaction.data.options[0].value}\n\n` +
                             `${Emote.ARCY_ICON.emote}: ${eight_ball_answers_json["answers"].sample()}`
+                    }
+                });
+
+            case SEND_ISSUE_COMMAND.name.toLowerCase():
+                await logMessage(env, interaction);
+
+                return new JsonResponse({
+                    type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
+                    data: {
+                        content: `Thanks for the raised issue! Mama keilo will look at it!`,
+                        flags: InteractionResponseFlags.EPHEMERAL,
                     }
                 });
 

@@ -19,11 +19,7 @@ export async function wengineCommandHandler(interaction: any, env: any): Promise
     let refinementInput: string | null = null;
     let embed: any | null = null;
 
-    const logging: string[] = [];
-
     interaction.data.options.forEach((option: any) => {
-        logging.push(`**${option["name"]}:** ${option["value"]}\n`);
-
         if (option["name"] == "w-engine")
             wengineInput = option["value"];
 
@@ -61,7 +57,7 @@ export async function wengineCommandHandler(interaction: any, env: any): Promise
         });
     }
 
-    await logMessage(env, interaction, logging);
+    await logMessage(env, interaction);
     return new JsonResponse({
         type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
         data: {

@@ -112,3 +112,19 @@ export const EIGHT_BALL_COMMAND = {
         },
     ],
 }
+
+export const SEND_ISSUE_COMMAND = {
+    name: "issue",
+    type: 1,
+    description: "send an issue to mama keilo! or just a note, she will read it and deal with it",
+    integration_types: [ApplicationIntegrationType.GUILD_INSTALL, ApplicationIntegrationType.USER_INSTALL],
+    contexts: [InteractionContextType.GUILD, InteractionContextType.PRIVATE_CHANNEL],
+    options: [
+        {
+            name: "issue",
+            description: "issue you wish to send",
+            type: 3,
+            required: true,
+        },
+    ],
+}

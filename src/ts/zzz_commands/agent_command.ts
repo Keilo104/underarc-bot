@@ -31,11 +31,7 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
     let levelInput: number | null = null;
     let embed: any | null = null;
 
-    const logging: string[] = []
-
     interaction.data.options.forEach((option: any) => {
-        logging.push(`**${option["name"]}:** ${option["value"]}\n`);
-
         if (option["name"] == "agent")
             agentInput = option["value"];
 
@@ -86,7 +82,7 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
         });
     }
 
-    await logMessage(env, interaction, logging);
+    await logMessage(env, interaction);
     return new JsonResponse({
         type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
         data: {

@@ -3,7 +3,7 @@ import {
     AGENT_COMMAND,
     EIGHT_BALL_COMMAND,
     GUILD_INSTALL_COMMAND,
-    PING_COMMAND,
+    PING_COMMAND, SEND_ISSUE_COMMAND,
     USER_INSTALL_COMMAND, WENGINE_COMMAND,
 } from "./commands.js";
 
@@ -34,7 +34,7 @@ const response = await fetch(url, {
     body: JSON.stringify(
         [
             PING_COMMAND, EIGHT_BALL_COMMAND, USER_INSTALL_COMMAND, GUILD_INSTALL_COMMAND,
-            AGENT_COMMAND, WENGINE_COMMAND,
+            AGENT_COMMAND, WENGINE_COMMAND, SEND_ISSUE_COMMAND
         ]
     ),
 });

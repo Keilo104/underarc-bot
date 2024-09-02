@@ -7,9 +7,9 @@ export function printAgentMindscapes(agent: Agent, env: any): any {
 
     [5, 3, 1, 0].forEach(item => {
          agentEmbed.fields.unshift({
-             name: `M${item+1}: ${agent.consNames[item]}`, inline: false,
+             name: `M${item+1}: ${agent.consNames[item] ? agent.consNames[item] : "No Data"}`, inline: false,
              value:
-                 `${agent.consEffects[item]}`
+                 `${agent.consEffects[item] ? agent.consEffects[item] : "No Data"}`
         });
     });
 
@@ -20,9 +20,9 @@ export function printAgentMindscapesAtLevel(agent: Agent, level: number, env: an
     const agentEmbed = generateBaseAgentEmbed(agent, env);
 
     agentEmbed.fields.unshift({
-         name: `M${level}: ${agent.consNames[level-1]}`, inline: false,
+         name: `M${level}: ${agent.consNames[level-1] ? agent.consNames[level-1] : "No Data"}`, inline: false,
          value:
-             `${agent.consEffects[level-1]}`
+             `${agent.consEffects[level-1] ? agent.consEffects[level-1] : "No Data"}`
     });
 
     return agentEmbed;

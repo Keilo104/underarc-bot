@@ -46,7 +46,7 @@ export async function wengineCommandHandler(interaction: any, env: any): Promise
 
     interaction.data.options.forEach((option: any) => {
         if (option["name"] == "w-engine")
-            wengineInput = option["value"];
+            wengineInput = option["value"].toLowerCase();
 
         else if (option["name"] == "level")
             levelInput = option["value"];

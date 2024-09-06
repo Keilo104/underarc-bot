@@ -34,7 +34,7 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
 
     interaction.data.options.forEach((option: any) => {
         if (option["name"] == "agent")
-            agentInput = option["value"];
+            agentInput = option["value"].toLowerCase();
 
         else if (option["name"] == "what")
             whatInput = option["value"];

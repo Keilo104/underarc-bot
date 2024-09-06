@@ -13,13 +13,14 @@ def look_in_json(json_to_look, what_to_look_for):
         for item in json_to_look:
             flag |= look_in_json(json_to_look[item], what_to_look_for)
 
-            if item in what_to_look_for:
-                # print(f"Key: {item}, item: {json_to_look[item]}")
-                flag = True
+            for x in what_to_look_for:
+                if (type(item) is str and type(x) is str and x in item) or (item == x):
+                    flag = True
 
-    elif json_to_look in what_to_look_for:
-        # print(f"Text: {json_to_look}")
-        flag = True
+    else:
+        for item in what_to_look_for:
+            if (type(json_to_look) is str and type(item) is str and json_to_look == item) or item == json_to_look:
+                flag = True
 
     return flag
 
@@ -27,7 +28,7 @@ def look_in_json(json_to_look, what_to_look_for):
 zenless_data_path = os.environ["ZENLESS_DATA_PATH"]
 
 places_to_look = ["FileCfg", "Data", "TextMap"]
-what_to_look_for = ["3600", 3600]
+what_to_look_for = ["4510", 4510]
 
 for directory in places_to_look:
     for json_file_path in os.listdir(f"{zenless_data_path}/{directory}"):

@@ -1,4 +1,4 @@
-import {JsonResponse} from "../util/json_reponse";
+import {JsonResponse} from "../model/JsonResponse";
 import {InteractionResponseFlags, InteractionResponseType} from "discord-interactions";
 import {WEngine} from "../model/WEngine";
 import {
@@ -13,8 +13,8 @@ async function translateWEngine(wengine: string | null, env: any): Promise<strin
     if(wengine == null)
         return null;
 
-    const signatureWeaponStrings = require("../../data/helpers/wengine_signature_translations.json")["wengineSignatureTranslations"];
-    const wengineTranslations = require("../../data/helpers/wengine_translations.json");
+    const signatureWeaponStrings = JSON.parse(await env.helpers.get("wengine_signature_translations"))["wengineSignatureTranslations"];
+    const wengineTranslations = JSON.parse(await env.helpers.get("wengine_translations"));
 
     let lookingFor = wengine;
     let foundLen = 0;
@@ -26,7 +26,7 @@ async function translateWEngine(wengine: string | null, env: any): Promise<strin
         }
     });
 
-    const agentId = translateAgent(lookingFor);
+    const agentId = await translateAgent(lookingFor, env);
 
     if(agentId)
         return `${(await Agent.AgentFromIdSlim(agentId, env)).signatureWEngineId}`;

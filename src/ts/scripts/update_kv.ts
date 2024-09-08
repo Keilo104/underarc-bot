@@ -1,8 +1,8 @@
-import ids_json from "../data/helpers/zzz_ids.json" assert { type: "json" }
-import agent_helper from "../data/helpers/agent_extra_infos.json" assert { type: "json" }
-import wengine_helper from "../data/helpers/wengine_extra_infos.json" assert { type: "json" }
-import bangboo_helper from "../data/helpers/bangboo_extra_infos.json" assert { type: "json" }
-import helpers_helper from "../data/helpers/helpers_helper.json" assert { type: "json" }
+import ids_json from "../../data/helpers/zzz_ids.json" assert { type: "json" }
+import agent_helper from "../../data/helpers/agent_extra_infos.json" assert { type: "json" }
+import wengine_helper from "../../data/helpers/wengine_extra_infos.json" assert { type: "json" }
+import bangboo_helper from "../../data/helpers/bangboo_extra_infos.json" assert { type: "json" }
+import helpers_helper from "../../data/helpers/helpers_helper.json" assert { type: "json" }
 import fs from "node:fs";
 import axios from "axios";
 import dotenv from "dotenv";

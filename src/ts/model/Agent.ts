@@ -60,7 +60,7 @@ export class Agent {
     public consEffects: string[] = [];
 
     private async loadFromHelper(env: any) {
-        const agentHelper = require(`../../data/helpers/agent_extra_infos.json`);
+        const agentHelper = JSON.parse(await env.helpers.get("agent_extra_infos"));
 
         if (this.id && "override_full_name" in agentHelper[`${this.id}`])
             this.fullName = agentHelper[`${this.id}`]["override_full_name"];
@@ -267,10 +267,10 @@ export class Agent {
 
     public static async AgentFromIdSlim(agentId: string, env: any): Promise<Agent> {
         const agentJson = JSON.parse(await env.agents.get(agentId));
-        const agentHelper = require(`../../data/helpers/agent_extra_infos.json`);
+        const agentHelper = JSON.parse(await env.helpers.get("agent_extra_infos"));
 
         if("source" in agentHelper[agentId] && agentHelper[agentId]["source"] == "hakushin")
-            return Agent.AgentFromHakushinSlim(agentJson);
+            return Agent.AgentFromHakushinSlim(agentJson, env);
 
         return Agent.AgentFromSelfDataSlim(agentJson);
     }
@@ -288,8 +288,8 @@ export class Agent {
         return agent;
     }
 
-    private static async AgentFromHakushinSlim(agentJson: any): Promise<Agent> {
-        const agentHelper = require(`../../data/helpers/agent_extra_infos.json`);
+    private static async AgentFromHakushinSlim(agentJson: any, env: any): Promise<Agent> {
+        const agentHelper = JSON.parse(await env.helpers.get("agent_extra_infos"));
         const agent = new Agent();
 
         agent.id = agentJson["Id"];
@@ -304,7 +304,7 @@ export class Agent {
 
     public static async AgentFromId(agentId: string, env: any): Promise<Agent> {
         const agentJson = JSON.parse(await env.agents.get(agentId));
-        const agentHelper = require(`../../data/helpers/agent_extra_infos.json`);
+        const agentHelper = JSON.parse(await env.helpers.get("agent_extra_infos"));
 
         if("source" in agentHelper[agentId] && agentHelper[agentId]["source"] == "hakushin")
             return Agent.AgentFromHakushin(agentJson, env);

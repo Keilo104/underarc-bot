@@ -99,7 +99,7 @@ export class WEngine {
     }
 
     private async loadHelper(env: any) {
-        const wengineHelper = require(`../../data/helpers/wengine_extra_infos.json`);
+        const wengineHelper = JSON.parse(await env.helpers.get("wengine_extra_infos"));
 
         if (this.id && "obtain" in wengineHelper[`${this.id}`])
             this.obtainMethod = ObtainMethod.GetObtainMethodFromString(wengineHelper[`${this.id}`]["obtain"]);
@@ -120,9 +120,9 @@ export class WEngine {
             this.releasePatch = wengineHelper[`${this.id}`]["release_patch"];
     }
 
-    private setScalingsFromRarity() {
+    private async setScalingsFromRarity(env: any) {
         if(this.rarity !== null && this.rarity !== Rarity.UNKNOWN) {
-            const xpTables = require(`../../data/helpers/wengine_xp_tables.json`);
+            const xpTables = JSON.parse(await env.helpers.get("wengine_xp_tables"));
 
             this.mainStatScaling = xpTables[`${this.rarity.id}`]["MainstatScaling"];
             this.mainStatBoosts = xpTables[`${this.rarity.id}`]["MainstatBoosts"];
@@ -132,7 +132,7 @@ export class WEngine {
 
     public static async WEngineFromIdSlim(wengineId: string, env: any): Promise<WEngine> {
         const wengineJson = JSON.parse(await env.wengines.get(wengineId));
-        const wengineHelper = require(`../../data/helpers/wengine_extra_infos.json`);
+        const wengineHelper = JSON.parse(await env.helpers.get("wengine_extra_infos"));
 
         if("source" in wengineHelper[wengineId] && wengineHelper[wengineId]["source"] == "hakushin")
             return WEngine.WEngineFromHakushinSlim(wengineJson);
@@ -162,7 +162,7 @@ export class WEngine {
 
     public static async WEngineFromId(wengineId: string, env: any): Promise<WEngine> {
         const wengineJson = JSON.parse(await env.wengines.get(wengineId));
-        const wengineHelper = require(`../../data/helpers/wengine_extra_infos.json`);
+        const wengineHelper = JSON.parse(await env.helpers.get("wengine_extra_infos"));
 
         if("source" in wengineHelper[wengineId] && wengineHelper[wengineId]["source"] == "hakushin")
             return WEngine.WEngineFromHakushin(wengineJson, env);
@@ -192,7 +192,7 @@ export class WEngine {
             wengine.descValues[i] = TreatString(wengine.descValues[i]);
         }
 
-        wengine.setScalingsFromRarity();
+        await wengine.setScalingsFromRarity(env);
         await wengine.loadHelper(env);
 
         return wengine;
@@ -219,7 +219,7 @@ export class WEngine {
             wengine.descValues.push(TreatString(wengineJson["Talents"][i]["Desc"]));
         });
 
-        wengine.setScalingsFromRarity();
+        await wengine.setScalingsFromRarity(env);
         await wengine.loadHelper(env);
 
         return wengine;

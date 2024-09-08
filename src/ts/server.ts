@@ -6,10 +6,10 @@ import {
     GUILD_INSTALL_COMMAND,
     PING_COMMAND, SEND_ISSUE_COMMAND,
     USER_INSTALL_COMMAND, WENGINE_COMMAND,
-} from "./commands";
+} from "./enums/commands";
 import { Emote } from "./enums/emote";
 import { FigureOutUsername } from "./util/figure_out_username";
-import {JsonResponse} from "./util/json_reponse";
+import {JsonResponse} from "./model/JsonResponse";
 import {agentCommandHandler } from "./zzz_commands/agent_command";
 import {wengineCommandHandler} from "./zzz_commands/wengine_command";
 import {logInteraction} from "./util/log_interaction";

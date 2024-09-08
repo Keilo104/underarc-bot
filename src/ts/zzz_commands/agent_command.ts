@@ -1,4 +1,4 @@
-import {JsonResponse} from "../util/json_reponse";
+import {JsonResponse} from "../model/JsonResponse";
 import {InteractionResponseFlags, InteractionResponseType} from "discord-interactions";
 import {Agent} from "../model/Agent";
 import {printAgentStats, printAgentStatsAtLevel} from "./agent_commands/print_agent_stats";
@@ -6,8 +6,8 @@ import {printAgentCore, printAgentCoreAtLevel} from "./agent_commands/print_agen
 import {logInteraction} from "../util/log_interaction";
 import {printAgentMindscapes, printAgentMindscapesAtLevel} from "./agent_commands/print_agent_mindscapes";
 
-export function translateAgent(agent: string | null): string | null {
-    const agentTranslations = require("../../data/helpers/agent_translations.json");
+export async function translateAgent(agent: string | null, env: any): Promise<string | null> {
+    const agentTranslations = JSON.parse(await env.helpers.get("agent_translations"));
 
     if(agent && agentTranslations.hasOwnProperty(agent)){
         return agentTranslations[agent];
@@ -43,7 +43,7 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
             levelInput = option["value"];
     });
 
-    const agentId: string | null = translateAgent(agentInput);
+    const agentId: string | null = await translateAgent(agentInput, env);
 
     if(agentId) {
         const agent = await Agent.AgentFromId(agentId, env);

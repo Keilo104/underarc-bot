@@ -5,7 +5,7 @@ import {
     GUILD_INSTALL_COMMAND,
     PING_COMMAND, SEND_ISSUE_COMMAND,
     USER_INSTALL_COMMAND, WENGINE_COMMAND,
-} from "./commands.js";
+} from "../enums/commands.js";
 
 if (process.argv[2] == "dev")
     dotenv.config({ path: ".dev.vars" });
@@ -21,7 +21,7 @@ if (!token)
     throw new Error("The DISCORD_TOKEN environment variable is required.");
 
 if (!applicationId)
-      throw new Error("The DISCORD_APPLICATION_ID environment variable is required.");
+    throw new Error("The DISCORD_APPLICATION_ID environment variable is required.");
 
 const url = `https://discord.com/api/v10/applications/${applicationId}/commands`;
 

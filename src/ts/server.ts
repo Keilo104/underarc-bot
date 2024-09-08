@@ -166,7 +166,7 @@ router.post("/", async (request: IRequest, env: any) => {
                 });
 
             case SEND_ISSUE_COMMAND.name.toLowerCase():
-                await logInteraction(env, interaction);
+                await logInteraction(interaction, env);
 
                 return new JsonResponse({
                     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,

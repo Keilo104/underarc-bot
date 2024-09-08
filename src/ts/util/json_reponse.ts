@@ -7,6 +7,6 @@ export class JsonResponse extends Response {
             },
         };
 
-        super(jsonBody, init)
+        super(jsonBody, init);
     }
 }

@@ -91,7 +91,7 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
         });
     }
 
-    await logInteraction(env, interaction);
+    await logInteraction(interaction, env);
     return new JsonResponse({
         type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
         data: {

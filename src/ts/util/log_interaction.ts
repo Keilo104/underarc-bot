@@ -2,7 +2,7 @@ import {FigureOutUsername} from "./figure_out_username";
 import {InteractionContextType} from "./discord_enums";
 import {FigureOutId} from "./figure_out_id";
 
-export async function logInteraction(env: any, interaction: any) {
+export async function logInteraction(interaction: any, env: any) {
     const url = `https://discord.com/api/webhooks/${env.LOGGING_WEBHOOK}`;
     const fields: any[] = [];
     const currentDate: number = Math.floor(Date.now() / 1000);

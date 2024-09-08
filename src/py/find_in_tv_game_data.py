@@ -28,7 +28,7 @@ def look_in_json(json_to_look, what_to_look_for):
 zenless_data_path = os.environ["ZENLESS_DATA_PATH"]
 
 places_to_look = ["FileCfg", "Data", "TextMap"]
-what_to_look_for = ["4510", 4510]
+what_to_look_for = ["1000104", 1000104]
 
 for directory in places_to_look:
     for json_file_path in os.listdir(f"{zenless_data_path}/{directory}"):

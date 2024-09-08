@@ -34,5 +34,5 @@ with open(f"{zenless_data_path}/FileCfg/WeaponStarTemplateTb.json", "r", encodin
         wengine_general_data[item["GNAGJHPOCIO"]]["MainstatBoosts"][item["LLLIKCEGBBJ"]] = item["LDIAMGGGFME"]
         wengine_general_data[item["GNAGJHPOCIO"]]["SubstatBoosts"][item["LLLIKCEGBBJ"]] = item["CGMEFNBJIGH"]
 
-with open(f"src/data/wengines/xp_tables.json", "w", encoding="utf-8") as json_file_to_write:
+with open(f"src/data/helpers/xp_tables.json", "w", encoding="utf-8") as json_file_to_write:
     json_file_to_write.write(json.dumps(wengine_general_data, indent=2))

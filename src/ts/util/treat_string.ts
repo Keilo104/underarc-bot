@@ -37,5 +37,5 @@ export function TreatString(string: string): string {
         .replaceAll("`", "\\`")
         .replaceAll("Attack-type character", `${Emote.ATTACK_ICON.emote}Attack-type character`)
         .replaceAll("Support character", `${Emote.SUPPORT_ICON.emote}Support character`)
-        .replaceAll("Anomaly Agents", `${Emote.ANOMALY_ICON.emote}Anomaly Agents`)
+        .replaceAll("Anomaly Agents", `${Emote.ANOMALY_ICON.emote}Anomaly Agents`);
 }

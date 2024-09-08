@@ -1,5 +1,5 @@
 import {FigureOutUsername} from "./figure_out_username";
-import {InteractionContextType} from "./discord_enums";
+import {InteractionContextType} from "../enums/discord_enums";
 import {FigureOutId} from "./figure_out_id";
 
 export async function logInteraction(interaction: any, env: any) {

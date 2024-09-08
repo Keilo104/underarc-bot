@@ -1,6 +1,8 @@
 import ids_json from "../data/helpers/zzz_ids.json" assert { type: "json" }
 import agent_helper from "../data/helpers/agent_extra_infos.json" assert { type: "json" }
 import wengine_helper from "../data/helpers/wengine_extra_infos.json" assert { type: "json" }
+import bangboo_helper from "../data/helpers/bangboo_extra_infos.json" assert { type: "json" }
+import helpers_helper from "../data/helpers/helpers_helper.json" assert { type: "json" }
 import fs from "node:fs";
 import axios from "axios";
 import dotenv from "dotenv";
@@ -33,7 +35,7 @@ ids_json.agents.forEach((agentId: string) => {
     jsonResponse["agents"].push({
         "Id": agentId,
         "json": agentJson,
-    })
+    });
 });
 
 jsonResponse["wengines"] = [];
@@ -52,7 +54,38 @@ ids_json.wengines.forEach((wengineId: string) => {
     jsonResponse["wengines"].push({
         "Id": wengineId,
         "json": wengineJson,
-    })
+    });
+});
+
+jsonResponse["bangboos"] = [];
+
+ids_json.bangboos.forEach((bangbooId: string) => {
+    let bangbooFile: string, bangbooJson: any;
+
+    if("source" in bangboo_helper[bangbooId as keyof Object]) {
+        bangbooFile = fs.readFileSync(`./src/data/hakushin_data/${bangbooId}.json`, "utf-8");
+        bangbooJson = JSON.parse(bangbooFile);
+    } else {
+        bangbooFile = fs.readFileSync(`./src/data/bangboos/${bangbooId}.json`, "utf-8");
+        bangbooJson = JSON.parse(bangbooFile);
+    }
+
+    jsonResponse["bangboos"].push({
+        "Id": bangbooId,
+        "json": bangbooJson,
+    });
+});
+
+jsonResponse["helpers"] = [];
+
+helpers_helper.helpers.forEach((helperId: string) => {
+    let helperFile = fs.readFileSync(`./src/data/helpers/${helperId}.json`, "utf-8");
+    let helperJson = JSON.parse(helperFile);
+
+    jsonResponse["helpers"].push({
+        "Id": helperId,
+        "json": helperJson,
+    });
 });
 
 axios.post(`${endpoint}/massUpdate`, jsonResponse, {

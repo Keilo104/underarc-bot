@@ -1,4 +1,4 @@
-import {InteractionContextType} from "./discord_enums";
+import {InteractionContextType} from "../enums/discord_enums";
 
 export function FigureOutUsername(interaction: any): string {
     if(interaction.context == InteractionContextType.PRIVATE_CHANNEL)

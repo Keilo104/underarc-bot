@@ -1,0 +1,9 @@
+{
+  "helpers": [
+    "helpers_helper",
+    "agent_extra_infos", "agent_translations",
+    "bangboo_extra_infos", "bangboo_translations",
+    "wengine_extra_infos", "wengine_xp_tables", "wengine_signature_translations", "wengine_translations",
+    "zzz_ids"
+  ]
+}

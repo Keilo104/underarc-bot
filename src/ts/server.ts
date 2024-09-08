@@ -20,6 +20,7 @@ export interface Env {
     agents: KVNamespace,
     wengines: KVNamespace,
     bangboos: KVNamespace,
+    helpers: KVNamespace,
 }
 
 router.get("/", (_: IRequest, env: any) => {
@@ -50,6 +51,13 @@ router.post("/massUpdate", async (request: IRequest, env: any) => {
         if(requestJson.hasOwnProperty("bangboos")) {
             for(const bangboo of requestJson["bangboos"]) {
                 await env.bangboos.put(bangboo["Id"], JSON.stringify(bangboo["json"]));
+                updatedAmount++;
+            }
+        }
+
+        if(requestJson.hasOwnProperty("helpers")) {
+            for(const helper of requestJson["helpers"]) {
+                await env.helpers.put(helper["Id"], JSON.stringify(helper["json"]));
                 updatedAmount++;
             }
         }
@@ -100,6 +108,21 @@ router.post("/bangboos/:bangbooId", async (request: IRequest, env: any) => {
         await env.bangboos.put(bangbooId, JSON.stringify(bangbooJson));
 
         return new Response(`Bangboo ${bangbooId} added/updated successfully`, { status: 200 });
+    }
+
+    return new Response("Bad request signature.", { status: 401 });
+});
+
+router.post("/helpers/:helperId", async (request: IRequest, env: any) => {
+    const securityKey = request.headers.get("security-key");
+
+    if (securityKey && securityKey === env.ENDPOINT_KEY) {
+        let helperJson = await request.json();
+        let helperId = request.params.helperId;
+
+        await env.helpers.put(helperId, JSON.stringify(helperJson));
+
+        return new Response(`Helper ${helperId} added/updated successfully`, { status: 200 });
     }
 
     return new Response("Bad request signature.", { status: 401 });

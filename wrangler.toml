@@ -5,5 +5,6 @@ compatibility_date = "2024-08-06"
 kv_namespaces = [
     { binding = "agents", id = "c94d8925006d4b96b8574b4043322fec" },
     { binding = "wengines", id = "6e440ed53318461b88dd27411171b784" },
-    { binding = "bangboos", id = "dec4b61a5072460ba4d9758c2d81c9d0" }
+    { binding = "bangboos", id = "dec4b61a5072460ba4d9758c2d81c9d0" },
+    { binding = "helpers", id = "fe38e28c8c4f4bd2bd456aa72c681b20" }
 ]

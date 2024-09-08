@@ -122,7 +122,7 @@ export class WEngine {
 
     private setScalingsFromRarity() {
         if(this.rarity !== null && this.rarity !== Rarity.UNKNOWN) {
-            const xpTables = require(`../../data/wengines/xp_tables.json`);
+            const xpTables = require(`../../data/helpers/xp_tables.json`);
 
             this.mainStatScaling = xpTables[`${this.rarity.id}`]["MainstatScaling"];
             this.mainStatBoosts = xpTables[`${this.rarity.id}`]["MainstatBoosts"];

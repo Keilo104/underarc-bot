@@ -25,6 +25,7 @@
   },
 
   "1071": {
+    "icon_image_url": "https://i.imgur.com/niuAqay.png",
     "release_patch": 3,
     "signature_weapon": "14107",
     "override_full_name": "Caesar King",
@@ -78,6 +79,7 @@
   },
 
   "1171": {
+    "icon_image_url": "https://i.imgur.com/2SzwDFT.png",
     "release_patch": 3,
     "signature_weapon": "14117",
     "override_full_name": "Burnice White",

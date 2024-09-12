@@ -140,7 +140,7 @@
     "embed_color": "0xfe437e"
   },
   "54011": {
-    "icon_image_url": "",
+    "icon_image_url": "https://i.imgur.com/JqwcBaZ.png",
     "release_patch": 3,
     "damage_type": ["Physical"],
     "synergy_count": 2,

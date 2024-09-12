@@ -33,6 +33,8 @@ export function TreatString(string: string): string {
         .replaceAll("<color=#ff5521>", `${Emote.FIRE_ICON.emote}`)
         .replaceAll("<color=#2BAD00>", "")
         .replaceAll("<color=#ffffff>", "")
+        .replaceAll("<color=#FFFFFF>", "")
+        .replaceAll("<color=#FF5521>", "")
         .replaceAll("</color>", "")
         .replaceAll("`", "\\`")
         .replaceAll("Attack-type character", `${Emote.ATTACK_ICON.emote}Attack-type character`)

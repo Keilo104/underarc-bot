@@ -30,6 +30,8 @@ export function printAgentCore(agent: Agent, env: any): any {
         value: ``
     });
 
+    console.log(agentEmbed);
+
     return agentEmbed;
 }
 

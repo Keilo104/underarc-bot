@@ -19,18 +19,33 @@ export function printAgentCore(agent: Agent, env: any): any {
     });
 
     for (let i = agent.coreSkillNames.length - 1 ; i > -1 ; i--) {
-        agentEmbed.fields.unshift({
-            name: agent.coreSkillNames[i], inline: false,
-            value: `${agent.coreSkillMeshedDescription(i)}`
-        });
+        if(agent.coreSkillMeshedDescription(i).length <= 1024)
+            agentEmbed.fields.unshift({
+                name: agent.coreSkillNames[i], inline: false,
+                value: `${agent.coreSkillMeshedDescription(i)}`
+            });
+
+        else {
+            let coreSkillDescs: string[] = agent.coreSkillMeshedDescription(i).split("\n");
+
+            for (let j = coreSkillDescs.length - 1; j > 0; j--) {
+                agentEmbed.fields.unshift({
+                    name: "", inline: false,
+                    value: `${coreSkillDescs[j]}`
+                });
+            }
+
+            agentEmbed.fields.unshift({
+                name: agent.coreSkillNames[i], inline: false,
+                value: `${coreSkillDescs[0]}`
+            });
+        }
     }
 
     agentEmbed.fields.unshift({
         name: `Core at Lv0 → LvF`, inline: false,
         value: ``
     });
-
-    console.log(agentEmbed);
 
     return agentEmbed;
 }

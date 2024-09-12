@@ -17,7 +17,30 @@
     "4": "Sons of Calydon"
   },
   "Gender": 2,
-  "PartnerInfo": {},
+  "PartnerInfo": {
+    "Birthday": "MAY 23",
+    "FullName": "Burnice White",
+    "Gender": "Female",
+    "IconPath": "UI/Sprite/A1DynamicLoad/IconRoleCircle/UnPacker/IconRoleCircle32.png",
+    "ImpressionF": "Burnice sure makes delicious drinks! No wonder she's famous in the Outer Ring.",
+    "ImpressionM": "Yeah, so long as we don't try her blends for Steeltusk.",
+    "Name": "",
+    "OutlookDesc": "There's no record of Burnice in the New Eridu Citizen Verification Profile.\nNote: Burnice has a good Aptitude for Ether",
+    "ProfileDesc": "Burnice, the Nitro-Fuel bartender for the Sons of Calydon.\nA hopeless fuel lover. She is responsible for all the fuel used by the machinery owned by the Sons of Calydon.\nShe seems to have a passion for fuel that overwhelms all else.\n\nBurnice is super outgoing, friendly, and oblivious.\nShe is easily able to spread her emotions to the people around her, bringing them the same optimism she possesses.\n\"You like the drinks I mix? Thank you! Steeltusk does, too~ That big guy can eat two hundred tons for a single meal!\"\n\"Do you wanna try it's special fuel blend? It's suuuuper hot!\"",
+    "Race": "Sons of Calydon",
+    "RoleIcon": "IconRole/UnPacker/IconRole32",
+    "Stature": "160",
+    "UnlockCondition": [
+      "Obtain Agent",
+      "Complete Main Story \"Leisurely Lull: Unexpected New Customers\" (available after completing Main Story Chapter 4) to unlock"
+    ],
+    "TrustLv": {
+      "1": "Burnice, the Nitro-Fuel bartender for the Sons of Calydon.\nA hopeless fuel lover. She is responsible for all the fuel used by the machinery owned by the Sons of Calydon.\nShe seems to have a passion for fuel that overwhelms all else.\n\nBurnice is super outgoing, friendly, and oblivious.\nShe is easily able to spread her emotions to the people around her, bringing them the same optimism she possesses.\n\"You like the drinks I mix? Thank you! Steeltusk does, too~ That big guy can eat two hundred tons for a single meal!\"\n\"Do you wanna try it's special fuel blend? It's suuuuper hot!\"",
+      "2": "",
+      "3": "\"Fire can bring warmth, but it can also burn. For someone like this, when used with good intentions, they can keep the cold at bay, when used with bad intentions... well, that idiot Caesar couldn't think of any bad intentions if her life depended on it.\"\n—From a certain young heiress who wishes to remain anonymous",
+      "4": ""
+    }
+  },
   "Stats": {
     "Armor": 0,
     "ArmorGrowth": 0,
@@ -37,8 +60,8 @@
     "CritRes": 0,
     "Defence": 48,
     "DefenceGrowth": 65524,
-    "ElementAbnormalPower": 120,
-    "ElementMystery": 118,
+    "ElementAbnormalPower": 118,
+    "ElementMystery": 120,
     "Endurance": 0,
     "HpGrowth": 803931,
     "HpMax": 592,
@@ -301,15 +324,15 @@
     "Basic": {
       "Description": [
         {
-          "Name": "Burnice_Skill_Normal_Title",
-          "Desc": "Burnice_Skill_Normal_Desc"
+          "Name": "Basic Attack: Direct Flame Blend",
+          "Desc": "Press <IconMap:Icon_Normal> to activate:\nUnleashes up to 5 attacks in front, dealing <color=#F0D12B>Physical DMG</color> and <color=#FF5521>Fire DMG</color>."
         },
         {
-          "Name": "Burnice_Skill_Normal_Enhance_Title",
-          "Desc": "Burnice_Skill_Normal_Enhance_Desc"
+          "Name": "Basic Attack: Mixed Flame Blend",
+          "Desc": "In the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, press and hold <IconMap:Icon_Normal> to activate:\nSpin continuously while spraying flames around, followed by a finishing blow that inflicts <color=#FF5521>Fire DMG</color>. Continuing to hold extends the flame-spraying duration.\nWhen the move is activated, it consumes 20 <color=#FFFFFF>Heat</color>;\nAnti-Interrupt level is increased while using this skill.\nAfter executing the Finishing Move, pressing <IconMap:Icon_SpecialReady> will directly chain into <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>."
         },
         {
-          "Name": "Burnice_Skill_Normal_Title",
+          "Name": "Basic Attack: Direct Flame Blend",
           "Param": [
             {
               "Name": "1st-Hit DMG Multiplier",
@@ -534,10 +557,10 @@
           ]
         },
         {
-          "Name": "Burnice_Skill_Normal_Enhance_Title",
+          "Name": "Basic Attack: Mixed Flame Blend",
           "Param": [
             {
-              "Name": "Burnice_Property_Normal_Enhance_Desc_Dmg_01",
+              "Name": "Continuous Spray DMG Multiplier",
               "Desc": "{Skill:1171006, Prop:1001}",
               "Param": {
                 "1171006": {
@@ -559,7 +582,7 @@
               }
             },
             {
-              "Name": "Burnice_Property_Normal_Enhance_Desc_Dmg_02",
+              "Name": "Finishing Move DMG Multiplier",
               "Desc": "{Skill:1171007, Prop:1001}",
               "Param": {
                 "1171007": {
@@ -581,7 +604,7 @@
               }
             },
             {
-              "Name": "Burnice_Property_Normal_Enhance_Desc_Stun_01",
+              "Name": "Continuous Spray Daze Multiplier",
               "Desc": "{Skill:1171006, Prop:1002}",
               "Param": {
                 "1171006": {
@@ -603,7 +626,7 @@
               }
             },
             {
-              "Name": "Burnice_Property_Normal_Enhance_Desc_Stun_02",
+              "Name": "Finishing Move Daze Multiplier",
               "Desc": "{Skill:1171007, Prop:1002}",
               "Param": {
                 "1171007": {
@@ -679,19 +702,19 @@
     "Dodge": {
       "Description": [
         {
-          "Name": "Burnice_Skill_Evade_Title",
-          "Desc": "Burnice_Skill_Evade_Desc"
+          "Name": "Dodge: Fiery Phantom Dash",
+          "Desc": "Press <IconMap:Icon_Evade> to activate:\nA quick dash dodge.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "Burnice_Skill_Rush_Title",
-          "Desc": "Burnice_Skill_Rush_Desc"
+          "Name": "Dash Attack: Dangerous Fermentation",
+          "Desc": "Press <IconMap:Icon_Normal> during a dodge to activate:\nPerform a forward thrust with the flamethrower, causing <color=#FF5521>Fire DMG</color>."
         },
         {
-          "Name": "Burnice_Skill_Counter_Title",
-          "Desc": "Burnice_Skill_Counter_Desc"
+          "Name": "Dodge Counter: Fluttering Steps",
+          "Desc": "Press <IconMap:Icon_Normal> during a <color=#FFFFFF>Perfect Dodge</color> to activate:\nLaunch a series of attacks on enemies in front while spraying flames, dealing <color=#F0D12B>Physical DMG</color> and <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "Burnice_Skill_Rush_Title",
+          "Name": "Dash Attack: Dangerous Fermentation",
           "Param": [
             {
               "Name": "DMG Multiplier",
@@ -740,7 +763,7 @@
           ]
         },
         {
-          "Name": "Burnice_Skill_Counter_Title",
+          "Name": "Dodge Counter: Fluttering Steps",
           "Param": [
             {
               "Name": "DMG Multiplier",
@@ -841,19 +864,19 @@
     "Special": {
       "Description": [
         {
-          "Name": "Burnice_Skill_Special_Title",
-          "Desc": "Burnice_Skill_Special_Desc"
+          "Name": "Special Attack: Intense Heat Aging Method",
+          "Desc": "Press <IconMap:Icon_Special> to activate:\nUnleash a fire blast forward, inflicting <color=#FF5521>Fire DMG</color>;\nPress and hold <IconMap:Icon_Special> to charge, boosting the move's potency.\nAnti-Interrupt level is increased while using this skill."
         },
         {
-          "Name": "Burnice_Skill_ExSpecial_01_Title",
-          "Desc": "Burnice_Skill_ExSpecial_01_Desc"
+          "Name": "EX Special Attack: Intense Heat Stirring Method",
+          "Desc": "With enough energy, press <IconMap:Icon_SpecialReady> to activate:\nContinuously spray flames with a one-handed flamethrower, then release a fire blast in a straight line ahead, causing massive <color=#FF5521>Fire DMG</color>. Continue holding to steadily consume energy and extend the spray's duration.\nWhile continuously spraying, drag the{LAYOUT_CONSOLECONTROLLER#stick}{LAYOUT_FALLBACK#joystick} to execute a sidestep dodge, adjusting your position in the corresponding direction.\nAnti-Interrupt Level is increased while continuously spraying, and DMG taken is reduced by 40%.\nInvincibility is granted during sidestep dodge and fire blast."
         },
         {
-          "Name": "Burnice_Skill_ExSpecial_02_Title",
-          "Desc": "Burnice_Skill_ExSpecial_02_Desc"
+          "Name": "EX Special Attack: Intense Heat Stirring Method - Double Shot",
+          "Desc": "When activating <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> with enough Energy, press <IconMap:Icon_SpecialReady> to activate:\nUse a dual-handed flamethrower to continuously spray flames, followed by a fire blast in a front line, dealing massive <color=#FF5521>Fire DMG</color>. Keep holding to continue consuming Energy and extend the spray's duration.\nCharacter is invulnerable during the moment the spray is activated and during the activation of the fire blast.\nAnti-Interrupt Level is increased while spraying, and DMG received is reduced by 40%."
         },
         {
-          "Name": "Burnice_Skill_Special_Title",
+          "Name": "Special Attack: Intense Heat Aging Method",
           "Param": [
             {
               "Name": "DMG Multiplier",
@@ -878,7 +901,7 @@
               }
             },
             {
-              "Name": "Burnice_Property_Special_Enhance_Desc_Dmg_01",
+              "Name": "Charged Attack DMG Multiplier",
               "Desc": "{Skill:1171009, Prop:1001}",
               "Param": {
                 "1171009": {
@@ -922,7 +945,7 @@
               }
             },
             {
-              "Name": "Burnice_Property_Special_Enhance_Desc_Stun_01",
+              "Name": "Charged Daze Multiplier",
               "Desc": "{Skill:1171009, Prop:1002}",
               "Param": {
                 "1171009": {
@@ -946,212 +969,212 @@
           ]
         },
         {
-          "Name": "Burnice_Skill_ExSpecial_01_Title",
+          "Name": "EX Special Attack: Intense Heat Stirring Method",
           "Param": [
             {
-              "Name": "Burnice_Property_ExSpecial_01_Desc_Dmg_01",
+              "Name": "Continuous Spray DMG Multiplier",
               "Desc": "{Skill:1171010, Prop:1001}",
               "Param": {
                 "1171010": {
-                  "Main": 40910,
-                  "Growth": 3720,
+                  "Main": 54380,
+                  "Growth": 4950,
                   "Format": "%",
-                  "DamagePercentage": 40910,
-                  "DamagePercentageGrowth": 3720,
-                  "StunRatio": 31450,
-                  "StunRatioGrowth": 1430,
+                  "DamagePercentage": 54380,
+                  "DamagePercentageGrowth": 4950,
+                  "StunRatio": 37860,
+                  "StunRatioGrowth": 1730,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 868840,
+                  "FeverRecovery": 1064222,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 33968,
+                  "AttributeInfliction": 41110,
                   "SpConsume": 0,
                   "AttackData": []
                 }
               }
             },
             {
-              "Name": "Burnice_Property_ExSpecial_01_Desc_Stun_01",
+              "Name": "Continuous Spray Daze Multiplier",
               "Desc": "{Skill:1171010, Prop:1002}",
               "Param": {
                 "1171010": {
-                  "Main": 31450,
-                  "Growth": 1430,
+                  "Main": 37860,
+                  "Growth": 1730,
                   "Format": "%",
-                  "DamagePercentage": 40910,
-                  "DamagePercentageGrowth": 3720,
-                  "StunRatio": 31450,
-                  "StunRatioGrowth": 1430,
+                  "DamagePercentage": 54380,
+                  "DamagePercentageGrowth": 4950,
+                  "StunRatio": 37860,
+                  "StunRatioGrowth": 1730,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 868840,
+                  "FeverRecovery": 1064222,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 33968,
+                  "AttributeInfliction": 41110,
                   "SpConsume": 0,
                   "AttackData": []
                 }
               }
             },
             {
-              "Name": "Burnice_Property_ExSpecial_01_Desc_Dmg_02",
+              "Name": "Fire Blast DMG Multiplier",
               "Desc": "{Skill:1171011, Prop:1001}",
               "Param": {
                 "1171011": {
-                  "Main": 20500,
-                  "Growth": 1870,
+                  "Main": 9670,
+                  "Growth": 880,
                   "Format": "%",
-                  "DamagePercentage": 20500,
-                  "DamagePercentageGrowth": 1870,
-                  "StunRatio": 15500,
-                  "StunRatioGrowth": 710,
+                  "DamagePercentage": 9670,
+                  "DamagePercentageGrowth": 880,
+                  "StunRatio": 6570,
+                  "StunRatioGrowth": 300,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 432280,
+                  "FeverRecovery": 186822,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 16786,
+                  "AttributeInfliction": 7155,
                   "SpConsume": 0,
                   "AttackData": []
                 }
               }
             },
             {
-              "Name": "Burnice_Property_ExSpecial_01_Desc_Stun_02",
+              "Name": "Fire Blast Daze Multiplier",
               "Desc": "{Skill:1171011, Prop:1002}",
               "Param": {
                 "1171011": {
-                  "Main": 15500,
-                  "Growth": 710,
+                  "Main": 6570,
+                  "Growth": 300,
                   "Format": "%",
-                  "DamagePercentage": 20500,
-                  "DamagePercentageGrowth": 1870,
-                  "StunRatio": 15500,
-                  "StunRatioGrowth": 710,
+                  "DamagePercentage": 9670,
+                  "DamagePercentageGrowth": 880,
+                  "StunRatio": 6570,
+                  "StunRatioGrowth": 300,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 432280,
+                  "FeverRecovery": 186822,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 16786,
+                  "AttributeInfliction": 7155,
                   "SpConsume": 0,
                   "AttackData": []
                 }
               }
             },
             {
-              "Name": "Burnice_Property_ExSpecial_01_Desc_SpCost_01",
-              "Desc": "Burnice_Property_ExSpecial_01_SpCostValue_01"
+              "Name": "Energy Cost to Use",
+              "Desc": "40"
             },
             {
-              "Name": "Burnice_Property_ExSpecial_01_Desc_SpCost_02",
-              "Desc": "Burnice_Property_ExSpecial_01_SpCostValue_02"
+              "Name": "Continuous Spray Energy Consumption",
+              "Desc": "12.5/s"
             },
             {
-              "Name": "Burnice_Property_ExSpecial_01_Desc_SpCost_03",
-              "Desc": "Burnice_Property_ExSpecial_01_SpCostValue_03"
+              "Name": "Fire Blast Energy Consumption",
+              "Desc": "5"
             }
           ]
         },
         {
-          "Name": "Burnice_Skill_ExSpecial_02_Title",
+          "Name": "EX Special Attack: Intense Heat Stirring Method - Double Shot",
           "Param": [
             {
-              "Name": "Burnice_Property_ExSpecial_02_Desc_Dmg_01",
+              "Name": "Continuous Spray DMG Multiplier",
               "Desc": "{Skill:1171012, Prop:1001}",
               "Param": {
                 "1171012": {
-                  "Main": 76700,
-                  "Growth": 6980,
+                  "Main": 95810,
+                  "Growth": 8710,
                   "Format": "%",
-                  "DamagePercentage": 76700,
-                  "DamagePercentageGrowth": 6980,
-                  "StunRatio": 53360,
-                  "StunRatioGrowth": 2430,
+                  "DamagePercentage": 95810,
+                  "DamagePercentageGrowth": 8710,
+                  "StunRatio": 58570,
+                  "StunRatioGrowth": 2670,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 1278008,
+                  "FeverRecovery": 1431660,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 48000,
+                  "AttributeInfliction": 53024,
                   "SpConsume": 0,
                   "AttackData": []
                 }
               }
             },
             {
-              "Name": "Burnice_Property_ExSpecial_02_Desc_Stun_01",
+              "Name": "Continuous Spray Daze Multiplier",
               "Desc": "{Skill:1171012, Prop:1002}",
               "Param": {
                 "1171012": {
-                  "Main": 53360,
-                  "Growth": 2430,
+                  "Main": 58570,
+                  "Growth": 2670,
                   "Format": "%",
-                  "DamagePercentage": 76700,
-                  "DamagePercentageGrowth": 6980,
-                  "StunRatio": 53360,
-                  "StunRatioGrowth": 2430,
+                  "DamagePercentage": 95810,
+                  "DamagePercentageGrowth": 8710,
+                  "StunRatio": 58570,
+                  "StunRatioGrowth": 2670,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 1278008,
+                  "FeverRecovery": 1431660,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 48000,
+                  "AttributeInfliction": 53024,
                   "SpConsume": 0,
                   "AttackData": []
                 }
               }
             },
             {
-              "Name": "Burnice_Property_ExSpecial_02_Desc_Dmg_02",
+              "Name": "Fire Blast DMG Multiplier",
               "Desc": "{Skill:1171013, Prop:1001}",
               "Param": {
                 "1171013": {
-                  "Main": 37120,
-                  "Growth": 3380,
+                  "Main": 28710,
+                  "Growth": 2610,
                   "Format": "%",
-                  "DamagePercentage": 37120,
-                  "DamagePercentageGrowth": 3380,
-                  "StunRatio": 25820,
-                  "StunRatioGrowth": 1180,
+                  "DamagePercentage": 28710,
+                  "DamagePercentageGrowth": 2610,
+                  "StunRatio": 20780,
+                  "StunRatioGrowth": 950,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 618460,
+                  "FeverRecovery": 469730,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 23226,
+                  "AttributeInfliction": 18365,
                   "SpConsume": 0,
                   "AttackData": []
                 }
               }
             },
             {
-              "Name": "Burnice_Property_ExSpecial_02_Desc_Stun_02",
+              "Name": "Fire Blast Daze Multiplier",
               "Desc": "{Skill:1171013, Prop:1002}",
               "Param": {
                 "1171013": {
-                  "Main": 25820,
-                  "Growth": 1180,
+                  "Main": 20780,
+                  "Growth": 950,
                   "Format": "%",
-                  "DamagePercentage": 37120,
-                  "DamagePercentageGrowth": 3380,
-                  "StunRatio": 25820,
-                  "StunRatioGrowth": 1180,
+                  "DamagePercentage": 28710,
+                  "DamagePercentageGrowth": 2610,
+                  "StunRatio": 20780,
+                  "StunRatioGrowth": 950,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 618460,
+                  "FeverRecovery": 469730,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 23226,
+                  "AttributeInfliction": 18365,
                   "SpConsume": 0,
                   "AttackData": []
                 }
               }
             },
             {
-              "Name": "Burnice_Property_ExSpecial_02_Desc_SpCost_01",
-              "Desc": "Burnice_Property_ExSpecial_02_SpCostValue_01"
+              "Name": "Energy Cost to Use",
+              "Desc": "10"
             },
             {
-              "Name": "Burnice_Property_ExSpecial_02_Desc_SpCost_02",
-              "Desc": "Burnice_Property_ExSpecial_02_SpCostValue_02"
+              "Name": "Continuous Spray Energy Consumption",
+              "Desc": "25/s"
             },
             {
-              "Name": "Burnice_Property_ExSpecial_02_Desc_SpCost_03",
-              "Desc": "Burnice_Property_ExSpecial_02_SpCostValue_03"
+              "Name": "Fire Blast Energy Consumption",
+              "Desc": "10"
             }
           ]
         }
@@ -1208,15 +1231,15 @@
     "Chain": {
       "Description": [
         {
-          "Name": "Burnice_Skill_QTE_Title",
-          "Desc": "Burnice_Skill_QTE_Desc"
+          "Name": "Chain Attack: Fuel-Fed Flame",
+          "Desc": "When a <color=#FFFFFF>Chain Attack</color> is triggered, select the character to activate:\nQuickly dash forward while spraying flames, then launch a fire blast in a fan-shaped area ahead, dealing massive <color=#FF5521>Fire DMG</color>.\nAfter using the skill, press <IconMap:Icon_SpecialReady> to immediately follow up with <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "Burnice_Skill_ExQTE_Title",
-          "Desc": "Burnice_Skill_ExQTE_Desc"
+          "Name": "Ultimate: Glorious Inferno",
+          "Desc": "When Decibel Rating is at <color=#FFFFFF>Maximum</color>, press <IconMap:Icon_UltimateReady> to activate:\nDash forward quickly, then leap into the air and continuously spray flames over a wide area ahead, dealing massive <color=#FF5521>Fire DMG</color>.\nWhen leaping into the air, a <color=#FFFFFF>Quick Assist</color> will be triggered. If the <color=#FFFFFF>Quick Assist</color> is triggered, Burnice will spray flames for an extended duration.\nUpon activation, recover 50 <color=#FFFFFF>Heat</color>.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "Burnice_Skill_QTE_Title",
+          "Name": "Chain Attack: Fuel-Fed Flame",
           "Param": [
             {
               "Name": "DMG Multiplier",
@@ -1265,10 +1288,10 @@
           ]
         },
         {
-          "Name": "Burnice_Skill_ExQTE_Title",
+          "Name": "Ultimate: Glorious Inferno",
           "Param": [
             {
-              "Name": "Burnice_Property_ExQTE_01_Desc_Dmg_01",
+              "Name": "Maximum DMG Multiplier",
               "Desc": "{Skill:1171017, Prop:1001}",
               "Param": {
                 "1171017": {
@@ -1290,7 +1313,7 @@
               }
             },
             {
-              "Name": "Burnice_Property_ExQTE_01_Desc_Stun_01",
+              "Name": "Maximum Daze Multiplier",
               "Desc": "{Skill:1171017, Prop:1002}",
               "Param": {
                 "1171017": {
@@ -1366,19 +1389,19 @@
     "Assist": {
       "Description": [
         {
-          "Name": "Burnice_Skill_BeHitAid_Title",
-          "Desc": "Burnice_Skill_BeHitAid_Desc"
+          "Name": "Quick Assist: Energizing Specialty Drink",
+          "Desc": "When the on-field character is launched, press <IconMap:Icon_Switch> to activate:\nUnleash a flurry of attacks on enemies in front while spraying flames, dealing <color=#F0D12B>Physical DMG</color> and <color=#FF5521>Fire DMG</color>.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "Burnice_Skill_ParryAid_Title",
-          "Desc": "Burnice_Skill_ParryAid_Desc"
+          "Name": "Defensive Assist: Smoky Cauldron",
+          "Desc": "When the on-field character is about to be attacked, press <IconMap:Icon_Switch> to activate:\nParries the enemy's attack, dealing massive Daze.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "Burnice_Skill_AssaultAid_Title",
-          "Desc": "Burnice_Skill_AssaultAid_Desc"
+          "Name": "Assist Follow-Up: Scorching Dew",
+          "Desc": "Press <IconMap:Icon_Normal> after a <color=#FFFFFF>Defensive Assist</color> to activate:\nLeap into the air and quickly spin forward while spraying flames in all directions, dealing <color=#FF5521>Fire DMG</color>.\nAfter using the skill, press <IconMap:Icon_SpecialReady> to immediately follow up with <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "Burnice_Skill_BeHitAid_Title",
+          "Name": "Quick Assist: Energizing Specialty Drink",
           "Param": [
             {
               "Name": "DMG Multiplier",
@@ -1427,7 +1450,7 @@
           ]
         },
         {
-          "Name": "Burnice_Skill_ParryAid_Title",
+          "Name": "Defensive Assist: Smoky Cauldron",
           "Param": [
             {
               "Name": "Light Defensive Daze Multiplier",
@@ -1498,25 +1521,25 @@
           ]
         },
         {
-          "Name": "Burnice_Skill_AssaultAid_Title",
+          "Name": "Assist Follow-Up: Scorching Dew",
           "Param": [
             {
               "Name": "DMG Multiplier",
               "Desc": "{Skill:1171022, Prop:1001}",
               "Param": {
                 "1171022": {
-                  "Main": 31990,
-                  "Growth": 2910,
+                  "Main": 32760,
+                  "Growth": 2980,
                   "Format": "%",
-                  "DamagePercentage": 31990,
-                  "DamagePercentageGrowth": 2910,
-                  "StunRatio": 27520,
-                  "StunRatioGrowth": 1260,
+                  "DamagePercentage": 32760,
+                  "DamagePercentageGrowth": 2980,
+                  "StunRatio": 28240,
+                  "StunRatioGrowth": 1290,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 709196,
+                  "FeverRecovery": 725246,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 27047,
+                  "AttributeInfliction": 27722,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -1527,18 +1550,18 @@
               "Desc": "{Skill:1171022, Prop:1002}",
               "Param": {
                 "1171022": {
-                  "Main": 27520,
-                  "Growth": 1260,
+                  "Main": 28240,
+                  "Growth": 1290,
                   "Format": "%",
-                  "DamagePercentage": 31990,
-                  "DamagePercentageGrowth": 2910,
-                  "StunRatio": 27520,
-                  "StunRatioGrowth": 1260,
+                  "DamagePercentage": 32760,
+                  "DamagePercentageGrowth": 2980,
+                  "StunRatio": 28240,
+                  "StunRatioGrowth": 1290,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 709196,
+                  "FeverRecovery": 725246,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 27047,
+                  "AttributeInfliction": 27722,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -1603,84 +1626,84 @@
         "Level": 1,
         "Id": 1171501,
         "Name": [
-          "Burnice_UniqueSkill_Title",
-          "Burnice_MathSkill_Title"
+          "Core Passive: Nitro-Fuel Cocktail",
+          "Additional Ability: Fire Kindling"
         ],
         "Desc": [
-          "Burnice_UniqueSkill_01_Desc",
-          "Burnice_MathSkill_Desc"
+          "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy spent. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. On entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>175%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. \nEvery 10 Anomaly Proficiency increases <color=#FFFFFF>Afterburn</color> DMG by 1%, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+          "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%.  When any team member applies the <color=#FF5521>Burn</color> effect to the enemy, the duration of that effect is extended by 3s."
         ]
       },
       "2": {
         "Level": 2,
         "Id": 1171502,
         "Name": [
-          "Burnice_UniqueSkill_Title",
-          "Burnice_MathSkill_Title"
+          "Core Passive: Nitro-Fuel Cocktail",
+          "Additional Ability: Fire Kindling"
         ],
         "Desc": [
-          "Burnice_UniqueSkill_02_Desc",
-          "Burnice_MathSkill_Desc"
+          "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy spent. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. On entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>205%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. \nEvery 10 Anomaly Proficiency increases <color=#FFFFFF>Afterburn</color> DMG by 1%, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+          "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%.  When any team member applies the <color=#FF5521>Burn</color> effect to the enemy, the duration of that effect is extended by 3s."
         ]
       },
       "3": {
         "Level": 3,
         "Id": 1171503,
         "Name": [
-          "Burnice_UniqueSkill_Title",
-          "Burnice_MathSkill_Title"
+          "Core Passive: Nitro-Fuel Cocktail",
+          "Additional Ability: Fire Kindling"
         ],
         "Desc": [
-          "Burnice_UniqueSkill_03_Desc",
-          "Burnice_MathSkill_Desc"
+          "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy spent. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. On entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>235%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. \nEvery 10 Anomaly Proficiency increases <color=#FFFFFF>Afterburn</color> DMG by 1%, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+          "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%.  When any team member applies the <color=#FF5521>Burn</color> effect to the enemy, the duration of that effect is extended by 3s."
         ]
       },
       "4": {
         "Level": 4,
         "Id": 1171504,
         "Name": [
-          "Burnice_UniqueSkill_Title",
-          "Burnice_MathSkill_Title"
+          "Core Passive: Nitro-Fuel Cocktail",
+          "Additional Ability: Fire Kindling"
         ],
         "Desc": [
-          "Burnice_UniqueSkill_04_Desc",
-          "Burnice_MathSkill_Desc"
+          "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy spent. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. On entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>262%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. \nEvery 10 Anomaly Proficiency increases <color=#FFFFFF>Afterburn</color> DMG by 1%, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+          "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%.  When any team member applies the <color=#FF5521>Burn</color> effect to the enemy, the duration of that effect is extended by 3s."
         ]
       },
       "5": {
         "Level": 5,
         "Id": 1171505,
         "Name": [
-          "Burnice_UniqueSkill_Title",
-          "Burnice_MathSkill_Title"
+          "Core Passive: Nitro-Fuel Cocktail",
+          "Additional Ability: Fire Kindling"
         ],
         "Desc": [
-          "Burnice_UniqueSkill_05_Desc",
-          "Burnice_MathSkill_Desc"
+          "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy spent. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. On entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>290%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. \nEvery 10 Anomaly Proficiency increases <color=#FFFFFF>Afterburn</color> DMG by 1%, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+          "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%.  When any team member applies the <color=#FF5521>Burn</color> effect to the enemy, the duration of that effect is extended by 3s."
         ]
       },
       "6": {
         "Level": 6,
         "Id": 1171506,
         "Name": [
-          "Burnice_UniqueSkill_Title",
-          "Burnice_MathSkill_Title"
+          "Core Passive: Nitro-Fuel Cocktail",
+          "Additional Ability: Fire Kindling"
         ],
         "Desc": [
-          "Burnice_UniqueSkill_06_Desc",
-          "Burnice_MathSkill_Desc"
+          "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy spent. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. On entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>320%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. \nEvery 10 Anomaly Proficiency increases <color=#FFFFFF>Afterburn</color> DMG by 1%, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+          "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%.  When any team member applies the <color=#FF5521>Burn</color> effect to the enemy, the duration of that effect is extended by 3s."
         ]
       },
       "7": {
         "Level": 7,
         "Id": 1171507,
         "Name": [
-          "Burnice_UniqueSkill_Title",
-          "Burnice_MathSkill_Title"
+          "Core Passive: Nitro-Fuel Cocktail",
+          "Additional Ability: Fire Kindling"
         ],
         "Desc": [
-          "Burnice_UniqueSkill_07_Desc",
-          "Burnice_MathSkill_Desc"
+          "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy spent. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. On entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>350%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. \nEvery 10 Anomaly Proficiency increases <color=#FFFFFF>Afterburn</color> DMG by 1%, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+          "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%.  When any team member applies the <color=#FF5521>Burn</color> effect to the enemy, the duration of that effect is extended by 3s."
         ]
       }
     },
@@ -1716,39 +1739,39 @@
   "Talent": {
     "1": {
       "Level": 1,
-      "Name": "Burnice_Talent_01_Title",
-      "Desc": "Burnice_Talent_01_Desc_01",
-      "Desc2": "Burnice_Talent_01_Desc_02"
+      "Name": "Kindred Flames",
+      "Desc": "Increases the limit of <color=#FFFFFF>Heat</color> from 100 to 140. Upon entering the battlefield, Burnice accumulates an additional 40 <color=#FFFFFF>Heat</color>. Increases the DMG Multiplier of the <color=#FFFFFF>Afterburn</color> effect by 100% of Burnice's ATK. Additionally, the accumulated <color=#FF5521>Fire Anomaly Buildup</color> from the <color=#FFFFFF>Afterburn</color> effect is increased by 25%.",
+      "Desc2": "\"Everyone has rough times; it's perfectly normal!\"\n\"Cheer up, Caesar! How about a Nitro-Fuel special?  I added a ton of sugar!\""
     },
     "2": {
       "Level": 2,
-      "Name": "Burnice_Talent_02_Title",
-      "Desc": "Burnice_Talent_02_Desc_01",
-      "Desc2": "Burnice_Talent_02_Desc_02"
+      "Name": "Extra at No Additional Charge",
+      "Desc": "When triggering the <color=#FFFFFF>Afterburn</color> effect, <color=#FFFFFF>Thermal Penetration</color> is applied to the enemy, stacking up to 5 times and lasting 6s. Repeated triggers reset the duration. When any allied unit in the squad hits the enemy, the attack's PEN Ratio is increased by 4% for each stack of <color=#FFFFFF>Thermal Penetration</color>, up to a max of 20%.",
+      "Desc2": "As the mixologist for the Sons of Calydon, Burnice takes great pleasure in crafting the best Nitro-Fuel drinks in New Eridu for her friends. \nOf course, if you happen to be her enemy... you might have the opportunity to try a new and unique flavor too.\n\"It's a once-in-a-lifetime, absolutely exquisite taste!\""
     },
     "3": {
       "Level": 3,
-      "Name": "Burnice_Talent_03_Title",
-      "Desc": "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dodge</color>, <color=#ffffff>Assist</color>, <color=#ffffff>Special Attack</color>, and <color=#ffffff>Chain Attack</color> Lv. +2",
-      "Desc2": "Burnice_Talent_03_Desc_02"
+      "Name": "Optimistic by Nature",
+      "Desc": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+      "Desc2": "\"That Burnice, she's always so full of energy!  Even right after waking up! I have no idea where she gets all that energy...\"\n\"What's even scarier is that she can get everyone around her to be just as enthusiastic! It's almost like she's some kind of monster!\"\n\"But... I don't really dislike it, to be honest...\"\n— From a boar manager who wishes to remain unnamed"
     },
     "4": {
       "Level": 4,
-      "Name": "Burnice_Talent_04_Title",
-      "Desc": "Burnice_Talent_04_Desc_01",
-      "Desc2": "Burnice_Talent_04_Desc_02"
+      "Name": "Ultimate Fuel Supply",
+      "Desc": "When an <color=#FFFFFF>EX Special Attack</color> or <color=#FFFFFF>Assist Attack</color> hits an enemy, the move's CRIT Rate increases by 30%. The max flame spray duration of <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> is increased by 1s.",
+      "Desc2": "\"You like the drink I mixed? Thanks! Steeltusk likes them too~ That guy can drink 200 liters in one go!\"\n\"Oh, Steeltusk is our big truck!\"\n\"Wanna try some of its special fuel? It's pretty fiery~\""
     },
     "5": {
       "Level": 5,
-      "Name": "Burnice_Talent_05_Title",
-      "Desc": "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dodge</color>, <color=#ffffff>Assist</color>, <color=#ffffff>Special Attack</color>, and <color=#ffffff>Chain Attack</color> Lv. +2",
-      "Desc2": "Burnice_Talent_05_Desc_02"
+      "Name": "Dance of Fire and Ice",
+      "Desc": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+      "Desc2": "When mixing drinks, ice is a crucial element.\nWithout an intense chill, the intense heat just doesn't stand out.\n\"That fusion of fire and ice~ It's truly captivating!\""
     },
     "6": {
       "Level": 6,
-      "Name": "Burnice_Talent_06_Title",
-      "Desc": "Burnice_Talent_06_Desc_01",
-      "Desc2": "Burnice_Talent_06_Desc_02"
+      "Name": "Burning Invitation",
+      "Desc": "When Burnice hits an enemy with <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, it triggers a special <color=#FFFFFF>Afterburn</color> effect, dealing 60% of Burnice's ATK. This effect can trigger once every 0.5s and does not consume <color=#FFFFFF>Heat</color>. After hitting an enemy with <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, while the move is active, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>'s special <color=#FFFFFF>Afterburn</color> and <color=#FF5521>Burn</color> effects will ignore 25% of the target's <color=#FF5521>Fire RES</color>. When <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>'s fire blast hits an enemy, if that enemy is <color=#FF5521>Burned</color>, trigger an additional instance of <color=#FF5521>Burn</color> DMG equal to 1,800% of the original DMG. This effect can trigger once every 20s for each target.",
+      "Desc2": "It seems like no one has ever seen Burnice truly angry.\n\"Trust me, you don't want to see it.\"\n— From a driver getting ready to sleep atop Steeltusk"
     }
   }
 }

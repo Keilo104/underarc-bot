@@ -17,7 +17,30 @@
     "4": "Sons of Calydon"
   },
   "Gender": 2,
-  "PartnerInfo": {},
+  "PartnerInfo": {
+    "Birthday": "MAR 16",
+    "FullName": "...",
+    "Gender": "Female",
+    "IconPath": "UI/Sprite/A1DynamicLoad/IconRoleCircle/UnPacker/IconRoleCircle25.png",
+    "ImpressionF": "Big Daddy looks cultured and sophisticated, but Caesar's a different kettle of fish...\nBut even though she often gets her idioms wrong, Caesar's still very cute!",
+    "ImpressionM": "Earning the trust of the Outer Ring's Overlord is a pretty big deal. We should really appreciate that.\nOf course, it'd be nice if Caesar could make fewer typos in her DMs to us.",
+    "Name": "",
+    "OutlookDesc": "There's no record of Caesar in the New Eridu Citizen Verification Profile.\nBased on data analysis from previous combat, Caesar has a good Aptitude for Ether",
+    "ProfileDesc": "Caesar: Leader of the Sons of Calydon biker gang, and also a \"monarch\" in the making.\nHer combination of formidable strength and bold, straightforward personality has earned her the love and respect of the Outer Ring's residents.\nAlthough she appears to do things her own way, she is actually very willing to listen to others' opinions. Caesar actively listens to and implements any valid suggestion she hears — regardless of who it comes from.\nShe is completely defenseless against those she trusts. Once she accepts someone, she considers them part of her inner circle, treating them with unguarded trust.\n(Assumption: Caesar currently views you in this way.)\n\nCaesar's father has been missing for as long as she can remember, and her mother passed away from illness when she was young. She was raised by Big Daddy, who took a very hands-off approach to raising her, allowing her to grow up freely and independently.\n\nIn addition, Caesar seems to have a curious interest in matters related to romance.\nIf you wish to get closer to her, you might want to try discussing this topic with her.",
+    "Race": "Sons of Calydon",
+    "RoleIcon": "IconRole/UnPacker/IconRole25",
+    "Stature": "176",
+    "UnlockCondition": [
+      "Obtain Agent",
+      "Complete Main Story \"Leisurely Lull: Unexpected New Customers\" (available after completing Main Story Chapter 4) to unlock"
+    ],
+    "TrustLv": {
+      "1": "Caesar: Leader of the Sons of Calydon biker gang, and also a \"monarch\" in the making.\nHer combination of formidable strength and bold, straightforward personality has earned her the love and respect of the Outer Ring's residents.\nAlthough she appears to do things her own way, she is actually very willing to listen to others' opinions. Caesar actively listens to and implements any valid suggestion she hears — regardless of who it comes from.\nShe is completely defenseless against those she trusts. Once she accepts someone, she considers them part of her inner circle, treating them with unguarded trust.\n(Assumption: Caesar currently views you in this way.)\n\nCaesar's father has been missing for as long as she can remember, and her mother passed away from illness when she was young. She was raised by Big Daddy, who took a very hands-off approach to raising her, allowing her to grow up freely and independently.\n\nIn addition, Caesar seems to have a curious interest in matters related to romance.\nIf you wish to get closer to her, you might want to try discussing this topic with her.",
+      "2": "",
+      "3": "Caesar's father was the leader of a biker gang called \"Calydon,\" which carved out a legendary reputation in the Outer Ring. The \"Sons of Calydon\" take their name from this legacy.\nCaesar has a fear of needles.\n\"They're so tiny and thin, and it only stings for a second when you're pricked — but then all this blood comes out. It's so weird — and definitely not straightforward at all!\"",
+      "4": ""
+    }
+  },
   "Stats": {
     "Armor": 0,
     "ArmorGrowth": 0,
@@ -37,8 +60,8 @@
     "CritRes": 0,
     "Defence": 61,
     "DefenceGrowth": 82180,
-    "ElementAbnormalPower": 90,
-    "ElementMystery": 87,
+    "ElementAbnormalPower": 87,
+    "ElementMystery": 90,
     "Endurance": 0,
     "HpGrowth": 1039361,
     "HpMax": 766,
@@ -301,28 +324,28 @@
     "Basic": {
       "Description": [
         {
-          "Name": "...",
-          "Desc": "..."
+          "Name": "Basic Attack: Rampaging Slash",
+          "Desc": "Press <IconMap:Icon_Normal> to activate:\nUnleashes up to 6 slashes ahead, dealing <color=#F0D12B>Physical DMG</color>."
         },
         {
-          "Name": "Caesar_Skill_Normal_Branch_01_Title",
-          "Desc": "Caesar_Skill_Normal_Branch_01_Desc"
+          "Name": "Basic Attack: Dead End",
+          "Desc": "When there are sufficient <color=#FFFFFF>Assist Points</color>, hold <IconMap:Icon_Normal> to activate:\nConsume 1 <color=#FFFFFF>Assist Point</color> to toss the shield and attack nearby enemies in all directions, dealing <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "...",
+          "Name": "Basic Attack: Rampaging Slash",
           "Param": [
             {
               "Name": "1st-Hit DMG Multiplier",
               "Desc": "{Skill:1071001, Prop:1001}",
               "Param": {
                 "1071001": {
-                  "Main": 4510,
-                  "Growth": 410,
+                  "Main": 4720,
+                  "Growth": 430,
                   "Format": "%",
-                  "DamagePercentage": 4510,
-                  "DamagePercentageGrowth": 410,
-                  "StunRatio": 2260,
-                  "StunRatioGrowth": 110,
+                  "DamagePercentage": 4720,
+                  "DamagePercentageGrowth": 430,
+                  "StunRatio": 2130,
+                  "StunRatioGrowth": 100,
                   "SpRecovery": 7720,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 46010,
@@ -338,13 +361,13 @@
               "Desc": "{Skill:1071002, Prop:1001}",
               "Param": {
                 "1071002": {
-                  "Main": 3900,
-                  "Growth": 360,
+                  "Main": 4090,
+                  "Growth": 380,
                   "Format": "%",
-                  "DamagePercentage": 3900,
-                  "DamagePercentageGrowth": 360,
-                  "StunRatio": 3590,
-                  "StunRatioGrowth": 170,
+                  "DamagePercentage": 4090,
+                  "DamagePercentageGrowth": 380,
+                  "StunRatio": 3380,
+                  "StunRatioGrowth": 160,
                   "SpRecovery": 12280,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 72974,
@@ -360,13 +383,13 @@
               "Desc": "{Skill:1071003, Prop:1001}",
               "Param": {
                 "1071003": {
-                  "Main": 14150,
-                  "Growth": 1290,
+                  "Main": 14830,
+                  "Growth": 1350,
                   "Format": "%",
-                  "DamagePercentage": 14150,
-                  "DamagePercentageGrowth": 1290,
-                  "StunRatio": 11670,
-                  "StunRatioGrowth": 540,
+                  "DamagePercentage": 14830,
+                  "DamagePercentageGrowth": 1350,
+                  "StunRatio": 11000,
+                  "StunRatioGrowth": 500,
                   "SpRecovery": 39980,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 237754,
@@ -378,17 +401,17 @@
               }
             },
             {
-              "Name": "Caesar_Property_Normal_03_Sp_Desc_Damage_01",
+              "Name": "3rd-Hit (ALT) DMG Multiplier",
               "Desc": "{Skill:1071008, Prop:1001}",
               "Param": {
                 "1071008": {
-                  "Main": 11300,
-                  "Growth": 1030,
+                  "Main": 11840,
+                  "Growth": 1080,
                   "Format": "%",
-                  "DamagePercentage": 11300,
-                  "DamagePercentageGrowth": 1030,
-                  "StunRatio": 7810,
-                  "StunRatioGrowth": 360,
+                  "DamagePercentage": 11840,
+                  "DamagePercentageGrowth": 1080,
+                  "StunRatio": 7360,
+                  "StunRatioGrowth": 340,
                   "SpRecovery": 26760,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 159216,
@@ -404,13 +427,13 @@
               "Desc": "{Skill:1071004, Prop:1001}",
               "Param": {
                 "1071004": {
-                  "Main": 7530,
-                  "Growth": 690,
+                  "Main": 7880,
+                  "Growth": 720,
                   "Format": "%",
-                  "DamagePercentage": 7530,
-                  "DamagePercentageGrowth": 690,
-                  "StunRatio": 7160,
-                  "StunRatioGrowth": 330,
+                  "DamagePercentage": 7880,
+                  "DamagePercentageGrowth": 720,
+                  "StunRatio": 6750,
+                  "StunRatioGrowth": 310,
                   "SpRecovery": 24530,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 145948,
@@ -426,13 +449,13 @@
               "Desc": "{Skill:1071005, Prop:1001}",
               "Param": {
                 "1071005": {
-                  "Main": 18960,
-                  "Growth": 1730,
+                  "Main": 19860,
+                  "Growth": 1810,
                   "Format": "%",
-                  "DamagePercentage": 18960,
-                  "DamagePercentageGrowth": 1730,
-                  "StunRatio": 14580,
-                  "StunRatioGrowth": 670,
+                  "DamagePercentage": 19860,
+                  "DamagePercentageGrowth": 1810,
+                  "StunRatio": 13750,
+                  "StunRatioGrowth": 630,
                   "SpRecovery": 49970,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 297032,
@@ -448,13 +471,13 @@
               "Desc": "{Skill:1071006, Prop:1001}",
               "Param": {
                 "1071006": {
-                  "Main": 38170,
-                  "Growth": 3470,
+                  "Main": 39990,
+                  "Growth": 3640,
                   "Format": "%",
-                  "DamagePercentage": 38170,
-                  "DamagePercentageGrowth": 3470,
-                  "StunRatio": 27860,
-                  "StunRatioGrowth": 1270,
+                  "DamagePercentage": 39990,
+                  "DamagePercentageGrowth": 3640,
+                  "StunRatio": 26260,
+                  "StunRatioGrowth": 1200,
                   "SpRecovery": 95490,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 567742,
@@ -470,13 +493,13 @@
               "Desc": "{Skill:1071001, Prop:1002}",
               "Param": {
                 "1071001": {
-                  "Main": 2260,
-                  "Growth": 110,
+                  "Main": 2130,
+                  "Growth": 100,
                   "Format": "%",
-                  "DamagePercentage": 4510,
-                  "DamagePercentageGrowth": 410,
-                  "StunRatio": 2260,
-                  "StunRatioGrowth": 110,
+                  "DamagePercentage": 4720,
+                  "DamagePercentageGrowth": 430,
+                  "StunRatio": 2130,
+                  "StunRatioGrowth": 100,
                   "SpRecovery": 7720,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 46010,
@@ -492,13 +515,13 @@
               "Desc": "{Skill:1071002, Prop:1002}",
               "Param": {
                 "1071002": {
-                  "Main": 3590,
-                  "Growth": 170,
+                  "Main": 3380,
+                  "Growth": 160,
                   "Format": "%",
-                  "DamagePercentage": 3900,
-                  "DamagePercentageGrowth": 360,
-                  "StunRatio": 3590,
-                  "StunRatioGrowth": 170,
+                  "DamagePercentage": 4090,
+                  "DamagePercentageGrowth": 380,
+                  "StunRatio": 3380,
+                  "StunRatioGrowth": 160,
                   "SpRecovery": 12280,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 72974,
@@ -514,13 +537,13 @@
               "Desc": "{Skill:1071003, Prop:1002}",
               "Param": {
                 "1071003": {
-                  "Main": 11670,
-                  "Growth": 540,
+                  "Main": 11000,
+                  "Growth": 500,
                   "Format": "%",
-                  "DamagePercentage": 14150,
-                  "DamagePercentageGrowth": 1290,
-                  "StunRatio": 11670,
-                  "StunRatioGrowth": 540,
+                  "DamagePercentage": 14830,
+                  "DamagePercentageGrowth": 1350,
+                  "StunRatio": 11000,
+                  "StunRatioGrowth": 500,
                   "SpRecovery": 39980,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 237754,
@@ -532,17 +555,17 @@
               }
             },
             {
-              "Name": "Caesar_Property_Normal_03_Sp_Desc_Stun_01",
-              "Desc": "{Skill:1071008, Prop:1001}",
+              "Name": "3rd-Hit (ALT) Daze Multiplier",
+              "Desc": "{Skill:1071008, Prop:1002}",
               "Param": {
                 "1071008": {
-                  "Main": 11300,
-                  "Growth": 1030,
+                  "Main": 7360,
+                  "Growth": 340,
                   "Format": "%",
-                  "DamagePercentage": 11300,
-                  "DamagePercentageGrowth": 1030,
-                  "StunRatio": 7810,
-                  "StunRatioGrowth": 360,
+                  "DamagePercentage": 11840,
+                  "DamagePercentageGrowth": 1080,
+                  "StunRatio": 7360,
+                  "StunRatioGrowth": 340,
                   "SpRecovery": 26760,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 159216,
@@ -558,13 +581,13 @@
               "Desc": "{Skill:1071004, Prop:1002}",
               "Param": {
                 "1071004": {
-                  "Main": 7160,
-                  "Growth": 330,
+                  "Main": 6750,
+                  "Growth": 310,
                   "Format": "%",
-                  "DamagePercentage": 7530,
-                  "DamagePercentageGrowth": 690,
-                  "StunRatio": 7160,
-                  "StunRatioGrowth": 330,
+                  "DamagePercentage": 7880,
+                  "DamagePercentageGrowth": 720,
+                  "StunRatio": 6750,
+                  "StunRatioGrowth": 310,
                   "SpRecovery": 24530,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 145948,
@@ -580,13 +603,13 @@
               "Desc": "{Skill:1071005, Prop:1002}",
               "Param": {
                 "1071005": {
-                  "Main": 14580,
-                  "Growth": 670,
+                  "Main": 13750,
+                  "Growth": 630,
                   "Format": "%",
-                  "DamagePercentage": 18960,
-                  "DamagePercentageGrowth": 1730,
-                  "StunRatio": 14580,
-                  "StunRatioGrowth": 670,
+                  "DamagePercentage": 19860,
+                  "DamagePercentageGrowth": 1810,
+                  "StunRatio": 13750,
+                  "StunRatioGrowth": 630,
                   "SpRecovery": 49970,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 297032,
@@ -602,13 +625,13 @@
               "Desc": "{Skill:1071006, Prop:1002}",
               "Param": {
                 "1071006": {
-                  "Main": 27860,
-                  "Growth": 1270,
+                  "Main": 26260,
+                  "Growth": 1200,
                   "Format": "%",
-                  "DamagePercentage": 38170,
-                  "DamagePercentageGrowth": 3470,
-                  "StunRatio": 27860,
-                  "StunRatioGrowth": 1270,
+                  "DamagePercentage": 39990,
+                  "DamagePercentageGrowth": 3640,
+                  "StunRatio": 26260,
+                  "StunRatioGrowth": 1200,
                   "SpRecovery": 95490,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 567742,
@@ -622,25 +645,25 @@
           ]
         },
         {
-          "Name": "Caesar_Skill_Normal_Branch_01_Title",
+          "Name": "Basic Attack: Dead End",
           "Param": [
             {
               "Name": "DMG Multiplier",
               "Desc": "{Skill:1071007, Prop:1001}",
               "Param": {
                 "1071007": {
-                  "Main": 23020,
-                  "Growth": 2100,
+                  "Main": 20510,
+                  "Growth": 1870,
                   "Format": "%",
-                  "DamagePercentage": 23020,
-                  "DamagePercentageGrowth": 2100,
-                  "StunRatio": 19860,
-                  "StunRatioGrowth": 910,
-                  "SpRecovery": 68070,
+                  "DamagePercentage": 20510,
+                  "DamagePercentageGrowth": 1870,
+                  "StunRatio": 16070,
+                  "StunRatioGrowth": 740,
+                  "SpRecovery": 58410,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 404674,
+                  "FeverRecovery": 347322,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 18907,
+                  "AttributeInfliction": 16222,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -651,22 +674,26 @@
               "Desc": "{Skill:1071007, Prop:1002}",
               "Param": {
                 "1071007": {
-                  "Main": 19860,
-                  "Growth": 910,
+                  "Main": 16070,
+                  "Growth": 740,
                   "Format": "%",
-                  "DamagePercentage": 23020,
-                  "DamagePercentageGrowth": 2100,
-                  "StunRatio": 19860,
-                  "StunRatioGrowth": 910,
-                  "SpRecovery": 68070,
+                  "DamagePercentage": 20510,
+                  "DamagePercentageGrowth": 1870,
+                  "StunRatio": 16070,
+                  "StunRatioGrowth": 740,
+                  "SpRecovery": 58410,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 404674,
+                  "FeverRecovery": 347322,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 18907,
+                  "AttributeInfliction": 16222,
                   "SpConsume": 0,
                   "AttackData": []
                 }
               }
+            },
+            {
+              "Name": "Assist Point Cost",
+              "Desc": "1"
             }
           ]
         }
@@ -723,32 +750,32 @@
     "Dodge": {
       "Description": [
         {
-          "Name": "...",
-          "Desc": "..."
+          "Name": "Dodge: Adrift",
+          "Desc": "Press <IconMap:Icon_Evade> to activate:\nA quick dash dodge.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "...",
-          "Desc": "..."
+          "Name": "Dash Attack: Hog Rush",
+          "Desc": "While dodging, press <IconMap:Icon_Normal> to activate:\nStrikes forward with the shield, dealing <color=#F0D12B>Physical DMG</color>.\nDuring skill activation, damage taken is reduced by 40%. When attacked by an enemy Caesar blocks with the shield and gets slightly knocked back. Press <IconMap:Icon_Special> or <IconMap:Icon_SpecialReady> to trigger <color=#FFFFFF>Retaliation</color> and activate <color=#FFFFFF>Special Attack: Roaring Thrust</color> or <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color>."
         },
         {
-          "Name": "...",
-          "Desc": "..."
+          "Name": "Dodge Counter: Eye For an Eye",
+          "Desc": "Press <IconMap:Icon_Normal> during a <color=#FFFFFF>Perfect Dodge</color> to activate:\nSlashes enemies in front, dealing <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "...",
+          "Name": "Dash Attack: Hog Rush",
           "Param": [
             {
               "Name": "DMG Multiplier",
               "Desc": "{Skill:1071016, Prop:1001}",
               "Param": {
                 "1071016": {
-                  "Main": 5950,
-                  "Growth": 550,
+                  "Main": 6230,
+                  "Growth": 570,
                   "Format": "%",
-                  "DamagePercentage": 5950,
-                  "DamagePercentageGrowth": 550,
-                  "StunRatio": 2980,
-                  "StunRatioGrowth": 140,
+                  "DamagePercentage": 6230,
+                  "DamagePercentageGrowth": 570,
+                  "StunRatio": 3120,
+                  "StunRatioGrowth": 150,
                   "SpRecovery": 10200,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 212288,
@@ -764,13 +791,13 @@
               "Desc": "{Skill:1071016, Prop:1002}",
               "Param": {
                 "1071016": {
-                  "Main": 2980,
-                  "Growth": 140,
+                  "Main": 3120,
+                  "Growth": 150,
                   "Format": "%",
-                  "DamagePercentage": 5950,
-                  "DamagePercentageGrowth": 550,
-                  "StunRatio": 2980,
-                  "StunRatioGrowth": 140,
+                  "DamagePercentage": 6230,
+                  "DamagePercentageGrowth": 570,
+                  "StunRatio": 3120,
+                  "StunRatioGrowth": 150,
                   "SpRecovery": 10200,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 212288,
@@ -784,25 +811,25 @@
           ]
         },
         {
-          "Name": "...",
+          "Name": "Dodge Counter: Eye For an Eye",
           "Param": [
             {
               "Name": "DMG Multiplier",
               "Desc": "{Skill:1071017, Prop:1001}",
               "Param": {
                 "1071017": {
-                  "Main": 19150,
-                  "Growth": 1750,
+                  "Main": 19350,
+                  "Growth": 1760,
                   "Format": "%",
-                  "DamagePercentage": 19150,
-                  "DamagePercentageGrowth": 1750,
-                  "StunRatio": 17150,
-                  "StunRatioGrowth": 780,
-                  "SpRecovery": 22800,
+                  "DamagePercentage": 19350,
+                  "DamagePercentageGrowth": 1760,
+                  "StunRatio": 17420,
+                  "StunRatioGrowth": 800,
+                  "SpRecovery": 21010,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 135676,
+                  "FeverRecovery": 124976,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 6333,
+                  "AttributeInfliction": 5833,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -813,18 +840,18 @@
               "Desc": "{Skill:1071017, Prop:1002}",
               "Param": {
                 "1071017": {
-                  "Main": 17150,
-                  "Growth": 780,
+                  "Main": 17420,
+                  "Growth": 800,
                   "Format": "%",
-                  "DamagePercentage": 19150,
-                  "DamagePercentageGrowth": 1750,
-                  "StunRatio": 17150,
-                  "StunRatioGrowth": 780,
-                  "SpRecovery": 22800,
+                  "DamagePercentage": 19350,
+                  "DamagePercentageGrowth": 1760,
+                  "StunRatio": 17420,
+                  "StunRatioGrowth": 800,
+                  "SpRecovery": 21010,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 135676,
+                  "FeverRecovery": 124976,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 6333,
+                  "AttributeInfliction": 5833,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -885,54 +912,54 @@
     "Special": {
       "Description": [
         {
-          "Name": "Caesar_Skill_Special_01_Title",
-          "Desc": "Caesar_Skill_Special_01_Desc"
+          "Name": "Special Attack: Shockwave Shield Bash",
+          "Desc": "Press <IconMap:Icon_Special> to activate:\nStrike forward with the shield, dealing <color=#F0D12B>Physical DMG</color>.\nIf Caesar is hit by an enemy at the beginning of the skill activation, it will trigger a <color=#FFFFFF>Perfect Block</color>, negating the damage once and automatically following up with a <color=#FFFFFF>Special Attack: Roaring Thrust</color>.\nAfter using the skill, Caesar enters a guard stance, reducing incoming damage by 40%. When attacked by an enemy Caesar blocks with the shield and gets slightly knocked back. Press <IconMap:Icon_Special> or <IconMap:Icon_SpecialReady> to trigger <color=#FFFFFF>Retaliation</color>, activating <color=#FFFFFF>Special Attack: Roaring Thrust</color> or <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color>\nWhen <color=#FFFFFF>Retaliation</color> is triggered, Caesar is invulnerable while using the skill."
         },
         {
-          "Name": "Caesar_Skill_Special_02_Title",
-          "Desc": "Caesar_Skill_Special_02_Desc"
+          "Name": "Special Attack: Roaring Thrust",
+          "Desc": "After activating <color=#FFFFFF>Special Attack: Shockwave Shield Bash</color>, press <IconMap:Icon_Special> to activate:\nThrusts forward, dealing <color=#F0D12B>Physical DMG</color>.\nIf <color=#FFFFFF>Perfect Block</color> or <color=#FFFFFF>Retaliation</color> is not triggered, the Anti-Interrupt level is increased while using this skill.\nCharacter is invulnerable while using this skill when <color=#FFFFFF>Perfect Block</color> or <color=#FFFFFF>Retaliation</color>is triggered."
         },
         {
-          "Name": "Caesar_Skill_ExSpecial_01_Title",
-          "Desc": "Caesar_Skill_ExSpecial_01_Desc"
+          "Name": "EX Special Attack: Parry Counter",
+          "Desc": "With enough Energy, press <IconMap:Icon_SpecialReady> to activate:\nStrikes forward with the shield, followed by a powerful thrust, dealing massive <color=#F0D12B>Physical DMG</color>.\nIf Caesar is hit by an enemy at the beginning of the skill activation or a <color=#FFFFFF>Interrupt</color> is triggered with the shield strike, it will trigger <color=#FFFFFF>Perfect Block</color>, negating incoming damage once and countering with a shield bash. After triggering <color=#FFFFFF>Perfect Block</color>, press <IconMap:Icon_SpecialReady> to activate <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> without consuming energy.\nAfter using the skill, Caesar enters a guard stance, reducing incoming damage by 40%. When attacked by an enemy, Caesar blocks the attack and is slightly knocked back. Press <IconMap:Icon_Special> or <IconMap:Icon_SpecialReady> to trigger <color=#FFFFFF>Retaliation</color> and activate <color=#FFFFFF>Special Attack: Roaring Thrust</color> or <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color>\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "Caesar_Skill_ExSpecial_02_Title",
-          "Desc": "Caesar_Skill_ExSpecial_02_Desc"
+          "Name": "EX Special Attack: Overpowered Shield Bash",
+          "Desc": "After activating <color=#FFFFFF>EX Special Attack: Parry Counter</color>, with enough energy, press <IconMap:Icon_SpecialReady> to activate:\nStrikes forward with the shield, dealing massive <color=#F0D12B>Physical DMG</color>.\nIf Caesar is hit by an enemy at the beginning of the skill activation or a <color=#FFFFFF>Interrupt</color> is triggered with a shield strike, it will trigger <color=#FFFFFF>Perfect Block</color>, negating incoming damage once and recovering the Energy used to activate the skill.\nWhen the skill is activated through <color=#FFFFFF>Perfect Block</color> or <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Perfect Block</color> cannot be triggered again.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "Caesar_Skill_Revenge_Title",
-          "Desc": "Caesar_Skill_Revenge_Desc"
+          "Name": "Stance Switch",
+          "Desc": "When Caesar triggers a <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, or <color=#FFFFFF>Defensive Assist</color>, her impact is increased by <color=#2BAD00>{CAL:8+AvatarSkillLevel(1)*1,1,2}</color>% for 3s."
         },
         {
-          "Name": "Caesar_Skill_Revenge_Title",
+          "Name": "Stance Switch",
           "Param": [
             {
-              "Name": "Caesar_Skill_Revenge_Key",
-              "Desc": "Caesar_Skill_Revenge_Value"
+              "Name": "Impact Increase",
+              "Desc": "{CAL:8+AvatarSkillLevel(1)*1,1,2}%"
             }
           ]
         },
         {
-          "Name": "Caesar_Skill_Special_01_Title",
+          "Name": "Special Attack: Shockwave Shield Bash",
           "Param": [
             {
               "Name": "DMG Multiplier",
               "Desc": "{Skill:1071009, Prop:1001}",
               "Param": {
                 "1071009": {
-                  "Main": 5610,
-                  "Growth": 510,
+                  "Main": 5330,
+                  "Growth": 490,
                   "Format": "%",
-                  "DamagePercentage": 5610,
-                  "DamagePercentageGrowth": 510,
-                  "StunRatio": 2810,
-                  "StunRatioGrowth": 130,
+                  "DamagePercentage": 5330,
+                  "DamagePercentageGrowth": 490,
+                  "StunRatio": 2400,
+                  "StunRatioGrowth": 110,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 57138,
+                  "FeverRecovery": 51788,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 2668,
+                  "AttributeInfliction": 2418,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -943,12 +970,61 @@
               "Desc": "{Skill:1071009, Prop:1002}",
               "Param": {
                 "1071009": {
-                  "Main": 2810,
-                  "Growth": 130,
+                  "Main": 2400,
+                  "Growth": 110,
                   "Format": "%",
-                  "DamagePercentage": 5610,
-                  "DamagePercentageGrowth": 510,
-                  "StunRatio": 2810,
+                  "DamagePercentage": 5330,
+                  "DamagePercentageGrowth": 490,
+                  "StunRatio": 2400,
+                  "StunRatioGrowth": 110,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 51788,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 2418,
+                  "SpConsume": 0,
+                  "AttackData": []
+                }
+              }
+            },
+            {
+              "Name": "[Perfect Block] Daze Multiplier",
+              "Desc": "{Skill:1071014, Prop:1002}",
+              "Param": {
+                "1071014": {
+                  "Main": 7700,
+                  "Growth": 350,
+                  "Format": "%",
+                  "DamagePercentage": 0,
+                  "DamagePercentageGrowth": 0,
+                  "StunRatio": 7700,
+                  "StunRatioGrowth": 350,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 85814,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 4000,
+                  "SpConsume": 0,
+                  "AttackData": []
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Special Attack: Roaring Thrust",
+          "Param": [
+            {
+              "Name": "DMG Multiplier",
+              "Desc": "{Skill:1071010, Prop:1001}",
+              "Param": {
+                "1071010": {
+                  "Main": 5880,
+                  "Growth": 540,
+                  "Format": "%",
+                  "DamagePercentage": 5880,
+                  "DamagePercentageGrowth": 540,
+                  "StunRatio": 2650,
                   "StunRatioGrowth": 130,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
@@ -961,71 +1037,22 @@
               }
             },
             {
-              "Name": "Caesar_Property_Special_Desc_Stun_01",
-              "Desc": "{Skill:1071014, Prop:1002}",
-              "Param": {
-                "1071014": {
-                  "Main": 7350,
-                  "Growth": 340,
-                  "Format": "%",
-                  "DamagePercentage": 0,
-                  "DamagePercentageGrowth": 0,
-                  "StunRatio": 7350,
-                  "StunRatioGrowth": 340,
-                  "SpRecovery": 0,
-                  "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 107214,
-                  "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 5000,
-                  "SpConsume": 0,
-                  "AttackData": []
-                }
-              }
-            }
-          ]
-        },
-        {
-          "Name": "Caesar_Skill_Special_02_Title",
-          "Param": [
-            {
-              "Name": "DMG Multiplier",
-              "Desc": "{Skill:1071010, Prop:1001}",
-              "Param": {
-                "1071010": {
-                  "Main": 5250,
-                  "Growth": 480,
-                  "Format": "%",
-                  "DamagePercentage": 5250,
-                  "DamagePercentageGrowth": 480,
-                  "StunRatio": 2630,
-                  "StunRatioGrowth": 120,
-                  "SpRecovery": 0,
-                  "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 53500,
-                  "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 2498,
-                  "SpConsume": 0,
-                  "AttackData": []
-                }
-              }
-            },
-            {
               "Name": "Daze Multiplier",
               "Desc": "{Skill:1071010, Prop:1002}",
               "Param": {
                 "1071010": {
-                  "Main": 2630,
-                  "Growth": 120,
+                  "Main": 2650,
+                  "Growth": 130,
                   "Format": "%",
-                  "DamagePercentage": 5250,
-                  "DamagePercentageGrowth": 480,
-                  "StunRatio": 2630,
-                  "StunRatioGrowth": 120,
+                  "DamagePercentage": 5880,
+                  "DamagePercentageGrowth": 540,
+                  "StunRatio": 2650,
+                  "StunRatioGrowth": 130,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 53500,
+                  "FeverRecovery": 57138,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 2498,
+                  "AttributeInfliction": 2668,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -1034,25 +1061,25 @@
           ]
         },
         {
-          "Name": "Caesar_Skill_ExSpecial_01_Title",
+          "Name": "EX Special Attack: Parry Counter",
           "Param": [
             {
               "Name": "DMG Multiplier",
               "Desc": "{Skill:1071011, Prop:1001}",
               "Param": {
                 "1071011": {
-                  "Main": 34040,
-                  "Growth": 3100,
+                  "Main": 29550,
+                  "Growth": 2690,
                   "Format": "%",
-                  "DamagePercentage": 34040,
-                  "DamagePercentageGrowth": 3100,
-                  "StunRatio": 28480,
-                  "StunRatioGrowth": 1300,
+                  "DamagePercentage": 29550,
+                  "DamagePercentageGrowth": 2690,
+                  "StunRatio": 25260,
+                  "StunRatioGrowth": 1150,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 806994,
+                  "FeverRecovery": 658478,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 29768,
+                  "AttributeInfliction": 24911,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -1063,84 +1090,84 @@
               "Desc": "{Skill:1071011, Prop:1002}",
               "Param": {
                 "1071011": {
-                  "Main": 28480,
-                  "Growth": 1300,
+                  "Main": 25260,
+                  "Growth": 1150,
                   "Format": "%",
-                  "DamagePercentage": 34040,
-                  "DamagePercentageGrowth": 3100,
-                  "StunRatio": 28480,
-                  "StunRatioGrowth": 1300,
+                  "DamagePercentage": 29550,
+                  "DamagePercentageGrowth": 2690,
+                  "StunRatio": 25260,
+                  "StunRatioGrowth": 1150,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 806994,
+                  "FeverRecovery": 658478,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 29768,
+                  "AttributeInfliction": 24911,
                   "SpConsume": 0,
                   "AttackData": []
                 }
               }
             },
             {
-              "Name": "Caesar_Property_ExSpecial_01_Desc_Damage_01",
-              "Desc": "{Skill:1071012, Prop:1001}",
-              "Param": {
-                "1071012": {
-                  "Main": 34040,
-                  "Growth": 3100,
-                  "Format": "%",
-                  "DamagePercentage": 34040,
-                  "DamagePercentageGrowth": 3100,
-                  "StunRatio": 28480,
-                  "StunRatioGrowth": 1300,
-                  "SpRecovery": 0,
-                  "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 806994,
-                  "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 29768,
-                  "SpConsume": 0,
-                  "AttackData": []
-                }
-              }
-            },
-            {
-              "Name": "Caesar_Property_ExSpecial_01_Desc_Stun_01",
-              "Desc": "{Skill:1071012, Prop:1002}",
-              "Param": {
-                "1071012": {
-                  "Main": 28480,
-                  "Growth": 1300,
-                  "Format": "%",
-                  "DamagePercentage": 34040,
-                  "DamagePercentageGrowth": 3100,
-                  "StunRatio": 28480,
-                  "StunRatioGrowth": 1300,
-                  "SpRecovery": 0,
-                  "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 806994,
-                  "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 29768,
-                  "SpConsume": 0,
-                  "AttackData": []
-                }
-              }
-            },
-            {
-              "Name": "...",
+              "Name": "[Perfect Block] Daze Multiplier",
               "Desc": "{Skill:1071015, Prop:1002}",
               "Param": {
                 "1071015": {
-                  "Main": 14700,
-                  "Growth": 670,
+                  "Main": 15400,
+                  "Growth": 700,
                   "Format": "%",
                   "DamagePercentage": 0,
                   "DamagePercentageGrowth": 0,
-                  "StunRatio": 14700,
-                  "StunRatioGrowth": 670,
+                  "StunRatio": 15400,
+                  "StunRatioGrowth": 700,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 235400,
+                  "FeverRecovery": 214000,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 11000,
+                  "AttributeInfliction": 10000,
+                  "SpConsume": 0,
+                  "AttackData": []
+                }
+              }
+            },
+            {
+              "Name": "[Perfect Block] Counter DMG Multiplier",
+              "Desc": "{Skill:1071012, Prop:1001}",
+              "Param": {
+                "1071012": {
+                  "Main": 29550,
+                  "Growth": 2690,
+                  "Format": "%",
+                  "DamagePercentage": 29550,
+                  "DamagePercentageGrowth": 2690,
+                  "StunRatio": 25260,
+                  "StunRatioGrowth": 1150,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 658478,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 24911,
+                  "SpConsume": 0,
+                  "AttackData": []
+                }
+              }
+            },
+            {
+              "Name": "[Perfect Block] Counter Daze Multiplier",
+              "Desc": "{Skill:1071012, Prop:1002}",
+              "Param": {
+                "1071012": {
+                  "Main": 25260,
+                  "Growth": 1150,
+                  "Format": "%",
+                  "DamagePercentage": 29550,
+                  "DamagePercentageGrowth": 2690,
+                  "StunRatio": 25260,
+                  "StunRatioGrowth": 1150,
+                  "SpRecovery": 0,
+                  "SpRecoveryGrowth": 0,
+                  "FeverRecovery": 658478,
+                  "FeverRecoveryGrowth": 0,
+                  "AttributeInfliction": 24911,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -1148,30 +1175,30 @@
             },
             {
               "Name": "Energy Cost",
-              "Desc": "..."
+              "Desc": "40"
             }
           ]
         },
         {
-          "Name": "Caesar_Skill_ExSpecial_02_Title",
+          "Name": "EX Special Attack: Overpowered Shield Bash",
           "Param": [
             {
               "Name": "DMG Multiplier",
-              "Desc": "{Skill:1071011, Prop:1001}",
+              "Desc": "{Skill:1071013, Prop:1001}",
               "Param": {
-                "1071011": {
-                  "Main": 34040,
-                  "Growth": 3100,
+                "1071013": {
+                  "Main": 33410,
+                  "Growth": 3040,
                   "Format": "%",
-                  "DamagePercentage": 34040,
-                  "DamagePercentageGrowth": 3100,
-                  "StunRatio": 28480,
-                  "StunRatioGrowth": 1300,
+                  "DamagePercentage": 33410,
+                  "DamagePercentageGrowth": 3040,
+                  "StunRatio": 28840,
+                  "StunRatioGrowth": 1320,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 806994,
+                  "FeverRecovery": 738728,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 29768,
+                  "AttributeInfliction": 28287,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -1179,51 +1206,51 @@
             },
             {
               "Name": "Daze Multiplier",
-              "Desc": "{Skill:1071011, Prop:1002}",
+              "Desc": "{Skill:1071013, Prop:1002}",
               "Param": {
-                "1071011": {
-                  "Main": 28480,
-                  "Growth": 1300,
+                "1071013": {
+                  "Main": 28840,
+                  "Growth": 1320,
                   "Format": "%",
-                  "DamagePercentage": 34040,
-                  "DamagePercentageGrowth": 3100,
-                  "StunRatio": 28480,
-                  "StunRatioGrowth": 1300,
+                  "DamagePercentage": 33410,
+                  "DamagePercentageGrowth": 3040,
+                  "StunRatio": 28840,
+                  "StunRatioGrowth": 1320,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 806994,
+                  "FeverRecovery": 738728,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 29768,
+                  "AttributeInfliction": 28287,
                   "SpConsume": 0,
                   "AttackData": []
                 }
               }
             },
             {
-              "Name": "...",
+              "Name": "[Perfect Block] Daze Multiplier",
               "Desc": "{Skill:1071015, Prop:1002}",
               "Param": {
                 "1071015": {
-                  "Main": 14700,
-                  "Growth": 670,
+                  "Main": 15400,
+                  "Growth": 700,
                   "Format": "%",
                   "DamagePercentage": 0,
                   "DamagePercentageGrowth": 0,
-                  "StunRatio": 14700,
-                  "StunRatioGrowth": 670,
+                  "StunRatio": 15400,
+                  "StunRatioGrowth": 700,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 235400,
+                  "FeverRecovery": 214000,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 11000,
+                  "AttributeInfliction": 10000,
                   "SpConsume": 0,
                   "AttackData": []
                 }
               }
             },
             {
-              "Name": "Caesar_Property_ExSpecial_SpCost",
-              "Desc": "Caesar_Property_ExSpecial_SpCostValue_02"
+              "Name": "Activation Energy Cost",
+              "Desc": "20"
             }
           ]
         }
@@ -1280,28 +1307,28 @@
     "Chain": {
       "Description": [
         {
-          "Name": "...",
-          "Desc": "..."
+          "Name": "Chain Attack: Road Rage Slam",
+          "Desc": "When a <color=#FFFFFF>Chain Attack</color> is triggered, select the character to activate:\nUnleashes a powerful downward strike at enemies ahead, dealing massive <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "...",
-          "Desc": "..."
+          "Name": "Ultimate: Savage Smash",
+          "Desc": "When Decibel Rating is at <color=#FFFFFF>Maximum</color>, press <IconMap:Icon_UltimateReady> to activate:\nTosses the shield forward, unleashing a powerful spinning attack on enemies in front, followed by a downward strike, dealing massive <color=#F0D12B>Physical DMG</color>.\nWhen hitting shielded enemies, the Daze dealt is increased by <color=#2BAD00>{CAL:40+AvatarSkillLevel(3)*5,1,2}%</color>.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "...",
+          "Name": "Chain Attack: Road Rage Slam",
           "Param": [
             {
               "Name": "DMG Multiplier",
               "Desc": "{Skill:1071018, Prop:1001}",
               "Param": {
                 "1071018": {
-                  "Main": 60980,
-                  "Growth": 5550,
+                  "Main": 63880,
+                  "Growth": 5810,
                   "Format": "%",
-                  "DamagePercentage": 60980,
-                  "DamagePercentageGrowth": 5550,
-                  "StunRatio": 19080,
-                  "StunRatioGrowth": 870,
+                  "DamagePercentage": 63880,
+                  "DamagePercentageGrowth": 5810,
+                  "StunRatio": 19990,
+                  "StunRatioGrowth": 910,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 1811938,
@@ -1317,13 +1344,13 @@
               "Desc": "{Skill:1071018, Prop:1002}",
               "Param": {
                 "1071018": {
-                  "Main": 19080,
-                  "Growth": 870,
+                  "Main": 19990,
+                  "Growth": 910,
                   "Format": "%",
-                  "DamagePercentage": 60980,
-                  "DamagePercentageGrowth": 5550,
-                  "StunRatio": 19080,
-                  "StunRatioGrowth": 870,
+                  "DamagePercentage": 63880,
+                  "DamagePercentageGrowth": 5810,
+                  "StunRatio": 19990,
+                  "StunRatioGrowth": 910,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 1811938,
@@ -1337,25 +1364,25 @@
           ]
         },
         {
-          "Name": "...",
+          "Name": "Ultimate: Savage Smash",
           "Param": [
             {
               "Name": "DMG Multiplier",
               "Desc": "{Skill:1071019, Prop:1001}",
               "Param": {
                 "1071019": {
-                  "Main": 193450,
-                  "Growth": 17590,
+                  "Main": 201230,
+                  "Growth": 18300,
                   "Format": "%",
-                  "DamagePercentage": 193450,
-                  "DamagePercentageGrowth": 17590,
-                  "StunRatio": 27650,
-                  "StunRatioGrowth": 1260,
+                  "DamagePercentage": 201230,
+                  "DamagePercentageGrowth": 18300,
+                  "StunRatio": 27870,
+                  "StunRatioGrowth": 1270,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 0,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 26333,
+                  "AttributeInfliction": 25329,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -1366,26 +1393,26 @@
               "Desc": "{Skill:1071019, Prop:1002}",
               "Param": {
                 "1071019": {
-                  "Main": 27650,
-                  "Growth": 1260,
+                  "Main": 27870,
+                  "Growth": 1270,
                   "Format": "%",
-                  "DamagePercentage": 193450,
-                  "DamagePercentageGrowth": 17590,
-                  "StunRatio": 27650,
-                  "StunRatioGrowth": 1260,
+                  "DamagePercentage": 201230,
+                  "DamagePercentageGrowth": 18300,
+                  "StunRatio": 27870,
+                  "StunRatioGrowth": 1270,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 0,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 26333,
+                  "AttributeInfliction": 25329,
                   "SpConsume": 0,
                   "AttackData": []
                 }
               }
             },
             {
-              "Name": "Caesar_Skill_ExQTE_AddedBreakStunRatio_Key",
-              "Desc": "Caesar_Skill_ExQTE_AddedBreakStunRatio_Value"
+              "Name": "Daze Increase",
+              "Desc": "{CAL:40+AvatarSkillLevel(3)*5,1,2}%"
             }
           ]
         }
@@ -1442,37 +1469,37 @@
     "Assist": {
       "Description": [
         {
-          "Name": "...",
-          "Desc": "..."
+          "Name": "Quick Assist: Lane Change",
+          "Desc": "When the on-field character is launched, press <IconMap:Icon_Switch> to activate:\nSlashes enemies in front, dealing <color=#F0D12B>Physical DMG</color>.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "Caesar_Skill_ParryAid_Title",
-          "Desc": "Caesar_Skill_ParryAid_Desc"
+          "Name": "Defensive Assist: Aegis Shield",
+          "Desc": "When the character on field is about to be attacked, press <IconMap:Icon_Switch> to activate:\nParries the enemy's attack, dealing massive Daze.\nThis skill excels at parrying enemy attacks and reduces the consumption of <color=#FFFFFF>Assist Points</color> when the character is under intense attacks.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "Caesar_Skill_AssaultAid_Title",
-          "Desc": "Caesar_Skill_AssaultAid_Desc"
+          "Name": "Assist Follow-Up: Aiding Blade",
+          "Desc": "After activating <color=#FFFFFF>Defensive Assist</color>, press <IconMap:Icon_Normal> to activate:\nTosses the shield forward, unleashing a powerful spinning attack on enemies in front, followed by a slash that deals <color=#F0D12B>Physical DMG</color>.\nAfter activating the skill, press <IconMap:Icon_Special> or <IconMap:Icon_SpecialReady> to trigger a <color=#FFFFFF>Retaliation</color>, activating <color=#FFFFFF>Special Attack: Roaring Thrust</color> or <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color>.\nCharacter is invulnerable while using this skill."
         },
         {
-          "Name": "...",
+          "Name": "Quick Assist: Lane Change",
           "Param": [
             {
               "Name": "DMG Multiplier",
               "Desc": "{Skill:1071020, Prop:1001}",
               "Param": {
                 "1071020": {
-                  "Main": 6650,
-                  "Growth": 610,
+                  "Main": 6420,
+                  "Growth": 590,
                   "Format": "%",
-                  "DamagePercentage": 6650,
-                  "DamagePercentageGrowth": 610,
-                  "StunRatio": 6650,
-                  "StunRatioGrowth": 310,
-                  "SpRecovery": 22800,
+                  "DamagePercentage": 6420,
+                  "DamagePercentageGrowth": 590,
+                  "StunRatio": 6420,
+                  "StunRatioGrowth": 300,
+                  "SpRecovery": 21010,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 135676,
+                  "FeverRecovery": 124976,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 6333,
+                  "AttributeInfliction": 5833,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -1483,18 +1510,18 @@
               "Desc": "{Skill:1071020, Prop:1002}",
               "Param": {
                 "1071020": {
-                  "Main": 6650,
-                  "Growth": 310,
+                  "Main": 6420,
+                  "Growth": 300,
                   "Format": "%",
-                  "DamagePercentage": 6650,
-                  "DamagePercentageGrowth": 610,
-                  "StunRatio": 6650,
-                  "StunRatioGrowth": 310,
-                  "SpRecovery": 22800,
+                  "DamagePercentage": 6420,
+                  "DamagePercentageGrowth": 590,
+                  "StunRatio": 6420,
+                  "StunRatioGrowth": 300,
+                  "SpRecovery": 21010,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 135676,
+                  "FeverRecovery": 124976,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 6333,
+                  "AttributeInfliction": 5833,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -1503,20 +1530,20 @@
           ]
         },
         {
-          "Name": "Caesar_Skill_ParryAid_Title",
+          "Name": "Defensive Assist: Aegis Shield",
           "Param": [
             {
               "Name": "Light Defensive Daze Multiplier",
               "Desc": "{Skill:1071021, Prop:1002}",
               "Param": {
                 "1071021": {
-                  "Main": 25900,
-                  "Growth": 1180,
+                  "Main": 27130,
+                  "Growth": 1240,
                   "Format": "%",
                   "DamagePercentage": 0,
                   "DamagePercentageGrowth": 0,
-                  "StunRatio": 25900,
-                  "StunRatioGrowth": 1180,
+                  "StunRatio": 27130,
+                  "StunRatioGrowth": 1240,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 142738,
@@ -1532,13 +1559,13 @@
               "Desc": "{Skill:1071022, Prop:1002}",
               "Param": {
                 "1071022": {
-                  "Main": 32960,
-                  "Growth": 1500,
+                  "Main": 34530,
+                  "Growth": 1570,
                   "Format": "%",
                   "DamagePercentage": 0,
                   "DamagePercentageGrowth": 0,
-                  "StunRatio": 32960,
-                  "StunRatioGrowth": 1500,
+                  "StunRatio": 34530,
+                  "StunRatioGrowth": 1570,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 253376,
@@ -1554,13 +1581,13 @@
               "Desc": "{Skill:1071023, Prop:1002}",
               "Param": {
                 "1071023": {
-                  "Main": 16160,
-                  "Growth": 740,
+                  "Main": 16930,
+                  "Growth": 770,
                   "Format": "%",
                   "DamagePercentage": 0,
                   "DamagePercentageGrowth": 0,
-                  "StunRatio": 16160,
-                  "StunRatioGrowth": 740,
+                  "StunRatio": 16930,
+                  "StunRatioGrowth": 770,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
                   "FeverRecovery": 253376,
@@ -1574,25 +1601,25 @@
           ]
         },
         {
-          "Name": "Caesar_Skill_AssaultAid_Title",
+          "Name": "Assist Follow-Up: Aiding Blade",
           "Param": [
             {
               "Name": "DMG Multiplier",
               "Desc": "{Skill:1071024, Prop:1001}",
               "Param": {
                 "1071024": {
-                  "Main": 39360,
-                  "Growth": 3580,
+                  "Main": 40720,
+                  "Growth": 3710,
                   "Format": "%",
-                  "DamagePercentage": 39360,
-                  "DamagePercentageGrowth": 3580,
-                  "StunRatio": 36060,
-                  "StunRatioGrowth": 1640,
+                  "DamagePercentage": 40720,
+                  "DamagePercentageGrowth": 3710,
+                  "StunRatio": 35630,
+                  "StunRatioGrowth": 1620,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 901796,
+                  "FeverRecovery": 891096,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 35147,
+                  "AttributeInfliction": 34697,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -1603,18 +1630,18 @@
               "Desc": "{Skill:1071024, Prop:1002}",
               "Param": {
                 "1071024": {
-                  "Main": 36060,
-                  "Growth": 1640,
+                  "Main": 35630,
+                  "Growth": 1620,
                   "Format": "%",
-                  "DamagePercentage": 39360,
-                  "DamagePercentageGrowth": 3580,
-                  "StunRatio": 36060,
-                  "StunRatioGrowth": 1640,
+                  "DamagePercentage": 40720,
+                  "DamagePercentageGrowth": 3710,
+                  "StunRatio": 35630,
+                  "StunRatioGrowth": 1620,
                   "SpRecovery": 0,
                   "SpRecoveryGrowth": 0,
-                  "FeverRecovery": 901796,
+                  "FeverRecovery": 891096,
                   "FeverRecoveryGrowth": 0,
-                  "AttributeInfliction": 35147,
+                  "AttributeInfliction": 34697,
                   "SpConsume": 0,
                   "AttackData": []
                 }
@@ -1679,84 +1706,84 @@
         "Level": 1,
         "Id": 1071501,
         "Name": [
-          "Caesar_UniqueSkill_Title",
-          "Caesar_MathSkill_Title"
+          "Core Passive: Barrier of Resilience",
+          "Additional Ability: Battle Spirit"
         ],
         "Desc": [
-          "Caesar_UniqueSkill_01_Desc",
-          "Caesar_MathSkill_Desc"
+          "When Caesar activates <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, or triggers <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> through <color=#FFFFFF>Retaliation</color>, she buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield equal to <color=#2BAD00>300%</color> of her base Impact + <color=#2BAD00>200</color>. The shield lasts for 90s and is equipped by the on-field character, with its value shared among the entire team. Any single instance of DMG will not exceed the Shield value.\nWhile <color=#FFFFFF>Radiant Aegis</color> is active, the shield bearer's Anti-Interrupt level is increased, and their ATK is increased by 40. After <color=#FFFFFF>Radiant Aegis</color> expires, the buff remains for an additional 5s.",
+          "When there is another character in your squad who can activate <color=#FFFFFF>Defensive Assist</color> or is from the same Faction:\nWhen Caesar activates <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Basic Attack: Dead End</color>, she applies a Debuff effect to enemies within a 7m radius, increasing the damage they take from all teammates by 25% for 30s."
         ]
       },
       "2": {
         "Level": 2,
         "Id": 1071502,
         "Name": [
-          "Caesar_UniqueSkill_Title",
-          "Caesar_MathSkill_Title"
+          "Core Passive: Barrier of Resilience",
+          "Additional Ability: Battle Spirit"
         ],
         "Desc": [
-          "Caesar_UniqueSkill_02_Desc",
-          "Caesar_MathSkill_Desc"
+          "When Caesar activates <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, or triggers <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> through <color=#FFFFFF>Retaliation</color>, she buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield equal to <color=#2BAD00>500%</color> of her base Impact + <color=#2BAD00>400</color>. The shield lasts for 90s and is equipped by the on-field character, with its value shared among the entire team. Any single instance of DMG will not exceed the Shield value.\nWhile <color=#FFFFFF>Radiant Aegis</color> is active, the shield bearer's Anti-Interrupt level is increased, and their ATK is increased by 135. After <color=#FFFFFF>Radiant Aegis</color> expires, the buff remains for an additional 5s.",
+          "When there is another character in your squad who can activate <color=#FFFFFF>Defensive Assist</color> or is from the same Faction:\nWhen Caesar activates <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Basic Attack: Dead End</color>, she applies a Debuff effect to enemies within a 7m radius, increasing the damage they take from all teammates by 25% for 30s."
         ]
       },
       "3": {
         "Level": 3,
         "Id": 1071503,
         "Name": [
-          "Caesar_UniqueSkill_Title",
-          "Caesar_MathSkill_Title"
+          "Core Passive: Barrier of Resilience",
+          "Additional Ability: Battle Spirit"
         ],
         "Desc": [
-          "Caesar_UniqueSkill_03_Desc",
-          "Caesar_MathSkill_Desc"
+          "When Caesar activates <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, or triggers <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> through <color=#FFFFFF>Retaliation</color>, she buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield equal to <color=#2BAD00>700%</color> of her base Impact + <color=#2BAD00>700</color>. The shield lasts for 90s and is equipped by the on-field character, with its value shared among the entire team. Any single instance of DMG will not exceed the Shield value.\nWhile <color=#FFFFFF>Radiant Aegis</color> is active, the shield bearer's Anti-Interrupt level is increased, and their ATK is increased by 240. After <color=#FFFFFF>Radiant Aegis</color> expires, the buff remains for an additional 5s.",
+          "When there is another character in your squad who can activate <color=#FFFFFF>Defensive Assist</color> or is from the same Faction:\nWhen Caesar activates <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Basic Attack: Dead End</color>, she applies a Debuff effect to enemies within a 7m radius, increasing the damage they take from all teammates by 25% for 30s."
         ]
       },
       "4": {
         "Level": 4,
         "Id": 1071504,
         "Name": [
-          "Caesar_UniqueSkill_Title",
-          "Caesar_MathSkill_Title"
+          "Core Passive: Barrier of Resilience",
+          "Additional Ability: Battle Spirit"
         ],
         "Desc": [
-          "Caesar_UniqueSkill_04_Desc",
-          "Caesar_MathSkill_Desc"
+          "When Caesar activates <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, or triggers <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> through <color=#FFFFFF>Retaliation</color>, she buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield equal to <color=#2BAD00>900%</color> of her base Impact + <color=#2BAD00>900</color>. The shield lasts for 90s and is equipped by the on-field character, with its value shared among the entire team. Any single instance of DMG will not exceed the Shield value.\nWhile <color=#FFFFFF>Radiant Aegis</color> is active, the shield bearer's Anti-Interrupt level is increased, and their ATK is increased by 400. After <color=#FFFFFF>Radiant Aegis</color> expires, the buff remains for an additional 5s.",
+          "When there is another character in your squad who can activate <color=#FFFFFF>Defensive Assist</color> or is from the same Faction:\nWhen Caesar activates <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Basic Attack: Dead End</color>, she applies a Debuff effect to enemies within a 7m radius, increasing the damage they take from all teammates by 25% for 30s."
         ]
       },
       "5": {
         "Level": 5,
         "Id": 1071505,
         "Name": [
-          "Caesar_UniqueSkill_Title",
-          "Caesar_MathSkill_Title"
+          "Core Passive: Barrier of Resilience",
+          "Additional Ability: Battle Spirit"
         ],
         "Desc": [
-          "Caesar_UniqueSkill_05_Desc",
-          "Caesar_MathSkill_Desc"
+          "When Caesar activates <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, or triggers <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> through <color=#FFFFFF>Retaliation</color>, she buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield equal to <color=#2BAD00>1,100%</color> of her base Impact + <color=#2BAD00>1,100</color>. The shield lasts for 90s and is equipped by the on-field character, with its value shared among the entire team. Any single instance of DMG will not exceed the Shield value.\nWhile <color=#FFFFFF>Radiant Aegis</color> is active, the shield bearer's Anti-Interrupt level is increased, and their ATK is increased by 650. After <color=#FFFFFF>Radiant Aegis</color> expires, the buff remains for an additional 5s.",
+          "When there is another character in your squad who can activate <color=#FFFFFF>Defensive Assist</color> or is from the same Faction:\nWhen Caesar activates <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Basic Attack: Dead End</color>, she applies a Debuff effect to enemies within a 7m radius, increasing the damage they take from all teammates by 25% for 30s."
         ]
       },
       "6": {
         "Level": 6,
         "Id": 1071506,
         "Name": [
-          "Caesar_UniqueSkill_Title",
-          "Caesar_MathSkill_Title"
+          "Core Passive: Barrier of Resilience",
+          "Additional Ability: Battle Spirit"
         ],
         "Desc": [
-          "Caesar_UniqueSkill_06_Desc",
-          "Caesar_MathSkill_Desc"
+          "When Caesar activates <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, or triggers <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> through <color=#FFFFFF>Retaliation</color>, she buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield equal to <color=#2BAD00>1,300%</color> of her base Impact + <color=#2BAD00>1,300</color>. The shield lasts for 90s and is equipped by the on-field character, with its value shared among the entire team. Any single instance of DMG will not exceed the Shield value.\nWhile <color=#FFFFFF>Radiant Aegis</color> is active, the shield bearer's Anti-Interrupt level is increased, and their ATK is increased by 900. After <color=#FFFFFF>Radiant Aegis</color> expires, the buff remains for an additional 5s.",
+          "When there is another character in your squad who can activate <color=#FFFFFF>Defensive Assist</color> or is from the same Faction:\nWhen Caesar activates <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Basic Attack: Dead End</color>, she applies a Debuff effect to enemies within a 7m radius, increasing the damage they take from all teammates by 25% for 30s."
         ]
       },
       "7": {
         "Level": 7,
         "Id": 1071507,
         "Name": [
-          "Caesar_UniqueSkill_Title",
-          "Caesar_MathSkill_Title"
+          "Core Passive: Barrier of Resilience",
+          "Additional Ability: Battle Spirit"
         ],
         "Desc": [
-          "Caesar_UniqueSkill_07_Desc",
-          "Caesar_MathSkill_Desc"
+          "When Caesar activates <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, or triggers <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> through <color=#FFFFFF>Retaliation</color>, she buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield equal to <color=#2BAD00>1,400%</color> of her base Impact + <color=#2BAD00>1,400</color>. The shield lasts for 90s and is equipped by the on-field character, with its value shared among the entire team. Any single instance of DMG will not exceed the Shield value.\nWhile <color=#FFFFFF>Radiant Aegis</color> is active, the shield bearer's Anti-Interrupt level is increased, and their ATK is increased by 1,000. After <color=#FFFFFF>Radiant Aegis</color> expires, the buff remains for an additional 5s.",
+          "When there is another character in your squad who can activate <color=#FFFFFF>Defensive Assist</color> or is from the same Faction:\nWhen Caesar activates <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Basic Attack: Dead End</color>, she applies a Debuff effect to enemies within a 7m radius, increasing the damage they take from all teammates by 25% for 30s."
         ]
       }
     },
@@ -1792,39 +1819,39 @@
   "Talent": {
     "1": {
       "Level": 1,
-      "Name": "Caesar_Talent_01_Title",
-      "Desc": "Caesar_Talent_01_Desc_01",
-      "Desc2": "Caesar_Talent_01_Desc_02"
+      "Name": "Spearhead Advance",
+      "Desc": "When Caesar enters combat or switches in, she instantly buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield, which can be can be triggered once every 300s. While <color=#FFFFFF>Radiant Aegis</color> is active, enemies within a 5m radius of the shield bearer suffer a 15% Attribute DMG RES reduction.",
+      "Desc2": "\"Big Daddy taught me that this is when you form a spearheaded formation with overwhelming force and strike at the enemy's weakest point—\"\n\"And I'll be leading the charge, of course!\""
     },
     "2": {
       "Level": 2,
-      "Name": "Caesar_Talent_02_Title",
-      "Desc": "Caesar_Talent_02_Desc_01",
-      "Desc2": "Caesar_Talent_02_Desc_02"
+      "Name": "Legacy of the Far Lands",
+      "Desc": "While <color=#FFFFFF>Radiant Aegis</color> is active during <color=#FFFFFF>Core Passive: Barrier of Resilience</color>, Caesar's Energy Generation increases by 10%, and the shield bearer's attack boost is increased to 150% of its original value.",
+      "Desc2": "Caesar's combat style stands out from those of New Eridu or the Outer Ring, drawing from the techniques of the most skilled warriors among the wanderers.\nKnowing when to hold back and when to strike decisively—that has always been the wanderer's way of survival. And Caesar has always been a good student of this philosophy."
     },
     "3": {
       "Level": 3,
-      "Name": "Caesar_Talent_03_Title",
-      "Desc": "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dodge</color>, <color=#ffffff>Assist</color>, <color=#ffffff>Special Attack</color>, and <color=#ffffff>Chain Attack</color> Lv. +2",
-      "Desc2": "Caesar_Talent_03_Desc_02"
+      "Name": "Absolute Trust",
+      "Desc": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+      "Desc2": "Once Caesar recognizes someone as one of her own, she fully accepts them as part of her inner circle. She gives them absolute trust, letting her guard down completely...\nJust like she does with you now."
     },
     "4": {
       "Level": 4,
-      "Name": "Caesar_Talent_04_Title",
-      "Desc": "Caesar_Talent_04_Desc_01",
-      "Desc2": "Caesar_Talent_04_Desc_02"
+      "Name": "Aries the Battering-Ram",
+      "Desc": "When Caesar uses a <color=#FFFFFF>Chain Attack</color> or <color=#FFFFFF>Ultimate</color>, she gains 3 additional <color=#FFFFFF>Assist Points</color>. If her Energy is below 20, she can activate <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> with 1 <color=#FFFFFF>Assist Point</color> instead. This substitution can only be triggered once every 5s.",
+      "Desc2": "One of the tactics Caesar mastered under the guidance of the wanderers.\n\"No matter what, I'll fight till the last moment!\""
     },
     "5": {
       "Level": 5,
-      "Name": "Caesar_Talent_05_Title",
-      "Desc": "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dodge</color>, <color=#ffffff>Assist</color>, <color=#ffffff>Special Attack</color>, and <color=#ffffff>Chain Attack</color> Lv. +2",
-      "Desc2": "Caesar_Talent_05_Desc_02"
+      "Name": "Romantic Conquest",
+      "Desc": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2",
+      "Desc2": "Behind Caesar's carefree and unpolished apperance lies a romantic at heart.\nShe's always curious about love stories.\nBut if you dig a little deeper into the subject... you might just catch her blushing."
     },
     "6": {
       "Level": 6,
-      "Name": "Caesar_Talent_06_Title",
-      "Desc": "Caesar_Talent_06_Desc_01",
-      "Desc2": "Caesar_Talent_06_Desc_02"
+      "Name": "Overlord's Will",
+      "Desc": "<color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> and <color=#FFFFFF>Assist Follow-Up</color> is guaranteed to trigger a critical hit. The skill's DMG is increased by 50% with an additional damage of 50% dealt to the primary target. When Caesar uses <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> or <color=#FFFFFF>Assist Follow-Up</color>, her CRIT Rate is increased by 30% and her CRIT DMG is increased by 60% for 15s.",
+      "Desc2": "\"I used to keep my eyes straight ahead, thinking that as long as I was strong enough, I could do anything.\"\n\"But being a great leader takes more than just power.\"\n\"I need to protect my friends behind me — they are the reason I can keep going.\""
     }
   }
 }

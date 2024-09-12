@@ -1,8 +1,8 @@
 {
   "Id": 54011,
-  "CodeName": "...",
-  "Name": "Bangboo_Name_54011",
-  "Desc": "Bangboo_Desc_54011",
+  "CodeName": "Red Moccus",
+  "Name": "Red Moccus",
+  "Desc": "I'll be waiting for you on the off-road section of the Outer Ring!",
   "Rarity": 4,
   "Icon": "UI/Sprite/A1DynamicLoad/BangbooModGarage/UnPacker/BangbooRole/BangbooGarageRole26.png",
   "Stats": {
@@ -174,161 +174,161 @@
     "A": {
       "Level": {
         "1": {
-          "Name": "Bangboo_ActiveSkill_Title_54011",
-          "Desc": "Bangboo_ActiveSkill_Des_54011",
+          "Name": "Roaring Wheels",
+          "Desc": "<color=#FFFFFF>Active Skill</color>\nRides a motorcycle and pushes the farthest enemy until they're near the Agent, dealing <color=#F0D12B>Physical DMG</color>",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier",
             "Cooldown"
           ],
-          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|Bangboo_ActiveSkill_Property_CD_54011"
+          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|30s"
         },
         "2": {
-          "Name": "Bangboo_ActiveSkill_Title_54011",
-          "Desc": "Bangboo_ActiveSkill_Des_54011",
+          "Name": "Roaring Wheels",
+          "Desc": "<color=#FFFFFF>Active Skill</color>\nRides a motorcycle and pushes the farthest enemy until they're near the Agent, dealing <color=#F0D12B>Physical DMG</color>",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier",
             "Cooldown"
           ],
-          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|Bangboo_ActiveSkill_Property_CD_54011"
+          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|30s"
         },
         "3": {
-          "Name": "Bangboo_ActiveSkill_Title_54011",
-          "Desc": "Bangboo_ActiveSkill_Des_54011",
+          "Name": "Roaring Wheels",
+          "Desc": "<color=#FFFFFF>Active Skill</color>\nRides a motorcycle and pushes the farthest enemy until they're near the Agent, dealing <color=#F0D12B>Physical DMG</color>",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier",
             "Cooldown"
           ],
-          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|Bangboo_ActiveSkill_Property_CD_54011"
+          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|30s"
         },
         "4": {
-          "Name": "Bangboo_ActiveSkill_Title_54011",
-          "Desc": "Bangboo_ActiveSkill_Des_54011",
+          "Name": "Roaring Wheels",
+          "Desc": "<color=#FFFFFF>Active Skill</color>\nRides a motorcycle and pushes the farthest enemy until they're near the Agent, dealing <color=#F0D12B>Physical DMG</color>",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier",
             "Cooldown"
           ],
-          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|Bangboo_ActiveSkill_Property_CD_54011"
+          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|30s"
         },
         "5": {
-          "Name": "Bangboo_ActiveSkill_Title_54011",
-          "Desc": "Bangboo_ActiveSkill_Des_54011",
+          "Name": "Roaring Wheels",
+          "Desc": "<color=#FFFFFF>Active Skill</color>\nRides a motorcycle and pushes the farthest enemy until they're near the Agent, dealing <color=#F0D12B>Physical DMG</color>",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier",
             "Cooldown"
           ],
-          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|Bangboo_ActiveSkill_Property_CD_54011"
+          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|30s"
         },
         "6": {
-          "Name": "Bangboo_ActiveSkill_Title_54011",
-          "Desc": "Bangboo_ActiveSkill_Des_54011",
+          "Name": "Roaring Wheels",
+          "Desc": "<color=#FFFFFF>Active Skill</color>\nRides a motorcycle and pushes the farthest enemy until they're near the Agent, dealing <color=#F0D12B>Physical DMG</color>",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier",
             "Cooldown"
           ],
-          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|Bangboo_ActiveSkill_Property_CD_54011"
+          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|30s"
         },
         "7": {
-          "Name": "Bangboo_ActiveSkill_Title_54011",
-          "Desc": "Bangboo_ActiveSkill_Des_54011",
+          "Name": "Roaring Wheels",
+          "Desc": "<color=#FFFFFF>Active Skill</color>\nRides a motorcycle and pushes the farthest enemy until they're near the Agent, dealing <color=#F0D12B>Physical DMG</color>",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier",
             "Cooldown"
           ],
-          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|Bangboo_ActiveSkill_Property_CD_54011"
+          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|30s"
         },
         "8": {
-          "Name": "Bangboo_ActiveSkill_Title_54011",
-          "Desc": "Bangboo_ActiveSkill_Des_54011",
+          "Name": "Roaring Wheels",
+          "Desc": "<color=#FFFFFF>Active Skill</color>\nRides a motorcycle and pushes the farthest enemy until they're near the Agent, dealing <color=#F0D12B>Physical DMG</color>",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier",
             "Cooldown"
           ],
-          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|Bangboo_ActiveSkill_Property_CD_54011"
+          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|30s"
         },
         "9": {
-          "Name": "Bangboo_ActiveSkill_Title_54011",
-          "Desc": "Bangboo_ActiveSkill_Des_54011",
+          "Name": "Roaring Wheels",
+          "Desc": "<color=#FFFFFF>Active Skill</color>\nRides a motorcycle and pushes the farthest enemy until they're near the Agent, dealing <color=#F0D12B>Physical DMG</color>",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier",
             "Cooldown"
           ],
-          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|Bangboo_ActiveSkill_Property_CD_54011"
+          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|30s"
         },
         "10": {
-          "Name": "Bangboo_ActiveSkill_Title_54011",
-          "Desc": "Bangboo_ActiveSkill_Des_54011",
+          "Name": "Roaring Wheels",
+          "Desc": "<color=#FFFFFF>Active Skill</color>\nRides a motorcycle and pushes the farthest enemy until they're near the Agent, dealing <color=#F0D12B>Physical DMG</color>",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier",
             "Cooldown"
           ],
-          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|Bangboo_ActiveSkill_Property_CD_54011"
+          "Param": "{Skill:5401101, Prop:1001}|{Skill:5401101, Prop:1002}|30s"
         }
       }
     },
     "B": {
       "Level": {
         "1": {
-          "Name": "Bangboo_TalentSkill_Title_54011",
-          "Desc": "Bangboo_TalentSkill_Des_54011_01",
+          "Name": "Drifting Technique",
+          "Desc": "<color=#FFFFFF>Additional Ability</color>\nWhen there are at least 2 <color=#FFFFFF>Sons of Calydon</color> characters in your squad: <color=#FFFFFF>Active Skill</color> DMG increases by 36%. After <color=#FFFFFF>Active Skill</color> deals DMG to an enemy, when that enemy is defeated, the skill's cooldown is reduced by 4s.",
           "Property": [
-            "Bangboo_TalentSkill_Property_Des_5401101",
-            "Bangboo_TalentSkill_Property_Des_5401102"
+            "DMG Increase",
+            "Cooldown Reduction"
           ],
-          "Param": "Bangboo_TalentSkill_Property_Val_5401101_01|Bangboo_TalentSkill_Property_Val_5401102_01"
+          "Param": "36%|4s"
         },
         "2": {
-          "Name": "Bangboo_TalentSkill_Title_54011",
-          "Desc": "Bangboo_TalentSkill_Des_54011_02",
+          "Name": "Drifting Technique",
+          "Desc": "<color=#FFFFFF>Additional Ability</color>\nWhen there are at least 2 <color=#FFFFFF>Sons of Calydon</color> characters in your squad: <color=#FFFFFF>Active Skill</color> DMG increases by 45%. After <color=#FFFFFF>Active Skill</color> deals DMG to an enemy, when that enemy is defeated, the skill's cooldown is reduced by 5s.",
           "Property": [
-            "Bangboo_TalentSkill_Property_Des_5401101",
-            "Bangboo_TalentSkill_Property_Des_5401102"
+            "DMG Increase",
+            "Cooldown Reduction"
           ],
-          "Param": "Bangboo_TalentSkill_Property_Val_5401101_02|Bangboo_TalentSkill_Property_Val_5401102_02"
+          "Param": "45%|5s"
         },
         "3": {
-          "Name": "Bangboo_TalentSkill_Title_54011",
-          "Desc": "Bangboo_TalentSkill_Des_54011_03",
+          "Name": "Drifting Technique",
+          "Desc": "<color=#FFFFFF>Additional Ability</color>\nWhen there are at least 2 <color=#FFFFFF>Sons of Calydon</color> characters in your squad: <color=#FFFFFF>Active Skill</color> DMG increases by 54%. After <color=#FFFFFF>Active Skill</color> deals DMG to an enemy, when that enemy is defeated, the skill's cooldown is reduced by 6s.",
           "Property": [
-            "Bangboo_TalentSkill_Property_Des_5401101",
-            "Bangboo_TalentSkill_Property_Des_5401102"
+            "DMG Increase",
+            "Cooldown Reduction"
           ],
-          "Param": "Bangboo_TalentSkill_Property_Val_5401101_03|Bangboo_TalentSkill_Property_Val_5401102_03"
+          "Param": "54%|6s"
         },
         "4": {
-          "Name": "Bangboo_TalentSkill_Title_54011",
-          "Desc": "Bangboo_TalentSkill_Des_54011_04",
+          "Name": "Drifting Technique",
+          "Desc": "<color=#FFFFFF>Additional Ability</color>\nWhen there are at least 2 <color=#FFFFFF>Sons of Calydon</color> characters in your squad: <color=#FFFFFF>Active Skill</color> DMG increases by 63%. After <color=#FFFFFF>Active Skill</color> deals DMG to an enemy, when that enemy is defeated, the skill's cooldown is reduced by 7s.",
           "Property": [
-            "Bangboo_TalentSkill_Property_Des_5401101",
-            "Bangboo_TalentSkill_Property_Des_5401102"
+            "DMG Increase",
+            "Cooldown Reduction"
           ],
-          "Param": "Bangboo_TalentSkill_Property_Val_5401101_04|Bangboo_TalentSkill_Property_Val_5401102_04"
+          "Param": "63%|7s"
         },
         "5": {
-          "Name": "Bangboo_TalentSkill_Title_54011",
-          "Desc": "Bangboo_TalentSkill_Des_54011_05",
+          "Name": "Drifting Technique",
+          "Desc": "<color=#FFFFFF>Additional Ability</color>\nWhen there are at least 2 <color=#FFFFFF>Sons of Calydon</color> characters in your squad: <color=#FFFFFF>Active Skill</color> DMG increases by 72%. After <color=#FFFFFF>Active Skill</color> deals DMG to an enemy, when that enemy is defeated, the skill's cooldown is reduced by 8s.",
           "Property": [
-            "Bangboo_TalentSkill_Property_Des_5401101",
-            "Bangboo_TalentSkill_Property_Des_5401102"
+            "DMG Increase",
+            "Cooldown Reduction"
           ],
-          "Param": "Bangboo_TalentSkill_Property_Val_5401101_05|Bangboo_TalentSkill_Property_Val_5401102_05"
+          "Param": "72%|8s"
         }
       }
     },
     "C": {
       "Level": {
         "1": {
-          "Name": "Bangboo_QTE_Title_54011",
-          "Desc": "Bangboo_QTE_Des_54011",
+          "Name": "Mad Charge",
+          "Desc": "<color=#FFFFFF>Bangboo Chain Attack</color>\nRun enemies over with a motorcycle and detonate an explosion, dealing massive <color=#F0D12B>Physical DMG</color>.",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier"
@@ -336,8 +336,8 @@
           "Param": "{Skill:5401102, Prop:1001}|{Skill:5401102, Prop:1002}"
         },
         "2": {
-          "Name": "Bangboo_QTE_Title_54011",
-          "Desc": "Bangboo_QTE_Des_54011",
+          "Name": "Mad Charge",
+          "Desc": "<color=#FFFFFF>Bangboo Chain Attack</color>\nRun enemies over with a motorcycle and detonate an explosion, dealing massive <color=#F0D12B>Physical DMG</color>.",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier"
@@ -345,8 +345,8 @@
           "Param": "{Skill:5401102, Prop:1001}|{Skill:5401102, Prop:1002}"
         },
         "3": {
-          "Name": "Bangboo_QTE_Title_54011",
-          "Desc": "Bangboo_QTE_Des_54011",
+          "Name": "Mad Charge",
+          "Desc": "<color=#FFFFFF>Bangboo Chain Attack</color>\nRun enemies over with a motorcycle and detonate an explosion, dealing massive <color=#F0D12B>Physical DMG</color>.",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier"
@@ -354,8 +354,8 @@
           "Param": "{Skill:5401102, Prop:1001}|{Skill:5401102, Prop:1002}"
         },
         "4": {
-          "Name": "Bangboo_QTE_Title_54011",
-          "Desc": "Bangboo_QTE_Des_54011",
+          "Name": "Mad Charge",
+          "Desc": "<color=#FFFFFF>Bangboo Chain Attack</color>\nRun enemies over with a motorcycle and detonate an explosion, dealing massive <color=#F0D12B>Physical DMG</color>.",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier"
@@ -363,8 +363,8 @@
           "Param": "{Skill:5401102, Prop:1001}|{Skill:5401102, Prop:1002}"
         },
         "5": {
-          "Name": "Bangboo_QTE_Title_54011",
-          "Desc": "Bangboo_QTE_Des_54011",
+          "Name": "Mad Charge",
+          "Desc": "<color=#FFFFFF>Bangboo Chain Attack</color>\nRun enemies over with a motorcycle and detonate an explosion, dealing massive <color=#F0D12B>Physical DMG</color>.",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier"
@@ -372,8 +372,8 @@
           "Param": "{Skill:5401102, Prop:1001}|{Skill:5401102, Prop:1002}"
         },
         "6": {
-          "Name": "Bangboo_QTE_Title_54011",
-          "Desc": "Bangboo_QTE_Des_54011",
+          "Name": "Mad Charge",
+          "Desc": "<color=#FFFFFF>Bangboo Chain Attack</color>\nRun enemies over with a motorcycle and detonate an explosion, dealing massive <color=#F0D12B>Physical DMG</color>.",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier"
@@ -381,8 +381,8 @@
           "Param": "{Skill:5401102, Prop:1001}|{Skill:5401102, Prop:1002}"
         },
         "7": {
-          "Name": "Bangboo_QTE_Title_54011",
-          "Desc": "Bangboo_QTE_Des_54011",
+          "Name": "Mad Charge",
+          "Desc": "<color=#FFFFFF>Bangboo Chain Attack</color>\nRun enemies over with a motorcycle and detonate an explosion, dealing massive <color=#F0D12B>Physical DMG</color>.",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier"
@@ -390,8 +390,8 @@
           "Param": "{Skill:5401102, Prop:1001}|{Skill:5401102, Prop:1002}"
         },
         "8": {
-          "Name": "Bangboo_QTE_Title_54011",
-          "Desc": "Bangboo_QTE_Des_54011",
+          "Name": "Mad Charge",
+          "Desc": "<color=#FFFFFF>Bangboo Chain Attack</color>\nRun enemies over with a motorcycle and detonate an explosion, dealing massive <color=#F0D12B>Physical DMG</color>.",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier"
@@ -399,8 +399,8 @@
           "Param": "{Skill:5401102, Prop:1001}|{Skill:5401102, Prop:1002}"
         },
         "9": {
-          "Name": "Bangboo_QTE_Title_54011",
-          "Desc": "Bangboo_QTE_Des_54011",
+          "Name": "Mad Charge",
+          "Desc": "<color=#FFFFFF>Bangboo Chain Attack</color>\nRun enemies over with a motorcycle and detonate an explosion, dealing massive <color=#F0D12B>Physical DMG</color>.",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier"
@@ -408,8 +408,8 @@
           "Param": "{Skill:5401102, Prop:1001}|{Skill:5401102, Prop:1002}"
         },
         "10": {
-          "Name": "Bangboo_QTE_Title_54011",
-          "Desc": "Bangboo_QTE_Des_54011",
+          "Name": "Mad Charge",
+          "Desc": "<color=#FFFFFF>Bangboo Chain Attack</color>\nRun enemies over with a motorcycle and detonate an explosion, dealing massive <color=#F0D12B>Physical DMG</color>.",
           "Property": [
             "DMG Multiplier",
             "Daze Multiplier"

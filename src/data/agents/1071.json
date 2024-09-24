@@ -1,7 +1,7 @@
 {
   "Id": 1071,
   "Name": "Caesar",
-  "FullName": "Caesar",
+  "FullName": "Caesar King",
   "Specialty": 5,
   "Faction": 4,
   "Element": [
@@ -11,7 +11,127 @@
     101,
     102
   ],
+  "Rarity": 4,
+  "Stats": {
+    "BaseAtk": 101,
+    "AtkGrowth": 58761,
+    "BaseDef": 61,
+    "DefGrowth": 82180,
+    "BaseHp": 766,
+    "HpGrowth": 1039361,
+    "BaseImpact": 105,
+    "BaseAnomalyMastery": 90,
+    "BaseAnomalyProficiency": 87
+  },
   "SigWeaponId": [
     14107
+  ],
+  "HpBoosts": [
+    0,
+    526,
+    1051,
+    1577,
+    2102,
+    2628
+  ],
+  "AtkBoosts": [
+    0,
+    38,
+    76,
+    113,
+    151,
+    189
+  ],
+  "DefBoosts": [
+    0,
+    42,
+    83,
+    125,
+    166,
+    208
+  ],
+  "CoreSkillInfo": {
+    "FirstCoreStat": 12201,
+    "FirstCoreStatValues": [
+      6,
+      6,
+      12,
+      12,
+      18,
+      18
+    ],
+    "SecondCoreStat": 12101,
+    "SecondCoreStatValues": [
+      0,
+      25,
+      25,
+      50,
+      50,
+      75
+    ],
+    "PurpleCoreMat": 110507,
+    "GoldenCoreMat": 110004
+  },
+  "CoreSkillLevels": {
+    "Name": [
+      "Core Passive: Barrier of Resilience",
+      "Additional Ability: Battle Spirit"
+    ],
+    "Descriptions": [
+      [
+        "When Caesar activates <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, or triggers <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> through <color=#FFFFFF>Retaliation</color>, she buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield equal to <color=#2BAD00>300%</color> of her base Impact + <color=#2BAD00>200</color>. The shield lasts for 90s and is equipped by the on-field character, with its value shared among the entire team. While <color=#FFFFFF>Radiant Aegis</color> is active, the shield bearer's Anti-Interrupt level is increased, and their ATK is increased by 40. After <color=#FFFFFF>Radiant Aegis</color> expires, the buff remains for an additional 5s.",
+        "When there is another character in your squad who can activate <color=#FFFFFF>Defensive Assist</color> or is from the same Faction:\nWhen Caesar activates <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Basic Attack: Dead End</color>, she applies a Debuff effect to enemies within a 7m radius, increasing the damage they take from all teammates by 25% for 30s."
+      ],
+      [
+        "When Caesar activates <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, or triggers <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> through <color=#FFFFFF>Retaliation</color>, she buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield equal to <color=#2BAD00>500%</color> of her base Impact + <color=#2BAD00>400</color>. The shield lasts for 90s and is equipped by the on-field character, with its value shared among the entire team. While <color=#FFFFFF>Radiant Aegis</color> is active, the shield bearer's Anti-Interrupt level is increased, and their ATK is increased by 135. After <color=#FFFFFF>Radiant Aegis</color> expires, the buff remains for an additional 5s.",
+        "When there is another character in your squad who can activate <color=#FFFFFF>Defensive Assist</color> or is from the same Faction:\nWhen Caesar activates <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Basic Attack: Dead End</color>, she applies a Debuff effect to enemies within a 7m radius, increasing the damage they take from all teammates by 25% for 30s."
+      ],
+      [
+        "When Caesar activates <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, or triggers <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> through <color=#FFFFFF>Retaliation</color>, she buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield equal to <color=#2BAD00>700%</color> of her base Impact + <color=#2BAD00>700</color>. The shield lasts for 90s and is equipped by the on-field character, with its value shared among the entire team. While <color=#FFFFFF>Radiant Aegis</color> is active, the shield bearer's Anti-Interrupt level is increased, and their ATK is increased by 240. After <color=#FFFFFF>Radiant Aegis</color> expires, the buff remains for an additional 5s.",
+        "When there is another character in your squad who can activate <color=#FFFFFF>Defensive Assist</color> or is from the same Faction:\nWhen Caesar activates <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Basic Attack: Dead End</color>, she applies a Debuff effect to enemies within a 7m radius, increasing the damage they take from all teammates by 25% for 30s."
+      ],
+      [
+        "When Caesar activates <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, or triggers <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> through <color=#FFFFFF>Retaliation</color>, she buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield equal to <color=#2BAD00>900%</color> of her base Impact + <color=#2BAD00>900</color>. The shield lasts for 90s and is equipped by the on-field character, with its value shared among the entire team. While <color=#FFFFFF>Radiant Aegis</color> is active, the shield bearer's Anti-Interrupt level is increased, and their ATK is increased by 400. After <color=#FFFFFF>Radiant Aegis</color> expires, the buff remains for an additional 5s.",
+        "When there is another character in your squad who can activate <color=#FFFFFF>Defensive Assist</color> or is from the same Faction:\nWhen Caesar activates <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Basic Attack: Dead End</color>, she applies a Debuff effect to enemies within a 7m radius, increasing the damage they take from all teammates by 25% for 30s."
+      ],
+      [
+        "When Caesar activates <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, or triggers <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> through <color=#FFFFFF>Retaliation</color>, she buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield equal to <color=#2BAD00>1,100%</color> of her base Impact + <color=#2BAD00>1,100</color>. The shield lasts for 90s and is equipped by the on-field character, with its value shared among the entire team. While <color=#FFFFFF>Radiant Aegis</color> is active, the shield bearer's Anti-Interrupt level is increased, and their ATK is increased by 650. After <color=#FFFFFF>Radiant Aegis</color> expires, the buff remains for an additional 5s.",
+        "When there is another character in your squad who can activate <color=#FFFFFF>Defensive Assist</color> or is from the same Faction:\nWhen Caesar activates <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Basic Attack: Dead End</color>, she applies a Debuff effect to enemies within a 7m radius, increasing the damage they take from all teammates by 25% for 30s."
+      ],
+      [
+        "When Caesar activates <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, or triggers <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> through <color=#FFFFFF>Retaliation</color>, she buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield equal to <color=#2BAD00>1,300%</color> of her base Impact + <color=#2BAD00>1,300</color>. The shield lasts for 90s and is equipped by the on-field character, with its value shared among the entire team. While <color=#FFFFFF>Radiant Aegis</color> is active, the shield bearer's Anti-Interrupt level is increased, and their ATK is increased by 900. After <color=#FFFFFF>Radiant Aegis</color> expires, the buff remains for an additional 5s.",
+        "When there is another character in your squad who can activate <color=#FFFFFF>Defensive Assist</color> or is from the same Faction:\nWhen Caesar activates <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Basic Attack: Dead End</color>, she applies a Debuff effect to enemies within a 7m radius, increasing the damage they take from all teammates by 25% for 30s."
+      ],
+      [
+        "When Caesar activates <color=#FFFFFF>EX Special Attack: Parry Counter</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Ultimate</color>, or triggers <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> through <color=#FFFFFF>Retaliation</color>, she buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield equal to <color=#2BAD00>1,400%</color> of her base Impact + <color=#2BAD00>1,400</color>. The shield lasts for 90s and is equipped by the on-field character, with its value shared among the entire team. While <color=#FFFFFF>Radiant Aegis</color> is active, the shield bearer's Anti-Interrupt level is increased, and their ATK is increased by 1,000. After <color=#FFFFFF>Radiant Aegis</color> expires, the buff remains for an additional 5s.",
+        "When there is another character in your squad who can activate <color=#FFFFFF>Defensive Assist</color> or is from the same Faction:\nWhen Caesar activates <color=#FFFFFF>Perfect Block</color>, <color=#FFFFFF>Retaliation</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Basic Attack: Dead End</color>, she applies a Debuff effect to enemies within a 7m radius, increasing the damage they take from all teammates by 25% for 30s."
+      ]
+    ]
+  },
+  "Cons": [
+    {
+      "Name": "Spearhead Advance",
+      "Effect": "When Caesar enters combat or switches in, she instantly buffs the entire team with a <color=#FFFFFF>Radiant Aegis</color> shield, which can be can be triggered once every 300s. While <color=#FFFFFF>Radiant Aegis</color> is active, enemies within a 5m radius of the shield bearer suffer a 15% Attribute DMG RES reduction."
+    },
+    {
+      "Name": "Legacy of the Far Lands",
+      "Effect": "While <color=#FFFFFF>Radiant Aegis</color> is active during <color=#FFFFFF>Core Passive: Barrier of Resilience</color>, Caesar's Energy Generation increases by 10%, and the shield bearer's attack boost is increased to 150% of its original value."
+    },
+    {
+      "Name": "Absolute Trust",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "Aries the Battering-Ram",
+      "Effect": "When Caesar uses a <color=#FFFFFF>Chain Attack</color> or <color=#FFFFFF>Ultimate</color>, she gains 3 additional <color=#FFFFFF>Assist Points</color>. If her Energy is below 20, she can activate <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> with 1 <color=#FFFFFF>Assist Point</color> instead. This substitution can only be triggered once every 5s."
+    },
+    {
+      "Name": "Romantic Conquest",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "Overlord's Will",
+      "Effect": "<color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> and <color=#FFFFFF>Assist Follow-Up</color> is guaranteed to trigger a critical hit. The skill's DMG is increased by 50% with an additional damage of 50% dealt to the primary target. When Caesar uses <color=#FFFFFF>EX Special Attack: Overpowered Shield Bash</color> or <color=#FFFFFF>Assist Follow-Up</color>, her CRIT Rate is increased by 30% and her CRIT DMG is increased by 60% for 15s. Repeated triggers reset the duration."
+    }
   ]
 }

@@ -9,5 +9,127 @@
   ],
   "DamageType": [
     102
+  ],
+  "Stats": {
+    "BaseAtk": 133,
+    "AtkGrowth": 81195,
+    "BaseDef": 49,
+    "DefGrowth": 66882,
+    "BaseHp": 629,
+    "HpGrowth": 853932,
+    "BaseImpact": 94,
+    "BaseAnomalyMastery": 90,
+    "BaseAnomalyProficiency": 91
+  },
+  "SigWeaponId": [
+    13116
+  ],
+  "HpBoosts": [
+    0,
+    432,
+    864,
+    1296,
+    1727,
+    2159
+  ],
+  "AtkBoosts": [
+    0,
+    47,
+    95,
+    142,
+    190,
+    237
+  ],
+  "DefBoosts": [
+    0,
+    34,
+    68,
+    101,
+    135,
+    169
+  ],
+  "CoreSkillInfo": {
+    "FirstCoreStat": 12201,
+    "FirstCoreStatValues": [
+      6,
+      6,
+      12,
+      12,
+      18,
+      18
+    ],
+    "SecondCoreStat": 12101,
+    "SecondCoreStatValues": [
+      0,
+      25,
+      25,
+      50,
+      50,
+      75
+    ],
+    "PurpleCoreMat": 110504,
+    "GoldenCoreMat": 110002
+  },
+  "CoreSkillLevels": {
+    "Name": [
+      "Lighter_UniqueSkill_Title",
+      "Lighter_MathSkill_Title"
+    ],
+    "Descriptions": [
+      [
+        "Lighter_UniqueSkill_01_Desc",
+        "Lighter_MathSkill_Desc"
+      ],
+      [
+        "Lighter_UniqueSkill_02_Desc",
+        "Lighter_MathSkill_Desc"
+      ],
+      [
+        "Lighter_UniqueSkill_03_Desc",
+        "Lighter_MathSkill_Desc"
+      ],
+      [
+        "Lighter_UniqueSkill_04_Desc",
+        "Lighter_MathSkill_Desc"
+      ],
+      [
+        "Lighter_UniqueSkill_05_Desc",
+        "Lighter_MathSkill_Desc"
+      ],
+      [
+        "Lighter_UniqueSkill_06_Desc",
+        "Lighter_MathSkill_Desc"
+      ],
+      [
+        "Lighter_UniqueSkill_07_Desc",
+        "Lighter_MathSkill_Desc"
+      ]
+    ]
+  },
+  "Cons": [
+    {
+      "Name": "Lighter_Talent_01_Title",
+      "Effect": "Lighter_Talent_01_Desc_01"
+    },
+    {
+      "Name": "Lighter_Talent_02_Title",
+      "Effect": "Lighter_Talent_02_Desc_01"
+    },
+    {
+      "Name": "Lighter_Talent_03_Title",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "Lighter_Talent_04_Title",
+      "Effect": "Lighter_Talent_04_Desc_01"
+    },
+    {
+      "Name": "Lighter_Talent_05_Title",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "Lighter_Talent_06_Title",
+      "Effect": "Lighter_Talent_06_Desc_01"
+    }
   ]
 }

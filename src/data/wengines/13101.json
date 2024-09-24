@@ -10,11 +10,11 @@
   "Refinements": {
     "Name": "In a Flash of Light",
     "Descriptions": [
-      "Increases <color=#2eb6ff>Electric DMG</color> by <color=#2BAD00>15%</color>. When the equipper hits an enemy with a <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Assist Attack</color>, their Energy Generation Rate increases by <color=#2BAD00>18%</color> for 8s.",
-      "Increases <color=#2eb6ff>Electric DMG</color> by <color=#2BAD00>17.5%</color>. When the equipper hits an enemy with a <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Assist Attack</color>, their Energy Generation Rate increases by <color=#2BAD00>20.5%</color> for 8s.",
-      "Increases <color=#2eb6ff>Electric DMG</color> by <color=#2BAD00>20%</color>. When the equipper hits an enemy with a <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Assist Attack</color>, their Energy Generation Rate increases by <color=#2BAD00>23%</color> for 8s.",
-      "Increases <color=#2eb6ff>Electric DMG</color> by <color=#2BAD00>22%</color>. When the equipper hits an enemy with a <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Assist Attack</color>, their Energy Generation Rate increases by <color=#2BAD00>25%</color> for 8s.",
-      "Increases <color=#2eb6ff>Electric DMG</color> by <color=#2BAD00>24%</color>. When the equipper hits an enemy with a <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Assist Attack</color>, their Energy Generation Rate increases by <color=#2BAD00>27.5%</color> for 8s."
+      "Increases <color=#2EB6FF>Electric DMG</color> by <color=#2BAD00>15%</color>. When the equipper hits an enemy with a <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Assist Attack</color>, their Energy Generation Rate increases by <color=#2BAD00>18%</color> for 8s.",
+      "Increases <color=#2EB6FF>Electric DMG</color> by <color=#2BAD00>17.5%</color>. When the equipper hits an enemy with a <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Assist Attack</color>, their Energy Generation Rate increases by <color=#2BAD00>20.5%</color> for 8s.",
+      "Increases <color=#2EB6FF>Electric DMG</color> by <color=#2BAD00>20%</color>. When the equipper hits an enemy with a <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Assist Attack</color>, their Energy Generation Rate increases by <color=#2BAD00>23%</color> for 8s.",
+      "Increases <color=#2EB6FF>Electric DMG</color> by <color=#2BAD00>22%</color>. When the equipper hits an enemy with a <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Assist Attack</color>, their Energy Generation Rate increases by <color=#2BAD00>25%</color> for 8s.",
+      "Increases <color=#2EB6FF>Electric DMG</color> by <color=#2BAD00>24%</color>. When the equipper hits an enemy with a <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Assist Attack</color>, their Energy Generation Rate increases by <color=#2BAD00>27.5%</color> for 8s."
     ]
   }
 }

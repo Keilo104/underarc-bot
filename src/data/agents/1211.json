@@ -110,7 +110,7 @@
   "Cons": [
     {
       "Name": "Dance Duet",
-      "Effect": "After being sent out to launch an attack, Drusilla and Anastella stay in place for an additional 5.5s before returning to Rina.\nThe effect gained from <color=#ffffff>Core Passive: Mini Destruction Partner</color> by characters within 10m is increased to 130% of the original value."
+      "Effect": "After being sent out to launch an attack, Drusilla and Anastella stay in place for an additional 5.5s before returning to Rina.\nThe effect gained from <color=#FFFFFF>Core Passive: Mini Destruction Partner</color> by characters within 10m is increased to 130% of the original value."
     },
     {
       "Name": "Master's Paragon",
@@ -118,7 +118,7 @@
     },
     {
       "Name": "Head Maid's Specialty",
-      "Effect": "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dodge</color>, <color=#ffffff>Assist</color>, <color=#ffffff>Special Attack</color>, and <color=#ffffff>Chain Attack</color> Lv. +2"
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
     },
     {
       "Name": "Needle and Hammer",
@@ -126,11 +126,11 @@
     },
     {
       "Name": "Head Maid Perfectionist",
-      "Effect": "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dodge</color>, <color=#ffffff>Assist</color>, <color=#ffffff>Special Attack</color>, and <color=#ffffff>Chain Attack</color> Lv. +2"
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
     },
     {
       "Name": "Stormy Night's Fright",
-      "Effect": "When an <color=#ffffff>EX Special Attack</color>, <color=#ffffff>Chain Attack</color> or <color=#ffffff>Ultimate</color> hits an enemy, the entire squad's <color=#2eb6ff>Electric DMG</color> is increased by 15% for 8s."
+      "Effect": "When an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color> or <color=#FFFFFF>Ultimate</color> hits an enemy, the entire squad's <color=#2EB6FF>Electric DMG</color> is increased by 15% for 8s."
     }
   ]
 }

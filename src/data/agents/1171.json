@@ -10,7 +10,127 @@
   "DamageType": [
     103
   ],
+  "Rarity": 4,
+  "Stats": {
+    "BaseAtk": 124,
+    "AtkGrowth": 74992,
+    "BaseDef": 48,
+    "DefGrowth": 65524,
+    "BaseHp": 592,
+    "HpGrowth": 803931,
+    "BaseImpact": 83,
+    "BaseAnomalyMastery": 120,
+    "BaseAnomalyProficiency": 118
+  },
   "SigWeaponId": [
     14117
+  ],
+  "HpBoosts": [
+    0,
+    407,
+    813,
+    1220,
+    1626,
+    2033
+  ],
+  "AtkBoosts": [
+    0,
+    44,
+    89,
+    133,
+    177,
+    222
+  ],
+  "DefBoosts": [
+    0,
+    33,
+    66,
+    99,
+    133,
+    166
+  ],
+  "CoreSkillInfo": {
+    "FirstCoreStat": 30501,
+    "FirstCoreStatValues": [
+      12,
+      12,
+      24,
+      24,
+      36,
+      36
+    ],
+    "SecondCoreStat": 12101,
+    "SecondCoreStatValues": [
+      0,
+      25,
+      25,
+      50,
+      50,
+      75
+    ],
+    "PurpleCoreMat": 110507,
+    "GoldenCoreMat": 110004
+  },
+  "CoreSkillLevels": {
+    "Name": [
+      "Core Passive: Nitro-Fuel Cocktail",
+      "Additional Ability: Fire Kindling"
+    ],
+    "Descriptions": [
+      [
+        "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy spent. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. On entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>175%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. \nEvery 10 Anomaly Proficiency increases <color=#FFFFFF>Afterburn</color> DMG by <color=#2BAD00>1%</color>, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+        "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%.  When any team member applies the <color=#FF5521>Burn</color> effect to the enemy, the duration of that effect is extended by 3s."
+      ],
+      [
+        "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy spent. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. On entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>205%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. \nEvery 10 Anomaly Proficiency increases <color=#FFFFFF>Afterburn</color> DMG by <color=#2BAD00>1%</color>, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+        "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%.  When any team member applies the <color=#FF5521>Burn</color> effect to the enemy, the duration of that effect is extended by 3s."
+      ],
+      [
+        "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy spent. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. On entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>235%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. \nEvery 10 Anomaly Proficiency increases <color=#FFFFFF>Afterburn</color> DMG by <color=#2BAD00>1%</color>, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+        "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%.  When any team member applies the <color=#FF5521>Burn</color> effect to the enemy, the duration of that effect is extended by 3s."
+      ],
+      [
+        "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy spent. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. On entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>262%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. \nEvery 10 Anomaly Proficiency increases <color=#FFFFFF>Afterburn</color> DMG by <color=#2BAD00>1%</color>, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+        "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%.  When any team member applies the <color=#FF5521>Burn</color> effect to the enemy, the duration of that effect is extended by 3s."
+      ],
+      [
+        "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy spent. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. On entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>290%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. \nEvery 10 Anomaly Proficiency increases <color=#FFFFFF>Afterburn</color> DMG by <color=#2BAD00>1%</color>, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+        "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%.  When any team member applies the <color=#FF5521>Burn</color> effect to the enemy, the duration of that effect is extended by 3s."
+      ],
+      [
+        "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy spent. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. On entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>320%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. \nEvery 10 Anomaly Proficiency increases <color=#FFFFFF>Afterburn</color> DMG by <color=#2BAD00>1%</color>, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+        "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%.  When any team member applies the <color=#FF5521>Burn</color> effect to the enemy, the duration of that effect is extended by 3s."
+      ],
+      [
+        "When Burnice expends Energy, she accumulates <color=#FFFFFF>Heat</color>, up to a max of 100. She gains 1.4 <color=#FFFFFF>Heat</color> for each 1 point of Energy spent. At 50 <color=#FFFFFF>Heat</color>, she enters the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state until all <color=#FFFFFF>Heat</color> is expended. On entering the battlefield, Burnice instantly accumulates 100 <color=#FFFFFF>Heat</color>.\nWhile in the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state, when Burnice hits an enemy with a <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she applies the <color=#FFFFFF>Scorched</color> effect to the target until she exits the <color=#FFFFFF>Nitro-Fuel Cocktail</color> state. When other squad members hit enemies under the <color=#FFFFFF>Scorched</color> status, it triggers the <color=#FFFFFF>Afterburn</color> effect, expending 8 <color=#FFFFFF>Heat</color> to deal <color=#FF5521>Fire DMG</color> equal to <color=#2BAD00>350%</color> of Burnice's ATK and accumulate <color=#FF5521>Fire Anomaly Buildup</color>. This effect can trigger once every 1.5s. \nEvery 10 Anomaly Proficiency increases <color=#FFFFFF>Afterburn</color> DMG by <color=#2BAD00>1%</color>, up to a max of 30%. DMG from the <color=#FFFFFF>Afterburn</color> effect is considered <color=#FFFFFF>Assist Attack</color> DMG.",
+        "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same Faction:\nWhen Burnice's <color=#FFFFFF>Basic Attack: Mixed Flame Blend</color>, <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method</color> or <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> hits an enemy, or when the <color=#FFFFFF>Afterburn</color> effect is triggered, the move's accumulated <color=#FF5521>Fire Anomaly Buildup</color> increases by 65%.  When any team member applies the <color=#FF5521>Burn</color> effect to the enemy, the duration of that effect is extended by 3s."
+      ]
+    ]
+  },
+  "Cons": [
+    {
+      "Name": "Kindred Flames",
+      "Effect": "Increases the limit of <color=#FFFFFF>Heat</color> from 100 to 140. Upon entering the battlefield, Burnice accumulates an additional 40 <color=#FFFFFF>Heat</color>. Increases the DMG Multiplier of the <color=#FFFFFF>Afterburn</color> effect by 100% of Burnice's ATK. Additionally, the accumulated <color=#FF5521>Fire Anomaly Buildup</color> from the <color=#FFFFFF>Afterburn</color> effect is increased by 25%."
+    },
+    {
+      "Name": "Extra at No Additional Charge",
+      "Effect": "When triggering the <color=#FFFFFF>Afterburn</color> effect, <color=#FFFFFF>Thermal Penetration</color> is applied to the enemy, stacking up to 5 times and lasting 6s. Repeated triggers reset the duration. When any allied unit in the squad hits the enemy, the attack's PEN Ratio is increased by 4% for each stack of <color=#FFFFFF>Thermal Penetration</color>, up to a max of 20%."
+    },
+    {
+      "Name": "Optimistic by Nature",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "Ultimate Fuel Supply",
+      "Effect": "Upon using <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, Burnice generates 30 Energy. This effect can trigger once every {EXCEL:1}s. The max flamethrower duration of <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> is increased by 1s."
+    },
+    {
+      "Name": "Dance of Fire and Ice",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "Burning Invitation",
+      "Effect": "When Burnice hits an enemy with <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color>, it triggers a special <color=#FFFFFF>Afterburn</color> effect, dealing 60% of Burnice's ATK. This effect can trigger once every 0.5s and does not consume <color=#FFFFFF>Heat</color>. Both <color=#FFFFFF>EX Special Attack: Intense Heat Stirring Method - Double Shot</color> and <color=#FFFFFF>Afterburn</color> effect ignore25% of the target's <color=#FF5521>Fire RES</color>."
+    }
   ]
 }

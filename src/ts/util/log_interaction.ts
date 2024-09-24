@@ -16,7 +16,7 @@ export async function logInteraction(interaction: any, env: any) {
         fields.push({
             name: "", inline: false,
             value: `**${option["name"]}:** ${option["value"]}\n`
-        })
+        });
     });
 
     const response = await fetch(url, {

@@ -4,7 +4,7 @@ export class GoldenCoreMat {
     public static FEROCIOUS_GRIP = new GoldenCoreMat("110001", "Ferocious Grip", Emote.BOSS1_MAT_ICON);
     public static LIVING_DRIVE = new GoldenCoreMat("110002", "Living Drive", Emote.BOSS2_MAT_ICON);
     public static FINALE_DANCE_SHOES = new GoldenCoreMat("110003", "Finale Dance Shoes", Emote.BOSS3_MAT_ICON);
-    public static NEW_12_MAT = new GoldenCoreMat("110004", "New 1.2 mat", Emote.UNKNOWN_ICON);
+    public static SCARLET_ENGINE = new GoldenCoreMat("110004", "Scarlet Engine", Emote.UNKNOWN_ICON);
 
     public static UNKNOWN = new GoldenCoreMat(null, "No Data", Emote.UNKNOWN_ICON);
 
@@ -27,7 +27,7 @@ export class GoldenCoreMat {
                 return GoldenCoreMat.FINALE_DANCE_SHOES;
 
             case "110004":
-                return GoldenCoreMat.NEW_12_MAT;
+                return GoldenCoreMat.SCARLET_ENGINE;
 
             default:
                 return GoldenCoreMat.UNKNOWN;

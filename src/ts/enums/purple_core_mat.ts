@@ -7,7 +7,7 @@ export class PurpleCoreMat {
     public static STEEL_MALICE = new PurpleCoreMat("110504", "Steel Malice", Emote.MINIBOSS4_MAT_ICON);
     public static DESTRUCTIVE_ADVANCE = new PurpleCoreMat("110505", "Destructive Advance", Emote.MINIBOSS5_MAT_ICON);
     public static FALLING_FIST = new PurpleCoreMat("110506", "Falling Fist", Emote.MINIBOSS6_MAT_ICON);
-    public static NEW_12_MAT = new PurpleCoreMat("110507", "New 1.2 mat", Emote.UNKNOWN_ICON);
+    public static STEALTH_PHANTOM = new PurpleCoreMat("110507", "Stealth Phantom", Emote.UNKNOWN_ICON);
 
     public static UNKNOWN = new PurpleCoreMat(null, "No Data", Emote.UNKNOWN_ICON);
 
@@ -39,7 +39,7 @@ export class PurpleCoreMat {
                 return PurpleCoreMat.FALLING_FIST;
 
             case "110507":
-                return PurpleCoreMat.NEW_12_MAT;
+                return PurpleCoreMat.STEALTH_PHANTOM;
 
             default:
                 return PurpleCoreMat.UNKNOWN;

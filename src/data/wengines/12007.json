@@ -10,11 +10,11 @@
   "Refinements": {
     "Name": "Undercurrent",
     "Descriptions": [
-      "<color=#ffffff>EX Special Attacks</color> inflict <color=#2BAD00>10%</color> more Daze.",
-      "<color=#ffffff>EX Special Attacks</color> inflict <color=#2BAD00>11.5%</color> more Daze.",
-      "<color=#ffffff>EX Special Attacks</color> inflict <color=#2BAD00>13%</color> more Daze.",
-      "<color=#ffffff>EX Special Attacks</color> inflict <color=#2BAD00>14.5%</color> more Daze.",
-      "<color=#ffffff>EX Special Attacks</color> inflict <color=#2BAD00>16%</color> more Daze."
+      "<color=#FFFFFF>EX Special Attacks</color> inflict <color=#2BAD00>10%</color> more Daze.",
+      "<color=#FFFFFF>EX Special Attacks</color> inflict <color=#2BAD00>11.5%</color> more Daze.",
+      "<color=#FFFFFF>EX Special Attacks</color> inflict <color=#2BAD00>13%</color> more Daze.",
+      "<color=#FFFFFF>EX Special Attacks</color> inflict <color=#2BAD00>14.5%</color> more Daze.",
+      "<color=#FFFFFF>EX Special Attacks</color> inflict <color=#2BAD00>16%</color> more Daze."
     ]
   }
 }

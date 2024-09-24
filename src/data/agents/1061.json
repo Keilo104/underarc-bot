@@ -110,27 +110,27 @@
   "Cons": [
     {
       "Name": "Open Trauma",
-      "Effect": "When Corin's <color=#ffffff>Chain Attack</color> or <color=#ffffff>Ultimate</color> hits an enemy, her DMG against the target increases by 12% for 15s."
+      "Effect": "When Corin's <color=#FFFFFF>Chain Attack</color> or <color=#FFFFFF>Ultimate</color> hits an enemy, her DMG against the target increases by 12% for 15s."
     },
     {
       "Name": "Atomic Smash",
-      "Effect": "When Corin's <color=#ffffff>EX Special Attack</color>, <color=#ffffff>Chain Attack</color> or <color=#ffffff>Ultimate</color> hits an enemy, the target's <color=#f0d12b>Physical RES</color> is reduced by 0.5%, stacking up to 20 times and lasting 5s. The duration of each stack is calculated separately."
+      "Effect": "When Corin's <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color> or <color=#FFFFFF>Ultimate</color> hits an enemy, the target's <color=#F0D12B>Physical RES</color> is reduced by 0.5%, stacking up to 20 times and lasting 5s. The duration of each stack is calculated separately."
     },
     {
       "Name": "Amateur Maid",
-      "Effect": "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dodge</color>, <color=#ffffff>Assist</color>, <color=#ffffff>Special Attack</color>, and <color=#ffffff>Chain Attack</color> Lv. +2"
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
     },
     {
       "Name": "Battlefield Retainer",
-      "Effect": "When Corin uses a <color=#ffffff>Quick Assist</color>, <color=#ffffff>Defensive Assist</color>, or <color=#ffffff>Chain Attack</color>, she recovers 7.2 Energy. This effect can trigger once every 16s."
+      "Effect": "When Corin uses a <color=#FFFFFF>Quick Assist</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Chain Attack</color>, she recovers 7.2 Energy. This effect can trigger once every 16s."
     },
     {
       "Name": "Special Ops Maid",
-      "Effect": "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dodge</color>, <color=#ffffff>Assist</color>, <color=#ffffff>Special Attack</color>, and <color=#ffffff>Chain Attack</color> Lv. +2"
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
     },
     {
       "Name": "Accumulated Release",
-      "Effect": "When Corin's extended slash hits an enemy, she obtains a stack of Charge (max 40 stacks).\nDuring a <color=#ffffff>Dodge Counter</color>, <color=#ffffff>Special Attack</color>, <color=#ffffff>EX Special Attack</color>, <color=#ffffff>Quick Assist</color>, or <color=#ffffff>Assist Follow-Up</color>, when her chainsaw detonation hits an enemy, consumes all stacks of Charge. Each stack consumed causes the attack to deal an additional 3% of ATK as DMG."
+      "Effect": "When Corin's extended slash hits an enemy, she obtains a stack of Charge (max 40 stacks).\nDuring a <color=#FFFFFF>Dodge Counter</color>, <color=#FFFFFF>Special Attack</color>, <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Quick Assist</color>, or <color=#FFFFFF>Assist Follow-Up</color>, when her chainsaw detonation hits an enemy, consumes all stacks of Charge. Each stack consumed causes the attack to deal an additional 3% of ATK as DMG."
     }
   ]
 }

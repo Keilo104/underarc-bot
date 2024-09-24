@@ -78,39 +78,39 @@
     ],
     "Descriptions": [
       [
-        "When Nekomata's <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>30%</color> for 6s.",
-        "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts <color=#f0d12b>Assault</color>, increases the DMG of Nekomata's next <color=#ffffff>EX Special Attack</color> by 35%, stacking up to 2 times."
+        "When Nekomata's <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>30%</color> for 6s.",
+        "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts <color=#F0D12B>Assault</color>, increases the DMG of Nekomata's next <color=#FFFFFF>EX Special Attack</color> by 35%, stacking up to 2 times."
       ],
       [
-        "When Nekomata's <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>35%</color> for 6s.",
-        "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts <color=#f0d12b>Assault</color>, increases the DMG of Nekomata's next <color=#ffffff>EX Special Attack</color> by 35%, stacking up to 2 times."
+        "When Nekomata's <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>35%</color> for 6s.",
+        "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts <color=#F0D12B>Assault</color>, increases the DMG of Nekomata's next <color=#FFFFFF>EX Special Attack</color> by 35%, stacking up to 2 times."
       ],
       [
-        "When Nekomata's <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>40%</color> for 6s.",
-        "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts <color=#f0d12b>Assault</color>, increases the DMG of Nekomata's next <color=#ffffff>EX Special Attack</color> by 35%, stacking up to 2 times."
+        "When Nekomata's <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>40%</color> for 6s.",
+        "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts <color=#F0D12B>Assault</color>, increases the DMG of Nekomata's next <color=#FFFFFF>EX Special Attack</color> by 35%, stacking up to 2 times."
       ],
       [
-        "When Nekomata's <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>45%</color> for 6s.",
-        "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts <color=#f0d12b>Assault</color>, increases the DMG of Nekomata's next <color=#ffffff>EX Special Attack</color> by 35%, stacking up to 2 times."
+        "When Nekomata's <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>45%</color> for 6s.",
+        "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts <color=#F0D12B>Assault</color>, increases the DMG of Nekomata's next <color=#FFFFFF>EX Special Attack</color> by 35%, stacking up to 2 times."
       ],
       [
-        "When Nekomata's <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>50%</color> for 6s.",
-        "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts <color=#f0d12b>Assault</color>, increases the DMG of Nekomata's next <color=#ffffff>EX Special Attack</color> by 35%, stacking up to 2 times."
+        "When Nekomata's <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>50%</color> for 6s.",
+        "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts <color=#F0D12B>Assault</color>, increases the DMG of Nekomata's next <color=#FFFFFF>EX Special Attack</color> by 35%, stacking up to 2 times."
       ],
       [
-        "When Nekomata's <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>55%</color> for 6s.",
-        "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts <color=#f0d12b>Assault</color>, increases the DMG of Nekomata's next <color=#ffffff>EX Special Attack</color> by 35%, stacking up to 2 times."
+        "When Nekomata's <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>55%</color> for 6s.",
+        "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts <color=#F0D12B>Assault</color>, increases the DMG of Nekomata's next <color=#FFFFFF>EX Special Attack</color> by 35%, stacking up to 2 times."
       ],
       [
-        "When Nekomata's <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>60%</color> for 6s.",
-        "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts <color=#f0d12b>Assault</color>, increases the DMG of Nekomata's next <color=#ffffff>EX Special Attack</color> by 35%, stacking up to 2 times."
+        "When Nekomata's <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>60%</color> for 6s.",
+        "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts <color=#F0D12B>Assault</color>, increases the DMG of Nekomata's next <color=#FFFFFF>EX Special Attack</color> by 35%, stacking up to 2 times."
       ]
     ]
   },
   "Cons": [
     {
       "Name": "Bird Hunter",
-      "Effect": "When Nekomata hits an enemy from behind, she ignores 16% of her target's <color=#f0d12b>Physical RES</color>. If the enemy is Stunned, all Nekomata's attacks are considered back attacks."
+      "Effect": "When Nekomata hits an enemy from behind, she ignores 16% of her target's <color=#F0D12B>Physical RES</color>. If the enemy is Stunned, all Nekomata's attacks are considered back attacks."
     },
     {
       "Name": "Cat & Mouse",
@@ -118,19 +118,19 @@
     },
     {
       "Name": "Curious Left Tail",
-      "Effect": "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dodge</color>, <color=#ffffff>Assist</color>, <color=#ffffff>Special Attack</color>, and <color=#ffffff>Chain Attack</color> Lv. +2"
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
     },
     {
       "Name": "Sharpen Claws",
-      "Effect": "When Nekomata uses her <color=#ffffff>EX Special Attack</color>, her CRIT Rate increases by 7% for 15s, stacking up to 2 times, with each stack's duration being calculated separately."
+      "Effect": "When Nekomata uses her <color=#FFFFFF>EX Special Attack</color>, her CRIT Rate increases by 7% for 15s, stacking up to 2 times, with each stack's duration being calculated separately."
     },
     {
       "Name": "Lucky Right Tail",
-      "Effect": "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dodge</color>, <color=#ffffff>Assist</color>, <color=#ffffff>Special Attack</color>, and <color=#ffffff>Chain Attack</color> Lv. +2"
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
     },
     {
       "Name": "Predator Lineage",
-      "Effect": "When Nekomata launches a <color=#ffffff>Chain Attack</color> or uses her <color=#ffffff>Ultimate</color>, her CRIT DMG increases by 18%, stacking up to 3 times. The effect expires when she's no longer in-combat. This effect gains maximum stacks immediately on defeating an enemy."
+      "Effect": "When Nekomata launches a <color=#FFFFFF>Chain Attack</color> or uses her <color=#FFFFFF>Ultimate</color>, her CRIT DMG increases by 18%, stacking up to 3 times. The effect expires when she's no longer in-combat. This effect gains maximum stacks immediately on defeating an enemy."
     }
   ]
 }

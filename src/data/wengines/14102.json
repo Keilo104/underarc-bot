@@ -10,11 +10,11 @@
   "Refinements": {
     "Name": "Metal Cat Claws",
     "Descriptions": [
-      "Increases <color=#f0d12b>Physical DMG</color> by <color=#2BAD00>20%</color>. The equipper's DMG increases by <color=#2BAD00>25%</color> when hitting the enemy from behind.",
-      "Increases <color=#f0d12b>Physical DMG</color> by <color=#2BAD00>25%</color>. The equipper's DMG increases by <color=#2BAD00>31.5%</color> when hitting the enemy from behind.",
-      "Increases <color=#f0d12b>Physical DMG</color> by <color=#2BAD00>30%</color>. The equipper's DMG increases by <color=#2BAD00>38%</color> when hitting the enemy from behind.",
-      "Increases <color=#f0d12b>Physical DMG</color> by <color=#2BAD00>35%</color>. The equipper's DMG increases by <color=#2BAD00>44%</color> when hitting the enemy from behind.",
-      "Increases <color=#f0d12b>Physical DMG</color> by <color=#2BAD00>40%</color>. The equipper's DMG increases by <color=#2BAD00>50%</color> when hitting the enemy from behind."
+      "Increases <color=#F0D12B>Physical DMG</color> by <color=#2BAD00>20%</color>. The equipper's DMG increases by <color=#2BAD00>25%</color> when hitting the enemy from behind.",
+      "Increases <color=#F0D12B>Physical DMG</color> by <color=#2BAD00>25%</color>. The equipper's DMG increases by <color=#2BAD00>31.5%</color> when hitting the enemy from behind.",
+      "Increases <color=#F0D12B>Physical DMG</color> by <color=#2BAD00>30%</color>. The equipper's DMG increases by <color=#2BAD00>38%</color> when hitting the enemy from behind.",
+      "Increases <color=#F0D12B>Physical DMG</color> by <color=#2BAD00>35%</color>. The equipper's DMG increases by <color=#2BAD00>44%</color> when hitting the enemy from behind.",
+      "Increases <color=#F0D12B>Physical DMG</color> by <color=#2BAD00>40%</color>. The equipper's DMG increases by <color=#2BAD00>50%</color> when hitting the enemy from behind."
     ]
   }
 }

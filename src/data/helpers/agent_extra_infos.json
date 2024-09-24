@@ -27,9 +27,6 @@
   "1071": {
     "icon_image_url": "https://i.imgur.com/niuAqay.png",
     "release_patch": 3,
-    "signature_weapon": "14107",
-    "override_full_name": "Caesar King",
-    "source": "hakushin",
     "embed_color": "0xFFDC4D"
   },
 
@@ -81,9 +78,6 @@
   "1171": {
     "icon_image_url": "https://i.imgur.com/2SzwDFT.png",
     "release_patch": 3,
-    "signature_weapon": "14117",
-    "override_full_name": "Burnice White",
-    "source": "hakushin",
     "embed_color": "0xFFDC4D"
   },
 
@@ -137,6 +131,11 @@
 
   "1281": {
     "icon_image_url": "https://i.imgur.com/ZYWWKVA.png",
+    "embed_color": "0xFFDC4D"
+  },
+
+  "1351": {
+    "release_patch": null,
     "embed_color": "0xFFDC4D"
   }
 }

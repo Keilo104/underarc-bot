@@ -78,31 +78,31 @@
     ],
     "Descriptions": [
       [
-        "When Lucy uses her <color=#ffffff>Special Attack</color> or <color=#ffffff>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#ffffff>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>140%</color> of the original effect, and their attack frequency is increased.",
+        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>140%</color> of the original effect, and their attack frequency is increased.",
         "When another character in your squad shares the same Attribute or Faction:\nThe guard boars inherit Lucy's CRIT Rate and CRIT DMG."
       ],
       [
-        "When Lucy uses her <color=#ffffff>Special Attack</color> or <color=#ffffff>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#ffffff>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>150%</color> of the original effect, and their attack frequency is increased.",
+        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>150%</color> of the original effect, and their attack frequency is increased.",
         "When another character in your squad shares the same Attribute or Faction:\nThe guard boars inherit Lucy's CRIT Rate and CRIT DMG."
       ],
       [
-        "When Lucy uses her <color=#ffffff>Special Attack</color> or <color=#ffffff>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#ffffff>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>160%</color> of the original effect, and their attack frequency is increased.",
+        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>160%</color> of the original effect, and their attack frequency is increased.",
         "When another character in your squad shares the same Attribute or Faction:\nThe guard boars inherit Lucy's CRIT Rate and CRIT DMG."
       ],
       [
-        "When Lucy uses her <color=#ffffff>Special Attack</color> or <color=#ffffff>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#ffffff>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>170%</color> of the original effect, and their attack frequency is increased.",
+        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>170%</color> of the original effect, and their attack frequency is increased.",
         "When another character in your squad shares the same Attribute or Faction:\nThe guard boars inherit Lucy's CRIT Rate and CRIT DMG."
       ],
       [
-        "When Lucy uses her <color=#ffffff>Special Attack</color> or <color=#ffffff>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#ffffff>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>180%</color> of the original effect, and their attack frequency is increased.",
+        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>180%</color> of the original effect, and their attack frequency is increased.",
         "When another character in your squad shares the same Attribute or Faction:\nThe guard boars inherit Lucy's CRIT Rate and CRIT DMG."
       ],
       [
-        "When Lucy uses her <color=#ffffff>Special Attack</color> or <color=#ffffff>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#ffffff>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>190%</color> of the original effect, and their attack frequency is increased.",
+        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>190%</color> of the original effect, and their attack frequency is increased.",
         "When another character in your squad shares the same Attribute or Faction:\nThe guard boars inherit Lucy's CRIT Rate and CRIT DMG."
       ],
       [
-        "When Lucy uses her <color=#ffffff>Special Attack</color> or <color=#ffffff>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#ffffff>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>200%</color> of the original effect, and their attack frequency is increased.",
+        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>200%</color> of the original effect, and their attack frequency is increased.",
         "When another character in your squad shares the same Attribute or Faction:\nThe guard boars inherit Lucy's CRIT Rate and CRIT DMG."
       ]
     ]
@@ -110,27 +110,27 @@
   "Cons": [
     {
       "Name": "Drill Formations",
-      "Effect": "When the guard boars launch <color=#ffffff>Guard Boars: Spinning Swing!</color>, Lucy recovers 2 Energy. This effect can trigger once every 15s, with each guard boar having its own separate cooldown."
+      "Effect": "When the guard boars launch <color=#FFFFFF>Guard Boars: Spinning Swing!</color>, Lucy recovers 2 Energy. This effect can trigger once every 15s, with each guard boar having its own separate cooldown."
     },
     {
       "Name": "Little Boar Captain",
-      "Effect": "When Lucy uses a <color=#ffffff>Chain Attack</color> or <color=#ffffff>Ultimate</color>, it grants all squad members, Bangboo, and the guard boars the <color=#ffffff>Cheer On!</color> status for 10s."
+      "Effect": "When Lucy uses a <color=#FFFFFF>Chain Attack</color> or <color=#FFFFFF>Ultimate</color>, it grants all squad members, Bangboo, and the guard boars the <color=#FFFFFF>Cheer On!</color> status for 10s."
     },
     {
       "Name": "Ironfist Overseer",
-      "Effect": "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dodge</color>, <color=#ffffff>Assist</color>, <color=#ffffff>Special Attack</color>, and <color=#ffffff>Chain Attack</color> Lv. +2"
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
     },
     {
       "Name": "Chaos Ball Game",
-      "Effect": "While in the <color=#ffffff>Cheer On!</color> state, allies' CRIT DMG is increased by an additional 10%."
+      "Effect": "While in the <color=#FFFFFF>Cheer On!</color> state, allies' CRIT DMG is increased by an additional 10%."
     },
     {
       "Name": "Wildland Princess",
-      "Effect": "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dodge</color>, <color=#ffffff>Assist</color>, <color=#ffffff>Special Attack</color>, and <color=#ffffff>Chain Attack</color> Lv. +2"
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
     },
     {
       "Name": "Fierce Fangs of Fire",
-      "Effect": "When an ally in the <color=#ffffff>Cheer On!</color> state hits an enemy with an <color=#ffffff>EX Special Attack</color>, a guard boar will drop from the sky and cause an explosion, dealing <color=#ff5521>Fire DMG</color> equal to 300% of the guard boar's ATK. This will extend the duration of the <color=#ffffff>Cheer On!</color> buff for all squad members by 5s. The duration can increase up to 3 times, with a maximum duration of 30s. Refreshing the <color=#ffffff>Cheer On!</color> state resets the stack count. After the guard boar's explosion, it will launch <color=#ffffff>Guard Boars: Spinning Swing!</color>."
+      "Effect": "When an ally in the <color=#FFFFFF>Cheer On!</color> state hits an enemy with an <color=#FFFFFF>EX Special Attack</color>, a guard boar will drop from the sky and cause an explosion, dealing <color=#FF5521>Fire DMG</color> equal to 300% of the guard boar's ATK. This will extend the duration of the <color=#FFFFFF>Cheer On!</color> buff for all squad members by 5s. The duration can increase up to 3 times, with a maximum duration of 30s. Refreshing the <color=#FFFFFF>Cheer On!</color> state resets the stack count. After the guard boar's explosion, it will launch <color=#FFFFFF>Guard Boars: Spinning Swing!</color>."
     }
   ]
 }

@@ -10,11 +10,11 @@
   "Refinements": {
     "Name": "Knight's Combo",
     "Descriptions": [
-      "Launching a <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Quick Assist</color> increases the equipper's ATK by <color=#2BAD00>12%</color> for 12s.",
-      "Launching a <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Quick Assist</color> increases the equipper's ATK by <color=#2BAD00>13.8%</color> for 12s.",
-      "Launching a <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Quick Assist</color> increases the equipper's ATK by <color=#2BAD00>15.6%</color> for 12s.",
-      "Launching a <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Quick Assist</color> increases the equipper's ATK by <color=#2BAD00>17.4%</color> for 12s.",
-      "Launching a <color=#ffffff>Dodge Counter</color> or <color=#ffffff>Quick Assist</color> increases the equipper's ATK by <color=#2BAD00>19.2%</color> for 12s."
+      "Launching a <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> increases the equipper's ATK by <color=#2BAD00>12%</color> for 12s.",
+      "Launching a <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> increases the equipper's ATK by <color=#2BAD00>13.8%</color> for 12s.",
+      "Launching a <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> increases the equipper's ATK by <color=#2BAD00>15.6%</color> for 12s.",
+      "Launching a <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> increases the equipper's ATK by <color=#2BAD00>17.4%</color> for 12s.",
+      "Launching a <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> increases the equipper's ATK by <color=#2BAD00>19.2%</color> for 12s."
     ]
   }
 }

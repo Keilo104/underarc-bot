@@ -1,0 +1,16 @@
+{
+  "Id": 1351,
+  "Name": "Pulchra",
+  "FullName": "Pulchra Ferrini",
+  "Specialty": 2,
+  "Faction": 1,
+  "Element": [
+    203
+  ],
+  "DamageType": [
+    101
+  ],
+  "SigWeaponId": [
+    13101
+  ]
+}

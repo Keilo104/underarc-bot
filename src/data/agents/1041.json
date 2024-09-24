@@ -78,32 +78,32 @@
     ],
     "Descriptions": [
       [
-        "When triggering <color=#ffffff>Fire Suppression</color> during a <color=#ffffff>Basic Attack</color> or <color=#ffffff>Dash Attack</color>, increase that attack's DMG by <color=#2BAD00>35%</color>.",
-        "When another character in your squad shares the same Attribute or Faction:\nSoldier 11 deals 10% more <color=#ff5521>Fire DMG</color>. When attacking Stunned enemies, this effect is further enhanced by an additional 22.5%."
+        "When triggering <color=#FFFFFF>Fire Suppression</color> during a <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Dash Attack</color>, increase that attack's DMG by <color=#2BAD00>35%</color>.",
+        "When another character in your squad shares the same Attribute or Faction:\nSoldier 11 deals 10% more <color=#FF5521>Fire DMG</color>. When attacking Stunned enemies, this effect is further enhanced by an additional 22.5%."
       ],
       [
-        "When triggering <color=#ffffff>Fire Suppression</color> during a <color=#ffffff>Basic Attack</color> or <color=#ffffff>Dash Attack</color>, increase that attack's DMG by <color=#2BAD00>40.8%</color>.",
-        "When another character in your squad shares the same Attribute or Faction:\nSoldier 11 deals 10% more <color=#ff5521>Fire DMG</color>. When attacking Stunned enemies, this effect is further enhanced by an additional 22.5%."
+        "When triggering <color=#FFFFFF>Fire Suppression</color> during a <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Dash Attack</color>, increase that attack's DMG by <color=#2BAD00>40.8%</color>.",
+        "When another character in your squad shares the same Attribute or Faction:\nSoldier 11 deals 10% more <color=#FF5521>Fire DMG</color>. When attacking Stunned enemies, this effect is further enhanced by an additional 22.5%."
       ],
       [
-        "When triggering <color=#ffffff>Fire Suppression</color> during a <color=#ffffff>Basic Attack</color> or <color=#ffffff>Dash Attack</color>, increase that attack's DMG by <color=#2BAD00>46.6%</color>.",
-        "When another character in your squad shares the same Attribute or Faction:\nSoldier 11 deals 10% more <color=#ff5521>Fire DMG</color>. When attacking Stunned enemies, this effect is further enhanced by an additional 22.5%."
+        "When triggering <color=#FFFFFF>Fire Suppression</color> during a <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Dash Attack</color>, increase that attack's DMG by <color=#2BAD00>46.6%</color>.",
+        "When another character in your squad shares the same Attribute or Faction:\nSoldier 11 deals 10% more <color=#FF5521>Fire DMG</color>. When attacking Stunned enemies, this effect is further enhanced by an additional 22.5%."
       ],
       [
-        "When triggering <color=#ffffff>Fire Suppression</color> during a <color=#ffffff>Basic Attack</color> or <color=#ffffff>Dash Attack</color>, increase that attack's DMG by <color=#2BAD00>52.5%</color>.",
-        "When another character in your squad shares the same Attribute or Faction:\nSoldier 11 deals 10% more <color=#ff5521>Fire DMG</color>. When attacking Stunned enemies, this effect is further enhanced by an additional 22.5%."
+        "When triggering <color=#FFFFFF>Fire Suppression</color> during a <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Dash Attack</color>, increase that attack's DMG by <color=#2BAD00>52.5%</color>.",
+        "When another character in your squad shares the same Attribute or Faction:\nSoldier 11 deals 10% more <color=#FF5521>Fire DMG</color>. When attacking Stunned enemies, this effect is further enhanced by an additional 22.5%."
       ],
       [
-        "When triggering <color=#ffffff>Fire Suppression</color> during a <color=#ffffff>Basic Attack</color> or <color=#ffffff>Dash Attack</color>, increase that attack's DMG by <color=#2BAD00>58.3%</color>.",
-        "When another character in your squad shares the same Attribute or Faction:\nSoldier 11 deals 10% more <color=#ff5521>Fire DMG</color>. When attacking Stunned enemies, this effect is further enhanced by an additional 22.5%."
+        "When triggering <color=#FFFFFF>Fire Suppression</color> during a <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Dash Attack</color>, increase that attack's DMG by <color=#2BAD00>58.3%</color>.",
+        "When another character in your squad shares the same Attribute or Faction:\nSoldier 11 deals 10% more <color=#FF5521>Fire DMG</color>. When attacking Stunned enemies, this effect is further enhanced by an additional 22.5%."
       ],
       [
-        "When triggering <color=#ffffff>Fire Suppression</color> during a <color=#ffffff>Basic Attack</color> or <color=#ffffff>Dash Attack</color>, increase that attack's DMG by <color=#2BAD00>64.1%</color>.",
-        "When another character in your squad shares the same Attribute or Faction:\nSoldier 11 deals 10% more <color=#ff5521>Fire DMG</color>. When attacking Stunned enemies, this effect is further enhanced by an additional 22.5%."
+        "When triggering <color=#FFFFFF>Fire Suppression</color> during a <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Dash Attack</color>, increase that attack's DMG by <color=#2BAD00>64.1%</color>.",
+        "When another character in your squad shares the same Attribute or Faction:\nSoldier 11 deals 10% more <color=#FF5521>Fire DMG</color>. When attacking Stunned enemies, this effect is further enhanced by an additional 22.5%."
       ],
       [
-        "When triggering <color=#ffffff>Fire Suppression</color> during a <color=#ffffff>Basic Attack</color> or <color=#ffffff>Dash Attack</color>, increase that attack's DMG by <color=#2BAD00>70%</color>.",
-        "When another character in your squad shares the same Attribute or Faction:\nSoldier 11 deals 10% more <color=#ff5521>Fire DMG</color>. When attacking Stunned enemies, this effect is further enhanced by an additional 22.5%."
+        "When triggering <color=#FFFFFF>Fire Suppression</color> during a <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Dash Attack</color>, increase that attack's DMG by <color=#2BAD00>70%</color>.",
+        "When another character in your squad shares the same Attribute or Faction:\nSoldier 11 deals 10% more <color=#FF5521>Fire DMG</color>. When attacking Stunned enemies, this effect is further enhanced by an additional 22.5%."
       ]
     ]
   },
@@ -114,23 +114,23 @@
     },
     {
       "Name": "Scorching Convergence",
-      "Effect": "When triggering <color=#ffffff>Fire Suppression</color>, <color=#ffffff>Basic Attack</color>, <color=#ffffff>Dash Attack</color>, and <color=#ffffff>Dodge Counter</color> DMG increases by 3%, up to 12 stacks, lasting 15s, with the duration of each stack calculated separately."
+      "Effect": "When triggering <color=#FFFFFF>Fire Suppression</color>, <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dash Attack</color>, and <color=#FFFFFF>Dodge Counter</color> DMG increases by 3%, up to 12 stacks, lasting 15s, with the duration of each stack calculated separately."
     },
     {
       "Name": "Elite Soldier",
-      "Effect": "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dodge</color>, <color=#ffffff>Assist</color>, <color=#ffffff>Special Attack</color>, and <color=#ffffff>Chain Attack</color> Lv. +2"
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
     },
     {
       "Name": "Indulgent Blaze",
-      "Effect": "If <color=#ffffff>Fire Suppression</color> is triggered during the 1st, 2nd, or 3rd hit of Soldier 11's <color=#ffffff>Basic Attack</color> or a <color=#ffffff>Dash Attack</color>, Anti-Interrupt Level increases and DMG received is reduced by 18% during skill activation.\nIf <color=#ffffff>Fire Suppression</color> is triggered during the 4th hit of her <color=#ffffff>Basic Attack</color>, she becomes invulnerable during skill activation."
+      "Effect": "If <color=#FFFFFF>Fire Suppression</color> is triggered during the 1st, 2nd, or 3rd hit of Soldier 11's <color=#FFFFFF>Basic Attack</color> or a <color=#FFFFFF>Dash Attack</color>, Anti-Interrupt Level increases and DMG received is reduced by 18% during skill activation.\nIf <color=#FFFFFF>Fire Suppression</color> is triggered during the 4th hit of her <color=#FFFFFF>Basic Attack</color>, she becomes invulnerable during skill activation."
     },
     {
       "Name": "Perfect Soldier",
-      "Effect": "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dodge</color>, <color=#ffffff>Assist</color>, <color=#ffffff>Special Attack</color>, and <color=#ffffff>Chain Attack</color> Lv. +2"
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
     },
     {
       "Name": "Scorching Flow",
-      "Effect": "When Soldier 11 uses her <color=#ffffff>EX Special Attack</color>, <color=#ffffff>Chain Attack</color>, or <color=#ffffff>Ultimate</color>, she gains 8 stacks of Charge (max 8 stacks).\nWhen <color=#ffffff>Fire Suppression</color> is triggered, 1 stack of Charge is consumed, causing the current move to ignore 25% of the target's <color=#ff5521>Fire RES</color>."
+      "Effect": "When Soldier 11 uses her <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she gains 8 stacks of Charge (max 8 stacks).\nWhen <color=#FFFFFF>Fire Suppression</color> is triggered, 1 stack of Charge is consumed, causing the current move to ignore 25% of the target's <color=#FF5521>Fire RES</color>."
     }
   ]
 }

@@ -10,11 +10,11 @@
   "Refinements": {
     "Name": "Knight Beam: Change",
     "Descriptions": [
-      "Increases the equipper's <color=#f0d12b>Physical DMG</color> against the target by <color=#2BAD00>36%</color> for 8s upon hitting an enemy at least 6 meters away with a <color=#ffffff>Basic Attack</color> or <color=#ffffff>Dash Attack</color>.",
-      "Increases the equipper's <color=#f0d12b>Physical DMG</color> against the target by <color=#2BAD00>41%</color> for 8s upon hitting an enemy at least 6 meters away with a <color=#ffffff>Basic Attack</color> or <color=#ffffff>Dash Attack</color>.",
-      "Increases the equipper's <color=#f0d12b>Physical DMG</color> against the target by <color=#2BAD00>46.5%</color> for 8s upon hitting an enemy at least 6 meters away with a <color=#ffffff>Basic Attack</color> or <color=#ffffff>Dash Attack</color>.",
-      "Increases the equipper's <color=#f0d12b>Physical DMG</color> against the target by <color=#2BAD00>52%</color> for 8s upon hitting an enemy at least 6 meters away with a <color=#ffffff>Basic Attack</color> or <color=#ffffff>Dash Attack</color>.",
-      "Increases the equipper's <color=#f0d12b>Physical DMG</color> against the target by <color=#2BAD00>57.5%</color> for 8s upon hitting an enemy at least 6 meters away with a <color=#ffffff>Basic Attack</color> or <color=#ffffff>Dash Attack</color>."
+      "Increases the equipper's <color=#F0D12B>Physical DMG</color> against the target by <color=#2BAD00>36%</color> for 8s upon hitting an enemy at least 6 meters away with a <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Dash Attack</color>.",
+      "Increases the equipper's <color=#F0D12B>Physical DMG</color> against the target by <color=#2BAD00>41%</color> for 8s upon hitting an enemy at least 6 meters away with a <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Dash Attack</color>.",
+      "Increases the equipper's <color=#F0D12B>Physical DMG</color> against the target by <color=#2BAD00>46.5%</color> for 8s upon hitting an enemy at least 6 meters away with a <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Dash Attack</color>.",
+      "Increases the equipper's <color=#F0D12B>Physical DMG</color> against the target by <color=#2BAD00>52%</color> for 8s upon hitting an enemy at least 6 meters away with a <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Dash Attack</color>.",
+      "Increases the equipper's <color=#F0D12B>Physical DMG</color> against the target by <color=#2BAD00>57.5%</color> for 8s upon hitting an enemy at least 6 meters away with a <color=#FFFFFF>Basic Attack</color> or <color=#FFFFFF>Dash Attack</color>."
     ]
   }
 }

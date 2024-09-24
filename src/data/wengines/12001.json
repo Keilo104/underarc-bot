@@ -10,11 +10,11 @@
   "Refinements": {
     "Name": "Full Moon",
     "Descriptions": [
-      "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dash Attack</color>, and <color=#ffffff>Dodge Counter</color> DMG increases by <color=#2BAD00>12%</color>.",
-      "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dash Attack</color>, and <color=#ffffff>Dodge Counter</color> DMG increases by <color=#2BAD00>14%</color>.",
-      "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dash Attack</color>, and <color=#ffffff>Dodge Counter</color> DMG increases by <color=#2BAD00>16%</color>.",
-      "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dash Attack</color>, and <color=#ffffff>Dodge Counter</color> DMG increases by <color=#2BAD00>18%</color>.",
-      "<color=#ffffff>Basic Attack</color>, <color=#ffffff>Dash Attack</color>, and <color=#ffffff>Dodge Counter</color> DMG increases by <color=#2BAD00>20%</color>."
+      "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dash Attack</color>, and <color=#FFFFFF>Dodge Counter</color> DMG increases by <color=#2BAD00>12%</color>.",
+      "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dash Attack</color>, and <color=#FFFFFF>Dodge Counter</color> DMG increases by <color=#2BAD00>14%</color>.",
+      "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dash Attack</color>, and <color=#FFFFFF>Dodge Counter</color> DMG increases by <color=#2BAD00>16%</color>.",
+      "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dash Attack</color>, and <color=#FFFFFF>Dodge Counter</color> DMG increases by <color=#2BAD00>18%</color>.",
+      "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dash Attack</color>, and <color=#FFFFFF>Dodge Counter</color> DMG increases by <color=#2BAD00>20%</color>."
     ]
   }
 }

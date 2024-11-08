@@ -9,7 +9,7 @@
     "start": "wrangler dev",
     "deploy": "wrangler deploy",
     "compile_register": "tsc -t es2021 -m esnext --moduleResolution Bundler --outDir dist src/ts/scripts/register.ts",
-    "run_register": "node dist/register.js",
+    "run_register": "node dist/scripts/register.js",
     "compile_update_kv": "tsc -t es2021 -m esnext --moduleResolution Bundler --outDir dist src/ts/scripts/update_kv.ts",
     "run_update_kv": "node dist/ts/scripts/update_kv.js",
     "register": "npm run compile_register && npm run run_register",
@@ -21,11 +21,11 @@
     "itty-router": "^5.0.18"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240903.0",
+    "@cloudflare/workers-types": "^4.20240909.0",
     "dotenv": "^16.4.5",
     "ngrok": "^5.0.0-beta.2",
-    "typescript": "^5.5.4",
+    "typescript": "^5.6.2",
     "axios": "^1.7.7",
-    "wrangler": "3.75.0"
+    "wrangler": "3.57.1"
   }
 }

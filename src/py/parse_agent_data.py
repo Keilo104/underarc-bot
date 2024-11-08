@@ -6,26 +6,26 @@ def load_initial_info(valks, translation_json):
     with open(f"{zenless_data_path}/FileCfg/AvatarBaseTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["JIJNDLLPCHO"]:
-        i = item["DKDDFEIAMIF"]
+    for item in json_to_parse["PEPPKLMFFBD"]:
+        i = item["GKNMDKNIMHP"]
 
         valks[i] = {}
-        valks[i]["Id"] = item["DKDDFEIAMIF"]
-        valks[i]["Name"] = translation_json[item["DEPJKIPACJK"]]
-        valks[i]["FullName"] = translation_json[item["JGEPCLEOCJP"]]
-        valks[i]["Specialty"] = item["IDPMCJCCDMO"]
-#       valks[i]["Gender"] = item["CJOHMMHHPIF"]
-        valks[i]["Faction"] = item["HIJMKHADACA"]
+        valks[i]["Id"] = item["GKNMDKNIMHP"]
+        valks[i]["Name"] = translation_json[item["FJECNNMMDGH"]]
+        valks[i]["FullName"] = translation_json[item["KHLFDOBGGFL"]]
+        valks[i]["Specialty"] = item["HBHNMKPOKEG"]
+#       valks[i]["Gender"] = item["EAKNPAJOAKP"]
+        valks[i]["Faction"] = item["JGNLMIEEHMJ"]
 
-        valks[i]["Element"] = item["MCPCLMHBFIN"]
-        valks[i]["DamageType"] = item["KPMFACAKMLA"]
+        valks[i]["Element"] = item["DFHMFENGHBK"]
+        valks[i]["DamageType"] = item["OGNDCHDHLMM"]
 
 def load_avatar_battle_template(valks, translation_json):
     with open(f"{zenless_data_path}/FileCfg/AvatarBattleTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["JIJNDLLPCHO"]:
-        i = item["DKDDFEIAMIF"]
+    for item in json_to_parse["PEPPKLMFFBD"]:
+        i = item["GKNMDKNIMHP"]
 
         if i not in valks:
             valks[i] = { "Id": i }

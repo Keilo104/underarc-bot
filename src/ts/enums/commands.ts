@@ -89,14 +89,47 @@ export const WENGINE_COMMAND = {
             min_value: 0,
             max_value: 60,
         },
+    ],
+}
+
+export const BANGBOO_COMMAND = {
+    name: "bangboo",
+    type: 1,
+    integration_types: [ApplicationIntegrationType.GUILD_INSTALL, ApplicationIntegrationType.USER_INSTALL],
+    contexts: [InteractionContextType.GUILD, InteractionContextType.PRIVATE_CHANNEL],
+    description: "ask for information from a zzz bangboo!",
+    options: [
+        {
+            name: "bangboo",
+            description: "the bangboo you wish to ask for!",
+            type: 3,
+            required: true,
+        },
 
         {
-            name: "refinement",
-            description: "refinement of the w-engine!",
+            name: "what",
+            description: "what of the bangboo to show!",
+            type: 3,
+            required: false,
+            choices: [
+                {
+                    name: "Skills",
+                    value: "skills"
+                },
+                {
+                    name: "Stats",
+                    value: "stats"
+                },
+            ]
+        },
+
+        {
+            name: "level",
+            description: "level of the bangboo!",
             type: 4,
             required: false,
-            min_value: 1,
-            max_value: 5,
+            min_value: 0,
+            max_value: 60,
         },
     ],
 }

@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 import {
-    AGENT_COMMAND,
+    AGENT_COMMAND, BANGBOO_COMMAND,
     EIGHT_BALL_COMMAND,
     GUILD_INSTALL_COMMAND,
     PING_COMMAND, SEND_ISSUE_COMMAND,
@@ -34,7 +34,7 @@ const response = await fetch(url, {
     body: JSON.stringify(
         [
             PING_COMMAND, EIGHT_BALL_COMMAND, USER_INSTALL_COMMAND, GUILD_INSTALL_COMMAND,
-            AGENT_COMMAND, WENGINE_COMMAND, SEND_ISSUE_COMMAND
+            AGENT_COMMAND, WENGINE_COMMAND, BANGBOO_COMMAND, SEND_ISSUE_COMMAND
         ]
     ),
 });

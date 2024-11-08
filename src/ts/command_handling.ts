@@ -2,7 +2,7 @@ import {AutoRouterType, IRequest} from "itty-router";
 import {InteractionResponseFlags, InteractionResponseType, InteractionType} from "discord-interactions";
 import {JsonResponse} from "./model/JsonResponse";
 import {
-    AGENT_COMMAND,
+    AGENT_COMMAND, BANGBOO_COMMAND,
     EIGHT_BALL_COMMAND,
     GUILD_INSTALL_COMMAND,
     PING_COMMAND,
@@ -15,6 +15,7 @@ import {logInteraction} from "./util/log_interaction";
 import {agentCommandHandler} from "./zzz_commands/agent_command";
 import {wengineCommandHandler} from "./zzz_commands/wengine_command";
 import server from "./server";
+import {bangbooCommandHandler} from "./zzz_commands/bangboo_command";
 
 export function SetCommandHandlingRoute(router: AutoRouterType) {
     router.post("/", async (request: IRequest, env: any) => {
@@ -93,6 +94,9 @@ export function SetCommandHandlingRoute(router: AutoRouterType) {
 
                 case WENGINE_COMMAND.name.toLowerCase():
                     return await wengineCommandHandler(interaction, env);
+
+                case BANGBOO_COMMAND.name.toLowerCase():
+                    return await bangbooCommandHandler(interaction, env);
 
                 default:
                     return new JsonResponse({ error: "Unknown Type" }, { status: 400 })

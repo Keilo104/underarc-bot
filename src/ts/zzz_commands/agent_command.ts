@@ -50,32 +50,32 @@ export async function agentCommandHandler(interaction: any, env: any): Promise<J
 
         if(levelInput !== null) {
             switch(whatInput) {
-            case "stats":
-                embed = printAgentStatsAtLevel(agent, bindLevel(1, 60, levelInput), env);
-                break;
+                case "stats":
+                    embed = printAgentStatsAtLevel(agent, bindLevel(1, 60, levelInput), env);
+                    break;
 
-            case "mindscape":
-                embed = printAgentMindscapesAtLevel(agent, bindLevel(1, 6, levelInput), env);
-                break;
+                case "mindscape":
+                    embed = printAgentMindscapesAtLevel(agent, bindLevel(1, 6, levelInput), env);
+                    break;
 
-            default:
-            case "core":
-                embed = printAgentCoreAtLevel(agent, bindLevel(0, 6, levelInput), env);
+                default:
+                case "core":
+                    embed = printAgentCoreAtLevel(agent, bindLevel(0, 6, levelInput), env);
             }
 
         } else {
             switch(whatInput) {
-            case "stats":
-                embed = printAgentStats(agent, env);
-                break;
+                case "stats":
+                    embed = printAgentStats(agent, env);
+                    break;
 
-            case "mindscape":
-                embed = printAgentMindscapes(agent, env);
-                break;
+                case "mindscape":
+                    embed = printAgentMindscapes(agent, env);
+                    break;
 
-            default:
-            case "core":
-                embed = printAgentCore(agent, env);
+                default:
+                case "core":
+                    embed = printAgentCore(agent, env);
             }
         }
     }

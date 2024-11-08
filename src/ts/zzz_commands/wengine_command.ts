@@ -42,7 +42,7 @@ export async function wengineCommandHandler(interaction: any, env: any): Promise
     let levelInput: number | null = null;
     let refinementInput: string | null = null;
     let embed: any | null = null;
-    let ephemeral = false;
+    let ephemeral: boolean = false;
 
     interaction.data.options.forEach((option: any) => {
         if (option["name"] == "w-engine")
@@ -59,14 +59,13 @@ export async function wengineCommandHandler(interaction: any, env: any): Promise
 
     if(wengineId && wengineInput) {
         if(typeof wengineId == "string"){
-            const wengine = await WEngine.WEngineFromId(wengineId, env);
+            const wengine: WEngine = await WEngine.WEngineFromId(wengineId, env);
 
             embed = printWEngine(wengine, levelInput, refinementInput, env);
         } else {
             embed = await printAmbiguousWEngines(wengineInput, wengineId, env);
             ephemeral = true;
         }
-
     }
 
     if (embed) {

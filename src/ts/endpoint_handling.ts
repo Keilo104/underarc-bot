@@ -101,4 +101,6 @@ export function SetEndpointHandlingRoutes(router: AutoRouterType) {
 
         return new Response("Bad request signature.", { status: 401 });
     });
+
+    router.get("")
 }

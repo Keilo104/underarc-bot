@@ -6,7 +6,7 @@ import {FigureOutId} from "../util/figure_out_id";
 
 export async function callQuoteCommand(interaction: any, env: any): Promise<JsonResponse> {
     let userId: string = FigureOutId(interaction);
-    let quotes: any = JSON.parse(await env.quotes.get(userId));
+    let quotes: any = JSON.parse(await env.quotes.get(userId) ?? "{}");
     let quoteName: string | null = null, quoteContent: string | null = null;
 
     interaction.data.options.forEach((option: any) => {
@@ -47,7 +47,7 @@ export async function callQuoteCommand(interaction: any, env: any): Promise<Json
 
 export async function addQuoteCommand(interaction: any, env: any): Promise<JsonResponse> {
     let userId: string = FigureOutId(interaction);
-    let quotes: any = JSON.parse(await env.quotes.get(userId));
+    let quotes: any = JSON.parse(await env.quotes.get(userId) ?? "{}");
     let quoteName: any, quoteContent: any;
 
     interaction.data.options.forEach((option: any) => {
@@ -86,7 +86,7 @@ export async function addQuoteCommand(interaction: any, env: any): Promise<JsonR
 
 export async function deleteQuoteCommand(interaction: any, env: any): Promise<JsonResponse> {
     let userId: string = FigureOutId(interaction);
-    let quotes: any = JSON.parse(await env.quotes.get(userId));
+    let quotes: any = JSON.parse(await env.quotes.get(userId) ?? "{}");
     let quoteName: string | null = null;
 
     interaction.data.options.forEach((option: any) => {

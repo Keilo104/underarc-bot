@@ -19,7 +19,7 @@
   "dependencies": {
     "discord-interactions": "^4.1.0",
     "itty-router": "^5.0.18",
-    "wrangler": "^3.111.0"
+    "wrangler": "^3.112.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240909.0",

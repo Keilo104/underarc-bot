@@ -165,3 +165,39 @@ export const SEND_ISSUE_COMMAND = {
         },
     ],
 }
+
+export const QUOTE_COMMAND = {
+    name: "q",
+    integration_types: [ApplicationIntegrationType.GUILD_INSTALL, ApplicationIntegrationType.USER_INSTALL],
+    contexts: [InteractionContextType.GUILD, InteractionContextType.PRIVATE_CHANNEL],
+    description: "use a quote",
+    options: [
+        {
+            name: "quote",
+            description: "name of the quote you want to call",
+            type: 3,
+            required: true,
+        },
+    ]
+}
+export const QUOTE_ADD_COMMAND = {
+    name: "q_add",
+    integration_types: [ApplicationIntegrationType.GUILD_INSTALL, ApplicationIntegrationType.USER_INSTALL],
+    contexts: [InteractionContextType.GUILD, InteractionContextType.PRIVATE_CHANNEL],
+    description: "create a quote",
+    options: [
+        {
+            name: "quote",
+            description: "name of the quote you want to add",
+            type: 3,
+            required: true,
+        },
+
+        {
+            name: "content",
+            description: "content of the quote you want to add",
+            type: 3,
+            required: true,
+        },
+    ]
+}

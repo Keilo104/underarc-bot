@@ -50,7 +50,7 @@ export function SetCommandHandlingRoute(router: AutoRouterType) {
                     return new JsonResponse({
                         type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
                         data: {
-                            content:INVITE_URL,
+                            content: INVITE_URL,
                             flags: InteractionResponseFlags.EPHEMERAL,
                         },
                     });

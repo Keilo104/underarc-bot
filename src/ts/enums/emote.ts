@@ -2,6 +2,7 @@ export class Emote {
     public static UNKNOWN_ICON = new Emote("<:unknown_icon:1266910231066316981>");
     public static NESSIE_ICON = new Emote("<a:nessie:1273067515798360106>");
     public static ARCY_ICON = new Emote("<:arcy:1273073570116931667>");
+    public static MEGAPHONE = new Emote("<:megaphone:1346600900810113026>");
 
     public static BASIC_ATTACK_ICON = new Emote("<:basic_attack_icon:1265906305843859476>");
     public static CORE_SKILL_ICON = new Emote("<:core_skill_icon:1265906318070517845>");

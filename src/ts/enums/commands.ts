@@ -180,6 +180,7 @@ export const QUOTE_COMMAND = {
         },
     ]
 }
+
 export const QUOTE_ADD_COMMAND = {
     name: "q_add",
     integration_types: [ApplicationIntegrationType.GUILD_INSTALL, ApplicationIntegrationType.USER_INSTALL],
@@ -196,6 +197,58 @@ export const QUOTE_ADD_COMMAND = {
         {
             name: "content",
             description: "content of the quote you want to add",
+            type: 3,
+            required: true,
+        },
+    ]
+}
+
+export const QUOTEADD_COMMAND = {
+    name: "qadd",
+    integration_types: [ApplicationIntegrationType.GUILD_INSTALL, ApplicationIntegrationType.USER_INSTALL],
+    contexts: [InteractionContextType.GUILD, InteractionContextType.PRIVATE_CHANNEL],
+    description: "create a quote",
+    options: [
+        {
+            name: "quote",
+            description: "name of the quote you want to add",
+            type: 3,
+            required: true,
+        },
+
+        {
+            name: "content",
+            description: "content of the quote you want to add",
+            type: 3,
+            required: true,
+        },
+    ]
+}
+
+export const QUOTE_DELETE_COMMAND = {
+    name: "q_del",
+    integration_types: [ApplicationIntegrationType.GUILD_INSTALL, ApplicationIntegrationType.USER_INSTALL],
+    contexts: [InteractionContextType.GUILD, InteractionContextType.PRIVATE_CHANNEL],
+    description: "delete a quote",
+    options: [
+        {
+            name: "quote",
+            description: "name of the quote you want to delete",
+            type: 3,
+            required: true,
+        },
+    ]
+}
+
+export const QUOTEDELETE_COMMAND = {
+    name: "qdel",
+    integration_types: [ApplicationIntegrationType.GUILD_INSTALL, ApplicationIntegrationType.USER_INSTALL],
+    contexts: [InteractionContextType.GUILD, InteractionContextType.PRIVATE_CHANNEL],
+    description: "delete a quote",
+    options: [
+        {
+            name: "quote",
+            description: "name of the quote you want to delete",
             type: 3,
             required: true,
         },

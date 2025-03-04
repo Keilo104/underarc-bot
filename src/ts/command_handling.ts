@@ -5,7 +5,7 @@ import {
     AGENT_COMMAND, BANGBOO_COMMAND,
     EIGHT_BALL_COMMAND,
     GUILD_INSTALL_COMMAND,
-    PING_COMMAND,
+    PING_COMMAND, QUOTE_ADD_COMMAND, QUOTE_COMMAND, QUOTE_DELETE_COMMAND, QUOTEADD_COMMAND, QUOTEDELETE_COMMAND,
     SEND_ISSUE_COMMAND,
     USER_INSTALL_COMMAND, WENGINE_COMMAND
 } from "./enums/commands";
@@ -16,6 +16,7 @@ import {agentCommandHandler} from "./commands/zzz_commands/agent_command";
 import {wengineCommandHandler} from "./commands/zzz_commands/wengine_command";
 import server from "./server";
 import {bangbooCommandHandler} from "./commands/zzz_commands/bangboo_command";
+import {addQuoteCommand, callQuoteCommand, deleteQuoteCommand} from "./commands/quote_command";
 
 export function SetCommandHandlingRoute(router: AutoRouterType) {
     router.post("/", async (request: IRequest, env: any) => {
@@ -88,6 +89,17 @@ export function SetCommandHandlingRoute(router: AutoRouterType) {
                             flags: InteractionResponseFlags.EPHEMERAL,
                         }
                     });
+
+                case QUOTE_COMMAND.name.toLowerCase():
+                    return await callQuoteCommand(interaction, env);
+
+                case QUOTEADD_COMMAND.name.toLowerCase():
+                case QUOTE_ADD_COMMAND.name.toLowerCase():
+                    return await addQuoteCommand(interaction, env);
+
+                case QUOTEDELETE_COMMAND.name.toLowerCase():
+                case QUOTE_DELETE_COMMAND.name.toLowerCase():
+                    return await deleteQuoteCommand(interaction, env);
 
                 case AGENT_COMMAND.name.toLowerCase():
                     return await agentCommandHandler(interaction, env);

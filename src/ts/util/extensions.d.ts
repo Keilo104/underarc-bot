@@ -7,4 +7,5 @@ interface Env {
     wengines: KVNamespace,
     bangboos: KVNamespace,
     helpers: KVNamespace,
+    quotes: KVNamespace,
 }

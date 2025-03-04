@@ -185,18 +185,18 @@ export const QUOTE_ADD_COMMAND = {
     name: "q_add",
     integration_types: [ApplicationIntegrationType.GUILD_INSTALL, ApplicationIntegrationType.USER_INSTALL],
     contexts: [InteractionContextType.GUILD, InteractionContextType.PRIVATE_CHANNEL],
-    description: "create a quote",
+    description: "create or update a quote",
     options: [
         {
             name: "quote",
-            description: "name of the quote you want to add",
+            description: "name of the quote you want to add or update",
             type: 3,
             required: true,
         },
 
         {
             name: "content",
-            description: "content of the quote you want to add",
+            description: "content of the quote you want to add or update",
             type: 3,
             required: true,
         },
@@ -207,18 +207,18 @@ export const QUOTEADD_COMMAND = {
     name: "qadd",
     integration_types: [ApplicationIntegrationType.GUILD_INSTALL, ApplicationIntegrationType.USER_INSTALL],
     contexts: [InteractionContextType.GUILD, InteractionContextType.PRIVATE_CHANNEL],
-    description: "create a quote",
+    description: "create or update a quote",
     options: [
         {
             name: "quote",
-            description: "name of the quote you want to add",
+            description: "name of the quote you want to add or update",
             type: 3,
             required: true,
         },
 
         {
             name: "content",
-            description: "content of the quote you want to add",
+            description: "content of the quote you want to add or update",
             type: 3,
             required: true,
         },

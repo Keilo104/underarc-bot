@@ -1,4 +1,4 @@
-import {WEngine} from "../../model/WEngine";
+import {WEngine} from "../../../model/WEngine";
 
 export function generateBaseWengineEmbed(wengine: WEngine, env: any): any {
     const wengineEmbed: { [k: string]: any } = {

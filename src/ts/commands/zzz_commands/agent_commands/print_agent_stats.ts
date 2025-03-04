@@ -1,5 +1,5 @@
-import {Agent} from "../../model/Agent";
-import {Emote} from "../../enums/emote";
+import {Agent} from "../../../model/Agent";
+import {Emote} from "../../../enums/emote";
 import {generateBaseAgentEmbed} from "./generate_base_agent_embed";
 
 export function printAgentStats(agent: Agent, env: any): any {

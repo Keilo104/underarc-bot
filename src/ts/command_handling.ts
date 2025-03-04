@@ -12,10 +12,10 @@ import {
 import {FigureOutUsername} from "./util/figure_out_username";
 import {Emote} from "./enums/emote";
 import {logInteraction} from "./util/log_interaction";
-import {agentCommandHandler} from "./zzz_commands/agent_command";
-import {wengineCommandHandler} from "./zzz_commands/wengine_command";
+import {agentCommandHandler} from "./commands/zzz_commands/agent_command";
+import {wengineCommandHandler} from "./commands/zzz_commands/wengine_command";
 import server from "./server";
-import {bangbooCommandHandler} from "./zzz_commands/bangboo_command";
+import {bangbooCommandHandler} from "./commands/zzz_commands/bangboo_command";
 
 export function SetCommandHandlingRoute(router: AutoRouterType) {
     router.post("/", async (request: IRequest, env: any) => {

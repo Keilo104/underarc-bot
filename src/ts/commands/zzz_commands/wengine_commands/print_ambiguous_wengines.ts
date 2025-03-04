@@ -1,4 +1,4 @@
-import {WEngine} from "../../model/WEngine";
+import {WEngine} from "../../../model/WEngine";
 
 export async function printAmbiguousWEngines(wengineInput: string, wengines: string[], env: any): Promise<any> {
     const ambiguousEmbed: { [k: string]: any } = {

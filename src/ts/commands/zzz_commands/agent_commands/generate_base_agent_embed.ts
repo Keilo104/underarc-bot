@@ -1,4 +1,4 @@
-import {Agent} from "../../model/Agent";
+import {Agent} from "../../../model/Agent";
 
 export function generateBaseAgentEmbed(agent: Agent, env: any): any {
     const agentEmbed: { [k: string]: any } = {

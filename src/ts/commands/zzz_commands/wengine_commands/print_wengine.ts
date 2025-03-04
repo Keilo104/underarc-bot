@@ -1,4 +1,4 @@
-import {WEngine} from "../../model/WEngine";
+import {WEngine} from "../../../model/WEngine";
 import {generateBaseWengineEmbed} from "./generate_base_wengine_embed";
 
 export function printWEngine(wengine: WEngine, level: number | null, refinement: number | null, env: any): any {

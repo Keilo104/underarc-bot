@@ -1,9 +1,9 @@
-import {JsonResponse} from "../model/JsonResponse";
+import {JsonResponse} from "../../model/JsonResponse";
 import {InteractionResponseFlags, InteractionResponseType} from "discord-interactions";
-import {Agent} from "../model/Agent";
+import {Agent} from "../../model/Agent";
 import {printAgentStats, printAgentStatsAtLevel} from "./agent_commands/print_agent_stats";
 import {printAgentCore, printAgentCoreAtLevel} from "./agent_commands/print_agent_core";
-import {logInteraction} from "../util/log_interaction";
+import {logInteraction} from "../../util/log_interaction";
 import {printAgentMindscapes, printAgentMindscapesAtLevel} from "./agent_commands/print_agent_mindscapes";
 
 export async function translateAgent(agent: string | null, env: any): Promise<string | null> {

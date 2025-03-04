@@ -1,12 +1,12 @@
-import {JsonResponse} from "../model/JsonResponse";
+import {JsonResponse} from "../../model/JsonResponse";
 import {InteractionResponseFlags, InteractionResponseType} from "discord-interactions";
-import {WEngine} from "../model/WEngine";
+import {WEngine} from "../../model/WEngine";
 import {
     printWEngine
 } from "./wengine_commands/print_wengine";
-import {logInteraction} from "../util/log_interaction";
+import {logInteraction} from "../../util/log_interaction";
 import {translateAgent} from "./agent_command";
-import {Agent} from "../model/Agent";
+import {Agent} from "../../model/Agent";
 import {printAmbiguousWEngines} from "./wengine_commands/print_ambiguous_wengines";
 
 async function translateWEngine(wengine: string | null, env: any): Promise<string | string[] | null> {

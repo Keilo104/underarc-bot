@@ -1,6 +1,6 @@
-import {JsonResponse} from "../model/JsonResponse";
+import {JsonResponse} from "../../model/JsonResponse";
 import {InteractionResponseFlags, InteractionResponseType} from "discord-interactions";
-import {logInteraction} from "../util/log_interaction";
+import {logInteraction} from "../../util/log_interaction";
 
 export async function bangbooCommandHandler(interaction: any, env: any): Promise<JsonResponse> {
     let bangbooInput: string | null = null;

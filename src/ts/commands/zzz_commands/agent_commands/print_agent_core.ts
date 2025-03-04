@@ -1,4 +1,4 @@
-import {Agent} from "../../model/Agent";
+import {Agent} from "../../../model/Agent";
 import {generateBaseAgentEmbed} from "./generate_base_agent_embed";
 
 export function printAgentCore(agent: Agent, env: any): any {

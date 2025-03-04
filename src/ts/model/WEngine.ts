@@ -204,7 +204,7 @@ export class WEngine {
         wengine.id = wengineJson["Id"];
         wengine.name = wengineJson["Name"];
         wengine.rarity = Rarity.GetRarityFromId(wengineJson["Rarity"]);
-        wengine.specialty = Specialty.GetSpecialtyFromId(wengineJson["WeaponType"]);
+        wengine.specialty = Specialty.GetSpecialtyFromId(Object.keys(wengineJson["WeaponType"])[0]);
 
         wengine.emote = Emote.GetEmoteFromId(`${wengine.id}`);
 

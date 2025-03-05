@@ -2,15 +2,15 @@
   "Id": 1131,
   "Name": "Soukaku",
   "FullName": "Soukaku",
-  "Specialty": 4,
   "Faction": 6,
+  "Rarity": 3,
+  "Specialty": 4,
   "Element": [
     202
   ],
   "DamageType": [
     101
   ],
-  "Rarity": 3,
   "Stats": {
     "BaseAtk": 96,
     "AtkGrowth": 54887,
@@ -79,31 +79,31 @@
     "Descriptions": [
       [
         "When Soukaku launches <color=#FFFFFF>Fly the Flag</color>, her ATK is increased by <color=#2BAD00>10%</color> of her initial ATK, up to 500, for 22s. When consuming <color=#FFFFFF>Vortex</color> during <color=#FFFFFF>Fly the Flag</color>, the ATK increase is doubled, up to a max of 1,000. This buff can be passed along to characters switching in via <color=#FFFFFF>Quick Assists</color> or <color=#FFFFFF>Chain Attacks</color> triggered by <color=#FFFFFF>Fly the Flag</color>, and it refreshes the duration of the buff.",
-        "When another character in your squad shares the same Attribute or Faction:\nWhen Soukaku consumes <color=#FFFFFF>Vortex</color> to activate <color=#FFFFFF>Fly the Flag</color>, the <color=#98EFF0>Ice DMG</color> of the squad is increased by 20% for 22s."
+        "When another character in your squad shares the same Attribute or Faction:\nWhen Soukaku consumes <color=#FFFFFF>Vortex</color> to activate <color=#FFFFFF>Fly the Flag</color>, the <color=#98EFF0>Ice DMG</color> of all squad members is increased by 20% for 22s."
       ],
       [
         "When Soukaku launches <color=#FFFFFF>Fly the Flag</color>, her ATK is increased by <color=#2BAD00>12.5%</color> of her initial ATK, up to 500, for 22s. When consuming <color=#FFFFFF>Vortex</color> during <color=#FFFFFF>Fly the Flag</color>, the ATK increase is doubled, up to a max of 1,000. This buff can be passed along to characters switching in via <color=#FFFFFF>Quick Assists</color> or <color=#FFFFFF>Chain Attacks</color> triggered by <color=#FFFFFF>Fly the Flag</color>, and it refreshes the duration of the buff.",
-        "When another character in your squad shares the same Attribute or Faction:\nWhen Soukaku consumes <color=#FFFFFF>Vortex</color> to activate <color=#FFFFFF>Fly the Flag</color>, the <color=#98EFF0>Ice DMG</color> of the squad is increased by 20% for 22s."
+        "When another character in your squad shares the same Attribute or Faction:\nWhen Soukaku consumes <color=#FFFFFF>Vortex</color> to activate <color=#FFFFFF>Fly the Flag</color>, the <color=#98EFF0>Ice DMG</color> of all squad members is increased by 20% for 22s."
       ],
       [
         "When Soukaku launches <color=#FFFFFF>Fly the Flag</color>, her ATK is increased by <color=#2BAD00>15%</color> of her initial ATK, up to 500, for 22s. When consuming <color=#FFFFFF>Vortex</color> during <color=#FFFFFF>Fly the Flag</color>, the ATK increase is doubled, up to a max of 1,000. This buff can be passed along to characters switching in via <color=#FFFFFF>Quick Assists</color> or <color=#FFFFFF>Chain Attacks</color> triggered by <color=#FFFFFF>Fly the Flag</color>, and it refreshes the duration of the buff.",
-        "When another character in your squad shares the same Attribute or Faction:\nWhen Soukaku consumes <color=#FFFFFF>Vortex</color> to activate <color=#FFFFFF>Fly the Flag</color>, the <color=#98EFF0>Ice DMG</color> of the squad is increased by 20% for 22s."
+        "When another character in your squad shares the same Attribute or Faction:\nWhen Soukaku consumes <color=#FFFFFF>Vortex</color> to activate <color=#FFFFFF>Fly the Flag</color>, the <color=#98EFF0>Ice DMG</color> of all squad members is increased by 20% for 22s."
       ],
       [
         "When Soukaku launches <color=#FFFFFF>Fly the Flag</color>, her ATK is increased by <color=#2BAD00>17%</color> of her initial ATK, up to 500, for 22s. When consuming <color=#FFFFFF>Vortex</color> during <color=#FFFFFF>Fly the Flag</color>, the ATK increase is doubled, up to a max of 1,000. This buff can be passed along to characters switching in via <color=#FFFFFF>Quick Assists</color> or <color=#FFFFFF>Chain Attacks</color> triggered by <color=#FFFFFF>Fly the Flag</color>, and it refreshes the duration of the buff.",
-        "When another character in your squad shares the same Attribute or Faction:\nWhen Soukaku consumes <color=#FFFFFF>Vortex</color> to activate <color=#FFFFFF>Fly the Flag</color>, the <color=#98EFF0>Ice DMG</color> of the squad is increased by 20% for 22s."
+        "When another character in your squad shares the same Attribute or Faction:\nWhen Soukaku consumes <color=#FFFFFF>Vortex</color> to activate <color=#FFFFFF>Fly the Flag</color>, the <color=#98EFF0>Ice DMG</color> of all squad members is increased by 20% for 22s."
       ],
       [
         "When Soukaku launches <color=#FFFFFF>Fly the Flag</color>, her ATK is increased by <color=#2BAD00>18%</color> of her initial ATK, up to 500, for 22s. When consuming <color=#FFFFFF>Vortex</color> during <color=#FFFFFF>Fly the Flag</color>, the ATK increase is doubled, up to a max of 1,000. This buff can be passed along to characters switching in via <color=#FFFFFF>Quick Assists</color> or <color=#FFFFFF>Chain Attacks</color> triggered by <color=#FFFFFF>Fly the Flag</color>, and it refreshes the duration of the buff.",
-        "When another character in your squad shares the same Attribute or Faction:\nWhen Soukaku consumes <color=#FFFFFF>Vortex</color> to activate <color=#FFFFFF>Fly the Flag</color>, the <color=#98EFF0>Ice DMG</color> of the squad is increased by 20% for 22s."
+        "When another character in your squad shares the same Attribute or Faction:\nWhen Soukaku consumes <color=#FFFFFF>Vortex</color> to activate <color=#FFFFFF>Fly the Flag</color>, the <color=#98EFF0>Ice DMG</color> of all squad members is increased by 20% for 22s."
       ],
       [
         "When Soukaku launches <color=#FFFFFF>Fly the Flag</color>, her ATK is increased by <color=#2BAD00>19%</color> of her initial ATK, up to 500, for 22s. When consuming <color=#FFFFFF>Vortex</color> during <color=#FFFFFF>Fly the Flag</color>, the ATK increase is doubled, up to a max of 1,000. This buff can be passed along to characters switching in via <color=#FFFFFF>Quick Assists</color> or <color=#FFFFFF>Chain Attacks</color> triggered by <color=#FFFFFF>Fly the Flag</color>, and it refreshes the duration of the buff.",
-        "When another character in your squad shares the same Attribute or Faction:\nWhen Soukaku consumes <color=#FFFFFF>Vortex</color> to activate <color=#FFFFFF>Fly the Flag</color>, the <color=#98EFF0>Ice DMG</color> of the squad is increased by 20% for 22s."
+        "When another character in your squad shares the same Attribute or Faction:\nWhen Soukaku consumes <color=#FFFFFF>Vortex</color> to activate <color=#FFFFFF>Fly the Flag</color>, the <color=#98EFF0>Ice DMG</color> of all squad members is increased by 20% for 22s."
       ],
       [
         "When Soukaku launches <color=#FFFFFF>Fly the Flag</color>, her ATK is increased by <color=#2BAD00>20%</color> of her initial ATK, up to 500, for 22s. When consuming <color=#FFFFFF>Vortex</color> during <color=#FFFFFF>Fly the Flag</color>, the ATK increase is doubled, up to a max of 1,000. This buff can be passed along to characters switching in via <color=#FFFFFF>Quick Assists</color> or <color=#FFFFFF>Chain Attacks</color> triggered by <color=#FFFFFF>Fly the Flag</color>, and it refreshes the duration of the buff.",
-        "When another character in your squad shares the same Attribute or Faction:\nWhen Soukaku consumes <color=#FFFFFF>Vortex</color> to activate <color=#FFFFFF>Fly the Flag</color>, the <color=#98EFF0>Ice DMG</color> of the squad is increased by 20% for 22s."
+        "When another character in your squad shares the same Attribute or Faction:\nWhen Soukaku consumes <color=#FFFFFF>Vortex</color> to activate <color=#FFFFFF>Fly the Flag</color>, the <color=#98EFF0>Ice DMG</color> of all squad members is increased by 20% for 22s."
       ]
     ]
   },

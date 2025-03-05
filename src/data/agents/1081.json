@@ -2,15 +2,15 @@
   "Id": 1081,
   "Name": "Billy",
   "FullName": "Billy Kid",
-  "Specialty": 1,
   "Faction": 1,
+  "Rarity": 3,
+  "Specialty": 1,
   "Element": [
     200
   ],
   "DamageType": [
     103
   ],
-  "Rarity": 3,
   "Stats": {
     "BaseAtk": 113,
     "AtkGrowth": 67335,

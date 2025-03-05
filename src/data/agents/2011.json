@@ -2,15 +2,15 @@
   "Id": 2011,
   "Name": "Wise",
   "FullName": "Wise",
-  "Specialty": 1,
   "Faction": 0,
+  "Rarity": 2,
+  "Specialty": 1,
   "Element": [
     1
   ],
   "DamageType": [
     0
   ],
-  "Rarity": 2,
   "Stats": {
     "BaseAtk": 100,
     "AtkGrowth": 57858,

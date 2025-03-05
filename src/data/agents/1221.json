@@ -2,8 +2,9 @@
   "Id": 1221,
   "Name": "Yanagi",
   "FullName": "Tsukishiro Yanagi",
-  "Specialty": 3,
   "Faction": 6,
+  "Rarity": 4,
+  "Specialty": 3,
   "Element": [
     203
   ],
@@ -11,17 +12,19 @@
     101
   ],
   "Stats": {
-    "BaseAtk": 134,
-    "AtkGrowth": 81654,
+    "BaseAtk": 126,
+    "AtkGrowth": 75860,
     "BaseDef": 49,
     "DefGrowth": 66882,
     "BaseHp": 626,
     "HpGrowth": 849779,
-    "BaseImpact": 93,
-    "BaseAnomalyMastery": 90,
-    "BaseAnomalyProficiency": 92
+    "BaseImpact": 86,
+    "BaseAnomalyMastery": 114,
+    "BaseAnomalyProficiency": 112
   },
-  "SigWeaponId": [],
+  "SigWeaponId": [
+    14122
+  ],
   "HpBoosts": [
     0,
     430,
@@ -32,11 +35,11 @@
   ],
   "AtkBoosts": [
     0,
-    48,
-    95,
-    143,
-    191,
-    239
+    45,
+    90,
+    134,
+    179,
+    224
   ],
   "DefBoosts": [
     0,
@@ -47,14 +50,14 @@
     169
   ],
   "CoreSkillInfo": {
-    "FirstCoreStat": 20101,
+    "FirstCoreStat": 31401,
     "FirstCoreStatValues": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
+      12,
+      12,
+      24,
+      24,
+      36,
+      36
     ],
     "SecondCoreStat": 12101,
     "SecondCoreStatValues": [
@@ -65,69 +68,69 @@
       50,
       75
     ],
-    "PurpleCoreMat": 110501,
-    "GoldenCoreMat": 110001
+    "PurpleCoreMat": 110505,
+    "GoldenCoreMat": 110002
   },
   "CoreSkillLevels": {
     "Name": [
-      "Yanagi_UniqueSkill_Title",
-      "Yanagi_MathSkill_Title"
+      "Core Passive: Lunar Eclipse",
+      "Additional Ability: Gessou"
     ],
     "Descriptions": [
       [
-        "Yanagi_UniqueSkill_01_Desc",
-        "Yanagi_MathSkill_Desc"
+        "After Yanagi activates her <color=#FFFFFF>EX Special Attack</color>, the DMG multiplier of <color=#FFFFFF>Disorder</color> is increased by <color=#2BAD00>125%</color> when any squad member applies the <color=#FFFFFF>Disorder</color> effect to an enemy, lasting 15s.\nWhen her <color=#FFFFFF>EX Special Attack</color> hits an enemy, Yanagi's <color=#2EB6FF>Electric DMG</color> against the target is increased by <color=#2BAD00>10%</color> for 15s.",
+        "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same attribute:\nAfter switching stances, when Yanagi hits an enemy with <color=#FFFFFF>Basic Attack: Tsukuyomi Kagura</color>, <color=#2EB6FF>Electric Anomaly Buildup</color> increases by 45% for 8s."
       ],
       [
-        "Yanagi_UniqueSkill_02_Desc",
-        "Yanagi_MathSkill_Desc"
+        "After Yanagi activates her <color=#FFFFFF>EX Special Attack</color>, the DMG multiplier of <color=#FFFFFF>Disorder</color> is increased by <color=#2BAD00>145%</color> when any squad member applies the <color=#FFFFFF>Disorder</color> effect to an enemy, lasting 15s.\nWhen her <color=#FFFFFF>EX Special Attack</color> hits an enemy, Yanagi's <color=#2EB6FF>Electric DMG</color> against the target is increased by <color=#2BAD00>11.6%</color> for 15s.",
+        "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same attribute:\nAfter switching stances, when Yanagi hits an enemy with <color=#FFFFFF>Basic Attack: Tsukuyomi Kagura</color>, <color=#2EB6FF>Electric Anomaly Buildup</color> increases by 45% for 8s."
       ],
       [
-        "Yanagi_UniqueSkill_03_Desc",
-        "Yanagi_MathSkill_Desc"
+        "After Yanagi activates her <color=#FFFFFF>EX Special Attack</color>, the DMG multiplier of <color=#FFFFFF>Disorder</color> is increased by <color=#2BAD00>166%</color> when any squad member applies the <color=#FFFFFF>Disorder</color> effect to an enemy, lasting 15s.\nWhen her <color=#FFFFFF>EX Special Attack</color> hits an enemy, Yanagi's <color=#2EB6FF>Electric DMG</color> against the target is increased by <color=#2BAD00>13.3%</color> for 15s.",
+        "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same attribute:\nAfter switching stances, when Yanagi hits an enemy with <color=#FFFFFF>Basic Attack: Tsukuyomi Kagura</color>, <color=#2EB6FF>Electric Anomaly Buildup</color> increases by 45% for 8s."
       ],
       [
-        "Yanagi_UniqueSkill_04_Desc",
-        "Yanagi_MathSkill_Desc"
+        "After Yanagi activates her <color=#FFFFFF>EX Special Attack</color>, the DMG multiplier of <color=#FFFFFF>Disorder</color> is increased by <color=#2BAD00>188%</color> when any squad member applies the <color=#FFFFFF>Disorder</color> effect to an enemy, lasting 15s.\nWhen her <color=#FFFFFF>EX Special Attack</color> hits an enemy, Yanagi's <color=#2EB6FF>Electric DMG</color> against the target is increased by <color=#2BAD00>15%</color> for 15s.",
+        "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same attribute:\nAfter switching stances, when Yanagi hits an enemy with <color=#FFFFFF>Basic Attack: Tsukuyomi Kagura</color>, <color=#2EB6FF>Electric Anomaly Buildup</color> increases by 45% for 8s."
       ],
       [
-        "Yanagi_UniqueSkill_05_Desc",
-        "Yanagi_MathSkill_Desc"
+        "After Yanagi activates her <color=#FFFFFF>EX Special Attack</color>, the DMG multiplier of <color=#FFFFFF>Disorder</color> is increased by <color=#2BAD00>208%</color> when any squad member applies the <color=#FFFFFF>Disorder</color> effect to an enemy, lasting 15s.\nWhen her <color=#FFFFFF>EX Special Attack</color> hits an enemy, Yanagi's <color=#2EB6FF>Electric DMG</color> against the target is increased by <color=#2BAD00>16.6%</color> for 15s.",
+        "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same attribute:\nAfter switching stances, when Yanagi hits an enemy with <color=#FFFFFF>Basic Attack: Tsukuyomi Kagura</color>, <color=#2EB6FF>Electric Anomaly Buildup</color> increases by 45% for 8s."
       ],
       [
-        "Yanagi_UniqueSkill_06_Desc",
-        "Yanagi_MathSkill_Desc"
+        "After Yanagi activates her <color=#FFFFFF>EX Special Attack</color>, the DMG multiplier of <color=#FFFFFF>Disorder</color> is increased by <color=#2BAD00>230%</color> when any squad member applies the <color=#FFFFFF>Disorder</color> effect to an enemy, lasting 15s.\nWhen her <color=#FFFFFF>EX Special Attack</color> hits an enemy, Yanagi's <color=#2EB6FF>Electric DMG</color> against the target is increased by <color=#2BAD00>18.3%</color> for 15s.",
+        "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same attribute:\nAfter switching stances, when Yanagi hits an enemy with <color=#FFFFFF>Basic Attack: Tsukuyomi Kagura</color>, <color=#2EB6FF>Electric Anomaly Buildup</color> increases by 45% for 8s."
       ],
       [
-        "Yanagi_UniqueSkill_07_Desc",
-        "Yanagi_MathSkill_Desc"
+        "After Yanagi activates her <color=#FFFFFF>EX Special Attack</color>, the DMG multiplier of <color=#FFFFFF>Disorder</color> is increased by <color=#2BAD00>250%</color> when any squad member applies the <color=#FFFFFF>Disorder</color> effect to an enemy, lasting 15s.\nWhen her <color=#FFFFFF>EX Special Attack</color> hits an enemy, Yanagi's <color=#2EB6FF>Electric DMG</color> against the target is increased by <color=#2BAD00>20%</color> for 15s.",
+        "When another character in your squad is an <color=#FFFFFF>Anomaly</color> character or shares the same attribute:\nAfter switching stances, when Yanagi hits an enemy with <color=#FFFFFF>Basic Attack: Tsukuyomi Kagura</color>, <color=#2EB6FF>Electric Anomaly Buildup</color> increases by 45% for 8s."
       ]
     ]
   },
   "Cons": [
     {
-      "Name": "Yanagi_Talent_01_Title",
-      "Effect": "Yanagi_Talent_01_Desc_01"
+      "Name": "Know Thy Self, Know Thy Enemy",
+      "Effect": "When any squad member inflicts an Anomaly on an enemy, Yanagi gains 1 stack of <color=#FFFFFF>Clarity</color>, lasting 15s, stacking up to 3 times. Repeated triggers reset the duration. Upon being hit by an enemy attack, Yanagi consumes 1 stack of <color=#FFFFFF>Clarity</color> to gain invulnerability for 1s. When Yanagi has 1 or more stacks of <color=#FFFFFF>Clarity</color>, her Anomaly Proficiency increases by 80."
     },
     {
-      "Name": "Yanagi_Talent_02_Title",
-      "Effect": "Yanagi_Talent_02_Desc_01"
+      "Name": "Outstanding Adaptability",
+      "Effect": "During her <color=#FFFFFF>EX Special Attack</color>, the rapid thrust's <color=#2EB6FF>Electric Anomaly Buildup</color> increases by 20%. Holding down the Special Attack button after a rapid thrust hits an enemy will consume 10 additional Energy to launch another thrust. If Energy is insufficient or the button is released, the attack automatically follows up with the downward attack. When the downward attack hits an enemy suffering an Anomaly and triggers <color=#FFFFFF>Polarity Disorder</color>, the DMG multiplier increases to 20% of the original <color=#FFFFFF>Disorder</color> effect. Each additional thrust increases this multiplier by 15%, up to a maximum of 2 extra thrusts."
     },
     {
-      "Name": "Yanagi_Talent_03_Title",
+      "Name": "Tsukishiro Style Management",
       "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
     },
     {
-      "Name": "Yanagi_Talent_04_Title",
-      "Effect": "Yanagi_Talent_04_Desc_01"
+      "Name": "Chessmaster",
+      "Effect": "When Yanagi inflicts Attribute Anomaly DMG on an enemy, they suffer the <color=#FFFFFF>Exposed</color> effect, lasting 15s. Attacks on enemies under the <color=#FFFFFF>Expose</color> effect will have 16% increased PEN Ratio."
     },
     {
-      "Name": "Yanagi_Talent_05_Title",
+      "Name": "\"Other Mother\"",
       "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
     },
     {
-      "Name": "Yanagi_Talent_06_Title",
-      "Effect": "Yanagi_Talent_06_Desc_01"
+      "Name": "Inhuman Blood",
+      "Effect": "After a thrust attack during her <color=#FFFFFF>EX Special Attack</color>, the duration of the <color=#FFFFFF>Shinrabanshou</color> state increases to 30s. While the state is active, <color=#FFFFFF>EX Special Attack</color> DMG increases by 20%. The maximum number of times the additional DMG multiplier increase effect for <color=#FFFFFF>Polarity Disorder</color> in <color=#FFFFFF>Outstanding Adaptability</color> can be triggered increases to 4, and the Energy cost for the first 4 additional thrust attacks is halved."
     }
   ]
 }

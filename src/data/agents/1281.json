@@ -2,15 +2,15 @@
   "Id": 1281,
   "Name": "Piper",
   "FullName": "Piper Wheel",
-  "Specialty": 3,
   "Faction": 4,
+  "Rarity": 3,
+  "Specialty": 3,
   "Element": [
     200
   ],
   "DamageType": [
     101
   ],
-  "Rarity": 3,
   "Stats": {
     "BaseAtk": 109,
     "AtkGrowth": 64308,

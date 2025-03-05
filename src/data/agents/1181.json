@@ -2,15 +2,15 @@
   "Id": 1181,
   "Name": "Grace",
   "FullName": "Grace Howard",
-  "Specialty": 3,
   "Faction": 3,
+  "Rarity": 4,
+  "Specialty": 3,
   "Element": [
     203
   ],
   "DamageType": [
     103
   ],
-  "Rarity": 4,
   "Stats": {
     "BaseAtk": 119,
     "AtkGrowth": 71181,

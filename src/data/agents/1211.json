@@ -2,15 +2,15 @@
   "Id": 1211,
   "Name": "Rina",
   "FullName": "Alexandrina Sebastiane",
-  "Specialty": 4,
   "Faction": 2,
+  "Rarity": 4,
+  "Specialty": 4,
   "Element": [
     203
   ],
   "DamageType": [
     102
   ],
-  "Rarity": 4,
   "Stats": {
     "BaseAtk": 103,
     "AtkGrowth": 60201,
@@ -79,31 +79,31 @@
     "Descriptions": [
       [
         "When ordering Drusilla or Anastella to attack, other squad members' PEN Ratio increases together with Rina's, by 25% of Rina's PEN Ratio + <color=#2BAD00>6%</color>, up to 30%. The effect ends when both Drusilla and Anastella return to Rina.",
-        "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of <color=#2eb6ff>Shock</color> inflicted on enemies by any character by 3s. When <color=#2eb6ff>Shocked</color> enemies are on the field, all squad members' <color=#2eb6ff>Electric DMG</color> increases by 10%."
+        "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of <color=#2EB6FF>Shock</color> inflicted on enemies by any character by 3s. When <color=#2EB6FF>Shocked</color> enemies are on the field, all squad members' <color=#2EB6FF>Electric DMG</color> increases by 10%."
       ],
       [
         "When ordering Drusilla or Anastella to attack, other squad members' PEN Ratio increases together with Rina's, by 25% of Rina's PEN Ratio + <color=#2BAD00>7.5%</color>, up to 30%. The effect ends when both Drusilla and Anastella return to Rina.",
-        "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of <color=#2eb6ff>Shock</color> inflicted on enemies by any character by 3s. When <color=#2eb6ff>Shocked</color> enemies are on the field, all squad members' <color=#2eb6ff>Electric DMG</color> increases by 10%."
+        "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of <color=#2EB6FF>Shock</color> inflicted on enemies by any character by 3s. When <color=#2EB6FF>Shocked</color> enemies are on the field, all squad members' <color=#2EB6FF>Electric DMG</color> increases by 10%."
       ],
       [
         "When ordering Drusilla or Anastella to attack, other squad members' PEN Ratio increases together with Rina's, by 25% of Rina's PEN Ratio + <color=#2BAD00>9%</color>, up to 30%. The effect ends when both Drusilla and Anastella return to Rina.",
-        "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of <color=#2eb6ff>Shock</color> inflicted on enemies by any character by 3s. When <color=#2eb6ff>Shocked</color> enemies are on the field, all squad members' <color=#2eb6ff>Electric DMG</color> increases by 10%."
+        "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of <color=#2EB6FF>Shock</color> inflicted on enemies by any character by 3s. When <color=#2EB6FF>Shocked</color> enemies are on the field, all squad members' <color=#2EB6FF>Electric DMG</color> increases by 10%."
       ],
       [
         "When ordering Drusilla or Anastella to attack, other squad members' PEN Ratio increases together with Rina's, by 25% of Rina's PEN Ratio + <color=#2BAD00>10.2%</color>, up to 30%. The effect ends when both Drusilla and Anastella return to Rina.",
-        "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of <color=#2eb6ff>Shock</color> inflicted on enemies by any character by 3s. When <color=#2eb6ff>Shocked</color> enemies are on the field, all squad members' <color=#2eb6ff>Electric DMG</color> increases by 10%."
+        "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of <color=#2EB6FF>Shock</color> inflicted on enemies by any character by 3s. When <color=#2EB6FF>Shocked</color> enemies are on the field, all squad members' <color=#2EB6FF>Electric DMG</color> increases by 10%."
       ],
       [
         "When ordering Drusilla or Anastella to attack, other squad members' PEN Ratio increases together with Rina's, by 25% of Rina's PEN Ratio + <color=#2BAD00>10.8%</color>, up to 30%. The effect ends when both Drusilla and Anastella return to Rina.",
-        "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of <color=#2eb6ff>Shock</color> inflicted on enemies by any character by 3s. When <color=#2eb6ff>Shocked</color> enemies are on the field, all squad members' <color=#2eb6ff>Electric DMG</color> increases by 10%."
+        "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of <color=#2EB6FF>Shock</color> inflicted on enemies by any character by 3s. When <color=#2EB6FF>Shocked</color> enemies are on the field, all squad members' <color=#2EB6FF>Electric DMG</color> increases by 10%."
       ],
       [
         "When ordering Drusilla or Anastella to attack, other squad members' PEN Ratio increases together with Rina's, by 25% of Rina's PEN Ratio + <color=#2BAD00>11.4%</color>, up to 30%. The effect ends when both Drusilla and Anastella return to Rina.",
-        "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of <color=#2eb6ff>Shock</color> inflicted on enemies by any character by 3s. When <color=#2eb6ff>Shocked</color> enemies are on the field, all squad members' <color=#2eb6ff>Electric DMG</color> increases by 10%."
+        "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of <color=#2EB6FF>Shock</color> inflicted on enemies by any character by 3s. When <color=#2EB6FF>Shocked</color> enemies are on the field, all squad members' <color=#2EB6FF>Electric DMG</color> increases by 10%."
       ],
       [
         "When ordering Drusilla or Anastella to attack, other squad members' PEN Ratio increases together with Rina's, by 25% of Rina's PEN Ratio + <color=#2BAD00>12%</color>, up to 30%. The effect ends when both Drusilla and Anastella return to Rina.",
-        "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of <color=#2eb6ff>Shock</color> inflicted on enemies by any character by 3s. When <color=#2eb6ff>Shocked</color> enemies are on the field, all squad members' <color=#2eb6ff>Electric DMG</color> increases by 10%."
+        "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of <color=#2EB6FF>Shock</color> inflicted on enemies by any character by 3s. When <color=#2EB6FF>Shocked</color> enemies are on the field, all squad members' <color=#2EB6FF>Electric DMG</color> increases by 10%."
       ]
     ]
   },

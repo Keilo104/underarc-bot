@@ -1,0 +1,24 @@
+{
+  "Id": 3111910,
+  "Specialty": 1,
+  "Element": [
+    202
+  ],
+  "DamageType": [
+    101
+  ],
+  "Stats": {
+    "BaseAtk": 135,
+    "AtkGrowth": 82578,
+    "BaseDef": 49,
+    "DefGrowth": 66203,
+    "BaseHp": 617,
+    "HpGrowth": 837238,
+    "BaseImpact": 93,
+    "BaseAnomalyMastery": 93,
+    "BaseAnomalyProficiency": 94
+  },
+  "SigWeaponId": [
+    14119
+  ]
+}

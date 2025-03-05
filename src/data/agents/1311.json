@@ -1,0 +1,136 @@
+{
+  "Id": 1311,
+  "Name": "Astra Yao",
+  "FullName": "Astra Yao",
+  "Faction": 8,
+  "Rarity": 4,
+  "Specialty": 4,
+  "Element": [
+    205
+  ],
+  "DamageType": [
+    102
+  ],
+  "Stats": {
+    "BaseAtk": 103,
+    "AtkGrowth": 59961,
+    "BaseDef": 48,
+    "DefGrowth": 65524,
+    "BaseHp": 692,
+    "HpGrowth": 939358,
+    "BaseImpact": 83,
+    "BaseAnomalyMastery": 92,
+    "BaseAnomalyProficiency": 93
+  },
+  "SigWeaponId": [
+    14131
+  ],
+  "HpBoosts": [
+    0,
+    475,
+    950,
+    1425,
+    1900,
+    2375
+  ],
+  "AtkBoosts": [
+    0,
+    37,
+    74,
+    110,
+    147,
+    184
+  ],
+  "DefBoosts": [
+    0,
+    33,
+    66,
+    99,
+    133,
+    166
+  ],
+  "CoreSkillInfo": {
+    "FirstCoreStat": 30501,
+    "FirstCoreStatValues": [
+      12,
+      12,
+      24,
+      24,
+      36,
+      36
+    ],
+    "SecondCoreStat": 12101,
+    "SecondCoreStatValues": [
+      0,
+      25,
+      25,
+      50,
+      50,
+      75
+    ],
+    "PurpleCoreMat": 110508,
+    "GoldenCoreMat": 110003
+  },
+  "CoreSkillLevels": {
+    "Name": [
+      "Core Passive: \"Graceful Andante\"",
+      "Additional Ability: \"Moonlit Frenzy\""
+    ],
+    "Descriptions": [
+      [
+        "During the <color=#FFFFFF>Idyllic Cadenza</color> state, when other squad members switch in through a <color=#FFFFFF>Quick Assist</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Evasive Assist</color>, and when Astra Yao expends Energy to release <color=#FFFFFF>Tremolo</color> to attack, both Astra Yao and the incoming character's ATK are increased. The increase is equal to <color=#2BAD00>22%</color> of Astra Yao's initial ATK, up to a maximum of 1,200. The effect lasts for 20s and can be extended up to 30s with repeated triggers.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Energy is consumed to trigger a <color=#FFFFFF>Precise Assist</color> or <color=#FFFFFF>Basic Attack: Finale</color>, Astra Yao will additionally follow up with 1 <color=#FFFFFF>Tremolo</color> and 3 <color=#FFFFFF>Tone Clusters</color>."
+      ],
+      [
+        "During the <color=#FFFFFF>Idyllic Cadenza</color> state, when other squad members switch in through a <color=#FFFFFF>Quick Assist</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Evasive Assist</color>, and when Astra Yao expends Energy to release <color=#FFFFFF>Tremolo</color> to attack, both Astra Yao and the incoming character's ATK are increased. The increase is equal to <color=#2BAD00>24%</color> of Astra Yao's initial ATK, up to a maximum of 1,200. The effect lasts for 20s and can be extended up to 30s with repeated triggers.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Energy is consumed to trigger a <color=#FFFFFF>Precise Assist</color> or <color=#FFFFFF>Basic Attack: Finale</color>, Astra Yao will additionally follow up with 1 <color=#FFFFFF>Tremolo</color> and 3 <color=#FFFFFF>Tone Clusters</color>."
+      ],
+      [
+        "During the <color=#FFFFFF>Idyllic Cadenza</color> state, when other squad members switch in through a <color=#FFFFFF>Quick Assist</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Evasive Assist</color>, and when Astra Yao expends Energy to release <color=#FFFFFF>Tremolo</color> to attack, both Astra Yao and the incoming character's ATK are increased. The increase is equal to <color=#2BAD00>26%</color> of Astra Yao's initial ATK, up to a maximum of 1,200. The effect lasts for 20s and can be extended up to 30s with repeated triggers.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Energy is consumed to trigger a <color=#FFFFFF>Precise Assist</color> or <color=#FFFFFF>Basic Attack: Finale</color>, Astra Yao will additionally follow up with 1 <color=#FFFFFF>Tremolo</color> and 3 <color=#FFFFFF>Tone Clusters</color>."
+      ],
+      [
+        "During the <color=#FFFFFF>Idyllic Cadenza</color> state, when other squad members switch in through a <color=#FFFFFF>Quick Assist</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Evasive Assist</color>, and when Astra Yao expends Energy to release <color=#FFFFFF>Tremolo</color> to attack, both Astra Yao and the incoming character's ATK are increased. The increase is equal to <color=#2BAD00>28%</color> of Astra Yao's initial ATK, up to a maximum of 1,200. The effect lasts for 20s and can be extended up to 30s with repeated triggers.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Energy is consumed to trigger a <color=#FFFFFF>Precise Assist</color> or <color=#FFFFFF>Basic Attack: Finale</color>, Astra Yao will additionally follow up with 1 <color=#FFFFFF>Tremolo</color> and 3 <color=#FFFFFF>Tone Clusters</color>."
+      ],
+      [
+        "During the <color=#FFFFFF>Idyllic Cadenza</color> state, when other squad members switch in through a <color=#FFFFFF>Quick Assist</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Evasive Assist</color>, and when Astra Yao expends Energy to release <color=#FFFFFF>Tremolo</color> to attack, both Astra Yao and the incoming character's ATK are increased. The increase is equal to <color=#2BAD00>30%</color> of Astra Yao's initial ATK, up to a maximum of 1,200. The effect lasts for 20s and can be extended up to 30s with repeated triggers.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Energy is consumed to trigger a <color=#FFFFFF>Precise Assist</color> or <color=#FFFFFF>Basic Attack: Finale</color>, Astra Yao will additionally follow up with 1 <color=#FFFFFF>Tremolo</color> and 3 <color=#FFFFFF>Tone Clusters</color>."
+      ],
+      [
+        "During the <color=#FFFFFF>Idyllic Cadenza</color> state, when other squad members switch in through a <color=#FFFFFF>Quick Assist</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Evasive Assist</color>, and when Astra Yao expends Energy to release <color=#FFFFFF>Tremolo</color> to attack, both Astra Yao and the incoming character's ATK are increased. The increase is equal to <color=#2BAD00>32%</color> of Astra Yao's initial ATK, up to a maximum of 1,200. The effect lasts for 20s and can be extended up to 30s with repeated triggers.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Energy is consumed to trigger a <color=#FFFFFF>Precise Assist</color> or <color=#FFFFFF>Basic Attack: Finale</color>, Astra Yao will additionally follow up with 1 <color=#FFFFFF>Tremolo</color> and 3 <color=#FFFFFF>Tone Clusters</color>."
+      ],
+      [
+        "During the <color=#FFFFFF>Idyllic Cadenza</color> state, when other squad members switch in through a <color=#FFFFFF>Quick Assist</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Evasive Assist</color>, and when Astra Yao expends Energy to release <color=#FFFFFF>Tremolo</color> to attack, both Astra Yao and the incoming character's ATK are increased. The increase is equal to <color=#2BAD00>35%</color> of Astra Yao's initial ATK, up to a maximum of 1,200. The effect lasts for 20s and can be extended up to 30s with repeated triggers.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Energy is consumed to trigger a <color=#FFFFFF>Precise Assist</color> or <color=#FFFFFF>Basic Attack: Finale</color>, Astra Yao will additionally follow up with 1 <color=#FFFFFF>Tremolo</color> and 3 <color=#FFFFFF>Tone Clusters</color>."
+      ]
+    ]
+  },
+  "Cons": [
+    {
+      "Name": "12-Tone Equal Temperament",
+      "Effect": "When Astra Yao's attack hits an enemy, the target's All-Attribute RES is reduced by 6%, stacking up to 3 times and lasting 30s. Repeated triggers reset the duration. Upon entering the battlefield, Astra Yao immediately gains 1,000 Decibels. When activating her <color=#FFFFFF>Ultimate</color>, all squad members gain 1 stack of <color=#FFFFFF>Song of Protection</color> for 60s. When attacked by an enemy, consume <color=#FFFFFF>Song of Protection</color>, granting Invulnerability for 1s."
+    },
+    {
+      "Name": "Art of Greed",
+      "Effect": "The ATK buff from <color=#FFFFFF>Core Passive: \"Graceful Andante\"</color> is further increased by 19%, with an increased maximum of 400. While in the <color=#FFFFFF>Idyllic Cadenza</color> state, when other squad members switch in through a <color=#FFFFFF>Quick Assist</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Evasive Assist</color>, Astra Yao will additionally follow up with 1 <color=#FFFFFF>Tremolo</color> and 3 <color=#FFFFFF>Tone Clusters</color> to attack. This effect can trigger once every 3s."
+    },
+    {
+      "Name": "Interwoven Staff Notation",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "\"Hair Upon Your Nape\"",
+      "Effect": "After activating a <color=#FFFFFF>Chain Attack</color> or <color=#FFFFFF>Ultimate</color>, within 15s, Astra Yao can trigger a <color=#FFFFFF>Quick Assist</color> even if she does not have <color=#FFFFFF>Chords</color>. When the attack hits an enemy, the interval for triggering a <color=#FFFFFF>Quick Assist</color> is reduced to 1s. While in the <color=#FFFFFF>Idyllic Cadenza</color> state, when other squad members enter the field via a <color=#FFFFFF>Quick Assist</color>, they will receive different buffs based on their specialty, and this effect can be triggered once every 3s for the entire squad: <color=#FFFFFF>Attack</color>: The next <color=#FFFFFF>Quick Assist</color> heavy attack on an enemy will deal extra DMG equal to 300% of Astra Yao's ATK; <color=#FFFFFF>Anomaly</color>: The next <color=#FFFFFF>Quick Assist</color> will have 50% increased Anomaly Buildup; <color=#FFFFFF>Stun</color>: The next <color=#FFFFFF>Quick Assist</color> will inflict 50% increased Daze."
+    },
+    {
+      "Name": "Proxy and Silk String",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "We Are the World",
+      "Effect": "While in the <color=#FFFFFF>Idyllic Cadenza</color> state, the DMG multiplier for <color=#FFFFFF>Tremolo</color> and <color=#FFFFFF>Tone Clusters</color> released or followed up with will increase to 200% of the original, and CRIT Rate is increased by 80%. When triggering a <color=#FFFFFF>Precise Assist</color>, Astra Yao will automatically follow up with the charged 3rd-hit of <color=#FFFFFF>Basic Attack: \"Capriccio\"</color>, with a 80% increased CRIT Rate. This effect can trigger once every 10s."
+    }
+  ]
+}

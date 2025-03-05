@@ -2,15 +2,15 @@
   "Id": 1061,
   "Name": "Corin",
   "FullName": "Corin Wickes",
-  "Specialty": 1,
   "Faction": 2,
+  "Rarity": 3,
+  "Specialty": 1,
   "Element": [
     200
   ],
   "DamageType": [
     101
   ],
-  "Rarity": 3,
   "Stats": {
     "BaseAtk": 116,
     "AtkGrowth": 69346,

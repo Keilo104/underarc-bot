@@ -2,15 +2,15 @@
   "Id": 1031,
   "Name": "Nicole",
   "FullName": "Nicole Demara",
-  "Specialty": 4,
   "Faction": 1,
+  "Rarity": 3,
+  "Specialty": 4,
   "Element": [
     205
   ],
   "DamageType": [
     102
   ],
-  "Rarity": 3,
   "Stats": {
     "BaseAtk": 93,
     "AtkGrowth": 53249,

@@ -1,0 +1,136 @@
+{
+  "Id": 1321,
+  "Name": "Evelyn",
+  "FullName": "Evelyn Chevalier",
+  "Faction": 8,
+  "Rarity": 4,
+  "Specialty": 1,
+  "Element": [
+    201
+  ],
+  "DamageType": [
+    101
+  ],
+  "Stats": {
+    "BaseAtk": 134,
+    "AtkGrowth": 81654,
+    "BaseDef": 49,
+    "DefGrowth": 66882,
+    "BaseHp": 626,
+    "HpGrowth": 849779,
+    "BaseImpact": 93,
+    "BaseAnomalyMastery": 90,
+    "BaseAnomalyProficiency": 92
+  },
+  "SigWeaponId": [
+    14132
+  ],
+  "HpBoosts": [
+    0,
+    430,
+    859,
+    1289,
+    1719,
+    2149
+  ],
+  "AtkBoosts": [
+    0,
+    48,
+    95,
+    143,
+    191,
+    239
+  ],
+  "DefBoosts": [
+    0,
+    34,
+    68,
+    101,
+    135,
+    169
+  ],
+  "CoreSkillInfo": {
+    "FirstCoreStat": 20101,
+    "FirstCoreStatValues": [
+      480,
+      480,
+      960,
+      960,
+      1440,
+      1440
+    ],
+    "SecondCoreStat": 12101,
+    "SecondCoreStatValues": [
+      0,
+      25,
+      25,
+      50,
+      50,
+      75
+    ],
+    "PurpleCoreMat": 110504,
+    "GoldenCoreMat": 110004
+  },
+  "CoreSkillLevels": {
+    "Name": [
+      "Core Passive: Entangle",
+      "Additional Ability: Ambush Point"
+    ],
+    "Descriptions": [
+      [
+        "Upon entering <color=#FFFFFF>Binding Seal</color>, Evelyn's CRIT Rate increases by <color=#2BAD00>12.5%</color>. After leaving <color=#FFFFFF>Binding Seal</color>, she retains the buff for 10s. If Evelyn switches to another character while in <color=#FFFFFF>Binding Seal</color>, she will automatically follow up with <color=#FFFFFF>Special Attack: Binding Sunder - First Form</color>.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> or <color=#FFFFFF>Support</color> character:\nEvelyn's <color=#FFFFFF>Chain Attack</color> and <color=#FFFFFF>Ultimate</color> DMG increases by 30%. When Evelyn's CRIT Rate is at or over 80%, the DMG multiplier for her <color=#FFFFFF>Chain Attack</color> and <color=#FFFFFF>Ultimate</color> increases to 125% of the original value."
+      ],
+      [
+        "Upon entering <color=#FFFFFF>Binding Seal</color>, Evelyn's CRIT Rate increases by <color=#2BAD00>14.6%</color>. After leaving <color=#FFFFFF>Binding Seal</color>, she retains the buff for 10s. If Evelyn switches to another character while in <color=#FFFFFF>Binding Seal</color>, she will automatically follow up with <color=#FFFFFF>Special Attack: Binding Sunder - First Form</color>.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> or <color=#FFFFFF>Support</color> character:\nEvelyn's <color=#FFFFFF>Chain Attack</color> and <color=#FFFFFF>Ultimate</color> DMG increases by 30%. When Evelyn's CRIT Rate is at or over 80%, the DMG multiplier for her <color=#FFFFFF>Chain Attack</color> and <color=#FFFFFF>Ultimate</color> increases to 125% of the original value."
+      ],
+      [
+        "Upon entering <color=#FFFFFF>Binding Seal</color>, Evelyn's CRIT Rate increases by <color=#2BAD00>16.7%</color>. After leaving <color=#FFFFFF>Binding Seal</color>, she retains the buff for 10s. If Evelyn switches to another character while in <color=#FFFFFF>Binding Seal</color>, she will automatically follow up with <color=#FFFFFF>Special Attack: Binding Sunder - First Form</color>.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> or <color=#FFFFFF>Support</color> character:\nEvelyn's <color=#FFFFFF>Chain Attack</color> and <color=#FFFFFF>Ultimate</color> DMG increases by 30%. When Evelyn's CRIT Rate is at or over 80%, the DMG multiplier for her <color=#FFFFFF>Chain Attack</color> and <color=#FFFFFF>Ultimate</color> increases to 125% of the original value."
+      ],
+      [
+        "Upon entering <color=#FFFFFF>Binding Seal</color>, Evelyn's CRIT Rate increases by <color=#2BAD00>18.8%</color>. After leaving <color=#FFFFFF>Binding Seal</color>, she retains the buff for 10s. If Evelyn switches to another character while in <color=#FFFFFF>Binding Seal</color>, she will automatically follow up with <color=#FFFFFF>Special Attack: Binding Sunder - First Form</color>.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> or <color=#FFFFFF>Support</color> character:\nEvelyn's <color=#FFFFFF>Chain Attack</color> and <color=#FFFFFF>Ultimate</color> DMG increases by 30%. When Evelyn's CRIT Rate is at or over 80%, the DMG multiplier for her <color=#FFFFFF>Chain Attack</color> and <color=#FFFFFF>Ultimate</color> increases to 125% of the original value."
+      ],
+      [
+        "Upon entering <color=#FFFFFF>Binding Seal</color>, Evelyn's CRIT Rate increases by <color=#2BAD00>20.8%</color>. After leaving <color=#FFFFFF>Binding Seal</color>, she retains the buff for 10s. If Evelyn switches to another character while in <color=#FFFFFF>Binding Seal</color>, she will automatically follow up with <color=#FFFFFF>Special Attack: Binding Sunder - First Form</color>.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> or <color=#FFFFFF>Support</color> character:\nEvelyn's <color=#FFFFFF>Chain Attack</color> and <color=#FFFFFF>Ultimate</color> DMG increases by 30%. When Evelyn's CRIT Rate is at or over 80%, the DMG multiplier for her <color=#FFFFFF>Chain Attack</color> and <color=#FFFFFF>Ultimate</color> increases to 125% of the original value."
+      ],
+      [
+        "Upon entering <color=#FFFFFF>Binding Seal</color>, Evelyn's CRIT Rate increases by <color=#2BAD00>23%</color>. After leaving <color=#FFFFFF>Binding Seal</color>, she retains the buff for 10s. If Evelyn switches to another character while in <color=#FFFFFF>Binding Seal</color>, she will automatically follow up with <color=#FFFFFF>Special Attack: Binding Sunder - First Form</color>.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> or <color=#FFFFFF>Support</color> character:\nEvelyn's <color=#FFFFFF>Chain Attack</color> and <color=#FFFFFF>Ultimate</color> DMG increases by 30%. When Evelyn's CRIT Rate is at or over 80%, the DMG multiplier for her <color=#FFFFFF>Chain Attack</color> and <color=#FFFFFF>Ultimate</color> increases to 125% of the original value."
+      ],
+      [
+        "Upon entering <color=#FFFFFF>Binding Seal</color>, Evelyn's CRIT Rate increases by <color=#2BAD00>25%</color>. After leaving <color=#FFFFFF>Binding Seal</color>, she retains the buff for 10s. If Evelyn switches to another character while in <color=#FFFFFF>Binding Seal</color>, she will automatically follow up with <color=#FFFFFF>Special Attack: Binding Sunder - First Form</color>.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> or <color=#FFFFFF>Support</color> character:\nEvelyn's <color=#FFFFFF>Chain Attack</color> and <color=#FFFFFF>Ultimate</color> DMG increases by 30%. When Evelyn's CRIT Rate is at or over 80%, the DMG multiplier for her <color=#FFFFFF>Chain Attack</color> and <color=#FFFFFF>Ultimate</color> increases to 125% of the original value."
+      ]
+    ]
+  },
+  "Cons": [
+    {
+      "Name": "Dreamweave",
+      "Effect": "Upon entering the battlefield, Evelyn immediately gains 1,500 Decibels. Enemies affected by <color=#FFFFFF>Binding Seal</color> will be <color=#FFFFFF>Bound</color>. When Evelyn attacks <color=#FFFFFF>Bound</color> enemies, she ignores 12% of their DEF. When Evelyn uses <color=#FFFFFF>Special Attack: Binding Sunder - First Form</color> or <color=#FFFFFF>EX Special Attack: Binding Sunder - Final Form</color>, the <color=#FFFFFF>Bound</color> effect spreads to all enemies hit by the skill. This spread <color=#FFFFFF>Bound</color> effect lasts for 10s."
+    },
+    {
+      "Name": "Dance of Fire",
+      "Effect": "Evelyn's ATK increases by 15%. When Evelyn uses <color=#FFFFFF>Basic Attack: Garrote - First Form</color> or <color=#FFFFFF>Basic Attack: Garrote - Second Form</color>, the <color=#FFFFFF>Burning Embers</color> consumed will be returned. This effect can trigger once every 25s. When Evelyn consumes <color=#FFFFFF>Burning Tether Point</color> to trigger <color=#FFFFFF>Chain Attack: Lunalux - Snare</color>, the skill's Interrupt Level increases."
+    },
+    {
+      "Name": "Metamorphosis",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "Fate's Melody",
+      "Effect": "Upon activating a <color=#FFFFFF>Chain Attack</color> or <color=#FFFFFF>Ultimate</color>, Evelyn immediately gains a shield equal to 10% of her Max HP. While this shield exists, Evelyn's CRIT DMG increases by 40%."
+    },
+    {
+      "Name": "Crimson Threads Like the Dawn",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "Bond of Light and Shadow",
+      "Effect": "When activating her <color=#FFFFFF>Chain Attack</color> or <color=#FFFFFF>Ultimate</color>, Evelyn gains <color=#FFFFFF>Shadowstring Edge</color> for 20s. During <color=#FFFFFF>Shadowstring Edge</color>, when Evelyn hits enemies with a <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dash Attack</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color>, an additional <color=#FFFFFF>Lunalux Garrote</color> will be released for a follow-up attack, dealing <color=#FF5521>Fire DMG</color> equal to 375% of Evelyn's ATK. This DMG is considered <color=#FFFFFF>Chain Attack</color> DMG and can trigger up to 16 times. The number of triggers will be refreshed each time <color=#FFFFFF>Shadowstring Edge</color> is gained."
+    }
+  ]
+}

@@ -2,59 +2,63 @@
   "Id": 1201,
   "Name": "Harumasa",
   "FullName": "Asaba Harumasa",
-  "Specialty": 1,
   "Faction": 6,
+  "Rarity": 4,
+  "Specialty": 1,
   "Element": [
     203
   ],
   "DamageType": [
-    103
+    103,
+    101
   ],
   "Stats": {
-    "BaseAtk": 133,
-    "AtkGrowth": 81195,
-    "BaseDef": 49,
-    "DefGrowth": 66882,
-    "BaseHp": 620,
-    "HpGrowth": 841391,
-    "BaseImpact": 94,
-    "BaseAnomalyMastery": 93,
-    "BaseAnomalyProficiency": 93
+    "BaseAtk": 132,
+    "AtkGrowth": 80270,
+    "BaseDef": 48,
+    "DefGrowth": 65524,
+    "BaseHp": 595,
+    "HpGrowth": 808084,
+    "BaseImpact": 90,
+    "BaseAnomalyMastery": 95,
+    "BaseAnomalyProficiency": 80
   },
-  "SigWeaponId": [],
+  "SigWeaponId": [
+    14120
+  ],
   "HpBoosts": [
     0,
-    426,
-    851,
-    1277,
-    1702,
-    2128
+    409,
+    817,
+    1226,
+    1635,
+    2043
   ],
   "AtkBoosts": [
     0,
     47,
-    95,
-    142,
-    190,
-    237
+    94,
+    141,
+    188,
+    235
   ],
   "DefBoosts": [
     0,
-    34,
-    68,
-    101,
-    135,
-    169
+    33,
+    66,
+    99,
+    133,
+    166
   ],
   "CoreSkillInfo": {
     "FirstCoreStat": 20101,
     "FirstCoreStatValues": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
+      480,
+      480,
+      960,
+      960,
+      1440,
+      1440
     ],
     "SecondCoreStat": 12101,
     "SecondCoreStatValues": [
@@ -65,69 +69,69 @@
       50,
       75
     ],
-    "PurpleCoreMat": 110501,
-    "GoldenCoreMat": 110001
+    "PurpleCoreMat": 110508,
+    "GoldenCoreMat": 110005
   },
   "CoreSkillLevels": {
     "Name": [
-      "Core Passive: Stealthy Paws",
-      "TestKey_TalentTitle"
+      "Core Passive: Day Break",
+      "Additional Ability: Overclock"
     ],
     "Descriptions": [
       [
-        "When Nekomata's <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>30%</color> for 6s.",
-        "TestKey_TalentDes"
+        "The CRIT Rate of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> increases by <color=#2BAD00>10.6%</color>, and when Harumasa's <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> triggers a critical hit against an enemy, he gains 1 stack of <color=#FFFFFF>Gleaming Edge</color>, for up to a maximum of 3 stacks per use of the skill and stacking up to 6 times, lasting 5s, repeated triggers reset the duration. Each stack of <color=#FFFFFF>Gleaming Edge</color> increases the CRIT DMG of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> by <color=#2BAD00>6%</color>.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Harumasa's attacks hit Stunned enemies or enemies under Attribute Anomaly, his DMG increases by 40%. When Harumasa's <color=#FFFFFF>Falling Feather</color> hits Stunned enemies or enemies under Attribute Anomaly, it will apply 2 stacks of <color=#FFFFFF>Electro Prison</color> to the target."
       ],
       [
-        "When Nekomata's <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>35%</color> for 6s.",
-        "TestKey_TalentDes"
+        "The CRIT Rate of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> increases by <color=#2BAD00>13%</color>, and when Harumasa's <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> triggers a critical hit against an enemy, he gains 1 stack of <color=#FFFFFF>Gleaming Edge</color>, for up to a maximum of 3 stacks per use of the skill and stacking up to 6 times, lasting 5s, repeated triggers reset the duration. Each stack of <color=#FFFFFF>Gleaming Edge</color> increases the CRIT DMG of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> by <color=#2BAD00>7%</color>.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Harumasa's attacks hit Stunned enemies or enemies under Attribute Anomaly, his DMG increases by 40%. When Harumasa's <color=#FFFFFF>Falling Feather</color> hits Stunned enemies or enemies under Attribute Anomaly, it will apply 2 stacks of <color=#FFFFFF>Electro Prison</color> to the target."
       ],
       [
-        "When Nekomata's <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>40%</color> for 6s.",
-        "TestKey_TalentDes"
+        "The CRIT Rate of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> increases by <color=#2BAD00>15.4%</color>, and when Harumasa's <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> triggers a critical hit against an enemy, he gains 1 stack of <color=#FFFFFF>Gleaming Edge</color>, for up to a maximum of 3 stacks per use of the skill and stacking up to 6 times, lasting 5s, repeated triggers reset the duration. Each stack of <color=#FFFFFF>Gleaming Edge</color> increases the CRIT DMG of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> by <color=#2BAD00>8%</color>.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Harumasa's attacks hit Stunned enemies or enemies under Attribute Anomaly, his DMG increases by 40%. When Harumasa's <color=#FFFFFF>Falling Feather</color> hits Stunned enemies or enemies under Attribute Anomaly, it will apply 2 stacks of <color=#FFFFFF>Electro Prison</color> to the target."
       ],
       [
-        "When Nekomata's <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>45%</color> for 6s.",
-        "TestKey_TalentDes"
+        "The CRIT Rate of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> increases by <color=#2BAD00>17.8%</color>, and when Harumasa's <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> triggers a critical hit against an enemy, he gains 1 stack of <color=#FFFFFF>Gleaming Edge</color>, for up to a maximum of 3 stacks per use of the skill and stacking up to 6 times, lasting 5s, repeated triggers reset the duration. Each stack of <color=#FFFFFF>Gleaming Edge</color> increases the CRIT DMG of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> by <color=#2BAD00>9%</color>.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Harumasa's attacks hit Stunned enemies or enemies under Attribute Anomaly, his DMG increases by 40%. When Harumasa's <color=#FFFFFF>Falling Feather</color> hits Stunned enemies or enemies under Attribute Anomaly, it will apply 2 stacks of <color=#FFFFFF>Electro Prison</color> to the target."
       ],
       [
-        "When Nekomata's <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>50%</color> for 6s.",
-        "TestKey_TalentDes"
+        "The CRIT Rate of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> increases by <color=#2BAD00>20.2%</color>, and when Harumasa's <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> triggers a critical hit against an enemy, he gains 1 stack of <color=#FFFFFF>Gleaming Edge</color>, for up to a maximum of 3 stacks per use of the skill and stacking up to 6 times, lasting 5s, repeated triggers reset the duration. Each stack of <color=#FFFFFF>Gleaming Edge</color> increases the CRIT DMG of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> by <color=#2BAD00>10%</color>.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Harumasa's attacks hit Stunned enemies or enemies under Attribute Anomaly, his DMG increases by 40%. When Harumasa's <color=#FFFFFF>Falling Feather</color> hits Stunned enemies or enemies under Attribute Anomaly, it will apply 2 stacks of <color=#FFFFFF>Electro Prison</color> to the target."
       ],
       [
-        "When Nekomata's <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>55%</color> for 6s.",
-        "TestKey_TalentDes"
+        "The CRIT Rate of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> increases by <color=#2BAD00>22.6%</color>, and when Harumasa's <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> triggers a critical hit against an enemy, he gains 1 stack of <color=#FFFFFF>Gleaming Edge</color>, for up to a maximum of 3 stacks per use of the skill and stacking up to 6 times, lasting 5s, repeated triggers reset the duration. Each stack of <color=#FFFFFF>Gleaming Edge</color> increases the CRIT DMG of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> by <color=#2BAD00>11%</color>.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Harumasa's attacks hit Stunned enemies or enemies under Attribute Anomaly, his DMG increases by 40%. When Harumasa's <color=#FFFFFF>Falling Feather</color> hits Stunned enemies or enemies under Attribute Anomaly, it will apply 2 stacks of <color=#FFFFFF>Electro Prison</color> to the target."
       ],
       [
-        "When Nekomata's <color=#FFFFFF>Dodge Counter</color> or <color=#FFFFFF>Quick Assist</color> hits an enemy, her DMG increases by <color=#2BAD00>60%</color> for 6s.",
-        "TestKey_TalentDes"
+        "The CRIT Rate of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> increases by <color=#2BAD00>25%</color>, and when Harumasa's <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> triggers a critical hit against an enemy, he gains 1 stack of <color=#FFFFFF>Gleaming Edge</color>, for up to a maximum of 3 stacks per use of the skill and stacking up to 6 times, lasting 5s, repeated triggers reset the duration. Each stack of <color=#FFFFFF>Gleaming Edge</color> increases the CRIT DMG of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> by <color=#2BAD00>12%</color>.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Harumasa's attacks hit Stunned enemies or enemies under Attribute Anomaly, his DMG increases by 40%. When Harumasa's <color=#FFFFFF>Falling Feather</color> hits Stunned enemies or enemies under Attribute Anomaly, it will apply 2 stacks of <color=#FFFFFF>Electro Prison</color> to the target."
       ]
     ]
   },
   "Cons": [
     {
-      "Name": "TestKey_PlaceHolder",
-      "Effect": "TestKey_PlaceHolder"
+      "Name": "\"High Spirit\"",
+      "Effect": "The maximum stack limit of <color=#FFFFFF>Electro Prison</color> from <color=#FFFFFF>Basic Attack: Ha-Oto no Ya</color> increases to 14 stacks. When an <color=#FFFFFF>Electro Quiver</color> is triggered, 2 consecutive <color=#FFFFFF>Ha-Oto no Ya</color> will be fired at the target."
     },
     {
-      "Name": "TestKey_PlaceHolder",
-      "Effect": "TestKey_PlaceHolder"
+      "Name": "Languish",
+      "Effect": "When using an <color=#FFFFFF>Chain Attack</color> or <color=#FFFFFF>Ultimate</color>, Harumasa gains 7 stacks of <color=#FFFFFF>Electro Blitz</color>, up to a max of 7 stacks. While possessing <color=#FFFFFF>Electro Blitz</color>, the DMG of <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> increases by 50%. Consume 1 stack of <color=#FFFFFF>Electro Blitz</color> once <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> ends."
     },
     {
-      "Name": "TestKey_PlaceHolder",
-      "Effect": "TestKey_PlaceHolder"
+      "Name": "White Lies",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
     },
     {
-      "Name": "TestKey_PlaceHolder",
-      "Effect": "TestKey_PlaceHolder"
+      "Name": "Occasionally Motivated",
+      "Effect": "<color=#FFFFFF>Electro Prison</color> now lasts for 20s. When <color=#FFFFFF>Dash Attack: Hiten no Tsuru - Slash</color> hits enemies, Harumasa gains 30 Decibels once per use of this skill. Upon activating <color=#FFFFFF>Ultimate</color>, apply the maximum stacks of <color=#FFFFFF>Electro Prison</color> to all on-field enemies."
     },
     {
-      "Name": "TestKey_PlaceHolder",
-      "Effect": "TestKey_PlaceHolder"
+      "Name": "No One Knows",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
     },
     {
-      "Name": "TestKey_PlaceHolder",
-      "Effect": "TestKey_PlaceHolder"
+      "Name": "Tacit Understanding",
+      "Effect": "After <color=#FFFFFF>Ha-Oto no Ya</color> hits Stunned enemies or enemies under Attribute Anomalies, Harumasa will ignore 15% of the target's <color=#2EB6FF>Electric RES</color> for 12s. Every 12 times an enemy is hit by <color=#FFFFFF>Ha-Oto no Ya</color>, trigger an extra electromagnetic explosion, dealing 1,500% of Harumasa's ATK to the target as <color=#2EB6FF>Electric DMG</color>."
     }
   ]
 }

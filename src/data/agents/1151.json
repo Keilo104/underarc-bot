@@ -2,15 +2,15 @@
   "Id": 1151,
   "Name": "Lucy",
   "FullName": "Luciana de Montefio",
-  "Specialty": 4,
   "Faction": 4,
+  "Rarity": 3,
+  "Specialty": 4,
   "Element": [
     201
   ],
   "DamageType": [
     102
   ],
-  "Rarity": 3,
   "Stats": {
     "BaseAtk": 95,
     "AtkGrowth": 54230,
@@ -78,31 +78,31 @@
     ],
     "Descriptions": [
       [
-        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>140%</color> of the original effect, and their attack frequency is increased.",
+        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK, Impact, and Anomaly Proficiency. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>140%</color> of the original effect, and their attack frequency is increased.",
         "When another character in your squad shares the same Attribute or Faction:\nThe guard boars inherit Lucy's CRIT Rate and CRIT DMG."
       ],
       [
-        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>150%</color> of the original effect, and their attack frequency is increased.",
+        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK, Impact, and Anomaly Proficiency. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>150%</color> of the original effect, and their attack frequency is increased.",
         "When another character in your squad shares the same Attribute or Faction:\nThe guard boars inherit Lucy's CRIT Rate and CRIT DMG."
       ],
       [
-        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>160%</color> of the original effect, and their attack frequency is increased.",
+        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK, Impact, and Anomaly Proficiency. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>160%</color> of the original effect, and their attack frequency is increased.",
         "When another character in your squad shares the same Attribute or Faction:\nThe guard boars inherit Lucy's CRIT Rate and CRIT DMG."
       ],
       [
-        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>170%</color> of the original effect, and their attack frequency is increased.",
+        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK, Impact, and Anomaly Proficiency. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>170%</color> of the original effect, and their attack frequency is increased.",
         "When another character in your squad shares the same Attribute or Faction:\nThe guard boars inherit Lucy's CRIT Rate and CRIT DMG."
       ],
       [
-        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>180%</color> of the original effect, and their attack frequency is increased.",
+        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK, Impact, and Anomaly Proficiency. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>180%</color> of the original effect, and their attack frequency is increased.",
         "When another character in your squad shares the same Attribute or Faction:\nThe guard boars inherit Lucy's CRIT Rate and CRIT DMG."
       ],
       [
-        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>190%</color> of the original effect, and their attack frequency is increased.",
+        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK, Impact, and Anomaly Proficiency. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>190%</color> of the original effect, and their attack frequency is increased.",
         "When another character in your squad shares the same Attribute or Faction:\nThe guard boars inherit Lucy's CRIT Rate and CRIT DMG."
       ],
       [
-        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK and Impact. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>200%</color> of the original effect, and their attack frequency is increased.",
+        "When Lucy uses her <color=#FFFFFF>Special Attack</color> or <color=#FFFFFF>EX Special Attack</color>, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK, Impact, and Anomaly Proficiency. The <color=#FFFFFF>Cheer On!</color> buff for the guard boars is increased to <color=#2BAD00>200%</color> of the original effect, and their attack frequency is increased.",
         "When another character in your squad shares the same Attribute or Faction:\nThe guard boars inherit Lucy's CRIT Rate and CRIT DMG."
       ]
     ]

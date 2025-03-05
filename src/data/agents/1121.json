@@ -2,15 +2,15 @@
   "Id": 1121,
   "Name": "Ben",
   "FullName": "Ben Bigger",
-  "Specialty": 5,
   "Faction": 3,
+  "Rarity": 3,
+  "Specialty": 5,
   "Element": [
     201
   ],
   "DamageType": [
     102
   ],
-  "Rarity": 3,
   "Stats": {
     "BaseAtk": 94,
     "AtkGrowth": 53574,

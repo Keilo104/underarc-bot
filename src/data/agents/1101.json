@@ -2,15 +2,15 @@
   "Id": 1101,
   "Name": "Koleda",
   "FullName": "Koleda Belobog",
-  "Specialty": 2,
   "Faction": 3,
+  "Rarity": 4,
+  "Specialty": 2,
   "Element": [
     201
   ],
   "DamageType": [
     102
   ],
-  "Rarity": 4,
   "Stats": {
     "BaseAtk": 106,
     "AtkGrowth": 62007,

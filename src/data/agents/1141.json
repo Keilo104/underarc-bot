@@ -2,15 +2,15 @@
   "Id": 1141,
   "Name": "Lycaon",
   "FullName": "Von Lycaon",
-  "Specialty": 2,
   "Faction": 2,
+  "Rarity": 4,
+  "Specialty": 2,
   "Element": [
     202
   ],
   "DamageType": [
     102
   ],
-  "Rarity": 4,
   "Stats": {
     "BaseAtk": 105,
     "AtkGrowth": 61287,

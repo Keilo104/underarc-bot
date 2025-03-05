@@ -2,15 +2,15 @@
   "Id": 1011,
   "Name": "Anby",
   "FullName": "Anby Demara",
-  "Specialty": 2,
   "Faction": 1,
+  "Rarity": 3,
+  "Specialty": 2,
   "Element": [
     203
   ],
   "DamageType": [
     101
   ],
-  "Rarity": 3,
   "Stats": {
     "BaseAtk": 95,
     "AtkGrowth": 54230,

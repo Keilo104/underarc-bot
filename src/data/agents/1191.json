@@ -2,15 +2,15 @@
   "Id": 1191,
   "Name": "Ellen",
   "FullName": "Ellen Joe",
-  "Specialty": 1,
   "Faction": 2,
+  "Rarity": 4,
+  "Specialty": 1,
   "Element": [
     202
   ],
   "DamageType": [
     101
   ],
-  "Rarity": 4,
   "Stats": {
     "BaseAtk": 135,
     "AtkGrowth": 82578,

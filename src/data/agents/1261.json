@@ -2,15 +2,15 @@
   "Id": 1261,
   "Name": "Jane",
   "FullName": "Jane Doe",
-  "Specialty": 3,
   "Faction": 7,
+  "Rarity": 4,
+  "Specialty": 3,
   "Element": [
     200
   ],
   "DamageType": [
     101
   ],
-  "Rarity": 4,
   "Stats": {
     "BaseAtk": 127,
     "AtkGrowth": 76728,

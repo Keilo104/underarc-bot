@@ -2,15 +2,15 @@
   "Id": 1271,
   "Name": "Seth",
   "FullName": "Seth Lowell",
-  "Specialty": 5,
   "Faction": 7,
+  "Rarity": 3,
+  "Specialty": 5,
   "Element": [
     203
   ],
   "DamageType": [
     101
   ],
-  "Rarity": 3,
   "Stats": {
     "BaseAtk": 93,
     "AtkGrowth": 52593,

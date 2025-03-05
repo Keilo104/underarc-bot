@@ -2,15 +2,15 @@
   "Id": 1021,
   "Name": "Nekomata",
   "FullName": "Nekomiya Mana",
-  "Specialty": 1,
   "Faction": 1,
+  "Rarity": 4,
+  "Specialty": 1,
   "Element": [
     200
   ],
   "DamageType": [
     101
   ],
-  "Rarity": 4,
   "Stats": {
     "BaseAtk": 131,
     "AtkGrowth": 79762,

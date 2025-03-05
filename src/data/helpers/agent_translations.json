@@ -40,6 +40,7 @@
   "11": "1041",
   "soldier 11": "1041",
   "anby2": "1041",
+  "anby 2": "1041",
   "second anby": "1041",
   "longinus": "1041",
 
@@ -102,6 +103,7 @@
 
   "1131": "1131",
   "soukaku": "1131",
+  "skk": "1131",
   "aokaku": "1131",
   "aoukaku": "1131",
   "demon": "1131",
@@ -125,14 +127,17 @@
 
   "1161": "1161",
   "lighter": "1161",
+  "light": "1161",
 
   "1171": "1171",
   "burnice": "1171",
+  "burgice": "1171",
   "burnice white": "1171",
   "white": "1171",
 
   "1181": "1181",
   "lisa": "1181",
+  "duck": "1181",
   "grace": "1181",
   "grace howard": "1181",
   "howard": "1181",
@@ -147,6 +152,9 @@
 
   "1201": "1201",
   "harumasa": "1201",
+  "harumasamasa": "1201",
+  "masa": "1201",
+  "masamasa": "1201",
   "asaba": "1201",
   "asaba harumasa": "1201",
 
@@ -160,6 +168,7 @@
 
   "1221": "1221",
   "yanagi": "1221",
+  "nagi": "1221",
   "tsukihiro yanagi": "1221",
   "tsukihiro": "1221",
   "tsukishima": "1221",
@@ -180,7 +189,6 @@
   "1251": "1251",
   "qingyi": "1251",
   "qing yi": "1251",
-  "anby4": "1251",
   "clank": "1251",
   "clankclank": "1251",
   "clankclankclank": "1251",
@@ -205,6 +213,29 @@
   "pipe her": "1281",
   "pipe": "1281",
   "clara": "1281",
+
+  "1291": "1291",
+  "hugo vlad": "1291",
+  "hugo": "1291",
+  "ugo": "1291",
+  "vlad": "1291",
+
+  "1311": "1311",
+  "astra yao": "1311",
+  "astra yaoi": "1311",
+  "astra": "1311",
+  "yao": "1311",
+  "yaoi": "1311",
+
+  "1321": "1321",
+  "evelyn chevalier": "1321",
+  "evelyn": "1321",
+  "chevalier": "1321",
+  "eve": "1321",
+
+  "1331": "1331",
+  "vivian": "1331",
+  "vivi": "1331",
 
   "1351": "1351",
   "pulchra": "1351",

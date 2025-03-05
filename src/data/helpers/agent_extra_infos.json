@@ -11,7 +11,7 @@
 
   "1031": {
     "icon_image_url": "https://i.imgur.com/82AxB4x.png",
-    "embed_color": "0xFF4B89"
+    "embed_color": "0xFC4A88"
   },
 
   "1041": {
@@ -36,7 +36,8 @@
   },
 
   "1091": {
-    "release_patch": null,
+    "icon_image_url": "https://i.imgur.com/C4H55yB.png",
+    "release_patch": 5,
     "embed_color": "0x1CE0EF"
   },
 
@@ -71,7 +72,8 @@
   },
 
   "1161": {
-    "release_patch": null,
+    "icon_image_url": "https://i.imgur.com/Ij8299h.png",
+    "release_patch": 4,
     "embed_color": "0xFFDC4D"
   },
 
@@ -92,7 +94,8 @@
   },
 
   "1201": {
-    "release_patch": null,
+    "icon_image_url": "https://i.imgur.com/7UFDlG6.png",
+    "release_patch": 5,
     "embed_color": "0x1CE0EF"
   },
 
@@ -102,7 +105,8 @@
   },
 
   "1221": {
-    "release_patch": null,
+    "icon_image_url": "https://i.imgur.com/1nUCPum.png",
+    "release_patch": 4,
     "embed_color": "0x1CE0EF"
   },
 
@@ -134,8 +138,30 @@
     "embed_color": "0xFFDC4D"
   },
 
-  "1351": {
+  "1291": {
     "release_patch": null,
+    "embed_color": ""
+  },
+
+  "1311": {
+    "icon_image_url": "https://i.imgur.com/5yZ3ZSs.png",
+    "release_patch": 6,
+    "embed_color": "0xD9D9D9"
+  },
+
+  "1321": {
+    "icon_image_url": "https://i.imgur.com/biM6Izz.png",
+    "release_patch": 6,
+    "embed_color": "0xD9D9D9"
+  },
+
+  "1331": {
+    "release_patch": null,
+    "embed_color": ""
+  },
+
+  "1351": {
+    "release_patch": 7,
     "embed_color": "0xFFDC4D"
   }
 }

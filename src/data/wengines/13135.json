@@ -1,0 +1,20 @@
+{
+  "Id": 13135,
+  "Specialty": 2,
+  "BaseProp": 12101,
+  "BasePropValue": 42,
+  "SubProp": 12202,
+  "SubPropValue": 600,
+  "Name": "Box Cutter",
+  "Rarity": 3,
+  "Refinements": {
+    "Name": "Watch Your Fingers",
+    "Descriptions": [
+      "Upon launching an <color=#FFFFFF>Aftershock</color>, the equipper's <color=#F0D12B>Physical DMG</color> increases by <color=#2BAD00>15%</color>, and Daze increases by <color=#2BAD00>10%</color>, lasting 10s.",
+      "Upon launching an <color=#FFFFFF>Aftershock</color>, the equipper's <color=#F0D12B>Physical DMG</color> increases by <color=#2BAD00>17.3%</color>, and Daze increases by <color=#2BAD00>11.5%</color>, lasting 10s.",
+      "Upon launching an <color=#FFFFFF>Aftershock</color>, the equipper's <color=#F0D12B>Physical DMG</color> increases by <color=#2BAD00>19.5%</color>, and Daze increases by <color=#2BAD00>13%</color>, lasting 10s.",
+      "Upon launching an <color=#FFFFFF>Aftershock</color>, the equipper's <color=#F0D12B>Physical DMG</color> increases by <color=#2BAD00>21.8%</color>, and Daze increases by <color=#2BAD00>14.5%</color>, lasting 10s.",
+      "Upon launching an <color=#FFFFFF>Aftershock</color>, the equipper's <color=#F0D12B>Physical DMG</color> increases by <color=#2BAD00>24%</color>, and Daze increases by <color=#2BAD00>16%</color>, lasting 10s."
+    ]
+  }
+}

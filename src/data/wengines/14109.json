@@ -1,0 +1,20 @@
+{
+  "Id": 14109,
+  "Specialty": 3,
+  "BaseProp": 12101,
+  "BasePropValue": 50,
+  "SubProp": 20103,
+  "SubPropValue": 960,
+  "Name": "Hailstorm Shrine",
+  "Rarity": 4,
+  "Refinements": {
+    "Name": "Frost-Stained Star",
+    "Descriptions": [
+      "CRIT DMG increases by <color=#2BAD00>50%</color>. When using an <color=#FFFFFF>EX Special Attack</color> or when any squad member applies an Attribute Anomaly to an enemy, the equipper's <color=#98EFF0>Ice DMG</color> increases by <color=#2BAD00>20%</color>, stacking up to 2 times and lasting 15s. The duration of each stack is calculated separately.",
+      "CRIT DMG increases by <color=#2BAD00>57%</color>. When using an <color=#FFFFFF>EX Special Attack</color> or when any squad member applies an Attribute Anomaly to an enemy, the equipper's <color=#98EFF0>Ice DMG</color> increases by <color=#2BAD00>23%</color>, stacking up to 2 times and lasting 15s. The duration of each stack is calculated separately.",
+      "CRIT DMG increases by <color=#2BAD00>65%</color>. When using an <color=#FFFFFF>EX Special Attack</color> or when any squad member applies an Attribute Anomaly to an enemy, the equipper's <color=#98EFF0>Ice DMG</color> increases by <color=#2BAD00>26%</color>, stacking up to 2 times and lasting 15s. The duration of each stack is calculated separately.",
+      "CRIT DMG increases by <color=#2BAD00>72%</color>. When using an <color=#FFFFFF>EX Special Attack</color> or when any squad member applies an Attribute Anomaly to an enemy, the equipper's <color=#98EFF0>Ice DMG</color> increases by <color=#2BAD00>29%</color>, stacking up to 2 times and lasting 15s. The duration of each stack is calculated separately.",
+      "CRIT DMG increases by <color=#2BAD00>80%</color>. When using an <color=#FFFFFF>EX Special Attack</color> or when any squad member applies an Attribute Anomaly to an enemy, the equipper's <color=#98EFF0>Ice DMG</color> increases by <color=#2BAD00>32%</color>, stacking up to 2 times and lasting 15s. The duration of each stack is calculated separately."
+    ]
+  }
+}

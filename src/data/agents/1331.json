@@ -1,6 +1,110 @@
 {
   "Id": 1331,
-  "Name": "Avatar_Female_Size02_Vivian",
-  "FullName": "Avatar_Female_Size02_Vivian_FullName",
-  "Faction": 0
+  "Name": "Vivian",
+  "FullName": "Vivian Banshee",
+  "Faction": 0,
+  "Rarity": 4,
+  "Specialty": 3,
+  "Element": [
+    205
+  ],
+  "DamageType": [
+    101
+  ],
+  "Stats": {
+    "BaseAtk": 127,
+    "AtkGrowth": 76728,
+    "BaseDef": 49,
+    "DefGrowth": 66203,
+    "BaseHp": 617,
+    "HpGrowth": 837238,
+    "BaseImpact": 86,
+    "BaseAnomalyMastery": 118,
+    "BaseAnomalyProficiency": 116
+  },
+  "SigWeaponId": [],
+  "HpBoosts": [
+    0,
+    423,
+    847,
+    1270,
+    1694,
+    2117
+  ],
+  "AtkBoosts": [
+    0,
+    45,
+    90,
+    136,
+    181,
+    226
+  ],
+  "DefBoosts": [
+    0,
+    33,
+    67,
+    100,
+    134,
+    167
+  ],
+  "CoreSkillInfo": {
+    "FirstCoreStat": 20101,
+    "FirstCoreStatValues": [
+      480,
+      480,
+      960,
+      960,
+      1440,
+      1440
+    ],
+    "SecondCoreStat": 12101,
+    "SecondCoreStatValues": [
+      0,
+      25,
+      25,
+      50,
+      50,
+      75
+    ],
+    "PurpleCoreMat": 110506,
+    "GoldenCoreMat": 110001
+  },
+  "CoreSkillLevels": {
+    "Name": [],
+    "Descriptions": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  "Cons": [
+    {
+      "Name": "TestKey_PlaceHolder",
+      "Effect": "TestKey_PlaceHolder"
+    },
+    {
+      "Name": "TestKey_PlaceHolder",
+      "Effect": "TestKey_PlaceHolder"
+    },
+    {
+      "Name": "TestKey_PlaceHolder",
+      "Effect": "TestKey_PlaceHolder"
+    },
+    {
+      "Name": "TestKey_PlaceHolder",
+      "Effect": "TestKey_PlaceHolder"
+    },
+    {
+      "Name": "TestKey_PlaceHolder",
+      "Effect": "TestKey_PlaceHolder"
+    },
+    {
+      "Name": "TestKey_PlaceHolder",
+      "Effect": "TestKey_PlaceHolder"
+    }
+  ]
 }

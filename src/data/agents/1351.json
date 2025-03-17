@@ -3,5 +3,134 @@
   "Name": "Pulchra",
   "FullName": "Pulchra Fellini",
   "Faction": 4,
-  "SigWeaponId": []
+  "Rarity": 3,
+  "Specialty": 2,
+  "Element": [
+    200
+  ],
+  "DamageType": [
+    101
+  ],
+  "Stats": {
+    "BaseAtk": 96,
+    "AtkGrowth": 54887,
+    "BaseDef": 49,
+    "DefGrowth": 66203,
+    "BaseHp": 612,
+    "HpGrowth": 830642,
+    "BaseImpact": 118,
+    "BaseAnomalyMastery": 90,
+    "BaseAnomalyProficiency": 92
+  },
+  "SigWeaponId": [
+    13135
+  ],
+  "HpBoosts": [
+    0,
+    420,
+    840,
+    1260,
+    1680,
+    2100
+  ],
+  "AtkBoosts": [
+    0,
+    34,
+    68,
+    103,
+    137,
+    171
+  ],
+  "DefBoosts": [
+    0,
+    33,
+    67,
+    100,
+    134,
+    167
+  ],
+  "CoreSkillInfo": {
+    "FirstCoreStat": 12201,
+    "FirstCoreStatValues": [
+      6,
+      6,
+      12,
+      12,
+      18,
+      18
+    ],
+    "SecondCoreStat": 12101,
+    "SecondCoreStatValues": [
+      0,
+      25,
+      25,
+      50,
+      50,
+      75
+    ],
+    "PurpleCoreMat": 110507,
+    "GoldenCoreMat": 110004
+  },
+  "CoreSkillLevels": {
+    "Name": [
+      "Core Passive: Hunter's Instinct",
+      "Additional Ability: Business Partner"
+    ],
+    "Descriptions": [
+      [
+        "When Pulchra activates an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she enters the <color=#FFFFFF>Hunter's Gait</color> state, increasing the Daze she deals by <color=#2BAD00>15%</color> for 6s. After switching to another character, if Pulchra is still in the <color=#FFFFFF>Hunter's Gait</color> state, the state will last until Pulchra switches back in. While in the <color=#FFFFFF>Hunter's Gait</color> state and as the active character, when Pulchra lands a heavy attack on enemies, she can trigger a <color=#FFFFFF>Quick Assist</color> from the previous character in the squad.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same Faction:\nWhen Pulchra hits enemies with <color=#FFFFFF>Special Attack: Rending Claw - Nightmare Shadow</color>, an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, it applies the <color=#FFFFFF>Binding Trap</color> effect for 15s. After applying <color=#FFFFFF>Binding Trap</color>, all units' <color=#FFFFFF>Aftershock</color> DMG against the target is increased by 30%."
+      ],
+      [
+        "When Pulchra activates an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she enters the <color=#FFFFFF>Hunter's Gait</color> state, increasing the Daze she deals by <color=#2BAD00>17.5%</color> for 6s. After switching to another character, if Pulchra is still in the <color=#FFFFFF>Hunter's Gait</color> state, the state will last until Pulchra switches back in. While in the <color=#FFFFFF>Hunter's Gait</color> state and as the active character, when Pulchra lands a heavy attack on enemies, she can trigger a <color=#FFFFFF>Quick Assist</color> from the previous character in the squad.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same Faction:\nWhen Pulchra hits enemies with <color=#FFFFFF>Special Attack: Rending Claw - Nightmare Shadow</color>, an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, it applies the <color=#FFFFFF>Binding Trap</color> effect for 15s. After applying <color=#FFFFFF>Binding Trap</color>, all units' <color=#FFFFFF>Aftershock</color> DMG against the target is increased by 30%."
+      ],
+      [
+        "When Pulchra activates an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she enters the <color=#FFFFFF>Hunter's Gait</color> state, increasing the Daze she deals by <color=#2BAD00>20%</color> for 6s. After switching to another character, if Pulchra is still in the <color=#FFFFFF>Hunter's Gait</color> state, the state will last until Pulchra switches back in. While in the <color=#FFFFFF>Hunter's Gait</color> state and as the active character, when Pulchra lands a heavy attack on enemies, she can trigger a <color=#FFFFFF>Quick Assist</color> from the previous character in the squad.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same Faction:\nWhen Pulchra hits enemies with <color=#FFFFFF>Special Attack: Rending Claw - Nightmare Shadow</color>, an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, it applies the <color=#FFFFFF>Binding Trap</color> effect for 15s. After applying <color=#FFFFFF>Binding Trap</color>, all units' <color=#FFFFFF>Aftershock</color> DMG against the target is increased by 30%."
+      ],
+      [
+        "When Pulchra activates an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she enters the <color=#FFFFFF>Hunter's Gait</color> state, increasing the Daze she deals by <color=#2BAD00>22.5%</color> for 6s. After switching to another character, if Pulchra is still in the <color=#FFFFFF>Hunter's Gait</color> state, the state will last until Pulchra switches back in. While in the <color=#FFFFFF>Hunter's Gait</color> state and as the active character, when Pulchra lands a heavy attack on enemies, she can trigger a <color=#FFFFFF>Quick Assist</color> from the previous character in the squad.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same Faction:\nWhen Pulchra hits enemies with <color=#FFFFFF>Special Attack: Rending Claw - Nightmare Shadow</color>, an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, it applies the <color=#FFFFFF>Binding Trap</color> effect for 15s. After applying <color=#FFFFFF>Binding Trap</color>, all units' <color=#FFFFFF>Aftershock</color> DMG against the target is increased by 30%."
+      ],
+      [
+        "When Pulchra activates an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she enters the <color=#FFFFFF>Hunter's Gait</color> state, increasing the Daze she deals by <color=#2BAD00>25%</color> for 6s. After switching to another character, if Pulchra is still in the <color=#FFFFFF>Hunter's Gait</color> state, the state will last until Pulchra switches back in. While in the <color=#FFFFFF>Hunter's Gait</color> state and as the active character, when Pulchra lands a heavy attack on enemies, she can trigger a <color=#FFFFFF>Quick Assist</color> from the previous character in the squad.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same Faction:\nWhen Pulchra hits enemies with <color=#FFFFFF>Special Attack: Rending Claw - Nightmare Shadow</color>, an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, it applies the <color=#FFFFFF>Binding Trap</color> effect for 15s. After applying <color=#FFFFFF>Binding Trap</color>, all units' <color=#FFFFFF>Aftershock</color> DMG against the target is increased by 30%."
+      ],
+      [
+        "When Pulchra activates an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she enters the <color=#FFFFFF>Hunter's Gait</color> state, increasing the Daze she deals by <color=#2BAD00>27.5%</color> for 6s. After switching to another character, if Pulchra is still in the <color=#FFFFFF>Hunter's Gait</color> state, the state will last until Pulchra switches back in. While in the <color=#FFFFFF>Hunter's Gait</color> state and as the active character, when Pulchra lands a heavy attack on enemies, she can trigger a <color=#FFFFFF>Quick Assist</color> from the previous character in the squad.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same Faction:\nWhen Pulchra hits enemies with <color=#FFFFFF>Special Attack: Rending Claw - Nightmare Shadow</color>, an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, it applies the <color=#FFFFFF>Binding Trap</color> effect for 15s. After applying <color=#FFFFFF>Binding Trap</color>, all units' <color=#FFFFFF>Aftershock</color> DMG against the target is increased by 30%."
+      ],
+      [
+        "When Pulchra activates an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, she enters the <color=#FFFFFF>Hunter's Gait</color> state, increasing the Daze she deals by <color=#2BAD00>30%</color> for 6s. After switching to another character, if Pulchra is still in the <color=#FFFFFF>Hunter's Gait</color> state, the state will last until Pulchra switches back in. While in the <color=#FFFFFF>Hunter's Gait</color> state and as the active character, when Pulchra lands a heavy attack on enemies, she can trigger a <color=#FFFFFF>Quick Assist</color> from the previous character in the squad.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same Faction:\nWhen Pulchra hits enemies with <color=#FFFFFF>Special Attack: Rending Claw - Nightmare Shadow</color>, an <color=#FFFFFF>EX Special Attack</color>, <color=#FFFFFF>Assist Follow-Up</color>, <color=#FFFFFF>Chain Attack</color>, or <color=#FFFFFF>Ultimate</color>, it applies the <color=#FFFFFF>Binding Trap</color> effect for 15s. After applying <color=#FFFFFF>Binding Trap</color>, all units' <color=#FFFFFF>Aftershock</color> DMG against the target is increased by 30%."
+      ]
+    ]
+  },
+  "Cons": [
+    {
+      "Name": "Self-Interest",
+      "Effect": "When dealing DMG to enemies affected by <color=#FFFFFF>Binding Trap</color>, increase own CRIT Rate by 10%."
+    },
+    {
+      "Name": "Opportunistic",
+      "Effect": "While in the <color=#FFFFFF>Hunter's Gait</color> state from <color=#FFFFFF>Core Passive: Hunter's Instinct</color>, Pulchra's ATK is increased by an additional 10%."
+    },
+    {
+      "Name": "Territorial",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "Joy of the Hunt",
+      "Effect": "Reduces Energy Cost of activating <color=#FFFFFF>EX Special Attack: Rending Claw - Flashstep</color> by 5."
+    },
+    {
+      "Name": "Tail Game",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "Behind the Mask",
+      "Effect": "<color=#FFFFFF>Special Attack: Rending Claw - Nightmare Shadow's</color> DMG is increased by 15%, and the number of times the repeated attack can trigger is increased by 2. <color=#FFFFFF>Additional Ability: Business Partner</color>'s <color=#FFFFFF>Binding Trap</color> effect now also applies to all damage types, not just <color=#FFFFFF>Aftershock</color> DMG."
+    }
+  ]
 }

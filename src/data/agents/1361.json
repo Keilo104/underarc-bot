@@ -1,0 +1,136 @@
+{
+  "Id": 1361,
+  "Name": "Trigger",
+  "FullName": "Trigger",
+  "Faction": 5,
+  "Rarity": 4,
+  "Specialty": 2,
+  "Element": [
+    203
+  ],
+  "DamageType": [
+    103
+  ],
+  "Stats": {
+    "BaseAtk": 108,
+    "AtkGrowth": 63517,
+    "BaseDef": 48,
+    "DefGrowth": 65524,
+    "BaseHp": 637,
+    "HpGrowth": 864437,
+    "BaseImpact": 113,
+    "BaseAnomalyMastery": 95,
+    "BaseAnomalyProficiency": 96
+  },
+  "SigWeaponId": [
+    14136
+  ],
+  "HpBoosts": [
+    0,
+    437,
+    874,
+    1311,
+    1749,
+    2186
+  ],
+  "AtkBoosts": [
+    0,
+    39,
+    77,
+    116,
+    154,
+    193
+  ],
+  "DefBoosts": [
+    0,
+    33,
+    66,
+    99,
+    133,
+    166
+  ],
+  "CoreSkillInfo": {
+    "FirstCoreStat": 12201,
+    "FirstCoreStatValues": [
+      6,
+      6,
+      12,
+      12,
+      18,
+      18
+    ],
+    "SecondCoreStat": 12101,
+    "SecondCoreStatValues": [
+      0,
+      25,
+      25,
+      50,
+      50,
+      75
+    ],
+    "PurpleCoreMat": 110509,
+    "GoldenCoreMat": 110001
+  },
+  "CoreSkillLevels": {
+    "Name": [
+      "Core Passive: Soul-Searching Gaze",
+      "Additional Ability: Silver Lantern's Gaze"
+    ],
+    "Descriptions": [
+      [
+        "When Trigger's <color=#FFFFFF>Aftershock</color> hits an enemy, the target's Stun DMG Multiplier increases by 20% for 5s. This Stun DMG Multiplier increase will apply even if the target isn't stunned.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same attribute:\nWhen Trigger's CRIT Rate exceeds 40%, each 1% CRIT Rate above this threshold increases her Daze dealt by <color=#FFFFFF>Aftershocks</color> by 1.5%, up to a maximum increase of 75%."
+      ],
+      [
+        "When Trigger's <color=#FFFFFF>Aftershock</color> hits an enemy, the target's Stun DMG Multiplier increases by 22.5% for 5s. This Stun DMG Multiplier increase will apply even if the target isn't stunned.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same attribute:\nWhen Trigger's CRIT Rate exceeds 40%, each 1% CRIT Rate above this threshold increases her Daze dealt by <color=#FFFFFF>Aftershocks</color> by 1.5%, up to a maximum increase of 75%."
+      ],
+      [
+        "When Trigger's <color=#FFFFFF>Aftershock</color> hits an enemy, the target's Stun DMG Multiplier increases by 25% for 5s. This Stun DMG Multiplier increase will apply even if the target isn't stunned.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same attribute:\nWhen Trigger's CRIT Rate exceeds 40%, each 1% CRIT Rate above this threshold increases her Daze dealt by <color=#FFFFFF>Aftershocks</color> by 1.5%, up to a maximum increase of 75%."
+      ],
+      [
+        "When Trigger's <color=#FFFFFF>Aftershock</color> hits an enemy, the target's Stun DMG Multiplier increases by 27.5% for 5s. This Stun DMG Multiplier increase will apply even if the target isn't stunned.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same attribute:\nWhen Trigger's CRIT Rate exceeds 40%, each 1% CRIT Rate above this threshold increases her Daze dealt by <color=#FFFFFF>Aftershocks</color> by 1.5%, up to a maximum increase of 75%."
+      ],
+      [
+        "When Trigger's <color=#FFFFFF>Aftershock</color> hits an enemy, the target's Stun DMG Multiplier increases by 30% for 5s. This Stun DMG Multiplier increase will apply even if the target isn't stunned.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same attribute:\nWhen Trigger's CRIT Rate exceeds 40%, each 1% CRIT Rate above this threshold increases her Daze dealt by <color=#FFFFFF>Aftershocks</color> by 1.5%, up to a maximum increase of 75%."
+      ],
+      [
+        "When Trigger's <color=#FFFFFF>Aftershock</color> hits an enemy, the target's Stun DMG Multiplier increases by 32.5% for 5s. This Stun DMG Multiplier increase will apply even if the target isn't stunned.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same attribute:\nWhen Trigger's CRIT Rate exceeds 40%, each 1% CRIT Rate above this threshold increases her Daze dealt by <color=#FFFFFF>Aftershocks</color> by 1.5%, up to a maximum increase of 75%."
+      ],
+      [
+        "When Trigger's <color=#FFFFFF>Aftershock</color> hits an enemy, the target's Stun DMG Multiplier increases by 35% for 5s. This Stun DMG Multiplier increase will apply even if the target isn't stunned.",
+        "When another character in your squad is an <color=#FFFFFF>Attack</color> character or shares the same attribute:\nWhen Trigger's CRIT Rate exceeds 40%, each 1% CRIT Rate above this threshold increases her Daze dealt by <color=#FFFFFF>Aftershocks</color> by 1.5%, up to a maximum increase of 75%."
+      ]
+    ]
+  },
+  "Cons": [
+    {
+      "Name": "Sharpened Senses",
+      "Effect": "The Stun DMG Multiplier applied through <color=#FFFFFF>Core Passive: Soul-Searching Gaze</color> is increased by an additional 20%. When activating <color=#FFFFFF>Basic Attack: Harmonizing Shot</color>, the cooldown is reduced to 2s. <color=#FFFFFF>Purge</color> gained upon hitting an enemy with the continuous fire or charged counter in <color=#FFFFFF>Sniper Stance</color> increases by 25%. Maximum <color=#FFFFFF>Purge</color> increases to 125."
+    },
+    {
+      "Name": "\"Ether Vision\"",
+      "Effect": "Upon using an <color=#FFFFFF>Aftershock</color>, Trigger gains 1 stack of <color=#FFFFFF>Hunter's Gaze</color>. When executing a Finishing Move in <color=#FFFFFF>Sniper Stance</color>, Trigger gains 2 stacks of <color=#FFFFFF>Hunter's Gaze</color>. Each stack of <color=#FFFFFF>Hunter's Gaze</color> increases all squad members' CRIT DMG by 6%, stacking up to 4 times, and lasting 10s. Repeated triggers reset the duration."
+    },
+    {
+      "Name": "\"Homecoming\"",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "Concealment",
+      "Effect": "When Trigger enters or extends <color=#FFFFFF>Coordinated Support</color>, while the state is active, the next time other squad members trigger <color=#FFFFFF>Basic Attack: Harmonizing Shot</color> or <color=#FFFFFF>Basic Attack: Harmonizing Shot - Tartarus</color>, it will trigger <color=#FFFFFF>Disconnect</color> upon hitting an enemy, dealing additional DMG equal to 200% of Trigger's ATK and inflict Daze equal to 120% of Trigger's Impact. This skill has a relatively high Interrupt Level."
+    },
+    {
+      "Name": "Locked In",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "Beyond the River of the Dead",
+      "Effect": "Upon entering the battlefield, Trigger gains 5 <color=#FFFFFF>Armor Break Rounds</color>. For every 25 <color=#FFFFFF>Purge</color> consumed, Trigger gains 1 additional <color=#FFFFFF>Armor Break Round</color>, up to a maximum of 5 rounds. While possessing <color=#FFFFFF>Armor Break Rounds</color>, when Trigger hits a target in <color=#FFFFFF>Sniper Stance</color>, 1 <color=#FFFFFF>Armor Break Round</color> is consumed to deal additional <color=#2EB6FF>Electric DMG</color> equal to 1,200% of Trigger's ATK. In addition, this instance of DMG is additionally increased by 50%. This effect can trigger once every 0.2s."
+    }
+  ]
+}

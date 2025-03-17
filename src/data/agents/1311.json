@@ -78,7 +78,7 @@
     ],
     "Descriptions": [
       [
-        "During the <color=#FFFFFF>Idyllic Cadenza</color> state, when other squad members switch in through a <color=#FFFFFF>Quick Assist</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Evasive Assist</color>, and when Astra Yao expends Energy to release <color=#FFFFFF>Tremolo</color> to attack, both Astra Yao and the incoming character's ATK are increased. The increase is equal to <color=#2BAD00>22%</color> of Astra Yao's initial ATK, up to a maximum of 1,200. The effect lasts for 20s and can be extended up to 30s with repeated triggers.",
+        "During the <color=#FFFFFF>Idyllic Cadenza</color> state, when other squad members switch in through a <color=#FFFFFF>Quick Assist</color>, <color=#FFFFFF>Chain Attack</color>, <color=#FFFFFF>Defensive Assist</color>, or <color=#FFFFFF>Evasive Assist</color>, and if Astra Yao expends Energy to release <color=#FFFFFF>Tremolo</color> to attack, both Astra Yao and the incoming character's ATK are increased. The increase is equal to <color=#2BAD00>22%</color> of Astra Yao's initial ATK, up to a maximum of 1,200. The effect lasts for 20s and can be extended up to 30s with repeated triggers.",
         "When another character in your squad is an <color=#FFFFFF>Attack</color> or <color=#FFFFFF>Anomaly</color> character:\nWhen Energy is consumed to trigger a <color=#FFFFFF>Precise Assist</color> or <color=#FFFFFF>Basic Attack: Finale</color>, Astra Yao will additionally follow up with 1 <color=#FFFFFF>Tremolo</color> and 3 <color=#FFFFFF>Tone Clusters</color>."
       ],
       [

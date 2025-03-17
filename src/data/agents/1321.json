@@ -130,7 +130,7 @@
     },
     {
       "Name": "Bond of Light and Shadow",
-      "Effect": "When activating her <color=#FFFFFF>Chain Attack</color> or <color=#FFFFFF>Ultimate</color>, Evelyn gains <color=#FFFFFF>Shadowstring Edge</color> for 20s. During <color=#FFFFFF>Shadowstring Edge</color>, when Evelyn hits enemies with a <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dash Attack</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color>, an additional <color=#FFFFFF>Lunalux Garrote</color> will be released for a follow-up attack, dealing <color=#FF5521>Fire DMG</color> equal to 375% of Evelyn's ATK. This DMG is considered <color=#FFFFFF>Chain Attack</color> DMG and can trigger up to 16 times. The number of triggers will be refreshed each time <color=#FFFFFF>Shadowstring Edge</color> is gained."
+      "Effect": "Upon launching a <color=#FFFFFF>Chain Attack</color> or <color=#FFFFFF>Ultimate</color>, Evelyn gains <color=#FFFFFF>Shadowstring Edge</color> for 20s. During <color=#FFFFFF>Shadowstring Edge</color>, when Evelyn hits her primary target with a <color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dash Attack</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color>, she additionally executes a <color=#FFFFFF>Lunalux Garrote</color> follow-up attack, dealing <color=#FF5521>Fire DMG</color> equal to 375% of her ATK to enemies in the area. This DMG is considered <color=#FFFFFF>Chain Attack</color> DMG and can trigger up to 16 times. Gaining another <color=#FFFFFF>Shadowstring Edge</color> will refresh the trigger count."
     }
   ]
 }

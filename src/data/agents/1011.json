@@ -78,31 +78,31 @@
     ],
     "Descriptions": [
       [
-        "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd-hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>32%</color> Daze.",
+        "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>32%</color> Daze.",
         "When another character in your squad shares the same Attribute or Faction:\nWhen Anby's <color=#FFFFFF>Dodge Counter</color> hits an enemy, she gains an extra 7.2 Energy. This effect can trigger once every 5s."
       ],
       [
-        "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd-hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>37.3%</color> Daze.",
+        "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>37.3%</color> Daze.",
         "When another character in your squad shares the same Attribute or Faction:\nWhen Anby's <color=#FFFFFF>Dodge Counter</color> hits an enemy, she gains an extra 7.2 Energy. This effect can trigger once every 5s."
       ],
       [
-        "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd-hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>42.6%</color> Daze.",
+        "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>42.6%</color> Daze.",
         "When another character in your squad shares the same Attribute or Faction:\nWhen Anby's <color=#FFFFFF>Dodge Counter</color> hits an enemy, she gains an extra 7.2 Energy. This effect can trigger once every 5s."
       ],
       [
-        "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd-hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>48%</color> Daze.",
+        "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>48%</color> Daze.",
         "When another character in your squad shares the same Attribute or Faction:\nWhen Anby's <color=#FFFFFF>Dodge Counter</color> hits an enemy, she gains an extra 7.2 Energy. This effect can trigger once every 5s."
       ],
       [
-        "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd-hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>53.3%</color> Daze.",
+        "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>53.3%</color> Daze.",
         "When another character in your squad shares the same Attribute or Faction:\nWhen Anby's <color=#FFFFFF>Dodge Counter</color> hits an enemy, she gains an extra 7.2 Energy. This effect can trigger once every 5s."
       ],
       [
-        "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd-hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>58.6%</color> Daze.",
+        "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>58.6%</color> Daze.",
         "When another character in your squad shares the same Attribute or Faction:\nWhen Anby's <color=#FFFFFF>Dodge Counter</color> hits an enemy, she gains an extra 7.2 Energy. This effect can trigger once every 5s."
       ],
       [
-        "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd-hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>64%</color> Daze.",
+        "Launch a <color=#FFFFFF>Basic Attack: Thunderbolt</color>, <color=#FFFFFF>Special Attack</color>, or <color=#FFFFFF>EX Special Attack</color> after the 3rd hit of Anby's <color=#FFFFFF>Basic Attack</color> for an extra <color=#2BAD00>64%</color> Daze.",
         "When another character in your squad shares the same Attribute or Faction:\nWhen Anby's <color=#FFFFFF>Dodge Counter</color> hits an enemy, she gains an extra 7.2 Energy. This effect can trigger once every 5s."
       ]
     ]
@@ -110,7 +110,7 @@
   "Cons": [
     {
       "Name": "Rapid Charge Mode",
-      "Effect": "When the 4th-hit of Anby's <color=#FFFFFF>Basic Attack</color> hits an enemy, her Energy Generation Rate is increased by 12% for 30s."
+      "Effect": "When the 4th hit of Anby's <color=#FFFFFF>Basic Attack</color> hits an enemy, her Energy Generation Rate is increased by 12% for 30s."
     },
     {
       "Name": "Precision Discharge",

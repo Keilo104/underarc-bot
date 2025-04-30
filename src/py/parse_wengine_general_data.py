@@ -24,15 +24,15 @@ wengine_general_data = {
 with open(f"{zenless_data_path}/FileCfg/WeaponLevelTemplateTb.json", "r", encoding="utf-8") as json_file:
     json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["GHFLHABGNDH"]:
-        wengine_general_data[item["GPEHNHPCIDC"]]["MainstatScaling"][item["CPEGDKBNGDH"]] = item["HFGGMPPIKOG"]
+    for item in json_to_parse["MCOOHPLIKCF"]:
+        wengine_general_data[item["GLPEPLDOFOK"]]["MainstatScaling"][item["JOEHGKBLECO"]] = item["LBKGGCHMILB"]
 
 with open(f"{zenless_data_path}/FileCfg/WeaponStarTemplateTb.json", "r", encoding="utf-8") as json_file:
     json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["GHFLHABGNDH"]:
-        wengine_general_data[item["GPEHNHPCIDC"]]["MainstatBoosts"][item["LOABNMJMDNI"]] = item["AIHMENAEFLO"]
-        wengine_general_data[item["GPEHNHPCIDC"]]["SubstatBoosts"][item["LOABNMJMDNI"]] = item["JAPCHOPHBNM"]
+    for item in json_to_parse["MCOOHPLIKCF"]:
+        wengine_general_data[item["GLPEPLDOFOK"]]["MainstatBoosts"][item["LDJOPPLDEGI"]] = item["JGJFLGCOHJE"]
+        wengine_general_data[item["GLPEPLDOFOK"]]["SubstatBoosts"][item["LDJOPPLDEGI"]] = item["KMJNJNLNHHA"]
 
 with open(f"src/data/helpers/xp_tables.json", "w", encoding="utf-8") as json_file_to_write:
     json_file_to_write.write(json.dumps(wengine_general_data, indent=2))

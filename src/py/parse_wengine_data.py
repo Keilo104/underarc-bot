@@ -6,53 +6,56 @@ def load_initial_weapon(weapons, translation_json):
     with open(f"{zenless_data_path}/FileCfg/WeaponTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["GHFLHABGNDH"]:
-        i = item["NMHNBHDEKBP"]
+    for item in json_to_parse["MCOOHPLIKCF"]:
+        i = item["NNHJEGNOAIG"]
 
         weapons[i] = {}
-        weapons[i]["Id"] = item["NMHNBHDEKBP"]
-        weapons[i]["Specialty"] = item["LDBDIBAEKDM"]
-        weapons[i]["BaseProp"] = item["PEAEKNFCPML"]["PIIPPIBBFBE"]
-        weapons[i]["BasePropValue"] = item["PEAEKNFCPML"]["ENCANOPLLDM"]
-        weapons[i]["SubProp"] = item["BPFIOCMFACA"]["PIIPPIBBFBE"]
-        weapons[i]["SubPropValue"] = item["BPFIOCMFACA"]["ENCANOPLLDM"]
+        weapons[i]["Id"] = item["NNHJEGNOAIG"]
+        weapons[i]["Specialty"] = item["PIANEABKLGC"]
+        weapons[i]["BaseProp"] = item["AFCKEEJNOBD"]["NCLMGBEIABB"]
+        weapons[i]["BasePropValue"] = item["AFCKEEJNOBD"]["JIGPCHENDDM"]
+        weapons[i]["SubProp"] = item["HOIAPALHPED"]["NCLMGBEIABB"]
+        weapons[i]["SubPropValue"] = item["HOIAPALHPED"]["JIGPCHENDDM"]
 
 
 def load_item_template(weapons, translation_json):
     with open(f"{zenless_data_path}/FileCfg/ItemTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["GHFLHABGNDH"]:
-        i = item["OPFEAMDPIAG"]
+    for item in json_to_parse["MCOOHPLIKCF"]:
+        i = item["NHNBEFBOCMH"]
 
         if i in weapons:
-            weapons[i]["Name"] = translation_json[item["MPHLIEKKFIK"]]
-            weapons[i]["Rarity"] = item["GPEHNHPCIDC"]
+            weapons[i]["Name"] = translation_json[item["MLGCKOOKMHN"]]
+            weapons[i]["Rarity"] = item["GLPEPLDOFOK"]
 
 def load_weapon_refinement(weapons, translation_json):
     with open(f"{zenless_data_path}/FileCfg/WeaponTalentTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["GHFLHABGNDH"]:
-        i = item["NDLAAEIJICC"]
+    for item in json_to_parse["MCOOHPLIKCF"]:
+        i = item["FNKLFEGBLPA"]
 
         if i not in weapons:
             weapons[i] = { "Id": i }
 
         if "Refinements" not in weapons[i]:
             weapons[i]["Refinements"] = {
-                "Name": translation_json[item["AKLFOEACLHE"]] if item["AKLFOEACLHE"] in translation_json else item["AKLFOEACLHE"],
+                "Name": translation_json[item["CNINEGHPOIH"]] if item["CNINEGHPOIH"] in translation_json else item["CNINEGHPOIH"],
                 "Descriptions": [None, None, None, None, None],
             }
 
-        weapons[i]["Refinements"]["Descriptions"][item["IAGGENODCPG"]-1] = translation_json[item["DPFFJOEHBBC"]] \
-            if item["DPFFJOEHBBC"] in translation_json else item["DPFFJOEHBBC"]
+        weapons[i]["Refinements"]["Descriptions"][item["GPACKNGPHFP"]-1] = translation_json[item["EDKNACLPBNI"]] \
+            if item["EDKNACLPBNI"] in translation_json else item["EDKNACLPBNI"]
 
 
 zenless_data_path = os.environ["ZENLESS_DATA_PATH"]
 
 with open(f"{zenless_data_path}/TextMap/TextMap_ENTemplateTb.json", "r", encoding="utf-8") as j_file:
     trans_json = json.load(j_file)
+
+with open(f"{zenless_data_path}/TextMap/TextMap_ENOverwriteTemplateTb.json", "r", encoding="utf-8") as j_file:
+    trans_json.update(json.load(j_file))
 
 weapon_dict = {}
 

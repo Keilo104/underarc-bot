@@ -2,7 +2,135 @@
   "Id": 1291,
   "Name": "Hugo",
   "FullName": "Hugo Vlad",
-  "Faction": 2,
+  "Faction": 9,
   "Rarity": 4,
-  "SigWeaponId": []
+  "Specialty": 1,
+  "Element": [
+    202
+  ],
+  "DamageType": [
+    101
+  ],
+  "Stats": {
+    "BaseAtk": 132,
+    "AtkGrowth": 80729,
+    "BaseDef": 50,
+    "DefGrowth": 67222,
+    "BaseHp": 638,
+    "HpGrowth": 866392,
+    "BaseImpact": 95,
+    "BaseAnomalyMastery": 90,
+    "BaseAnomalyProficiency": 86
+  },
+  "SigWeaponId": [
+    14129
+  ],
+  "HpBoosts": [
+    0,
+    438,
+    876,
+    1314,
+    1753,
+    2191
+  ],
+  "AtkBoosts": [
+    0,
+    47,
+    95,
+    142,
+    189,
+    236
+  ],
+  "DefBoosts": [
+    0,
+    34,
+    68,
+    102,
+    136,
+    170
+  ],
+  "CoreSkillInfo": {
+    "FirstCoreStat": 20101,
+    "FirstCoreStatValues": [
+      480,
+      480,
+      960,
+      960,
+      1440,
+      1440
+    ],
+    "SecondCoreStat": 12101,
+    "SecondCoreStatValues": [
+      0,
+      25,
+      25,
+      50,
+      50,
+      75
+    ],
+    "PurpleCoreMat": 110501,
+    "GoldenCoreMat": 110003
+  },
+  "CoreSkillLevels": {
+    "Name": [
+      "Core Passive: Terminating Verdict",
+      "Additional Ability: Prelude to Finality"
+    ],
+    "Descriptions": [
+      [
+        "When <color=#FFFFFF>Chain Attack: Trick of Fate</color> hits an enemy or Hugo's attacks Stun an enemy, Hugo gains the <color=#FFFFFF>Dark Abyss Reverb</color> state for 6s, and repeated triggers reset the duration. During this state, Hugo's CRIT Rate increases by 12% and CRIT DMG increases by 25%.\nWhen there are 1/2 <color=#FFFFFF>Stun</color> characters in your squad, Hugo's ATK increases by <color=#2BAD00>25</color>/<color=#2BAD00>75</color>.\nWhen the Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> or <color=#FFFFFF>Ultimate: Blaspheme</color> hits an enemy while they are Stunned, it triggers the <color=#FFFFFF>Totalize</color> effect, increasing the DMG Multiplier of the skill's Finishing Move by <color=#2BAD00>500%</color>. Additionally, the <color=#FFFFFF>Totalize</color> effect further increases the skill's DMG multiplier based on the remaining Stun time of the enemy when triggered: for each remaining second of Stun time from the portion that is less than or equal to 5s, the skill's DMG multiplier increases by <color=#2BAD00>140%</color>; for each remaining second of Stun time from the portion between 5 and 15s, the skill's DMG multiplier increases by <color=#2BAD00>50%</color>. The total increase can raise the skill's DMG multiplier by a maximum of <color=#2BAD00>1,700%</color>.\nAfter Hugo triggers the <color=#FFFFFF>Totalize</color> effect, the enemy's Stunned state will immediately end. Based on the remaining Stun time at the moment <color=#FFFFFF>Totalize</color> is triggered, a certain amount of Daze will be accumulated. For every second of Stun time remaining, 5% Daze is accumulated, up to a maximum Daze equivalent to 25% of the enemy's maximum Daze.\nWhen <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> hits an enemy, if the enemy is not Stunned, the Daze accumulated by the skill increases by 20%.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> character or shares the same attribute:\n<color=#FFFFFF>Chain Attack: Trick of Fate</color>'s DMG increases by 15%, with a further increase of 35% against normal enemies. When <color=#FFFFFF>Totalize</color> is triggered, the DMG dealt by the skill increases by 40%. <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> generates an additional 20 Energy when triggering <color=#FFFFFF>Totalize</color> on normal enemies. The Energy generation effect can trigger once every 30s."
+      ],
+      [
+        "When <color=#FFFFFF>Chain Attack: Trick of Fate</color> hits an enemy or Hugo's attacks Stun an enemy, Hugo gains the <color=#FFFFFF>Dark Abyss Reverb</color> state for 6s, and repeated triggers reset the duration. During this state, Hugo's CRIT Rate increases by 12% and CRIT DMG increases by 25%.\nWhen there are 1/2 <color=#FFFFFF>Stun</color> characters in your squad, Hugo's ATK increases by <color=#2BAD00>50</color>/<color=#2BAD00>150</color>.\nWhen the Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> or <color=#FFFFFF>Ultimate: Blaspheme</color> hits an enemy while they are Stunned, it triggers the <color=#FFFFFF>Totalize</color> effect, increasing the DMG Multiplier of the skill's Finishing Move by <color=#2BAD00>583%</color>. Additionally, the <color=#FFFFFF>Totalize</color> effect further increases the skill's DMG multiplier based on the remaining Stun time of the enemy when triggered: for each remaining second of Stun time from the portion that is less than or equal to 5s, the skill's DMG multiplier increases by <color=#2BAD00>163%</color>; for each remaining second of Stun time from the portion between 5 and 15s, the skill's DMG multiplier increases by <color=#2BAD00>58%</color>. The total increase can raise the skill's DMG multiplier by a maximum of <color=#2BAD00>1,978%</color>.\nAfter Hugo triggers the <color=#FFFFFF>Totalize</color> effect, the enemy's Stunned state will immediately end. Based on the remaining Stun time at the moment <color=#FFFFFF>Totalize</color> is triggered, a certain amount of Daze will be accumulated. For every second of Stun time remaining, 5% Daze is accumulated, up to a maximum Daze equivalent to 25% of the enemy's maximum Daze.\nWhen <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> hits an enemy, if the enemy is not Stunned, the Daze accumulated by the skill increases by 20%.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> character or shares the same attribute:\n<color=#FFFFFF>Chain Attack: Trick of Fate</color>'s DMG increases by 15%, with a further increase of 35% against normal enemies. When <color=#FFFFFF>Totalize</color> is triggered, the DMG dealt by the skill increases by 40%. <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> generates an additional 20 Energy when triggering <color=#FFFFFF>Totalize</color> on normal enemies. The Energy generation effect can trigger once every 30s."
+      ],
+      [
+        "When <color=#FFFFFF>Chain Attack: Trick of Fate</color> hits an enemy or Hugo's attacks Stun an enemy, Hugo gains the <color=#FFFFFF>Dark Abyss Reverb</color> state for 6s, and repeated triggers reset the duration. During this state, Hugo's CRIT Rate increases by 12% and CRIT DMG increases by 25%.\nWhen there are 1/2 <color=#FFFFFF>Stun</color> characters in your squad, Hugo's ATK increases by <color=#2BAD00>80</color>/<color=#2BAD00>240</color>.\nWhen the Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> or <color=#FFFFFF>Ultimate: Blaspheme</color> hits an enemy while they are Stunned, it triggers the <color=#FFFFFF>Totalize</color> effect, increasing the DMG Multiplier of the skill's Finishing Move by <color=#2BAD00>667%</color>. Additionally, the <color=#FFFFFF>Totalize</color> effect further increases the skill's DMG multiplier based on the remaining Stun time of the enemy when triggered: for each remaining second of Stun time from the portion that is less than or equal to 5s, the skill's DMG multiplier increases by <color=#2BAD00>187%</color>; for each remaining second of Stun time from the portion between 5 and 15s, the skill's DMG multiplier increases by <color=#2BAD00>67%</color>. The total increase can raise the skill's DMG multiplier by a maximum of <color=#2BAD00>2,272%</color>.\nAfter Hugo triggers the <color=#FFFFFF>Totalize</color> effect, the enemy's Stunned state will immediately end. Based on the remaining Stun time at the moment <color=#FFFFFF>Totalize</color> is triggered, a certain amount of Daze will be accumulated. For every second of Stun time remaining, 5% Daze is accumulated, up to a maximum Daze equivalent to 25% of the enemy's maximum Daze.\nWhen <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> hits an enemy, if the enemy is not Stunned, the Daze accumulated by the skill increases by 20%.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> character or shares the same attribute:\n<color=#FFFFFF>Chain Attack: Trick of Fate</color>'s DMG increases by 15%, with a further increase of 35% against normal enemies. When <color=#FFFFFF>Totalize</color> is triggered, the DMG dealt by the skill increases by 40%. <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> generates an additional 20 Energy when triggering <color=#FFFFFF>Totalize</color> on normal enemies. The Energy generation effect can trigger once every 30s."
+      ],
+      [
+        "When <color=#FFFFFF>Chain Attack: Trick of Fate</color> hits an enemy or Hugo's attacks Stun an enemy, Hugo gains the <color=#FFFFFF>Dark Abyss Reverb</color> state for 6s, and repeated triggers reset the duration. During this state, Hugo's CRIT Rate increases by 12% and CRIT DMG increases by 25%.\nWhen there are 1/2 <color=#FFFFFF>Stun</color> characters in your squad, Hugo's ATK increases by <color=#2BAD00>120</color>/<color=#2BAD00>360</color>.\nWhen the Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> or <color=#FFFFFF>Ultimate: Blaspheme</color> hits an enemy while they are Stunned, it triggers the <color=#FFFFFF>Totalize</color> effect, increasing the DMG Multiplier of the skill's Finishing Move by <color=#2BAD00>750%</color>. Additionally, the <color=#FFFFFF>Totalize</color> effect further increases the skill's DMG multiplier based on the remaining Stun time of the enemy when triggered: for each remaining second of Stun time from the portion that is less than or equal to 5s, the skill's DMG multiplier increases by <color=#2BAD00>210%</color>; for each remaining second of Stun time from the portion between 5 and 15s, the skill's DMG multiplier increases by <color=#2BAD00>75%</color>. The total increase can raise the skill's DMG multiplier by a maximum of <color=#2BAD00>2,550%</color>.\nAfter Hugo triggers the <color=#FFFFFF>Totalize</color> effect, the enemy's Stunned state will immediately end. Based on the remaining Stun time at the moment <color=#FFFFFF>Totalize</color> is triggered, a certain amount of Daze will be accumulated. For every second of Stun time remaining, 5% Daze is accumulated, up to a maximum Daze equivalent to 25% of the enemy's maximum Daze.\nWhen <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> hits an enemy, if the enemy is not Stunned, the Daze accumulated by the skill increases by 20%.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> character or shares the same attribute:\n<color=#FFFFFF>Chain Attack: Trick of Fate</color>'s DMG increases by 15%, with a further increase of 35% against normal enemies. When <color=#FFFFFF>Totalize</color> is triggered, the DMG dealt by the skill increases by 40%. <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> generates an additional 20 Energy when triggering <color=#FFFFFF>Totalize</color> on normal enemies. The Energy generation effect can trigger once every 30s."
+      ],
+      [
+        "When <color=#FFFFFF>Chain Attack: Trick of Fate</color> hits an enemy or Hugo's attacks Stun an enemy, Hugo gains the <color=#FFFFFF>Dark Abyss Reverb</color> state for 6s, and repeated triggers reset the duration. During this state, Hugo's CRIT Rate increases by 12% and CRIT DMG increases by 25%.\nWhen there are 1/2 <color=#FFFFFF>Stun</color> characters in your squad, Hugo's ATK increases by <color=#2BAD00>180</color>/<color=#2BAD00>540</color>.\nWhen the Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> or <color=#FFFFFF>Ultimate: Blaspheme</color> hits an enemy while they are Stunned, it triggers the <color=#FFFFFF>Totalize</color> effect, increasing the DMG Multiplier of the skill's Finishing Move by <color=#2BAD00>833%</color>. Additionally, the <color=#FFFFFF>Totalize</color> effect further increases the skill's DMG multiplier based on the remaining Stun time of the enemy when triggered: for each remaining second of Stun time from the portion that is less than or equal to 5s, the skill's DMG multiplier increases by <color=#2BAD00>233%</color>; for each remaining second of Stun time from the portion between 5 and 15s, the skill's DMG multiplier increases by <color=#2BAD00>83%</color>. The total increase can raise the skill's DMG multiplier by a maximum of <color=#2BAD00>2,828%</color>.\nAfter Hugo triggers the <color=#FFFFFF>Totalize</color> effect, the enemy's Stunned state will immediately end. Based on the remaining Stun time at the moment <color=#FFFFFF>Totalize</color> is triggered, a certain amount of Daze will be accumulated. For every second of Stun time remaining, 5% Daze is accumulated, up to a maximum Daze equivalent to 25% of the enemy's maximum Daze.\nWhen <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> hits an enemy, if the enemy is not Stunned, the Daze accumulated by the skill increases by 20%.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> character or shares the same attribute:\n<color=#FFFFFF>Chain Attack: Trick of Fate</color>'s DMG increases by 15%, with a further increase of 35% against normal enemies. When <color=#FFFFFF>Totalize</color> is triggered, the DMG dealt by the skill increases by 40%. <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> generates an additional 20 Energy when triggering <color=#FFFFFF>Totalize</color> on normal enemies. The Energy generation effect can trigger once every 30s."
+      ],
+      [
+        "When <color=#FFFFFF>Chain Attack: Trick of Fate</color> hits an enemy or Hugo's attacks Stun an enemy, Hugo gains the <color=#FFFFFF>Dark Abyss Reverb</color> state for 6s, and repeated triggers reset the duration. During this state, Hugo's CRIT Rate increases by 12% and CRIT DMG increases by 25%.\nWhen there are 1/2 <color=#FFFFFF>Stun</color> characters in your squad, Hugo's ATK increases by <color=#2BAD00>270</color>/<color=#2BAD00>810</color>.\nWhen the Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> or <color=#FFFFFF>Ultimate: Blaspheme</color> hits an enemy while they are Stunned, it triggers the <color=#FFFFFF>Totalize</color> effect, increasing the DMG Multiplier of the skill's Finishing Move by <color=#2BAD00>917%</color>. Additionally, the <color=#FFFFFF>Totalize</color> effect further increases the skill's DMG multiplier based on the remaining Stun time of the enemy when triggered: for each remaining second of Stun time from the portion that is less than or equal to 5s, the skill's DMG multiplier increases by <color=#2BAD00>257%</color>; for each remaining second of Stun time from the portion between 5 and 15s, the skill's DMG multiplier increases by <color=#2BAD00>92%</color>. The total increase can raise the skill's DMG multiplier by a maximum of <color=#2BAD00>3,122%</color>.\nAfter Hugo triggers the <color=#FFFFFF>Totalize</color> effect, the enemy's Stunned state will immediately end. Based on the remaining Stun time at the moment <color=#FFFFFF>Totalize</color> is triggered, a certain amount of Daze will be accumulated. For every second of Stun time remaining, 5% Daze is accumulated, up to a maximum Daze equivalent to 25% of the enemy's maximum Daze.\nWhen <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> hits an enemy, if the enemy is not Stunned, the Daze accumulated by the skill increases by 20%.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> character or shares the same attribute:\n<color=#FFFFFF>Chain Attack: Trick of Fate</color>'s DMG increases by 15%, with a further increase of 35% against normal enemies. When <color=#FFFFFF>Totalize</color> is triggered, the DMG dealt by the skill increases by 40%. <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> generates an additional 20 Energy when triggering <color=#FFFFFF>Totalize</color> on normal enemies. The Energy generation effect can trigger once every 30s."
+      ],
+      [
+        "When <color=#FFFFFF>Chain Attack: Trick of Fate</color> hits an enemy or Hugo's attacks Stun an enemy, Hugo gains the <color=#FFFFFF>Dark Abyss Reverb</color> state for 6s, and repeated triggers reset the duration. During this state, Hugo's CRIT Rate increases by 12% and CRIT DMG increases by 25%.\nWhen there are 1/2 <color=#FFFFFF>Stun</color> characters in your squad, Hugo's ATK increases by <color=#2BAD00>300</color>/<color=#2BAD00>900</color>.\nWhen the Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> or <color=#FFFFFF>Ultimate: Blaspheme</color> hits an enemy while they are Stunned, it triggers the <color=#FFFFFF>Totalize</color> effect, increasing the DMG Multiplier of the skill's Finishing Move by <color=#2BAD00>1,000%</color>. Additionally, the <color=#FFFFFF>Totalize</color> effect further increases the skill's DMG multiplier based on the remaining Stun time of the enemy when triggered: for each remaining second of Stun time from the portion that is less than or equal to 5s, the skill's DMG multiplier increases by <color=#2BAD00>280%</color>; for each remaining second of Stun time from the portion between 5 and 15s, the skill's DMG multiplier increases by <color=#2BAD00>100%</color>. The total increase can raise the skill's DMG multiplier by a maximum of <color=#2BAD00>3,400%</color>.\nAfter Hugo triggers the <color=#FFFFFF>Totalize</color> effect, the enemy's Stunned state will immediately end. Based on the remaining Stun time at the moment <color=#FFFFFF>Totalize</color> is triggered, a certain amount of Daze will be accumulated. For every second of Stun time remaining, 5% Daze is accumulated, up to a maximum Daze equivalent to 25% of the enemy's maximum Daze.\nWhen <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> hits an enemy, if the enemy is not Stunned, the Daze accumulated by the skill increases by 20%.",
+        "When another character in your squad is a <color=#FFFFFF>Stun</color> character or shares the same attribute:\n<color=#FFFFFF>Chain Attack: Trick of Fate</color>'s DMG increases by 15%, with a further increase of 35% against normal enemies. When <color=#FFFFFF>Totalize</color> is triggered, the DMG dealt by the skill increases by 40%. <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> generates an additional 20 Energy when triggering <color=#FFFFFF>Totalize</color> on normal enemies. The Energy generation effect can trigger once every 30s."
+      ]
+    ]
+  },
+  "Cons": [
+    {
+      "Name": "Child of Hatred",
+      "Effect": "When triggering the <color=#FFFFFF>Totalize</color> effect in the <color=#FFFFFF>Dark Abyss Reverb</color> state, the skill's CRIT Rate is increased by an additional 12%, and CRIT DMG by 30%."
+    },
+    {
+      "Name": "The Child Within",
+      "Effect": "When <color=#FFFFFF>Ultimate: Blaspheme</color> triggers <color=#FFFFFF>Totalize</color>, it will not end the enemy's Stunned state. Additionally, when <color=#FFFFFF>Totalize</color> is triggered, the skill will ignore 15% of the enemy's DEF."
+    },
+    {
+      "Name": "Fruit of the Poisonous Tree",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "Dramatic Theory",
+      "Effect": "After a Charged Shot hits an enemy, Hugo's attacks against that target will ignore 12% of that target's <color=#98EFF0>Ice RES</color> for 15s, repeated triggers reset the duration."
+    },
+    {
+      "Name": "Nirvana",
+      "Effect": "<color=#FFFFFF>Basic Attack</color>, <color=#FFFFFF>Dodge</color>, <color=#FFFFFF>Assist</color>, <color=#FFFFFF>Special Attack</color>, and <color=#FFFFFF>Chain Attack</color> Lv. +2"
+    },
+    {
+      "Name": "Crown of Thorns",
+      "Effect": "All shooting attacks that hit enemies trigger the <color=#FFFFFF>Dark Abyss Reverb</color> state, lasting up to 6s, and repeated triggers reset the duration. Additionally, whenever any skill triggers the <color=#FFFFFF>Totalize</color> effect, that DMG is further increased by 60%. The Finishing Move of <color=#FFFFFF>EX Special Attack: Soul Hunter - Punishment</color> also triggers the <color=#FFFFFF>Totalize</color> effect when hitting an enemy that isn't Stunned, boosting the DMG multiplier of the Finishing Move by a fixed 1,000 %."
+    }
+  ]
 }

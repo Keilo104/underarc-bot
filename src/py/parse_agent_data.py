@@ -6,50 +6,50 @@ def load_initial_info(valks, translation_json):
     with open(f"{zenless_data_path}/FileCfg/AvatarBaseTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["GHFLHABGNDH"]:
-        i = item["OPFEAMDPIAG"]
+    for item in json_to_parse["MCOOHPLIKCF"]:
+        i = item["NHNBEFBOCMH"]
 
         valks[i] = {}
-        valks[i]["Id"] = item["OPFEAMDPIAG"]
-        valks[i]["Name"] = translation_json[item["MPHLIEKKFIK"]] if item["MPHLIEKKFIK"] in translation_json else item["MPHLIEKKFIK"]
-        valks[i]["FullName"] = translation_json[item["KCANNBMKBBK"]] if item["KCANNBMKBBK"] in translation_json else item["KCANNBMKBBK"]
-#       valks[i]["Gender"] = item["GKBGKNKHBHI"]
-        valks[i]["Faction"] = item["CGONOJBFCFF"]
+        valks[i]["Id"] = item["NHNBEFBOCMH"]
+        valks[i]["Name"] = translation_json[item["MLGCKOOKMHN"]] if item["MLGCKOOKMHN"] in translation_json else item["MLGCKOOKMHN"]
+        valks[i]["FullName"] = translation_json[item["FNLCLFHMFLO"]] if item["FNLCLFHMFLO"] in translation_json else item["FNLCLFHMFLO"]
+#       valks[i]["Gender"] = item["HIHGDPAEMOF"]
+        valks[i]["Faction"] = item["HNMDAJNCHNF"]
 
 def load_avatar_battle_template(valks, translation_json):
     with open(f"{zenless_data_path}/FileCfg/AvatarBattleTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["GHFLHABGNDH"]:
-        i = item["OPFEAMDPIAG"]
+    for item in json_to_parse["MCOOHPLIKCF"]:
+        i = item["NHNBEFBOCMH"]
 
         if i not in valks:
             valks[i] = { "Id": i }
 
-        valks[i]["Specialty"] = item["GPHEJIDOIJJ"]
-        valks[i]["Element"] = item["PMBACBCGFCH"]
-        valks[i]["DamageType"] = item["MCBEAGMLMNF"]
+        valks[i]["Specialty"] = item["AMPFEKLHKLP"]
+        valks[i]["Element"] = item["DEEPEOEHMNG"]
+        valks[i]["DamageType"] = item["ACKBPFLIBIE"]
 
         valks[i]["Stats"] = {}
 
-        valks[i]["Stats"]["BaseAtk"] = item["PAPCKEHJENB"]
-        valks[i]["Stats"]["AtkGrowth"] = item["KPMDGFFGPAF"]
-        valks[i]["Stats"]["BaseDef"] = item["NKAPDFEBBKJ"]
-        valks[i]["Stats"]["DefGrowth"] = item["IHHFPOKACDA"]
-        valks[i]["Stats"]["BaseHp"] = item["EFCFBIFDBJF"]
-        valks[i]["Stats"]["HpGrowth"] = item["DEEGLPJFOCI"]
+        valks[i]["Stats"]["BaseAtk"] = item["OJEJACEDIIL"]
+        valks[i]["Stats"]["AtkGrowth"] = item["KAFCGCEJHMM"]
+        valks[i]["Stats"]["BaseDef"] = item["CKMNFGAOPGL"]
+        valks[i]["Stats"]["DefGrowth"] = item["CAKKCNCIAPF"]
+        valks[i]["Stats"]["BaseHp"] = item["KMCFEFHEAOI"]
+        valks[i]["Stats"]["HpGrowth"] = item["CLGABDPKLDI"]
 
-        valks[i]["Stats"]["BaseImpact"] = item["PIFBLNKFJFA"]
-        valks[i]["Stats"]["BaseAnomalyMastery"] = item["JOMHJKPKMHH"]
-        valks[i]["Stats"]["BaseAnomalyProficiency"] = item["KLHCIKKMDBC"]
+        valks[i]["Stats"]["BaseImpact"] = item["OMFPODODKOF"]
+        valks[i]["Stats"]["BaseAnomalyMastery"] = item["HILDPEOAHGP"]
+        valks[i]["Stats"]["BaseAnomalyProficiency"] = item["CCAEMPABCLN"]
 
 def load_avatar_level_advance_template(valks, translation_json):
     with open(f"{zenless_data_path}/FileCfg/AvatarLevelAdvanceTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["GHFLHABGNDH"]:
-        valk_id = item["AMIJIAHGPMC"]
-        boost_id = item["IHIEIMELEEH"]
+    for item in json_to_parse["MCOOHPLIKCF"]:
+        valk_id = item["CLODPIMNGGD"]
+        boost_id = item["BOBCEHHKEFA"]
 
         if valk_id not in valks:
             valks[valk_id] = { "Id": valk_id }
@@ -59,39 +59,39 @@ def load_avatar_level_advance_template(valks, translation_json):
             valks[valk_id]["AtkBoosts"] = [0, 0, 0, 0, 0, 0]
             valks[valk_id]["DefBoosts"] = [0, 0, 0, 0, 0, 0]
 
-        valks[valk_id]["HpBoosts"][boost_id-1] = item["EFCFBIFDBJF"]
-        valks[valk_id]["AtkBoosts"][boost_id-1] = item["PAPCKEHJENB"]
-        valks[valk_id]["DefBoosts"][boost_id-1] = item["NKAPDFEBBKJ"]
+        valks[valk_id]["HpBoosts"][boost_id-1] = item["KMCFEFHEAOI"]
+        valks[valk_id]["AtkBoosts"][boost_id-1] = item["OJEJACEDIIL"]
+        valks[valk_id]["DefBoosts"][boost_id-1] = item["CKMNFGAOPGL"]
 
 def load_avatar_ui_template(valks, translation_json):
     with open(f"{zenless_data_path}/FileCfg/AvatarUITemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["GHFLHABGNDH"]:
-        i = item["OPFEAMDPIAG"]
+    for item in json_to_parse["MCOOHPLIKCF"]:
+        i = item["NHNBEFBOCMH"]
 
         if i not in valks:
             valks[i] = { "Id": i }
 
-        valks[i]["SigWeaponId"] = item["BGJPOCDNMML"]
+        valks[i]["SigWeaponId"] = item["DMCHJGLBBAH"]
 
 def load_rarity(valks, translation_json):
     with open(f"{zenless_data_path}/FileCfg/ItemTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["GHFLHABGNDH"]:
-        i = item["OPFEAMDPIAG"]
+    for item in json_to_parse["MCOOHPLIKCF"]:
+        i = item["NHNBEFBOCMH"]
 
         if i in valks:
-            valks[i]["Rarity"] = item["GPEHNHPCIDC"]
+            valks[i]["Rarity"] = item["GLPEPLDOFOK"]
 
 
 def load_avatar_talent_template(valks, translation_json):
     with open(f"{zenless_data_path}/FileCfg/AvatarTalentTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["GHFLHABGNDH"]:
-        i = item["AMIJIAHGPMC"]
+    for item in json_to_parse["MCOOHPLIKCF"]:
+        i = item["CLODPIMNGGD"]
 
         if i not in valks:
             valks[i] = { "Id": i }
@@ -99,50 +99,50 @@ def load_avatar_talent_template(valks, translation_json):
         if "Cons" not in valks[i]:
             valks[i]["Cons"] = [None, None, None, None, None, None]
 
-        valks[i]["Cons"][item["JLKGMJIDPEC"]-1] = {
-            "Name": translation_json[item["FJEIMKOKDCN"]] if item["FJEIMKOKDCN"] in translation_json else item["FJEIMKOKDCN"],
-            "Effect": translation_json[item["NDOCJPHEADC"]] if item["NDOCJPHEADC"] in translation_json else item["NDOCJPHEADC"],
-#           "FlavorText": translation_json[item["IBNGGCFJLPN"]] if item["IBNGGCFJLPN"] in translation_json else item["IBNGGCFJLPN"],
+        valks[i]["Cons"][item["GGODPNKOIKJ"]-1] = {
+            "Name": translation_json[item["GPGHAMJGDFA"]] if item["GPGHAMJGDFA"] in translation_json else item["GPGHAMJGDFA"],
+            "Effect": translation_json[item["NFLMLKJIJHJ"]] if item["NFLMLKJIJHJ"] in translation_json else item["NFLMLKJIJHJ"],
+#           "FlavorText": translation_json[item["LJBJMIJHHHB"]] if item["LJBJMIJHHHB"] in translation_json else item["LJBJMIJHHHB"],
         }
 
 def load_avatar_passive_skill_template(valks, translation_json):
     with open(f"{zenless_data_path}/FileCfg/AvatarPassiveSkillTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["GHFLHABGNDH"]:
-        i = item["AMIJIAHGPMC"]
+    for item in json_to_parse["MCOOHPLIKCF"]:
+        i = item["CLODPIMNGGD"]
 
         if i not in valks:
             valks[i] = { "Id": i }
 
         if "CoreSkillInfo" not in valks[i]:
             valks[i]["CoreSkillInfo"] = {}
-            valks[i]["CoreSkillInfo"]["FirstCoreStat"] = item["LLHCBAEJCKF"][0]["HHALEGBBNFO"]
+            valks[i]["CoreSkillInfo"]["FirstCoreStat"] = item["BCKIFOFJOOJ"][0]["EMNFIAMJHLN"]
             valks[i]["CoreSkillInfo"]["FirstCoreStatValues"] = [None, None, None, None, None, None]
-            valks[i]["CoreSkillInfo"]["SecondCoreStat"] = item["LLHCBAEJCKF"][1]["HHALEGBBNFO"]
+            valks[i]["CoreSkillInfo"]["SecondCoreStat"] = item["BCKIFOFJOOJ"][1]["EMNFIAMJHLN"]
             valks[i]["CoreSkillInfo"]["SecondCoreStatValues"] = [None, None, None, None, None, None]
 
-        for stat in item["LLHCBAEJCKF"]:
-            if stat["HHALEGBBNFO"] == valks[i]["CoreSkillInfo"]["FirstCoreStat"]:
-                valks[i]["CoreSkillInfo"]["FirstCoreStatValues"][item["EPAEIOPFDHH"]-1] = stat["DACOIHOFHDN"]
+        for stat in item["BCKIFOFJOOJ"]:
+            if stat["EMNFIAMJHLN"] == valks[i]["CoreSkillInfo"]["FirstCoreStat"]:
+                valks[i]["CoreSkillInfo"]["FirstCoreStatValues"][item["OKHKDPBLPGN"]-1] = stat["DDPHPKDKLKC"]
 
-            if stat["HHALEGBBNFO"] == valks[i]["CoreSkillInfo"]["SecondCoreStat"]:
-                valks[i]["CoreSkillInfo"]["SecondCoreStatValues"][item["EPAEIOPFDHH"]-1] = stat["DACOIHOFHDN"]
+            if stat["EMNFIAMJHLN"] == valks[i]["CoreSkillInfo"]["SecondCoreStat"]:
+                valks[i]["CoreSkillInfo"]["SecondCoreStatValues"][item["OKHKDPBLPGN"]-1] = stat["DDPHPKDKLKC"]
 
-        if item["OPBIHHKCLPF"] == 7:
-            for material in item["LHMIPEMLLLB"]:
-                if material["DACOIHOFHDN"] == 30:
-                    valks[i]["CoreSkillInfo"]["PurpleCoreMat"] = material["NMHNBHDEKBP"]
+        if item["PAININPIKKE"] == 7:
+            for material in item["CFBIELMLGLL"]:
+                if material["DDPHPKDKLKC"] == 30:
+                    valks[i]["CoreSkillInfo"]["PurpleCoreMat"] = material["NNHJEGNOAIG"]
 
-                elif material["DACOIHOFHDN"] == 4:
-                    valks[i]["CoreSkillInfo"]["GoldenCoreMat"] = material["NMHNBHDEKBP"]
+                elif material["DDPHPKDKLKC"] == 4:
+                    valks[i]["CoreSkillInfo"]["GoldenCoreMat"] = material["NNHJEGNOAIG"]
 
 def load_avatar_skill_level_template(valks, translation_json):
     with open(f"{zenless_data_path}/FileCfg/AvatarSkillLevelTemplateTb.json", "r", encoding="utf-8") as json_file:
         json_to_parse = json.load(json_file)
 
-    for item in json_to_parse["GHFLHABGNDH"]:
-        i = item["AMIJIAHGPMC"]
+    for item in json_to_parse["MCOOHPLIKCF"]:
+        i = item["CLODPIMNGGD"]
 
         if i not in valks:
             valks[i] = { "Id": i }
@@ -152,21 +152,24 @@ def load_avatar_skill_level_template(valks, translation_json):
             valks[i]["CoreSkillLevels"]["Name"] = None
             valks[i]["CoreSkillLevels"]["Descriptions"] = [None, None, None, None, None, None, None]
 
-        if item["GCGPNHPGPLH"] == 5:
+        if item["BBHOCMPOHGF"] == 5:
             valks[i]["CoreSkillLevels"]["Name"] = []
-            valks[i]["CoreSkillLevels"]["Descriptions"][item["HKMOGOBJLPE"]-1] = []
+            valks[i]["CoreSkillLevels"]["Descriptions"][item["IBFCCFKDHIJ"]-1] = []
 
-            for name in item["MLABOKJKBFI"]:
+            for name in item["JHCAIEAAMHA"]:
                 valks[i]["CoreSkillLevels"]["Name"] += [translation_json[name] if name in translation_json else name]
 
-            for name in item["FOLNLNDCLFD"]:
-                valks[i]["CoreSkillLevels"]["Descriptions"][item["HKMOGOBJLPE"]-1] += [translation_json[name] if name in translation_json else name]
+            for name in item["ADHNAMECKCI"]:
+                valks[i]["CoreSkillLevels"]["Descriptions"][item["IBFCCFKDHIJ"]-1] += [translation_json[name] if name in translation_json else name]
 
 
 zenless_data_path = os.environ["ZENLESS_DATA_PATH"]
 
 with open(f"{zenless_data_path}/TextMap/TextMap_ENTemplateTb.json", "r", encoding="utf-8") as j_file:
     trans_json = json.load(j_file)
+
+with open(f"{zenless_data_path}/TextMap/TextMap_ENOverwriteTemplateTb.json", "r", encoding="utf-8") as j_file:
+    trans_json.update(json.load(j_file))
 
 valk_dict = {}
 
